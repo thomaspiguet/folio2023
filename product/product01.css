@@ -158,7 +158,6 @@
   padding: 0 40px;
 } */
 .content__container {
-  font-weight: 600;
   overflow: hidden;
   height: 100px;
   padding: 0 100px;
@@ -236,7 +235,6 @@
 
 @media (max-width: 1400px) {
   .content__container {
-    font-weight: 600;
     overflow: hidden;
     height: 40px;
     padding: 0 40px;
