@@ -140,7 +140,7 @@
 } */
 .content {
   position: absolute;
-  top: 50%;
+  top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 160px;
@@ -241,7 +241,6 @@
   }
   .content {
     position: absolute;
-    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 160px;
