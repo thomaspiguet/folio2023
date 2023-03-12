@@ -93,8 +93,8 @@
   /* -webkit-box-pack: center; */
   -ms-flex-pack: center;
   /* justify-content: center; */
-  width: 220px;
-  height: 45px;
+  width: 500px;
+  height: 52px;
 }
 
 .hidden-sm {
@@ -103,14 +103,22 @@
   }
 }
 
-.hide {
-  display: block;
-}
+// .myDIV {
+//   color: red;
+// }
 
-.myDIV:hover + .hide {
-  display: none;
-  color: red;
-}
+// .myDIV:hover + .hide {
+//   display: none;
+//   color: red;
+// }
+
+// .hide {
+//   display: block;
+// }
+
+// .myDIV00:hover {
+//   display: none;
+// }
 
 /* .video-wrap-overlay {
   width: 100px;

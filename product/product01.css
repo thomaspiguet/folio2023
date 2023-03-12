@@ -77,23 +77,14 @@
   /* -webkit-box-pack: center; */
   -ms-flex-pack: center;
   /* justify-content: center; */
-  width: 220px;
-  height: 45px;
+  width: 500px;
+  height: 52px;
 }
 
 @media (max-width: 900px) {
   .hidden-sm {
     display: none;
   }
-}
-
-.hide {
-  display: block;
-}
-
-.myDIV:hover + .hide {
-  display: none;
-  color: red;
 }
 
 /* .video-wrap-overlay {
