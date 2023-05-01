@@ -94,6 +94,7 @@ a .play {
 
 .play:hover {
   display: none;
+  transition-property: none;
 }
 
 .video-description {

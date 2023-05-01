@@ -35,7 +35,7 @@
     </script>
   </head>
   <body>
-    <header class=" sticky-top border-bottom ">
+    <header class="sticky-top border-bottom">
       <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3">
           <a
@@ -92,108 +92,175 @@
 
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="text-bg-white text-center overflow-hidden">
-          <div class="my-3 py-3">
+          <div class="my-3 py-2">
             <h2 class="display-5">Design System</h2>
             <p class="lead">& design, creation, development of style guide.</p>
+            <div class="d-flex gap-2 justify-content-center py-1">
+              <a class="" type="button"
+                ><img src="assets\img\csharp.svg" alt=""
+              /></a>
+              <a class="" type="button"><img src="assets\img\angular.svg" /></a>
+              <a class="" type="button"
+                ><img src="assets\img\axure.svg" alt=""
+              /></a>
+              <a class="" type="button"
+                ><img src="assets\img\sitecore.svg" alt=""
+              /></a>
+            </div>
           </div>
 
-          <div class="bg-white mx-auto video">
-            <video
-              src="assets/video/doc-01.mp4"
-              type="video/mp4"
-              muted=""
-              class="vid02"
-              loop=""
-            ></video>
+          <div class="bg-white mx-auto video video-wrapper">
+            <div class="">
+              <a class="play"
+                ><img src="assets\img\play.svg" id="helpdiv" alt=""
+              /></a>
 
-            <script>
-              // Listening to the video element
-              let clip01 = document.querySelector(".vid02");
+              <video
+                src="assets/video/doc-01.mp4"
+                type="video/mp4"
+                muted=""
+                class="vid02"
+                loop=""
+              ></video>
 
-              /* Adding the event listeners on the video to play/pause the video. */
-              clip01.addEventListener("mouseover", function (e) {
-                clip01.play();
-              });
+              <script>
+                // Listening to the video element
+                let clip01 = document.querySelector(".vid02");
 
-              /* Applying the mouse out event to pause the video */
-              clip01.addEventListener("mouseout", function (e) {
-                clip01.pause();
-              });
-            </script>
+                /* Adding the event listeners on the video to play/pause the video. */
+                clip01.addEventListener("mouseover", function (e) {
+                  clip01.play();
+                });
+
+                /* Applying the mouse out event to pause the video */
+                clip01.addEventListener("mouseout", function (e) {
+                  clip01.pause();
+                });
+
+                function closeHelpDiv() {
+                  document.getElementById("helpdiv").style.display = "none";
+                }
+
+                // close the div in 5 secs
+                window.setTimeout(closeHelpDiv, 2000);
+              </script>
+            </div>
           </div>
         </div>
 
         <div class="text-bg-white text-center overflow-hidden">
-          <div class="my-3 py-3">
+          <div class="my-3 py-2">
             <h2 class="display-5">Software Prototyping</h2>
             <p class="lead">& design, interface creation & Web development.</p>
+            <div class="d-flex gap-2 justify-content-center py-1">
+              <a class="" type="button"
+                ><img src="assets\img\xd.svg" alt=""
+              /></a>
+
+                  <a class="" type="button"
+                ><img src="assets\img\react.svg" alt=""
+              /></a>
+
+
+            </div>
           </div>
 
-          <div class="bg-white mx-auto video">
-            <video
-              src="assets/video/anim.mp4"
-              type="video/mp4"
-              muted=""
-              class="vid01"
-              loop=""
-            ></video>
+          <div class="bg-white mx-auto video video-wrapper">
+            <div class="">
+              <a class="play"
+                ><img src="assets\img\play.svg" id="helpdiv03" alt=""
+              /></a>
 
-            <script>
-              // Listening to the video element
-              let clip02 = document.querySelector(".vid01");
+              <video
+                src="assets/video/anim.mp4"
+                type="video/mp4"
+                muted=""
+                class="vid01"
+                loop=""
+              ></video>
 
-              /* Adding the event listeners on the video to play/pause the video. */
-              clip02.addEventListener("mouseover", function (e) {
-                clip02.play();
-              });
+              <script>
+                // Listening to the video element
+                let clip02 = document.querySelector(".vid01");
 
-              /* Applying the mouse out event to pause the video */
-              clip02.addEventListener("mouseout", function (e) {
-                clip02.pause();
-              });
-            </script>
+                /* Adding the event listeners on the video to play/pause the video. */
+                clip02.addEventListener("mouseover", function (e) {
+                  clip02.play();
+                });
+
+                /* Applying the mouse out event to pause the video */
+                clip02.addEventListener("mouseout", function (e) {
+                  clip02.pause();
+                });
+
+                function closeHelpDiv03() {
+                  document.getElementById("helpdiv03").style.display = "none";
+                }
+
+                // close the div in 5 secs
+                window.setTimeout(closeHelpDiv03, 30000);
+              </script>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="text-bg-white text-center overflow-hidden">
-        <div class="my-3 py-3">
+        <div class="my-3 py-2">
           <h2 class="display-5">Website Prototyping</h2>
-          <p class="lead">& design, interface creation & Web development.</p>
+          <p class="lead">+ design, interface creation & Web development.</p>
         </div>
 
-        <div class="bg-white mx-auto video">
-          <video
-            src="assets/video/transac.mp4"
-            type="video/mp4"
-            muted=""
-            class="vid05"
-            loop=""
-          ></video>
+        <div class="bg-white mx-auto video video-wrapper">
+          <div class="">
+            <a class="play"
+              ><img src="assets\img\play.svg" id="helpdiv02" alt=""
+            /></a>
 
-          <script>
-            // Listening to the video element
-            let clip05 = document.querySelector(".vid05");
+            <video
+              src="assets/video/transac.mp4"
+              type="video/mp4"
+              muted=""
+              class="vid05"
+              loop=""
+            ></video>
 
-            /* Adding the event listeners on the video to play/pause the video. */
-            clip05.addEventListener("mouseover", function (e) {
-              clip05.play();
-            });
+            <script>
+              // Listening to the video element
+              let clip05 = document.querySelector(".vid05");
 
-            /* Applying the mouse out event to pause the video */
-            clip05.addEventListener("mouseout", function (e) {
-              clip05.pause();
-            });
-          </script>
+              /* Adding the event listeners on the video to play/pause the video. */
+              clip05.addEventListener("mouseover", function (e) {
+                clip05.play();
+              });
+
+              /* Applying the mouse out event to pause the video */
+              clip05.addEventListener("mouseout", function (e) {
+                clip05.pause();
+              });
+              function closeHelpDiv02() {
+                document.getElementById("helpdiv02").style.display = "none";
+              }
+
+              // close the div in 5 secs
+              window.setTimeout(closeHelpDiv02, 200000);
+            </script>
+          </div>
         </div>
       </div>
 
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="text-bg-white text-center overflow-hidden">
-          <div class="my-3 py-3">
+          <div class="my-3 py-2">
             <h2 class="display-5">Design System</h2>
             <p class="lead">& design, creation, development of style guide.</p>
           </div>
+          <div class="bg-white mx-auto video video-wrapper">
+            <div class="">
+              <a class="play"
+                ><img src="assets\img\play.svg" id="helpdiv02" alt=""
+              /></a>
+  </div>
 
           <div class="bg-white mx-auto video">
             <video
@@ -219,14 +286,19 @@
               });
             </script>
           </div>
+          </div>
         </div>
 
         <div class="text-bg-white text-center overflow-hidden">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Transactional Website & application</h2>
-            <p class="lead">& design, interface creation & Web development.</p>
+          <div class="my-3 py-2">
+            <h2 class="display-5">Transactional Website</h2>
+            <p class="lead">design, interface creation & Web development.</p>
           </div>
-
+          <div class="bg-white mx-auto video video-wrapper">
+            <div class="">
+              <a class=""
+                ><img src="assets\img\play.svg" id="" alt=""
+              /></a>
           <div class="bg-white mx-auto video">
             <video
               src="assets/video/web-01.mp4"
@@ -253,6 +325,7 @@
           </div>
         </div>
       </div>
+            </div>
     </main>
 
     <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
