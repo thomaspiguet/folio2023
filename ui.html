@@ -177,19 +177,13 @@
 
           <div class="bg-white mx-auto video video-wrapper">
             <div class="">
-              <a class="play"
+              <!-- <a class="play"
                 ><img src="assets\img\play.svg" id="helpdiv03" alt=""
-              /></a>
+              /></a> -->
 
-              <video
-                src="assets/video/anim.mp4"
-                type="video/mp4"
-                muted=""
-                class="vid01"
-                loop=""
-              ></video>
+              <video class="vid01"  src="assets/video/anim.mp4" type="video/mp4" controls></video>
 
-              <script>
+              <!-- <script>
                 // Listening to the video element
                 let clip02 = document.querySelector(".vid01");
 
@@ -209,7 +203,7 @@
 
                 // close the div in 5 secs
                 window.setTimeout(closeHelpDiv03, 3000);
-              </script>
+              </script> -->
             </div>
           </div>
         </div>
@@ -272,7 +266,7 @@
       </div>
       <div class="text-bg-white text-center overflow-hidden">
         <div class="my-3 py-2">
-          <h2 class="display-5">Website Prototyping</h2>
+            <h2 class="display-5">Transactional Website</h2>
           <p class="lead">+ design, interface creation & Web development.</p>
         </div>
 
@@ -330,6 +324,9 @@
 
    </div>
           </div>
+
+
+
           <div class="bg-white mx-auto  video-wrapper">
             <div class="">
               <a class="play"
@@ -363,12 +360,26 @@
           </div>
           </div>
            </div>
+
+
+
+
+           
         </div>
 
         <div class="text-bg-white text-center overflow-hidden">
           <div class="my-3 py-2">
             <h2 class="display-5">Transactional Website</h2>
             <p class="lead">design, interface creation & Web development.</p>
+            <div class="d-flex gap-3 justify-content-center py-1">
+              <a class="" type="button"><img src="assets\img\zeplin.svg" /></a>
+              <a class="" type="button"><img src="assets\img\storybook-icon.svg" /></a>
+              <a class="" type="button"><img src="assets\img\angular.svg" alt=""/></a>
+              <a class="" type="button"><img src="assets\img\react.svg" /></a>
+              <a class="" type="button"><img src="assets\img\csharp.svg" /></a>
+
+
+   </div>
           </div>
           <div class="bg-white mx-auto video video-wrapper">
             <div class="">
@@ -400,6 +411,10 @@
         </div>
       </div>
      </div>
+
+
+
+
     </main>
 
     <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
@@ -415,5 +430,29 @@
         $("video", this).get(0).pause();
       }
     </script> -->
+
+    
+    <script>
+var myvideo = document.getElementById('myvideo'),
+    playbutton = document.getElementById('playme'),
+    jumplink = document.getElementById('jump');
+
+jumplink.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime = 7;
+    myvideo.play();
+}, false);
+
+// only in to demonstrate video
+playbutton.addEventListener("click", function () {
+    if (myvideo.paused) {
+        myvideo.play();
+    } else {
+        myvideo.pause();
+    }
+}, false);
+    </script>
   </body>
 </html>

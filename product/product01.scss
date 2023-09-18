@@ -31,6 +31,71 @@ header.border-bottom {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+
+.dropdown-hover:hover>.dropdown-menu {
+  display: inline-block;
+  }
+  
+  .dropdown-hover>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+  }
+
+
+
+  .navbar .megamenu{ 
+    background-color: fff;
+    padding: 1rem; 
+  
+  }
+  .fixed-top {
+           background-color: #fff!important;
+ 
+  }
+
+  
+  /* ============ desktop view ============ */
+  @media all and (min-width: 992px) {
+  
+    .navbar .has-megamenu{position:static!important;}
+    .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+  
+  }	
+  /* ============ desktop view .end// ============ */
+  
+  /* ============ mobile view ============ */
+  @media(max-width: 991px){
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+      overflow-y: auto;
+        max-height: 90vh;
+        margin-top:10px;
+        background-color: #fff!important;
+    }
+  }
+
+  .navbar-toggler {
+    padding: var(--mdb-navbar-toggler-padding-y) var(--mdb-navbar-toggler-padding-x);
+    font-size: var(--mdb-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--mdb-navbar-color);
+    background-color: transparent;
+    border: var(--mdb-border-width) solid var(--mdb-navbar-toggler-border-color);
+    border-radius: var(--mdb-navbar-toggler-border-radius);
+    transition: var(--mdb-navbar-toggler-transition);
+}
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display,inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+
+
+
 .product-device {
   position: absolute;
   right: 10%;

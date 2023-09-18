@@ -129,7 +129,50 @@
           </div>
         </div>
       </div>
+      <div class="text-bg-white text-center overflow-hidden">
+        <div class="my-3 py-2">
+          <h2 class="display-5">Transactional Website</h2>
+          <p class="lead">design, interface creation & Web development.</p>
+          <div class="d-flex gap-3 justify-content-center py-1">
+            <a class="" type="button"><img src="assets\img\zeplin.svg" /></a>
+            <a class="" type="button"><img src="assets\img\storybook-icon.svg" /></a>
+            <a class="" type="button"><img src="assets\img\angular.svg" alt=""/></a>
+            <a class="" type="button"><img src="assets\img\react.svg" /></a>
+            <a class="" type="button"><img src="assets\img\csharp.svg" /></a>
 
+
+ </div>
+        </div>
+        <div class="bg-white mx-auto video video-wrapper">
+          <div class="">
+            <a class="play"><img src="assets\img\play.svg"/></a>
+        <div class="bg-white mx-auto video">
+          <video
+            src="assets/video/web-01.mp4"
+            type="video/mp4"
+            muted=""
+            class="vid04"
+            loop=""
+          ></video>
+
+          <script>
+            // Listening to the video element
+            let clip04 = document.querySelector(".vid04");
+
+            /* Adding the event listeners on the video to play/pause the video. */
+            clip04.addEventListener("mouseover", function (e) {
+              clip04.play();
+            });
+
+            /* Applying the mouse out event to pause the video */
+            clip04.addEventListener("mouseout", function (e) {
+              clip04.pause();
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+   </div>
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="text-bg-primary text-center">
           <div class="my-3 py-2">
@@ -159,16 +202,5 @@
 
     <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- <script>
-      var figure = $(".video").hover(hoverVideo, hideVideo);
-
-      function hoverVideo(e) {
-        $("video", this).get(0).play();
-      }
-
-      function hideVideo(e) {
-        $("video", this).get(0).pause();
-      }
-    </script> -->
   </body>
 </html>
