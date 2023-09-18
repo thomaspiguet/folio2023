@@ -46,11 +46,14 @@ header.border-bottom {
   .navbar .megamenu{ 
     background-color: fff;
     padding: 1rem; 
+    padding: 0; 
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+
   
   }
   .fixed-top {
            background-color: #fff!important;
- 
   }
 
   
@@ -92,7 +95,6 @@ header.border-bottom {
   line-height: 1;
   text-rendering: auto;
 }
-
 
 
 
@@ -284,7 +286,6 @@ a {
   line-height: 40px;
   color: #000;
 } */
-
 .content {
   position: absolute;
   top: 400px;
