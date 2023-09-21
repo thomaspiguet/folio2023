@@ -52,6 +52,9 @@ header.border-bottom {
 .navbar .megamenu {
   background-color: fff;
   padding: 1rem;
+  padding: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .fixed-top {
