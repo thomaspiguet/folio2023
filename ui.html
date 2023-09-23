@@ -111,22 +111,11 @@
             </div>
           </div>
 
-          <div class="bg-white mx-auto video video-wrapper">
-              <a class="play"
-                ><img src="assets\img\play.svg" id="helpdiv" alt=""
-              /></a>
-
-              <!-- <video  
-                src="assets/video/doc-01.mp4"
-                src="assets/video/doc-01.mp4"
-                type="video/mp4"
-                muted=""
-                class="vid02"
-                loop=""
-              ></video> -->
+          <div class="bg-white mx-auto video video-wrapper">  
 
 
-              <video class="vid02" playsinline muted loop id="">
+
+              <video class="" autoplay  playsinline muted loop >
                 <source src="assets/video/doc-01.webm" type="video/webm" />
                 <source src="assets/video/doc-01.mp4" type="video/mp4" />
                 <source src="assets/video/doc-01.mov" type="video/mov" />
@@ -134,27 +123,7 @@
               </video>
 
 
-              <script>
-                // Listening to the video element
-                let clip01 = document.querySelector(".vid02");
-
-                /* Adding the event listeners on the video to play/pause the video. */
-                clip01.addEventListener("mouseover", function (e) {
-                  clip01.play();
-                });
-
-                /* Applying the mouse out event to pause the video */
-                clip01.addEventListener("mouseout", function (e) {
-                  clip01.pause();
-                });
-
-                function closeHelpDiv() {
-                  document.getElementById("helpdiv").style.display = "none";
-                }
-
-                // close the div in 5 secs
-                window.setTimeout(closeHelpDiv, 2000);
-              </script>
+            
           </div>
         </div>
 
@@ -241,26 +210,7 @@
               loop=""
             ></video>
 
-            <script>
-              // Listening to the video element
-              let clip08 = document.querySelector(".vid08");
 
-              /* Adding the event listeners on the video to play/pause the video. */
-              clip08.addEventListener("mouseover", function (e) {
-                clip08.play();
-              });
-
-              /* Applying the mouse out event to pause the video */
-              clip05.addEventListener("mouseout", function (e) {
-                clip05.pause();
-              });
-              function closeHelpDiv02() {
-                document.getElementById("helpdiv08").style.display = "none";
-              }
-
-              // close the div in 5 secs
-              window.setTimeout(closeHelpDiv02, 200000);
-            </script>
           </div>
         </div>
       </div>
@@ -271,40 +221,10 @@
         </div>
 
         <div class="bg-white mx-auto video video-wrapper">
-          <div class="">
-            <a class="play"
-              ><img src="assets\img\play.svg" id="helpdiv02" alt=""
-            /></a>
-
-            <video
-              src="assets/video/transac.mp4"
-              type="video/mp4"
-              muted=""
-              class="vid05"
-              loop=""
-            ></video>
-
-            <script>
-              // Listening to the video element
-              let clip05 = document.querySelector(".vid05");
-
-              /* Adding the event listeners on the video to play/pause the video. */
-              clip05.addEventListener("mouseover", function (e) {
-                clip05.play();
-              });
-
-              /* Applying the mouse out event to pause the video */
-              clip05.addEventListener("mouseout", function (e) {
-                clip05.pause();
-              });
-              function closeHelpDiv02() {
-                document.getElementById("helpdiv02").style.display = "none";
-              }
-
-              // close the div in 5 secs
-              window.setTimeout(closeHelpDiv02, 200000);
-            </script>
-          </div>
+          <video class="" autoplay playsinline muted loop>
+            <source src="assets/video/transac_1.mp4" type="video/mp4" /> 
+            <source src="assets/video/transac_1.mp4" type="video/mp4" />  
+          </video>
         </div>
       </div>
 
@@ -328,6 +248,8 @@
 
 
           <div class="bg-white mx-auto  video-wrapper">
+
+            
             <div class="">
               <a class="play"
                 ><img src="assets\img\play.svg" id="" alt=""
@@ -393,20 +315,7 @@
               loop=""
             ></video>
 
-            <script>
-              // Listening to the video element
-              let clip04 = document.querySelector(".vid04");
 
-              /* Adding the event listeners on the video to play/pause the video. */
-              clip04.addEventListener("mouseover", function (e) {
-                clip04.play();
-              });
-
-              /* Applying the mouse out event to pause the video */
-              clip04.addEventListener("mouseout", function (e) {
-                clip04.pause();
-              });
-            </script>
           </div>
         </div>
       </div>
