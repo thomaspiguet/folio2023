@@ -167,6 +167,11 @@ small, .small {
   z-index: 1000;
 }
 
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
 a img,
 a svg {
   vertical-align: middle;
