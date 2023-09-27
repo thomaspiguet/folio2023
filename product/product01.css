@@ -167,11 +167,6 @@ small, .small {
   z-index: 1000;
 }
 
-a {
-  color: #0d6efd;
-  text-decoration: none;
-}
-
 a img,
 a svg {
   vertical-align: middle;
@@ -181,6 +176,16 @@ a svg {
 
 a .play {
   height: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0d6efd !important;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .play:hover {

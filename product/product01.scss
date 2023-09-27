@@ -171,8 +171,6 @@ small, .small {
 }
 
 a {
-    color: #0d6efd;
-    text-decoration: none;
   img,
   svg {
     vertical-align: middle;
@@ -183,6 +181,17 @@ a {
     height: 200px;
   }
 }
+a {
+  text-decoration: none;
+  &:hover {
+    color: #0d6efd!important;
+    // background-color: #0d6efd!important;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+}
+
 
 .play:hover {
   display: none;
