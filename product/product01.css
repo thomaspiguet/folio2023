@@ -267,6 +267,7 @@ a .play {
   font-size: 50px;
   line-height: 40px;
   color: #000;
+  z-index: 100;
 }
 
 /* .content__container {
