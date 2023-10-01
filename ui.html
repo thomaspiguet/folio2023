@@ -1,284 +1,495 @@
-<html lang="en">
-  <head>
+<!doctype html>
+<html lang="en" class="h-100">
 
-+89+++
+<head>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="carousel/carousel.css" rel="stylesheet" />
+  <link href="product/product01.css" rel="stylesheet" />
+  <link href="sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header class="">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top  border-bottom  ">
+
+      <div class="container d-flex flex-wrap justify-content-center py-3">
+        <a class="navbar-brand" href="index.html"
+          class=" d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none "><span
+            class="fs-4">Thomas Piguet Folio</span>
+        </a>
+   
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.2/examples/product/"
-      href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.css"
-    />
+        <div class="collapse navbar-collapse" id="navbarCollapse">
 
-    <link href="assets/bootstrap.css" rel="stylesheet" />
 
-    <!-- <link href="product\product.css" rel="stylesheet" /> -->
-    <link href="product/product01.css" rel="stylesheet" />
+          <ul class="navbar-nav ms-auto">
 
-    <!-- Hotjar Tracking Code for my site -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3387631, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-  </head>
-  <body>
-    <header class="sticky-top border-bottom">
-      <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3">
-          <a
-            href="index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
-          >
-            <span class="fs-4">Thomas Piguet Folio</span>
-          </a>
 
-          <ul class="nav">
             <li class="nav-item">
               <a href="index.html" class="nav-link" aria-current="page">Demo Reel</a>
             </li>
-            <li class="nav-item">
-              <a href="ui.html" class="nav-link active">UI Design</a>
+
+
+
+            <li class="nav-item dropdown dropdown-hover position-static">
+
+
+              <a  aria-current="page" class="nav-link dropdown-toggle active " href="index.html" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false">
+                UI Design
+              </a>
+              <div class="dropdown-menu megamenu " role="menu">
+
+                <div class="container">
+                  <div class="row my-4">
+                    <div class="row my-4">
+                      <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+                        <p class="text-uppercase font-weight-bold">
+                          Design System
+                        </p>
+                        <a href="#DesignSystem" class="text-dark">
+                          <div class="row mb-4 border-bottom pb-2">
+                            <div class="col-4">
+                              <img src="assets/video/human-ux.gif" class="img-fluid ">
+                            </div>
+                            <div class="col-8"> 
+                              <p class="mb-2">Design System </p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="text-dark">
+                          <div class="row mb-4 border-bottom pb-2">
+                            <div class="col                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             -4">
+                              <img src="assets/video/human-ux.gif" class="img-fluid ">
+                            </div>
+                            <div class="col-8">                                                                
+                              <p class="mb-2">
+                                Software Prototyping
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        
+                      </div>
+                      <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                        <p class="text-uppercase font-weight-bold">
+                          Software Prototyping
+                        </p>
+                        <a href="#SoftwarePrototyping" class="text-dark">
+                          <div class="row mb-4 border-bottom pb-2">
+                            <div class="col-4">
+                              <img src="assets/video/human-ux.gif" class="img-fluid ">
+                            </div>
+                            <div class="col-8">
+                              <p class="mb-2">
+                              Software
+                              </p>
+                        <p class="mb-2">
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        
+                        
+                      </div>
+                      <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                        <p class="text-uppercase font-weight-bold">
+                          Website
+                        </p>
+                        <a href="#SalesforceCRM" class="text-dark">
+                          <div class="row mb-4 border-bottom pb-2">
+                            <div class="col-4">
+                              <img src="assets/video/human-ux.gif" class="img-fluid ">
+                            </div>
+                            <div class="col-8">
+                              
+                              <p class="mb-2">
+                                CRM &amp; CMS Website
+                              </p><p class="mb-2">
+                                
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        
+                        
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="row my-4">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                      <p class="text-uppercase font-weight-bold">
+                        User Workflows
+                      </p>
+                      <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4" data-mdb-ripple-color="light">
+                        <a href="" > <img src="assets/img/ux-01.jpg" class="img-fluid"></a>
+                      </div>
+                      
+
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-md-0">
+                      <p class="text-uppercase font-weight-bold">
+                        Transactional Website
+                      </p>
+                      <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4" data-mdb-ripple-color="light">
+                        <a href="" > <img src="assets/img/ux-01.jpg" class="img-fluid"></a>
+                      </div>
+                      
+
+                    </div>
+
+                    <div class="col-md-4">
+                      <p class="text-uppercase font-weight-bold">
+                        Process
+                      </p>
+                      <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4" data-mdb-ripple-color="light">
+                        <a href="" > <img src="assets/img/ux-01.jpg" class="img-fluid"></a>
+
+                      </div>
+                      
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+              </div>
+
+
+
             </li>
-            <li class="nav-item">
+
+
+            <li class="nav-item active">
               <a href="ux.html" class="nav-link">UX Design</a>
             </li>
             <li class="nav-item">
               <a href="research.html" class="nav-link">Research</a>
             </li>
-            <!-- <li class="nav-item">
-              <a href="development.html" class="nav-link">Development</a>
-            </li> -->
+
+
+
             <li class="nav-item">
-              <a href="mailto:thomas_piguet@msn.com" class="nav-link"
-                >Contact</a
-              >
+              <a href="mailto:thomas_piguet@msn.com" class="nav-link">Contact</a>
             </li>
-          </ul>
-        </header>
-      </div>
-    </header>
-
-    <main>
-
-      <div class="content">
-        <div class="content__container">
-          <p class="content__container__text">I am a</p>
-
-          <ul class="content__container__list">
-            <li class="content__container__list__item">UX Designer !</li>
-            <li class="content__container__list__item">UI Designer !</li>
-            <li class="content__container__list__item">Researcher !</li>
-            <li class="content__container__list__item">Web Developer !</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="">
-        <div class="col-12 hidden-sm">
-          <img src="assets/img/ux-top.png" />
-        </div>
-      </div>
-
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="text-bg-white text-center overflow-hidden">
-          <div class="my-3 py-2">
-            <h2 class="display-5">Design System</h2>
-            <p class="lead">+ design + creation + development of style guide.</p>
-                        <p class="small">Built with </p>
-
-            <div class="d-flex gap-3 justify-content-center py-1">
-                       <a class="" type="button"
-                ><img src="assets\img\adobe-xd.svg" alt=""
-              /></a>
-              <a class="" type="button"
-                ><img src="assets\img\csharp.svg" alt=""
-              /></a>
-              <a class="" type="button"
-                ><img src="assets\img\sitecore.svg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="bg-white mx-auto video video-wrapper">  
-
-
-
-              <video class="" autoplay playsinline muted loop >
-                <source src="assets/video/doc-01.webm" type="video/webm" />
-                <source src="assets/video/doc-01.mp4" type="video/mp4" />
-                <source src="assets/video/doc-01.mov" type="video/mov" />
-
-              </video>
             
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  
+
+
+
+
+<!-- 
+    <div class="">
+      <div class="col-12 hidden-sm">
+        <img src="assets/img/ux-top.png" />
+      </div>
+    </div> -->
+
+    <div class="content">
+      <div class="content__container">
+        <p class="content__container__text">I am a</p>
+
+        <ul class="content__container__list">
+          <li class="content__container__list__item">UX Designer !</li>
+          <li class="content__container__list__item">UI Designer !</li>
+          <li class="content__container__list__item">Researcher !</li>
+          <li class="content__container__list__item">Web Developer !</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+
+
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <video class="" autoplay playsinline muted loop >
+            <source src="assets/video/human-ux.mp4" type="video/mp4" />
+            <source src="assets/video/human-ux.mov" type="video/mov" />
+
+      
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <!-- <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p> -->
+              <p><a class="btn btn-outline-primary" href="#">Discover</a>
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="carousel-item">
+          <!-- <video class="" autoplay playsinline muted  >
+            <source src="assets/video/car-02.mp4" type="video/mp4" />
+          </video>   -->
+          <img src="assets/video/car-01.png">
+          
+          <!-- <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="carousel-item">
+
+            <img src="assets/img/ux-01.jpg">
+            <div class="container">
+            <!-- <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+
+
+  
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div class="text-bg-white text-center overflow-hidden">
+        <div class="my-3 py-2">
+          <h2 class="display-5">Design System</h2>
+          <p class="lead">+ design + creation + development of style guide.</p>
+                      <p class="small">Built with </p>
+
+          <div class="d-flex gap-3 justify-content-center py-1">
+                     <a class="" type="button"
+              ><img src="assets\img\adobe-xd.svg" alt=""
+            /></a>
+            <a class="" type="button"
+              ><img src="assets\img\csharp.svg" alt=""
+            /></a>
+            <a class="" type="button"
+              ><img src="assets\img\sitecore.svg" alt=""
+            /></a>
           </div>
         </div>
 
-        <div class="text-bg-white text-center overflow-hidden">
-          <div class="my-3 py-2">
-            <h2 class="display-5">Software Prototyping</h2>
-            <p class="lead">+ design + interface creation + Web development.</p>
-                        <p class="small">Built with </p>
-
-            <div class="d-flex gap-3 justify-content-center py-1">
-              <a class="" type="button"
-                ><img src="assets\img\xd.svg" alt=""
-              /></a>
-
-                  <a class="" type="button"
-                ><img src="assets\img\react.svg" alt=""
-              /></a>
+        <div class="bg-white mx-auto video video-wrapper">  
 
 
-            </div>
-          </div>
 
-          <div class="bg-white mx-auto video video-wrapper">
-            <div class="">
+            <video class="" autoplay playsinline muted loop >
+              <source src="assets/video/doc-01.webm" type="video/webm" />
+              <source src="assets/video/doc-01.mp4" type="video/mp4" />
+              <source src="assets/video/doc-01.mov" type="video/mov" />
 
-              <video class="" autoplay playsinline muted loop>
-                <source src="assets/video/anim.mp4" type="video/mp4" /> 
-              </video>
+            </video>
 
-            </div>
-          </div>
+
+          
         </div>
       </div>
 
       <div class="text-bg-white text-center overflow-hidden">
         <div class="my-3 py-2">
-          <h2 class="display-5">Salesforce CRM</h2>  
+          <h2 class="display-5">Software Prototyping</h2>
           <p class="lead">+ design + interface creation + Web development.</p>
                       <p class="small">Built with </p>
 
-            <div class="d-flex gap-3 justify-content-center py-1">
+          <div class="d-flex gap-3 justify-content-center py-1">
             <a class="" type="button"
-     ><img src="assets\img\figma.svg" alt=""
-   /></a>
+              ><img src="assets\img\xd.svg" alt=""
+            /></a>
 
-   <a class="" type="button"><img src="assets\img\zeplin.svg" /></a>
+                <a class="" type="button"trot
+              ><img src="assets\img\react.svg" alt=""
+            /></a>
 
-   <a class="" type="button"><img src="assets\img\apex.svg" /></a>
-   <a class="" type="button"
-     ><img src="assets\img\salesforce.svg" alt=""
-   /></a>
- </div>
+
+          </div>
         </div>
 
         <div class="bg-white mx-auto video video-wrapper">
-
-          <video class="" autoplay playsinline muted loop>
-            <!-- <source src="assets/video/birks.mp4" type="video/mp4" />  -->
-            <source src="assets/video/birks-nav.mp4" type="video/mp4" /> 
-
-          </video>
-
-        </div>
-      </div>
-
-
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="text-bg-white text-center overflow-hidden">
-          <div class="my-3 py-2">
-            <h2 id="DesignSystem" class="display-5">Design System</h2>
-            <p class="lead">+ design + creation + development of style guide.</p>
-            <p class="small">Built with </p>
-
-
-            <div class="d-flex gap-3 justify-content-center py-1">
-              <a class="" type="button"><img src="assets\img\zeplin.svg" /></a>
-              <a class="" type="button"><img src="assets\img\storybook-icon.svg" /></a>
-              <a class="" type="button"><img src="assets\img\angular.svg" alt=""/></a>
-              <a class="" type="button"><img src="assets\img\react.svg" /></a>
-              <a class="" type="button"><img src="assets\img\csharp.svg" /></a>
-        </div>
-      </div>
-
-          <div class="bg-white mx-auto  video-wrapper">
-          
           <div class="">
 
-
-
-          <div class="bg-white mx-auto video">
             <video class="" autoplay playsinline muted loop>
-              <source src="assets/video/nav.mp4" type="video/mp4" /> 
+              <source src="assets/video/anim.mp4" type="video/mp4" /> 
             </video>
+
           </div>
-          </div>
-           </div>
-
-
-
-
-           
-        </div>
-
-        <!-- <div class="text-bg-white text-center overflow-hidden">
-          <div class="my-3 py-2">
-            <h2 class="display-5">Salesforce CRM</h2>
-            <p class="lead">design + interface creation + Web development.</p>
-            <p class="small">Built with </p>
-
-            <div class="d-flex gap-3 justify-content-center py-1">
-              <a class="" type="button"><img src="assets\img\zeplin.svg" /></a>
-              <a class="" type="button"><img src="assets\img\storybook-icon.svg" /></a>
-              <a class="" type="button"><img src="assets\img\angular.svg" alt=""/></a>
-              <a class="" type="button"><img src="assets\img\react.svg" /></a>
-              <a class="" type="button"><img src="assets\img\csharp.svg" /></a>
-             </div>
-          </div>
-
-          <div class="bg-white mx-auto video video-wrapper">
-            <div class="">
-              <video class="" autoplay playsinline muted loop control>
-                <source src="assets/video/birks-nav.mp4" type="video/mp4" /> 
-              </video>
-
-
-
         </div>
       </div>
-     </div> -->
+    </div>
+
+    <div class="text-bg-white text-center overflow-hidden">
+      <div class="my-3 py-2">
+        <h2 class="display-5">Salesforce CRM</h2>  
+        <p class="lead">+ design + interface creation + Web development.</p>
+                    <p class="small">Built with </p>
+
+          <div class="d-flex gap-3 justify-content-center py-1">
+          <a class="" type="button"
+   ><img src="assets\img\figma.svg" alt=""
+ /></a>
+
+ <a class="" type="button"><img src="assets\img\zeplin.svg" /></a>
+
+ <a class="" type="button"><img src="assets\img\apex.svg" /></a>
+ <a class="" type="button"
+   ><img src="assets\img\salesforce.svg" alt=""
+ /></a>
+</div>
+      </div>
+
+      <div class="bg-white mx-auto video video-wrapper">
+
+        <video class="" autoplay playsinline muted loop>
+          <!-- <source src="assets/video/birks.mp4" type="video/mp4" />  -->
+          <source src="assets/video/birks-nav.mp4" type="video/mp4" /> 
+
+        </video>
+
+      </div>
+    </div>
 
 
-     
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
       <div class="text-bg-white text-center overflow-hidden">
         <div class="my-3 py-2">
-            <h2 class="display-5">Transactional Website</h2>
-          <p class="lead">+ design + interface creation + Web development.</p>
+          <h2 id="DesignSystem" class="display-5">Design System</h2>
+          <p class="lead">+ design + creation + development of style guide.</p>
+          <p class="small">Built with </p>
+
+
+          <div class="d-flex gap-3 justify-content-center py-1">
+            <a class="" type="button"><img src="assets\img\zeplin.svg" /></a>
+            <a class="" type="button"><img src="assets\img\storybook-icon.svg" /></a>
+            <a class="" type="button"><img src="assets\img\angular.svg" alt=""/></a>
+            <a class="" type="button"><img src="assets\img\react.svg" /></a>
+            <a class="" type="button"><img src="assets\img\csharp.svg" /></a>
+      </div>
+    </div>
+
+        <div class="bg-white mx-auto  video-wrapper">
+        
+        <div class="">
+
+
+
+        <div class="bg-white mx-auto video">
+          <video class="" autoplay playsinline muted loop>
+            <source src="assets/video/nav.mp4" type="video/mp4" /> 
+          </video>
+        </div>
+        </div>
+         </div>
+
+
+
+
+         
+      </div>
+
+      <!-- <div class="text-bg-white text-center overflow-hidden">
+        <div class="my-3 py-2">
+          <h2 class="display-5">Salesforce CRM</h2>
+          <p class="lead">design + interface creation + Web development.</p>
+          <p class="small">Built with </p>
+
+          <div class="d-flex gap-3 justify-content-center py-1">
+            <a class="" type="button"><img src="assets\img\zeplin.svg" /></a>
+            <a class="" type="button"><img src="assets\img\storybook-icon.svg" /></a>
+            <a class="" type="button"><img src="assets\img\angular.svg" alt=""/></a>
+            <a class="" type="button"><img src="assets\img\react.svg" /></a>
+            <a class="" type="button"><img src="assets\img\csharp.svg" /></a>
+           </div>
         </div>
 
         <div class="bg-white mx-auto video video-wrapper">
-          <video class="" autoplay playsinline muted loop>
-            <source src="assets/video/transac_1.mp4" type="video/mp4" /> 
-            <source src="assets/video/transac_1.mp4" type="video/mp4" />  
-          </video>
-        </div>
+          <div class="">
+            <video class="" autoplay playsinline muted loop control>
+              <source src="assets/video/birks-nav.mp4" type="video/mp4" /> 
+            </video>
+
+
+
+      </div>
+    </div>
+   </div> -->
+
+
+   
+    <div class="text-bg-white text-center overflow-hidden">
+      <div class="my-3 py-2">
+          <h2 class="display-5">Transactional Website</h2>
+        <p class="lead">+ design + interface creation + Web development.</p>
       </div>
 
+      <div class="bg-white mx-auto video video-wrapper">
+        <video class="" autoplay playsinline muted loop>
+          <source src="assets/video/transac_1.mp4" type="video/mp4" /> 
+          <source src="assets/video/transac_1.mp4" type="video/mp4" />  
+        </video>
+      </div>
+    </div>
 
 
 
 
-    </main>
 
-    <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
+  </main>
+
+  <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
 
 
-    
-    <script>
+  
+  <script>
 
-    </script>
-  </body>
+  </script>
+</body>
 </html>
