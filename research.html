@@ -23,17 +23,13 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico">
 
 
-    
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.2/examples/product/"
-      href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.css"
-    />
-
-    <link href="assets/bootstrap.css" rel="stylesheet" />
-
-    <!-- <link href="product\product.css" rel="stylesheet" /> -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="carousel/carousel.css" rel="stylesheet" />
     <link href="product/product01.css" rel="stylesheet" />
+    <link href="sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+    
+
 
     <!-- Hotjar Tracking Code for my site -->
     <script>
@@ -117,89 +113,90 @@
   
   
   
-      <div class="content">
-        <div class="content__container">
-          <p class="content__container__text">I am a</p>
-  
-          <ul class="content__container__list">
-            <li class="content__container__list__item">UX Designer !</li>
-            <li class="content__container__list__item">UI Designer !</li>
-            <li class="content__container__list__item">Researcher !</li>
-            <li class="content__container__list__item">Web Developer !</li>
-          </ul>
-        </div>
+
+    <div class="content">
+      <div class="content__container">
+        <p class="content__container__text">I am a</p>
+
+        <ul class="content__container__list">
+          <li class="content__container__list__item">UX Designer !</li>
+          <li class="content__container__list__item">UI Designer !</li>
+          <li class="content__container__list__item">Researcher !</li>
+          <li class="content__container__list__item">Web Developer !</li>
+        </ul>
       </div>
-  
+    </div>
+
+    
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+
+
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <video class="" autoplay playsinline muted loop >
+            <source src="assets/video/human-ux.mp4" type="video/mp4" />
+            <source src="assets/video/human-ux.mov" type="video/mov" />
+
       
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-  
-  
-  
-  
-        <div class="carousel-inner">
-  
-          <div class="carousel-item active">
-            <video class="" autoplay playsinline muted loop >
-              <source src="assets/video/human-ux.mp4" type="video/mp4" />
-              <source src="assets/video/human-ux.mov" type="video/mov" />
-  
-        
-  
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <!-- <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p> -->
-                <p><a class="btn btn-outline-primary" href="#">Discover</a>
-                </p>
-              </div>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <!-- <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p> -->
+              <p><a class="btn btn-outline-primary" href="#">Discover</a>
+              </p>
             </div>
-  
-  
           </div>
-  
-  
-          <div class="carousel-item">
-            <!-- <video class="" autoplay playsinline muted  >
-              <source src="assets/video/car-02.mp4" type="video/mp4" />
-            </video>   -->
-            <img src="assets/video/car-01.png">
-            
-            <!-- <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
+
+
+        </div>
+
+
+        <div class="carousel-item">
+          <!-- <video class="" autoplay playsinline muted  >
+            <source src="assets/video/car-02.mp4" type="video/mp4" />
+          </video>   -->
+          <img src="assets/video/car-01.png">
+          
+          <!-- <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="carousel-item">
+
+            <img src="assets/img/ux-01.jpg">
+            <div class="container">
+            <!-- <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
             </div> -->
           </div>
-  
-          <div class="carousel-item">
-  
-              <img src="assets/img/ux-01.jpg">
-              <div class="container">
-              <!-- <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div> -->
-            </div>
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-  
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
 
       
 
