@@ -112,9 +112,9 @@ body {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
   .carousel-item {
-    height: 44rem;
+    height: 40em;
   }
 }
