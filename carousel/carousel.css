@@ -26,7 +26,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 28rem;
+  height: 20rem;
 }
 .carousel-item > img {
   position: absolute;
@@ -94,6 +94,8 @@ body {
 }
 
 
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -103,6 +105,9 @@ body {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
+    .carousel-item {
+      height: 30em;
+    }
   }
 
   .featurette-heading {
