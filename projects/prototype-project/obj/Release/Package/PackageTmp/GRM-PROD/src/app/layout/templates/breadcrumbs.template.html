@@ -1,7 +1,0 @@
-<ol class="breadcrumb">
-  <li><a ui-sref="home" title="{{ 'home' | translate }}">{{ 'home' | translate }}</a></li>
-  <li ng-repeat="crumb in breadcrumbs" ng-class="{ active: $last }">
-    <a ui-sref="{{ crumb.route }}" ng-if="!$last" title="{{ crumb.displayName }}">{{ crumb.displayName }}&nbsp;</a>
-    <span ng-show="$last">{{ crumb.displayName }}</span>
-  </li>
-</ol>

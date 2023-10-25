@@ -1,3 +1,0 @@
-#video-background{display:none}@media (min-width: 992px){#video-background{display:block;position:absolute;left:0;top:-8px;min-width:118%;min-height:59%;z-index:-3}}#video-background-mobile{display:block;position:absolute;left:0;top:45px;width:100%;min-height:34%;z-index:-3}@media (min-width: 992px){#video-background-mobile{display:none}}
-
-/*# sourceMappingURL=bg-video.css.map */
