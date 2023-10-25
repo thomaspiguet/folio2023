@@ -1,0 +1,1152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+
+    <!-- Styles -->
+    <link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../components/main-header/css/navbar.css" rel="stylesheet">
+    <link href="../components/main-header/css/sidebar.css" rel="stylesheet">
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+    <link href="../components/main-header/_intermenu.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+    <link href="../components/alerts/css/_alerts.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_datatables.css" rel="stylesheet" />
+    <link href="../dist/css/scss/mixins/_utility.css" rel="stylesheet" />
+
+    <!-- Web components -->
+    <script src="../WEB-COMPONENTS/polyfills-0/webcomponents-lite.js"></script>
+    <script src="../WEB-COMPONENTS/template-components.js"></script>
+    <link rel="import" href="../WEB-COMPONENTS/navbar.html">
+    <link rel="import" href="../WEB-COMPONENTS/sidebar.html">
+    <link rel="import" href="../WEB-COMPONENTS/buttons.html">
+    <link rel="import" href="../WEB-COMPONENTS/color-palette.html">
+    <link rel="import" href="../WEB-COMPONENTS/modals.html">
+    <link rel="import" href="../WEB-COMPONENTS/toolbar.html">
+    <link rel="import" href="../WEB-COMPONENTS/nav-sidebar.html">
+
+    <!--<link rel="import" href="../WEB-COMPONENTS/toolbar-sidebar-attachments.html">-->
+    <link rel="import" href="../WEB-COMPONENTS/toolbar-sidebar-notes.html">
+    <!--<link rel="import" href="../WEB-COMPONENTS/toolbar-sidebar-notes-table.html">-->
+    <!--<link rel="import" href="../WEB-COMPONENTS/toolbar-sidebar-notes-add.html">-->
+
+    <link href="../dist/css/scss/_grf_style.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_toolbar_sidebar.css" rel="stylesheet" />
+
+    <link href="../components/wysihtml5/bootstrap3-wysihtml5.css" rel="stylesheet" />
+
+
+    <link href="../dist/css/jquery.toolbar.css" rel="stylesheet" />
+
+    <!-- jQuery 3 -->
+    <script src="../components/jquery/dist/jquery.min.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115556243-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115556243-1');
+    </script>
+
+
+
+
+<style>
+
+    .grm {
+        display: block!important;
+    }
+
+    .sidebar-toggle {
+        display:none;
+    }
+
+    .control-sidebar {
+        top: 24px;
+    }
+    /*.app__top-menu {
+        z-index: 10;
+        height: 49px;
+    }*/
+
+    /*.control-sidebar {
+        position: absolute;
+        padding-top: 0px;
+        top: 49px!important;
+        z-index: 10000;
+    }*/
+
+    .top-header {
+        z-index: 11;
+    }
+
+    .app__top-header {
+        height: 48px;
+        z-index: 10000;
+    }
+    .main-header {
+        position: relative;
+        max-height: 100px;
+        z-index: 1;
+    }
+    .tab-content > .active {
+        display: block;
+    }
+
+    .tab-content > .tab-pane {
+        display: block;
+    }
+
+    /*.control-sidebar-bg,
+    .control-sidebar {
+        top: 97px;
+        right: -400px;
+        width: 400px;
+        -webkit-transition: right 0.3s ease-in-out;
+        -o-transition: right 0.3s ease-in-out;
+        transition: right 0.3s ease-in-out;
+    }*/
+
+    .top-menu__scenario {
+        margin-left: 42px;
+        height: 52px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        float: left;
+    }
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+    .navbar-right {
+        float: left;
+    }
+
+    .main-header .navbar-custom-menu, .main-header .navbar-right {
+        float: none;
+    }
+    /*.top-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 49px;
+        background-color: transparent;
+        width: 215px;
+        margin-right: 2px !important;
+        float: right;
+    }*/
+
+    /*.toolbar-btn-icon {
+        width: 33px;
+        height: 34px;
+        cursor: pointer;
+        border-radius: 4px;
+        position: relative;
+        color: #00778b;
+        background-color: #f2f6f7
+    }*/
+
+        .toolbar-btn-icon:hover {
+            background-color: #e2ecef;
+            color: #00778b;
+        }
+
+    .icon-button {
+        background: #364347;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+        display: block;
+        transition: none;
+    }
+
+    a {
+        color: #02baf2;
+        text-decoration: none;
+        -webkit-transition: 0.25s;
+        transition: 0.25s;
+    }
+</style>
+
+
+
+</head>
+<body>
+    <div id="root">
+
+
+
+
+        <aside class="control-sidebar control-sidebar-light">
+            <div class="app__top-menu">
+
+                <template-component-toolbar-sidebar-notes></template-component-toolbar-sidebar-notes>
+
+                <!--<template-component-toolbar-sidebar-attachments></template-component-toolbar-sidebar-attachments>-->
+
+                <!--<template-component-toolbar-sidebar-notes-add></template-component-toolbar-sidebar-notes-add>-->
+
+                <!--<template-component-toolbar-sidebar-notes-table></template-component-toolbar-sidebar-notes-table>-->
+
+            </div>
+
+        </aside>
+
+
+        <div class="app">
+            <div class="app__top-header">
+                <div class="top-header">
+                    <div class="top-header__left">
+                        <div class="top-header__logo">
+                            <a href="/4512/dashboard"></a>
+                        </div>
+                        <div class="top-header__products">
+                            <div class="products">
+                                <div class="products__button">
+                                    <div class="products__icon"></div>
+                                </div>
+                                <div class="products__menu">
+                                    <div class="products__domains">
+                                        <div class="products__domain">
+                                            <div class="products__domain-menu">
+                                                <div class="products__domain-icon products__domain-icon--GRF"></div><a class="products__application-link products__application-link--domain" href="https://grf.qa.logibec.cloud">GRF</a>
+                                                <div class="products__domain-expander"></div>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero products__applications" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="products__application">
+                                                        <a class="products__application-link" href="https://grf.qa.logibec.cloud">GRF</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products__domain">
+                                            <div class="products__domain-menu">
+                                                <div class="products__domain-icon products__domain-icon--PLATFORM"></div><a class="products__application-link products__application-link--domain" href="https://platform.int.logibec.cloud">PLATFORM</a>
+                                                <div class="products__domain-expander"></div>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero products__applications" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="products__application">
+                                                        <a class="products__application-link" href="https://platform.int.logibec.cloud">PLATFORM</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products__domain">
+                                            <div class="products__domain-menu">
+                                                <div class="products__domain-icon products__domain-icon--IDS"></div><a class="products__application-link products__application-link--domain" href="https://identity-server-console.int.logibec.cloud">IDS</a>
+                                                <div class="products__domain-expander"></div>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero products__applications" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="products__application">
+                                                        <a class="products__application-link" href="https://identity-server-console.int.logibec.cloud">IDS</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-header__right">
+                        <div class="top-header__info">
+                            13
+                        </div>
+                        <div class="top-header__delim"></div>
+                        <div class="top-header__user">
+                            <div class="user">
+                                <div class="user__photo">
+                                    <div class="user__img">
+                                        TP
+                                    </div>
+                                </div>
+                                <div class="user__info">
+                                    <div class="user__name">
+                                        Thomas Piguet
+                                    </div>
+                                    <div class="user__job-title">
+                                        Manager
+                                    </div>
+                                </div>
+                                <div class="user-menu">
+                                    <div class="user-menu__arrow">
+                                        <div class="user-menu__select"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app__vbox">
+                <div class="app__box">
+                    <div class="app__side-menu">
+                        <div class="side-menu side-menu--expanded">
+                            <div class="scroll-box scroll-box--wrapped scroll-box--enable-y" style="height: 100%;" tabindex="-1">
+                                <div class="scroll-box__viewport" style="height: 100%; width: 100%;">
+                                    <div class="side-menu__toggle-block">
+                                        <div class="side-menu__module">
+                                            <div class="side-menu__name">
+                                                <span>Budget</span>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu__module-menu"></div>
+                                        <div class="side-menu__toggle side-menu__toggle--expanded"></div>
+                                    </div>
+                                    <div class="side-menu__items">
+                                        <div class="side-menu__bucket">
+                                            <div class="side-menu__item">
+                                                <a class="side-menu__link side-menu__link--dashboard" href="/4512/dashboard">
+                                                    <div class="side-menu__name">
+                                                        <span>Tableau de bord</span>
+                                                    </div>
+                                                    <div class="side-menu__dropdown side-menu__dropdown--expanded" role="button" tabindex="0"></div>
+                                                </a>
+                                            </div>
+                                            <div aria-hidden="false" class="rah-static rah-static--height-auto side-menu__subitems" style="height: auto; overflow: visible;">
+                                                <div>
+                                                    <div class="side-menu__subitem side-menu__subitem--selected">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/1">Salaires</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/2">Temps supplémentaire</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/3">M.O.I.</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/4">Primes</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/5">Autres</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/8">Autres dépenses</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/9">Revenus</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/16">Av. soc. gén.</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/17">Fournitures</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/18">Av. soc. part.</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/19">Charges soc. global</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/dashboard/20">Charges sociales</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu__bucket">
+                                            <div class="side-menu__item">
+                                                <div class="side-menu__link side-menu__link--employees">
+                                                    <div class="side-menu__name">
+                                                        <span>Détail du budget</span>
+                                                    </div>
+                                                    <div class="side-menu__dropdown" role="button" tabindex="0"></div>
+                                                </div>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero side-menu__subitems" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/budget-detail/positions"><span>Postes</span></a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/budget-detail/positions-by-job-title"><span>Postes par titre d’emploi</span></a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/budget-detail/required-attendance"><span>Présences requises</span></a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/budget-detail/required-attendance-dashboard"><span>Tableau prés. req.</span></a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/budget-detail/budget-requests"><span>Demandes budgétaires</span></a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/budget-detail/imports"><span>Importations</span></a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/budget-detail/parameters-by-structure"><span>Paramètres par structure</span></a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/budget-detail/global-parameters"><span>Paramètres globaux</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu__bucket">
+                                            <div class="side-menu__item">
+                                                <a class="side-menu__link side-menu__link--scenarios" href="/4512/scenarios">
+                                                    <div class="side-menu__name">
+                                                        <span>Scénarios</span>
+                                                    </div>
+                                                    <div class="side-menu__dropdown" role="button" tabindex="0"></div>
+                                                </a>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero side-menu__subitems" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/scenarios/SGA_2018_ORI">SGA_2018_ORI</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/scenarios/SGA_2017_ORI">SGA_2017_ORI</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu__bucket">
+                                            <div class="side-menu__item">
+                                                <a class="side-menu__link side-menu__link--salaries" href="/4512/salaries">
+                                                    <div class="side-menu__name">
+                                                        <span>Salaires</span>
+                                                    </div>
+                                                    <div class="side-menu__dropdown" role="button" tabindex="0"></div>
+                                                </a>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero side-menu__subitems" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/salaries/employees">Employees</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/salaries/positions">Positions</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/salaries/budget">Budget calculations</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/salaries/batch">Batch updates</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu__bucket">
+                                            <div class="side-menu__item">
+                                                <a class="side-menu__link side-menu__link--revenue" href="/4512/revenue">
+                                                    <div class="side-menu__name">
+                                                        <span>Revenus et autres dépenses</span>
+                                                    </div>
+                                                    <div class="side-menu__dropdown" role="button" tabindex="0"></div>
+                                                </a>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero side-menu__subitems" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/revenue/Employees">Employees</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu__bucket">
+                                            <div class="side-menu__item">
+                                                <a class="side-menu__link side-menu__link--report" href="/4512/report">
+                                                    <div class="side-menu__name">
+                                                        <span>Rapports</span>
+                                                    </div>
+                                                    <div class="side-menu__dropdown" role="button" tabindex="0"></div>
+                                                </a>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero side-menu__subitems" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/report/Quarter%201">Quarter 1</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu__bucket">
+                                            <div class="side-menu__item">
+                                                <a class="side-menu__link side-menu__link--reference" href="/4512/reference">
+                                                    <div class="side-menu__name">
+                                                        <span>Nomenclature</span>
+                                                    </div>
+                                                    <div class="side-menu__dropdown" role="button" tabindex="0"></div>
+                                                </a>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero side-menu__subitems" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/4512/reference/file%201">file 1</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-box__track scroll-box__track--x">
+                                    <div class="scroll-box__handle scroll-box__handle--x" style="width: 100%;"></div>
+                                </div>
+                                <div class="scroll-box__track scroll-box__track--y">
+                                    <div class="scroll-box__handle scroll-box__handle--y" style="height: 100%;">
+                                        <div class="scroll-box__handle--y-view"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="app__content">
+
+
+                        <div class="app__top-menu">
+                            <div class="top-menu">
+                                <div class="top-menu__scenario">
+                                    <div class="top-menu__info">
+                                        <div class="top-menu__info-top">
+                                            <span>2018</span><span class="top-menu__info-delim">/</span><span>0011</span>
+                                        </div>
+
+
+
+                                        <div class="top-menu__info-scenario">
+                                            SGA_2018_Original
+                                        </div>
+
+
+
+                                    </div><a class="top-menu__button" href="/modal/scenario"><span class="top-menu__button-text"><span>Changer de scénario</span></span></a>
+                                </div>
+                                <div class="top-menu__right">
+                                    <div class="top-menu__field--hide">
+                                        <div class="top-menu__field-name">
+                                            <span>STATUT</span>
+                                        </div>
+                                        <div class="top-menu__field-value top-menu__field-value--status-active">
+                                            Active
+                                        </div>
+                                    </div>
+                                    <div class="top-menu__field--hide">
+                                        <div class="top-menu__field-name">
+                                            <span>APPROUVÉ PAR</span>
+                                        </div>
+                                        <div class="top-menu__field-value">
+                                            Ronald Watkins
+                                        </div>
+                                    </div>
+                                    <div class="top-menu__field--hide">
+                                        <div class="top-menu__field-name">
+                                            <span>DATE D'APPROBATION</span>
+                                        </div>
+                                        <div class="top-menu__field-value">
+                                            25/01/2017
+                                        </div>
+                                    </div>
+                                    <div class="top-menu__delim--hide"></div>
+                                    <div class="top-menu__field">
+                                        <div class="top-menu__field-name">
+                                            <span>FILTRER PAR</span>
+                                        </div>
+                                        <div class="top-menu__field-value">
+                                            <div class="dropdown__container">
+                                                <div class="dropdown">
+                                                    <div class="dropdown__label"></div>
+                                                    <div class="dropdown__value">
+                                                        <span>Tous</span>
+                                                        <div class="dropdown__select"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="top-menu__field">
+                                        <div class="top-menu__field-name">
+                                            <span>SÉLECTION</span>
+                                        </div>
+                                        <div class="top-menu__field-value">
+                                            <div class="filter-dropdown">
+                                                <div class="filter-dropdown__value--disabled">
+                                                    Toutes
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <!--<div class="top-menu__field">
+
+
+                                            <a href="#" data-toggle="control-sidebar">
+                                                <i class="material-icons toolbar-btn-icon toolbar-btn-material-icons">attach_file</i>
+                                            </a>
+
+
+                                    </div>
+
+
+
+                                    <div class="top-menu__field">
+
+
+                                        <a href="#" data-toggle="control-sidebar">
+                                            <i class="fa fa-sticky-note toolbar-btn-icon">
+                                             
+                                            </i>
+                                        </a>
+
+                                    </div>-->
+
+
+
+                                    <div class="top-menu__field">
+
+
+
+                                        <div id="button1" data-toolbar="user-options" class=" toolbar-btn-icon "><i class="material-icons toolbar-btn-icon   toolbar-btn-material-icons">more_vert</i>
+                                            <span class="label label-top label-warning label-top-container-btn-tools"> 6</span>
+                                          
+                                 
+                                        </div>
+
+
+                                        <div id="toolbar-options1" class=" tool-item tool-container" style="display: none">
+
+
+                                            <a href="#" data-toggle="">
+                                                <i class="fa fa-sticky-note "></i>
+                                                <span class="label label-top label-warning label-top-container-tools-icons-first"> 6</span>
+                                            </a>
+
+                                            <a href="#" data-toggle=""><i class="material-icons toolbar-btn-icon-attachments-tool-item">attach_file</i></a>
+
+
+                                            <a href="#" data-toggle="" class="tool-explanation-container">
+                                                <i class="fa fa-calculator"></i>
+                                                <div class="tool-explanation">Budget Calculation</div>
+                                            </a>
+
+
+                                            <!--<a href="#" class="disabled"><i class="fa fa-file-excel-o"></i></a>-->
+
+                                            <a href="#"><i class="material-icons toolbar-btn-icon-attachments-tool-item">mode_edit</i></a>
+
+                                            <a href="#"><i class="material-icons toolbar-btn-icon-attachments-tool-item">content_copy</i></a>
+
+
+                                        </div>
+
+                                    </div>
+
+
+</div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="app__breadcrumbs">
+                            <div class="breadcrumbs">
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="/4512/dashboard">Tableau de bord</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="/4512/dashboard/1">Salaires</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="/4512/dashboard/1/origin/RequiredAttendances/6">001171 600001 Présences requises</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <div class="breadcrumbs__active">
+                                        2471-1 PR - Sandra - do not change
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+                        <div class="app__view">
+                            <div class="required-attendance">
+
+                                <div class="required-attendance__gradient content-gradient"></div>
+                                <div class="scroll-box scroll-box--wrapped scroll-box--enable-y" style="height: 100%;" tabindex="-1">
+                                    <div class="scroll-box__viewport" style="height: 100%; width: 100%;">
+                                        <div class="required-attendance__form">
+                                            <div class="form">
+                                                <div class="form__actions">
+                                                    <div class="form__actions-left">
+                                                        <div class="form__title form__title--position">
+                                                            <span>Présences requises:</span> <span>2471-1 PR - Sandra - do not change</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__actions-right">
+
+
+
+                                                        <div id="button" data-toolbar="user-options" class=" toolbar-btn-icon "><i class="material-icons toolbar-btn-icon   toolbar-btn-material-icons">more_vert</i>
+                                                            <span class="label label-top label-warning label-top-container-btn-tools"> 5</span>
+                                                        </div>
+
+                                                        <div id="toolbar-options" class=" tool-item tool-container" style="display: none">
+
+
+                                                            <a href="#" data-toggle="control-sidebar">
+                                                                <i class="fa fa-sticky-note "></i>
+                                                                <span class="label label-top label-warning label-top-container-tools-icons-first"> 2</span>
+                                                            </a>
+
+                                                            <a href="#"  data-toggle="control-sidebar"><i class="material-icons toolbar-btn-icon-attachments-tool-item">attach_file</i>
+                                                                <span class="label label-top label-warning label-top-container-tools-icons-second"> 3</span>
+                                                            </a>
+
+                                                            <a href="#"><i class="material-icons toolbar-btn-icon-attachments-tool-item">mode_edit</i></a>
+                                                            <!--<a href="#" class="disabled"><i class="fa fa-file-excel-o"></i></a>-->
+                                                            <a href="#"><i class="fa fa-file-excel-o"></i></a>
+                                                            <a href="#"><i class="material-icons toolbar-btn-icon-attachments-tool-item">content_copy</i></a>
+
+                                                            <a href="#"><i class="material-icons toolbar-btn-icon-attachments-tool-item">delete</i></a>
+                                                        </div>
+
+
+  
+
+                                                    </div>
+
+
+
+
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="form__tabs form-tabs">
+                                                    <div class="form-tabs__headers">
+                                                        <div class="form-tabs__header form-tabs__header--active">
+                                                            Détails
+                                                        </div>
+                                                        <div class="form-tabs__header">
+                                                            Échelons
+                                                        </div>
+                                                        <div class="form-tabs__header">
+                                                            Avantages sociaux
+                                                        </div>
+                                                        <div class="form-tabs__header">
+                                                            Charges sociales
+                                                        </div>
+                                                        <div class="form-tabs__header">
+                                                            Primes
+                                                        </div>
+                                                        <div class="form-tabs__header">
+                                                            Remplacements
+                                                        </div>
+                                                        <div class="form-tabs__header">
+                                                            Horaire - présences requises
+                                                        </div>
+                                                        <div class="form-tabs__header">
+                                                            Fermeture temporaire
+                                                        </div>
+                                                        <div class="form-tabs__header">
+                                                            Distributions
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-tabs__body">
+                                                        <div class="form__tab">
+                                                            <div class="form__row">
+                                                                <div class="form__column">
+                                                                    <div class="field field--disabled">
+                                                                        <div class="field__label">
+                                                                            Année financière:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            2018
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field field--disabled">
+                                                                        <div class="field__label">
+                                                                            Scénario:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            SGA_2018_Original
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="checkbox checkbox--view">
+                                                                        <div class="checkbox__icon checkbox__icon--unchecked-view"></div>
+                                                                        <div class="checkbox__label">
+                                                                            Spécifique à ce scénario
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="checkbox checkbox--view">
+                                                                        <div class="checkbox__icon checkbox__icon--unchecked-view"></div>
+                                                                        <div class="checkbox__label">
+                                                                            Calcul des heures seulement
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form__separator"></div>
+                                                            <div class="form__row">
+                                                                <div class="form__column">
+                                                                    <div class="field field--disabled">
+                                                                        <div class="field__label">
+                                                                            Unité administrative:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            001171 600001
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__info-box">
+                                                                            <div class="field__pointer"></div>
+                                                                            <div class="field__info"></div>
+                                                                            <div class="field__value field__value--info">
+                                                                                Adm. des soins infirmiers x
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column form__column--column2"></div>
+                                                            </div>
+                                                            <div class="form__row">
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label">
+                                                                            Type:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            Titre d'emploi
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label"></div>
+                                                                        <div class="field__value">
+                                                                            2471
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__info-box">
+                                                                            <div class="field__pointer"></div>
+                                                                            <div class="field__info"></div>
+                                                                            <div class="field__value field__value--info">
+                                                                                Infirmier-ère
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column"></div>
+                                                            </div>
+                                                            <div class="form__row">
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label">
+                                                                            Références:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            2471-1
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label">
+                                                                            Description:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            PR - Sandra - do not change
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column form__column--column2"></div>
+                                                            </div>
+                                                            <div class="form__separator"></div>
+                                                            <div class="form__row">
+                                                                <div class="form__column">
+                                                                    <div>
+                                                                        Durée:
+                                                                    </div>
+                                                                    <div class="checkbox checkbox--view">
+                                                                        <div class="checkbox__icon checkbox__icon--checked-view"></div>
+                                                                        <div class="checkbox__label">
+                                                                            Année financière
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column form__column--column3"></div>
+                                                            </div>
+                                                            <div class="form__row">
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label">
+                                                                            Début:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            -
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label">
+                                                                            Fin:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            -
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column form__column--column2"></div>
+                                                            </div>
+                                                            <div class="form__separator"></div>
+                                                            <div class="form__row">
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label">
+                                                                            Type d'emploi:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            Syndiqué
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label">
+                                                                            Statut d'emploi:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            TCR
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__info-box">
+                                                                            <div class="field__pointer"></div>
+                                                                            <div class="field__info"></div>
+                                                                            <div class="field__value field__value--info">
+                                                                                Temps complet régulier
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column"></div>
+                                                            </div>
+                                                            <div class="form__row">
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__label">
+                                                                            Syndicat:
+                                                                        </div>
+                                                                        <div class="field__value">
+                                                                            9999
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column">
+                                                                    <div class="field">
+                                                                        <div class="field__info-box">
+                                                                            <div class="field__pointer"></div>
+                                                                            <div class="field__info"></div>
+                                                                            <div class="field__value field__value--info">
+                                                                                Synd pour présence
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__column"></div>
+                                                                <div class="form__column"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scroll-box__track scroll-box__track--x">
+                                        <div class="scroll-box__handle scroll-box__handle--x" style="width: 100%; left: 0px;"></div>
+                                    </div>
+                                    <div class="scroll-box__track scroll-box__track--y">
+                                        <div class="scroll-box__handle scroll-box__handle--y" style="height: 100%;">
+                                            <div class="scroll-box__handle--y-view"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup">
+                                <div class="popup__box">
+                                    <div class="popup__box__content">
+                                        <div class="popup-dialog">
+                                            <div class="popup-dialog__header popup-dialog__header--undefined"></div>
+                                            <div class="popup-dialog__actions" tabindex="0"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel"></div>
+                            <div class="alert alert--undefined">
+                                <div class="alert__column-left">
+                                    <div class="alert__icon--undefined"></div>
+                                </div>
+                                <div class="alert__column-right">
+                                    <div class="alert__close-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <!-- Jquery js 1.11.3-->
+    <script src="../dist/js/jquery-1.11.3.js"></script>
+    <script>
+        // Make sure jQuery's "ready" event isn't fired before all custom elements
+        // have been upgraded.
+        (function (jQuery1113) {
+            jQuery1113.holdReady(true);
+            window.addEventListener('WebComponentsReady', function () {
+                jQuery1113.holdReady(false);
+            });
+        })(jQuery);
+    </script>
+
+
+
+
+    <script>
+            $(function () {
+                $('#button').toolbar({
+                    content: '#toolbar-options',
+                    position: 'bottom',
+                    event: 'click',
+                    animation: 'top',
+                    hideOnClick: true
+                });
+            });
+    </script>
+
+    <script>
+            $(function () {
+                $('#button1').toolbar({
+                    content: '#toolbar-options1',
+                    position: 'bottom',
+                    event: 'click',
+                    animation: 'top',
+                    hideOnClick: true
+                });
+            });
+    </script>
+
+
+    <!--<script>
+            $(function () {
+                $('#button').toolbar({
+                    content: '#toolbar-options1',
+                    position: 'bottom',
+                    animation: 'top'
+                });
+            });
+    </script>
+
+
+    <script>
+            $(function () {
+                $('#button1').toolbar({
+                    content: '#toolbar-options1',
+                    position: 'bottom',
+                    animation: 'top'
+                });
+            });
+    </script>-->
+
+    <script>
+            $(function () {
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace('editor1')
+                //bootstrap WYSIHTML5 - text editor
+                $('.textarea').wysihtml5()
+
+            })
+    </script>
+
+
+
+    <!-- Propeller Sidebar js -->
+    <script language="javascript" src="../components/main-header/js/sidebar.js" type="text/javascript"></script>
+    <!-- jQuery 3 -->
+    <script src="../components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/jquery.slimscroll.js"></script>
+
+    <script src="../dist/js/obs-raw.js"></script>
+
+    <!--<script src="../dist/js/obs.js"></script>-->
+
+    <!--<script src="../dist/js/demo.js"></script>-->
+
+    <script src="../components/Chart.js/Chart.js"></script>
+    <!--<script src="../dist/js/pages/dashboard2.js"></script>-->
+    <!--<script src="../dist/js/toolbar-tools.js"></script>-->
+
+
+    <!--<script src="../dist/js/toolbar-sidebar-attachments.js"></script>
+    <script src="../dist/js/toolbar-sidebar-notes.js"></script>
+    <script src="../dist/js/toolbar-sidebar-notes-add.js"></script>-->
+
+    <script src="../dist/js/jquery.toolbar.js"></script>
+    <script src="../components/wysihtml5/bootstrap3-wysihtml5.all.js"></script>
+
+
+    <script src="../components/ckeditor/ckeditor.js"></script>
+
+
+    </body>
+</html>

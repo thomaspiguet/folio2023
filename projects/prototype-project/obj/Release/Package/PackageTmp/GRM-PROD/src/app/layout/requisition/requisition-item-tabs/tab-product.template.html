@@ -1,0 +1,178 @@
+<div class="container-fluid requisition-item-tabs-panel">
+  <div class="row">
+    <div class="col-md-9 col-lg-9">
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="description">{{ 'description' | translate }}</label>
+          <input type="text"
+                 class="form-control"
+                 id="description"
+                 placeholder="{{ 'description' | translate }}"
+                 ng-model="$ctrl.model.description"
+                 ng-change="$ctrl.notifyModelChange()"
+                 ng-disabled="true">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="account">{{ 'account' | translate }}</label>
+          <account-list
+            input-id="account"
+            ng-model="$ctrl.model.account"
+            requester-id="$ctrl.model.requesterId"
+            requisition-type-code="$ctrl.model.requisitionTypeCode"
+            product-id="$ctrl.model.productId"
+            ng-disabled="$ctrl.stateModel.account.disabled"
+            ng-change="$ctrl.accountChange()"
+          >
+          </account-list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="note">{{ 'note' | translate }}</label>
+          <md-input-container md-no-float>
+            <textarea
+              aria-label="{{ 'note' | translate }}"
+              id="note"
+              maxlength=250
+              max-rows="5"
+              rows=""
+              md-maxlength=250
+              md-no-resize
+              ng-model="$ctrl.model.note"
+              ng-blur="$ctrl.notifyModelChange()"
+              ng-disabled="$ctrl.stateModel.note.disabled">
+            </textarea>
+          </md-input-container>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="projectActivity">{{ 'projectActivity' | translate }}</label>
+          <project-activity-list input-id="projectActivity"
+                                 ng-model="$ctrl.model.projectActivity"
+                                 account-id="$ctrl.model.account.id"
+                                 ng-disabled="true">
+          </project-activity-list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="vendor">{{ 'vendor' | translate }}</label>
+          <vendor-list input-id="vendor"
+                       ng-model="$ctrl.model.vendor"
+                       product-id="$ctrl.model.productId"
+                       ng-disabled="true">
+          </vendor-list>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="store">{{ 'store' | translate }}</label>
+          <store-list input-id="store"
+                      ng-model="$ctrl.model.store"
+                      product-id="$ctrl.model.productId"
+                      store-id="$ctrl.model.store.id"
+                      department-id="$ctrl.model.headerDepartmentId"
+                      site-id="$ctrl.getStoreSiteId()"
+                      is-msi-product="$ctrl.model.isMsiProduct"
+                      ng-disabled="$ctrl.stateModel.store.disabled"
+                      ng-required="$ctrl.stateModel.store.required"
+                      ng-change="$ctrl.storeChange()">
+          </store-list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-3">
+          <label for="order">{{ 'order' | translate }}</label>
+          <div class="readonly-field-placeholder" id="order">
+            <span ng-show="$ctrl.model.orderId">
+            {{$ctrl.model.orderId}}
+            </span>
+          </div>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="itemCode">{{ 'itemCode' | translate }}</label>
+          <div class="readonly-field-placeholder" id="itemCode">
+            <span ng-show="$ctrl.model.itemCode">
+            {{$ctrl.model.itemCode}}
+            </span>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="storeSite">{{ 'storeSite' | translate }}</label>
+          <div class="readonly-field-placeholder" id="storeSite">
+            <span ng-show="$ctrl.model.storeSite">
+              {{$ctrl.model.storeSite.code}} - {{$ctrl.model.storeSite.description}}
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-3">
+          <label for="buyer">{{ 'buyer' | translate }}</label>
+          <div class="readonly-field-placeholder" id="buyer">
+            <span ng-show="$ctrl.model.buyer.id">
+              {{$ctrl.model.buyer.code}} - {{$ctrl.model.buyer.description}}
+            </span>
+          </div>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="buyerPhone">{{ 'buyerPhone' | translate }}</label>
+          <div class="readonly-field-placeholder" id="buyerPhone">
+            <span ng-show="$ctrl.model.buyer.telephone">
+            {{$ctrl.model.buyer.telephone}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="row">
+        <div class="form-group col-md-12">
+          <button type="button"
+              title="{{ 'productConsumptionStatistics' | translate }}"
+              class="btn sgui-btn-icon-label sgui-btn-secondary-no-bg"
+              ng-click="$ctrl.onViewConsumptionStatisticsForProduct($event)"
+              ng-hide="$ctrl.isHidden(item, 'stats')"
+              ng-if="!$ctrl.model.isUncataloguedProduct">
+            <span class="mdi mdi-chart-bar"></span>
+            <span class>{{ 'consumptions' | translate }}</span>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label>{{ 'statuses' | translate }}</label>
+          <div class="indicator" ng-class="{ 'indicator-active' : $ctrl.model.isMsiProduct }">
+            <i class="mdi mdi-check" ng-class="{ 'visible' : $ctrl.model.isMsiProduct }"></i>
+            <span class="indicator-label">{{ 'itr' | translate }}</span>
+          </div>
+          <div class="indicator" ng-class="{'indicator-active' : $ctrl.model.traceabilityStatus}">
+            <i class="mdi mdi-check" ng-class="{ 'visible' : $ctrl.model.traceabilityStatus }"></i>
+            <span class="indicator-label">{{ 'tracability' | translate }}</span>
+          </div>
+          <div class="indicator" ng-class="{ 'indicator-active' : $ctrl.model.distributionCenterId !== undefined && $ctrl.model.distributionCenterId !== null }">
+            <i class="mdi mdi-check" ng-class="{ 'visible' : $ctrl.model.distributionCenterId !== undefined && $ctrl.model.distributionCenterId !== null }"></i>
+            <span class="indicator-label">{{ 'distributionCenter' | translate }}</span>
+          </div>
+          <div class="indicator" ng-class="{ 'indicator-active' : $ctrl.model.crossDockingId !== undefined && $ctrl.model.crossDockingId !== null }">
+            <i class="mdi mdi-check" ng-class="{ 'visible' : $ctrl.model.crossDockingId !== undefined && $ctrl.model.crossDockingId !== null }"></i>
+            <span class="indicator-label">{{ 'crossDocking' | translate }}</span>
+          </div>
+          <div class="indicator" ng-class="{ 'indicator-active' : $ctrl.model.isMultipleStore }">
+            <i class="mdi mdi-check" ng-class="{ 'visible' : $ctrl.model.isMultipleStore }"></i>
+            <span class="indicator-label">{{ 'multipleStores' | translate }}</span>
+          </div>
+          <div class="indicator" ng-class="{ 'indicator-active' : $ctrl.model.isMultipleFormat }">
+            <i class="mdi mdi-check" ng-class="{ 'visible' : $ctrl.model.isMultipleFormat }"></i>
+            <span class="indicator-label">{{ 'multipleFormats' | translate }}</span>
+          </div>
+          <div class="indicator" ng-class="{ 'indicator-active' : $ctrl.model.isMultipleContract > 0 }">
+            <i class="mdi mdi-check" ng-class="{ 'visible' : $ctrl.model.isMultipleContract > 0 }"></i>
+            <span class="indicator-label">{{ 'multipleContracts' | translate }}</span>
+          </div>
+          <div class="indicator" ng-class="{ 'indicator-active' : $ctrl.model.isMultipleCatalog > 0 }">
+            <i class="mdi mdi-check" ng-class="{ 'visible' : $ctrl.model.isMultipleCatalog > 0 }"></i>
+            <span class="indicator-label">{{ 'multipleCatalogs' | translate }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

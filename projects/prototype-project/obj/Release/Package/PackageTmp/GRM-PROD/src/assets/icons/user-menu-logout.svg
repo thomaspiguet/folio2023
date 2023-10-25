@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="14px" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>input_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00_Log-out" transform="translate(-1138.000000, -91.000000)" fill-rule="nonzero" fill="#7FBBC5">
+            <g id="input_24px" transform="translate(1138.000000, 91.000000)">
+                <path d="M15.4545455,0.00777777778 L1.54545455,0.00777777778 C0.695454545,0.00777777778 0,0.707777778 0,1.56333333 L0,4.66666667 L1.54545455,4.66666667 L1.54545455,1.54777778 L15.4545455,1.54777778 L15.4545455,12.46 L1.54545455,12.46 L1.54545455,9.33333333 L0,9.33333333 L0,12.4522222 C0,13.3077778 0.695454545,13.9922222 1.54545455,13.9922222 L15.4545455,13.9922222 C16.3045455,13.9922222 17,13.3077778 17,12.4522222 L17,1.56333333 C17,0.7 16.3045455,0.00777777778 15.4545455,0.00777777778 Z M7.72727273,10.1111111 L10.8181818,7 L7.72727273,3.88888889 L7.72727273,6.22222222 L0,6.22222222 L0,7.77777778 L7.72727273,7.77777778 L7.72727273,10.1111111 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

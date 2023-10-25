@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1, user-scalable=no" name=
+	"viewport">
+
+	<title>MAINMENU-STAND-ALONE</title>
+
+	<link href="../components/main-header/css/navbar.css" rel="stylesheet">
+	<link href="../components/main-header/css/sidebar.css" rel="stylesheet">
+
+    <link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../dist/css/scss/_newstyle.min.css" rel="stylesheet">
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <link href="../components/main-header/_intermenu.css" rel="stylesheet" />
+ 
+	<style>
+		.fa-chevron-right {
+		  transform: rotate(0deg);
+		  transition: transform 0.5s linear;
+		}
+		.fa-chevron-right.open {
+		  transform: rotate(90deg);
+		  transition: transform 0.5s linear;
+		}
+	</style>
+
+
+</head>
+
+<body style="background-color:#f2f3f6">
+
+	<nav class="navbar navbar-fixed-top pmd-z-depth" id="top-main-header" style="position:fixed;">
+
+		<div class="container-fluid" >
+			<div class="navbar-header"><img alt="BRAND" class="brand" src=
+			"../dist/img/BRAND01.svg">
+			</div>
+			<a id="container" class="btn btn-sm navbar-toggler pmd-sidebar-toggle" href=
+			"javascript:void(0);"><i id="icon" class="fa fa-chevron-right"></i></a>
+
+			<div class="navbar-custom-menu" style="float:right;">
+				<ul class="nav navbar-nav">
+
+					<li class="dropdown user user-menu">
+						<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown"
+						href="#"><img alt="User Image" class="user-image" src=
+						"../dist/img/user2-160x160.png"> <span class="hidden-xs" style="line-height: 1.9;" >John Smith</span>
+            <i id="icon-2" class="fa fa-angle-down pull-right" style="line-height: 1.9;padding: 0px 18px;"></i>
+ 
+          </a>
+
+						<ul class="dropdown-menu" style="top: 55px;">
+
+							<li class="user-header">
+								<img alt="User Image" class="img-circle" src="../dist/img/user-01.svg">
+
+								<p>John Smith - Manager<small>Member since Nov.
+								2003</small></p>
+							</li>
+
+
+							<li class="user-footer">
+								<div class="pull-left">
+									<a class="btn btn-info btn-flat" href="#">Profile</a>
+								</div>
+
+								<div class="pull-right">
+									<a class="btn btn-danger btn-flat" href="#">Sign out</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<section id="pmd-main">
+		<!-- Left sidebar -->
+
+		<aside class=
+		"pmd-sidebar sidebar-default pmd-sidebar-left-fixed pmd-sidebar-left pmd-z-depth"
+		role="navigation">
+			<ul class="nav pmd-sidebar-nav">
+				<li>
+					<div class="products__domain-menu">
+						<img src="../dist/img/BRAND02.svg" class="domain-menu-logo">
+						<div class="products__domain-title">
+							PLATFORM
+						</div>
+					</div>
+				</li>
+
+
+
+
+                <li>
+                    <div class="products__domain-menu">
+                        <img src="../dist/img/BRAND05.svg" class="domain-menu-logo">
+                        <div class="products__domain-title">
+                            SI-GFA
+                        </div>
+                        <span><i class="fa fa-angle-down" style="margin-left: 6em;font-size: 24px;"></i></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="products__domain-menu">
+                        <img src="" class="domain-menu-logo">
+                        <div class="products__domain-title">
+                            GRM
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="products__domain-menu">
+                        <img src="" class="domain-menu-logo">
+                        <div class="products__domain-title">
+                            GRF
+                        </div>
+                    </div>
+                </li>
+
+
+
+				<li>
+					<div class="products__domain-menu">
+						<img src="../dist/img/BRAND04.svg" class="domain-menu-logo">
+
+						<div class="products__domain-title">
+							BI
+						</div>
+					</div>
+				</li>
+
+
+
+                <li>
+                    <div class="products__domain-menu">
+                        <img src="../dist/img/BRAND03.svg" class="domain-menu-logo">
+                        <div class="products__domain-title">
+                            IDS
+                        </div>
+                    </div>
+                </li>
+
+
+			</ul>
+		</aside>
+		<!-- Start Content -->
+
+		<div class="pmd-sidebar-overlay">
+		</div>
+	</section>
+
+	<!-- <object data="DASHBOARD-CONTENT.html">
+	    <embed src="DASHBOARD-CONTENT.html" > </embed>
+	</object> -->
+
+
+
+	<!-- /.content -->
+    <!-- Jquery js 1.11.3-->
+    <script src="../dist/js/jquery.min.js"></script>
+    <!-- Propeller Sidebar js --> 
+    <script language="javascript" src="../components/main-header/js/sidebar.js" type="text/javascript"></script> 
+    <!-- jQuery 3 -->
+    <script src="../components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/obs.js"></script>
+    <script src="../components/Chart.js/Chart.js"></script>
+
+
+
+	<script>
+	(function(document){
+	  var div = document.getElementById('container');
+	  var icon = document.getElementById('icon');
+	  var open = false;
+
+	  div.addEventListener('click', function(){
+	    if(open){
+	      icon.className = 'fa fa-chevron-right';
+	    } else{
+	      icon.className = 'fa fa-chevron-right open';
+	    }
+	    open = !open;
+	  });
+	})(document);
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/* ----------------------------- */
+/* font - reset */
+/* ----------------------------- */
+h1, .h1 {
+  font-size: 22px;
+  /* equiv 24px */
+  line-height: 1.5;
+  /*margin: .8077em 0 0 0;*/
+  margin: 0 0 5px;
+}
+
+h2, .h2 {
+  font-size: 20px;
+  /* equiv 22px */
+  line-height: 1.5;
+  margin: 0 0 5px;
+  /*margin: .875em 0 0 0;*/
+}
+
+h3, .h3 {
+  font-size: 18px;
+  /* equiv 20px */
+  line-height: 1.5;
+  margin: 0 0 5px;
+  /*margin: .9545em 0 0 0;*/
+}
+
+h4, .h4 {
+  font-size: 16px;
+  /* equiv 18px */
+  line-height: 1.05;
+  margin: 0 0 5px;
+  /*margin: 1.05em 0 0 0;*/
+}
+
+h5, .h5 {
+  font-size: 16px;
+  /* equiv 16px */
+  line-height: 1.5;
+  margin: 0 0 5px;
+  /*margin: 1.1667em 0 0 0;*/
+}
+
+h6, .h6 {
+  font-size: 16px;
+  /* equiv 14px */
+  line-height: 1.5;
+  margin: 0 0 5px;
+  /*margin: 1.3125em 0 0 0;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 400;
+  color: #2f3943;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  /*color: $color-text-primary;*/
+  color: #00acf2;
+}
+
+a:hover, a:focus, a:active {
+  color: #73879c;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:active,
+a:focus,
+button,
+button:active,
+button:focus,
+object,
+embed,
+input::-moz-focus-inner {
+  outline: 0;
+}
+
+/* HTML5 tags */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* max values */
+img, table, td, blockquote, code, pre, textarea, input, video {
+  max-width: 100%;
+}
+
+/* avoid top margins on first content element */
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #73879c;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #73879c;
+  line-height: 1.5;
+}
+
+/*p {
+    margin: 0 0 10px;
+}*/
+small {
+  font-size: 85%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-bold, .text-bold.table td, .text-bold.table th {
+  font-weight: 500;
+}
+
+.boxing-text {
+  margin: 0px;
+}
+
+address {
+  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+  color: #2f3943;
+}
+
+/*
+ * COLORS-LEGEND
+ * 
+ */
+/*$color-legend-confinement: #FF3655;*/
+/*$color-legend-closed: #A1AEBD;*/
+/*DATASPACE COLORS*/
+.map {
+  /*stroke-width: 1px;*/
+  /*stroke-width: 0.5px;*/
+  /*stroke: inherit;*/
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+}
+
+.map text {
+  text-anchor: middle;
+  fill: #fff;
+  align-items: center;
+  alignment-baseline: central;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  /*font-size: 2px;*/
+  font-size: 1.5px;
+}
+
+.map .text-1, .map .text-2, .map .text-3 {
+  /*text-anchor: middle;
+        fill: $color-white;
+        align-items: center;
+        alignment-baseline: central;
+        font-family: $font-family-main;
+        font-weight: bold;*/
+  /*font-size: 2px;*/
+  font-size: 1.8px;
+}
+
+.map .text-1 {
+  animation: hideshow 10s 0s ease infinite;
+}
+
+.map .text-2 {
+  opacity: 0;
+  animation: hideshow 10s 6s ease infinite;
+}
+
+.map .text-3 {
+  opacity: 0;
+  animation: hideshow 10s 8s ease infinite;
+}
+
+@keyframes hideshow {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.map .floor {
+  fill: #fff;
+}
+
+.map .floor-stoke {
+  fill: none;
+}
+
+.map .room {
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+
+.map .confinement-room {
+  /*fill: $color-legend-closed;*/
+  stroke: #FF7B36 !important;
+  stroke-width: 0.3px !important;
+  /*outline-color: $color-legend-confinement;
+        outline-style: solid;
+        outline-width: 1px;
+        outline-offset: -1px;*/
+}
+
+.map .free-room {
+  /*stroke-width: 1px;*/
+  /*stroke: $color-white;*/
+  /*fill: $color-legend-free;
+        outline-color: $color-white;
+        outline-style: solid;
+        outline-width: 0.5px;
+        outline-offset: -0.5px;*/
+  fill: #E6E9ED;
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+
+.map .occupied-room {
+  fill: #C3CCD5;
+  /*stroke: $color-white;*/
+  /*outline-color: $color-white;
+        outline-style: solid;
+        outline-width: 0.5px;
+        outline-offset: -0.5px;*/
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+
+.map .closed-room {
+  fill: #F1F3F5;
+  /*stroke: $color-white;*/
+  /*outline-color: $color-white;
+        outline-style: solid;
+        outline-width: 0.5px;
+        outline-offset: -0.5px;*/
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+
+.map .free-bed {
+  fill: #00D4F2;
+}
+
+.map .occupied-bed {
+  fill: #00BFB6;
+}
+
+.map .absent-bed {
+  fill: #73879C;
+}
+
+.map .closed-bed {
+  fill: #F1F3F5;
+}
+
+.map circle {
+  stroke-width: 0.7;
+  stroke-opacity: 1;
+  fill: none;
+}
+
+.map .confinement-patient {
+  stroke: #FF7B36;
+  /*stroke-dasharray: 13,6;
+        stroke-dasharray: 13,20;*/
+  stroke-dasharray: 16,16;
+}
+
+.map .agressive-patient {
+  stroke: #FF3655;
+  /*stroke-dasharray: 13,6;
+        stroke-dasharray: 13,20;*/
+  stroke-dasharray: 8,8;
+}
+
+.map .infection {
+  fill: #d43f3a;
+  stroke: #fff;
+}
+
+.map .isolation {
+  fill: #d43f3a;
+  stroke: #fff;
+}
+
+.map .medical-attention {
+  fill: #ffc026;
+  animation: flash linear 1.5s infinite;
+  stroke: #fff;
+}
+
+.map .flash {
+  animation: flash linear 1.5s infinite;
+}
+
+.map .pulse {
+  animation: 1.5s ease-in-out 0s infinite normal both running heartbeat;
+}
+
+.map .pulse-ping {
+  animation: 0.8s ease-in-out 0s infinite normal both running ping;
+}
+
+.map .spot {
+  background-color: #fff;
+  fill: #fff;
+  opacity: 1;
+}
+
+.map .spot-alert {
+  background-color: #ffc026;
+  fill: #ffc026;
+  opacity: 1;
+}
+
+.map .spot-danger {
+  background-color: #d43f3a;
+  fill: #d43f3a;
+  opacity: 1;
+}
+
+.map .spot-info {
+  background-color: #31b0d5;
+  fill: #31b0d5;
+  opacity: 1;
+}
+
+.map .spot-teams {
+  background-color: #d43acf;
+  fill: #d43acf;
+  opacity: 1;
+}

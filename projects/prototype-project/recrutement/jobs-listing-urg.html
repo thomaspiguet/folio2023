@@ -1,0 +1,866 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Jobs Listing</title>
+
+
+    <link href="css/bootstrap-grid.css" rel="stylesheet" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!--<link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
+
+    <!--<link href="../dist/css/style.css" rel="stylesheet">-->
+
+    <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+
+    <link href="../components/main-header/css/navbar.css" rel="stylesheet">
+    <link href="../components/main-header/_intermenu.css" rel="stylesheet" />
+
+
+
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_branding.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+
+
+    <link href="css/_recrutement-style.css" rel="stylesheet" />
+    <link href="css/_jquery.dataTables.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_admin.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_collapse.css" rel="stylesheet" />
+
+
+
+    <link href="../components/checkbox/_checkbox.css" rel="stylesheet" />
+    <link href="../components/checkbox/_select.css" rel="stylesheet" />
+
+    <!--<link href="../dist/css/scss/ux.css" rel="stylesheet" />-->
+    <link href="css/_urgence-sante-style.css" rel="stylesheet" />
+
+
+
+    <script>
+
+        $(function () {
+
+            causeRepaintsOn = $("h1, h2, h3, p");
+
+            $(window).resize(function () {
+                causeRepaintsOn.css("z-index", 1);
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                $(".profile-info")
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                $(".account-creation")
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+
+
+</head>
+
+
+
+
+<body class="internal_pages" id="page-top">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <div class="navbar-brand js-scroll-trigger">
+                
+                <a href="index.html">
+                    <img  style="width: 57%;"  src="img/ministere.png" />
+                </a>
+            </div>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="jobs-listing-urg.html">CARRIÈRES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#language">ENGLISH</a>
+                    </li>
+
+                    <li class="nav-item dropdown user user-menu">
+
+                        <a aria-expanded="false" class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown"
+                           href="#">
+                            <span class="hidden-xs">
+                                VOTRE COMPTE
+                            </span>
+                        </a>
+
+
+
+                        <ul class="dropdown-menu" id="myModal">
+                            <li class="user-header">
+
+                                <h4>Enregistrement</h4>
+
+                            </li>
+
+                            <li class="user-body account-creation collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Créer votre compte utilisateur</p>
+
+                                    <form action="../../index.html" method="post">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="Nom complet">
+                                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Confirmer le mot de passe">
+                                            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='personal-info.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">S'inscrire</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                            </li>
+
+                            <li class="user-body profile-info collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Ouvrir votre session</p>
+
+
+
+                                    <form action="../../index.html" method="post">
+
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <p class="small">
+                                            <a href="#">Récupérer votre mot de passe</a>
+
+                                        </p>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='personal-info.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">Se connecter</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                            </li>
+
+
+                            <li class="user-footer">
+
+
+                                <div class="">
+
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile"><span class="account-creation-btn">Créer votre compte</span></button>
+                                </div>
+
+                                <div class="">
+
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile disabled">Profil</button>
+                                </div>
+
+
+                                <div class="">
+                                    <button type="button" data-widget="collapse" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile"><span class="profile-btn">Connexion</span></button>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item" id="notification-alert">
+                        <div href="profile.html" class="nav-link notification ">
+                            <i class="fa fa-bell-o text-secondary-color"></i>
+                            <span class="label-top-container label label-top label-warning bg-grey-active"> 0</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- Header -->
+    <header class="banner second_banner">
+
+        <div class="container">
+
+            <div class="intro-text second_banner-text">
+
+                <h1 class="intro-heading-second-banner">CARRIÈRES</h1>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="box box-header" style="margin-bottom: -5px; padding-top: 20px;">
+                        <div class="form-group">
+                            <form action="#" method="get" class="sidebar-form">
+                                <div class="input-group">
+                                    <input type="text" name="q" class="form-control" placeholder="Recherche...">
+                                    <span class="input-group-btn">
+                                        <button type="submit" name="search" id="search-btn" class="btn btn-info btn-search btn-small">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="box box-default collapsed-box ">
+                        <div class="box-header ">
+
+                            <div class="box-tools pull-left">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                                <h4 class="box-title">Recherche avancée</h4>
+                            </div>
+
+                        </div>
+
+
+                        <div class="box-body">
+                            <div class="row">
+
+
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>No de requête </label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+
+
+                                    <div>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                            Temps plein
+                                        </label>
+
+                                        <label class="radio">                                      
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+                                            Temps partiel
+                                        </label>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label>Catégorie</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">- Aucun(e) -</option>
+                                            <option class="" value="">
+                                                Approvisionnement et achats
+                                            </option>
+                                            <option class="" value="">
+                                                Architecture
+                                            </option>
+                                            <option class="" value="">
+                                                Communication / rel. publiques
+                                            </option>
+                                            <option class="" value="">
+                                                Cadre
+                                            </option>
+                                            <option class="" value="">
+                                                Cadre supérieur
+                                            </option>
+                                            <option class="" value="">
+                                                Emploi général
+                                            </option>
+                                            <option class="" value="">
+                                                Finance et comptabilité
+                                            </option>
+                                            <option class="" value="">
+                                                Ingénierie
+                                            </option>
+                                            <option class="" value="">
+                                                Légal
+                                            </option>
+                                            <option class="" value="">
+                                                Métiers
+                                            </option>
+                                            <option class="" value="">
+                                                Prof et tech. santé/réadapt
+                                            </option>
+                                            <option class="" value="">
+                                                Prof /tech. autres
+                                            </option>
+                                            <option class="" value="">
+                                                Recherche et enseignement
+                                            </option>
+                                            <option class="" value="">
+                                                Ressources humaines
+                                            </option>
+                                            <option class="" value="">
+                                                Sécurité
+                                            </option>
+                                            <option class="" value="">
+                                                Soins infirmiers
+                                            </option>
+                                            <option class="" value="">
+                                                Soutien administratif
+                                            </option>
+                                            <option class="" value="">
+                                                Technologie du bâtiment
+                                            </option>
+                                            <option class="" value="">
+                                                Technologies de l'information
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Région</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">- Aucun(e) -</option>
+                                            <option class="" value="01">
+                                                Abitibi-Témiscamingue
+                                            </option>
+                                            <option class="" value="02">
+                                                Bas St-Laurent
+                                            </option>
+                                            <option class="" value="03">
+                                                Capitale-Nationale
+                                            </option>
+                                            <option class="" value="04">
+                                                Centre-du-Québec
+                                            </option>
+                                            <option class="" value="05">
+                                                Chaudière-Appalaches
+                                            </option>
+                                            <option class="" value="06">
+                                                Côte-Nord
+                                            </option>
+                                            <option class="" value="07">
+                                                Estrie
+                                            </option>
+                                            <option class="" value="08">
+                                                Gaspésie-Îles-de-la-Madeleine
+                                            </option>
+                                            <option class="" value="09">
+                                                Lanaudière
+                                            </option>
+                                            <option class="" value="10">
+                                                Laurentides
+                                            </option>
+                                            <option class="" value="11">
+                                                Laval
+                                            </option>
+                                            <option class="" value="12">
+                                                Mauricie
+                                            </option>
+                                            <option class="" value="13">
+                                                Montérégie
+                                            </option>
+                                            <option class="" value="14">
+                                                Montréal
+                                            </option>
+                                            <option class="" value="15">
+                                                Nord-du-Québec
+                                            </option>
+                                            <option class="" value="16">
+                                                Outaouais
+                                            </option>
+                                            <option class="" value="17">
+                                                Saguenay-Lac-Saint-Jean
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>Titre de l'emploi</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <div>
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2" data-toggle="radio">
+                                            Permanent
+                                        </label>
+
+                                        <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option" data-toggle="radio" checked="">
+                                            Temporaire
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Établissement</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">- Aucun(e) -</option>
+                                            <option class="" value="">
+                                                CISSS Abitibi-Témiscamigue
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de Chaudière-Appalaches
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de l'Outaouais
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de la Côte-Nord
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de la Gaspésie
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de la Montérégie-Centre
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de la Montérégie-Est
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de la Montérégie-Ouest
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de Lanaudière
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS de Laval
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS des Îles
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS des Laurentides
+                                            </option>
+                                            <option class="" value="">
+                                                CISSS du Bas-Saint-Laurent
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS C-Ouest Île-de-Montréal
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS C-Sud Île-de-Montréal
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS Capitale-Nationale
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS Est - Île-de-Montréal
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS Estrie-Univ. Sherbrooke
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS Mauricie-Centre-du-Qué
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS Nord - Île-de-Montréal
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS Ouest - Île-de-Montréal
+                                            </option>
+                                            <option class="" value="">
+                                                CIUSSS Saguenay-Lac-Saint-Jean
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Type de poste</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">- Aucun(e) -</option>
+                                            <option class="" value="06">
+                                                Assistance technique
+                                            </option>
+                                            <option class="" value="">
+                                                Contrôle
+                                            </option>
+                                            <option class="" value="">
+                                                Développement de logiciel
+                                            </option>
+                                            <option class="" value="">
+                                                Direction générale
+                                            </option>
+                                            <option class="" value="">
+                                                Formation
+                                            </option>
+                                            <option class="" value="">
+                                                Intervention d'urgence
+                                            </option>
+                                            <option class="" value="">
+                                                Représentation
+                                            </option>
+                                            <option class="" value="">
+                                                Soins infirmiers
+                                            </option>
+                                            <option class="" value="">
+                                                Soutien/manufacturier
+                                            </option>
+                                            <option class="" value="">
+                                                Supervision
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="box-footer">
+                            <form action="#" method="post">
+                                <div class="">
+
+
+                                    <span class="">
+                                        <button type="submit" class="btn btn-success btn-flat pull-right">Lancer la recherche</button>
+                                    </span>
+
+                                    <span class="" >
+                                        <button type="submit" style="margin-right: 10px;" class="btn btn-default btn-flat pull-right">Réinitialiser les filtres</button>
+                                    </span>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+
+
+                    <table id="example" class="display table  " cellspacing="0" width="100%">
+                        <thead class="text-uppercase">
+                            <tr>
+                                <th></th>
+                                <th >Titre de l'emploi</th>
+                                <th>Type de poste </th>
+                                <th>Région</th>
+                                <th>Date d'affichage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="window.open('job-posting-urg.html')" style="cursor:pointer">
+
+                                <td style="vertical-align: top;"><small class="label pull-right bg-yellow">HEURES<br> GARANTIE</small></td>
+
+                                <td style="min-width: 300px;text-align:left">
+                                    <h3 class="text-info">PARAMÉDICS</h3>
+                                    <p>No de requête:  00696</p>
+                                </td>
+                                <td>Poste permanent</td>
+                                <td>Ville de Québec</td>
+                                <td>23-10-2018</td>
+
+                            </tr>
+
+                            <tr onclick="window.open('')" style="cursor:pointer">
+
+                                <td style="vertical-align: top;"><small class="label bg-green">Nouveau</small></td>
+
+                                <td style="min-width: 300px;text-align:left">
+                                    <h3 class="text-info">Technicien(nne) en informatique </h3>
+                                    <p>No de requête:  006936</p>
+                                </td>
+                                <td>Poste permanent</td>
+                                <td>Montréal</td>
+                                <td>20-05-2018</td>
+
+                            </tr>
+
+                            <tr onclick="window.open('job-posting-urg.html')" style="cursor:pointer">
+                                <td style="vertical-align: top;"><small class="label pull-right bg-yellow">HEURES<br> GARANTIE</small></td>
+
+                                <td style="min-width: 300px;text-align:left">
+                                    <h3 class="text-info">PARAMÉDICS</h3>
+                                    <p>No de requête:  00696</p>
+                                </td>
+                                <td>Poste permanent</td>
+                                <td>Ville de Québec</td>
+                                <td>23-10-2018</td>
+
+                            </tr>       
+
+                            <tr onclick="window.open('job-posting-urg.html')" style="cursor:pointer">
+                                <td style="vertical-align: top;"><small class="label pull-right bg-red-active">Urgent</small></td>
+
+                                <td style="min-width: 300px;text-align:left">
+                                    <h3 class="text-info">PARAMÉDICS</h3>
+                                    <p>No de requête:  00696</p>
+                                </td>
+                                <td>Poste permanent</td>
+                                <td>Montréal</td>
+                                <td>23-10-2018</td>
+
+                            </tr>
+                            <tr onclick="window.open('job-posting-urg.html')" style="cursor:pointer">
+                                <td style="vertical-align: top;"><small class="label pull-right bg-red-active">Urgent</small></td>
+
+                                <td style="min-width: 300px;text-align:left">
+                                    <h3 class="text-info">PARAMÉDICS</h3>
+                                    <p>No de requête:  73242</p>
+                                </td>
+                                <td>Poste permanent</td>
+                                <td>Ville St-Lambert</td>
+                                <td>23-10-2018</td>
+
+                            </tr>
+                            <tr onclick="window.open('job-posting-urg.html')" style="cursor:pointer">
+
+                                <td style="vertical-align: top;"></td>
+
+                                <td style="min-width: 300px;text-align:left">
+                                    <h3 class="text-info">Préposés au ravitaillement</h3>
+                                    <p>No de requête:  22227</p>
+                                </td>
+                                <td>Liste de rappel</td>
+                                <td>Ville de Laval</td>
+                                <td>23-10-2018</td>
+                            </tr>  
+
+                            <tr onclick="window.open('job-posting-urg.html')" style="cursor:pointer">
+                                <td style="vertical-align: top;"><small class="label pull-right bg-yellow">HEURES<br> GARANTIE</small></td>
+
+                                <td style="min-width: 300px;text-align:left">
+                                    <h3 class="text-info">PARAMÉDICS</h3>
+                                    <p>No de requête:  00696</p>
+                                </td>
+                                <td>Poste permanent</td>
+                                <td>Ville de Québec</td>
+                                <td>23-10-2018</td>
+
+                            </tr>    
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section></section>
+
+    <section id="footer" class="footer-menu bg-text">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li>ANALYTIQUE</li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-item">
+                                <h3>Legale</h3>
+                                <ul>
+                                    <li>COOKIES</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Alertes-Emploi!</h3>
+                        <p>
+                            Si vous désirez recevoir des informations actuelles sur les postes, inscrivez-vous à notre Alertes Emploi.
+                        </p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Entrez votre courriel">
+                            <input type="submit" class="form-control" value="c'est gratuit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer" id="copyright">
+
+
+
+        <small>Copyright © <a href="http://logibec.com" target="_blank">Logibec Canada</a> 2018. Tous droits réservés.</small>
+
+        <div class="">
+            <small>Version 1.0.1 BETA</small>
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/jquery.js"></script>
+
+    <!--<script src="../components/jquery/dist/jquery.min.js"></script>-->
+
+
+    <script src="js/jquery.easing.js"></script>
+
+    <script src="js/jquery.easing.compatibility.js"></script>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script src="../dist/js/obs-raw.js"></script>
+
+    <script src="js/dataTables.bootstrap4.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+
+    <script src="../components/checkbox/checkbox.js"></script>
+    <script src="../components/checkbox/radio.js"></script>
+
+    <!--<script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../components/checkbox/checkbox.js"></script>
+    <script src="../components/checkbox/radio.js"></script>-->
+
+    <!--<script src="../dist/js/obs.js"></script>
+    <script src="../dist/js/demo.js"></script>-->
+
+
+
+    <!--<script src="../dist/js/demo.js"></script>-->
+
+    <script>
+            $(function () {
+
+                $('#example').DataTable({
+                    'paging': true,
+                    'lengthChange': false,
+                    'searching': false,
+                    'ordering': false,
+                    'info': false,
+                    'autoWidth': true,
+                    //'scrollY': '500vh',
+                    //'scrollY': 500,
+                    'scrollX': true
+            //'scrollCollapse': true,
+            //'lengthMenu': [20, 75, 90]
+                })
+            });
+    </script>
+
+
+
+    <script>
+            $(document).ready(function () {
+                $("button.profile-btn").click(function (e) {
+                    e.stopPropagation();
+                    $(".profile-info")
+                        .slideDown(1000);
+                    //.slideToggle(1000);
+                });
+
+            });
+
+    </script>
+
+    <script>
+            $(document).ready(function () {
+                $("button.account-creation-btn").click(function (e) {
+                    e.stopPropagation();
+                    $(".account-creation")
+                        .slideDown(1000);
+                    //.slideToggle(1000);
+                });
+            });
+
+    </script>
+
+    <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+    </script>
+
+
+</body>
+
+
+
+
+
+</html>

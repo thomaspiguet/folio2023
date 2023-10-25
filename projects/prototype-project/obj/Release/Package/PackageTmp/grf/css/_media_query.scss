@@ -1,0 +1,28 @@
+﻿@media (max-width: 2050px) and (min-width: 1140px) {
+    .form__column.form__column--required-attendance.row {
+        position: absolute;
+        width: 25%;
+        right: 0;
+        top: 0px;
+    }
+
+    .required-attendance__premiums-header.--header-column {
+        flex-direction: column;
+    }
+
+    .required-attendance__premiums-header--right .field__value {
+        text-align: center;
+    }
+
+    .--r-item + .--r-item {
+        margin-top: 6px;
+    }
+
+    /*form__column.col-12.col-lg-3.--col-simple, form__column.col-12.col-lg-3.--col-date {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }*/
+}

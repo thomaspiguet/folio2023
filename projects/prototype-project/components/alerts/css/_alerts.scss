@@ -1,0 +1,59 @@
+﻿
+@import "../../../dist/css/scss/mixins/_variables.scss";
+@import "../../../dist/css/scss/mixins/_colors.scss";
+@import "../../../dist/css/scss/mixins/_fonts.scss";
+
+a.code,
+pre > code {
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: block;
+    font-family: monospace;
+    background-color: #f4f4f4;
+    color: #555555;
+}
+
+a.code:hover {
+    background-color: #eeeeee;
+}
+
+.simply-toast {
+    background-color: $white;
+    border: 2px solid $grey-active;
+    font-weight: 500;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(115,135,156,0.1);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(115,135,156,0.1);
+    box-shadow: 0px 0px 22px 0px rgba(115,135,156,0.1);
+}
+
+.alert-danger {
+    border-color: $danger;
+    color: $danger!important;
+
+}
+.alert-success {
+    border-color: $success-inactive !important;
+    color: $success-inactive !important;
+}
+.alert-warning {
+    border-color: $alert;
+    color: $alert!important;
+}
+
+.alert-info {
+    border-color: $info;
+    color: $info !important;
+}
+
+.alert-product {
+    border-color: $border;
+    color: $text-primary !important;
+}
+
+.grf-style {
+
+}

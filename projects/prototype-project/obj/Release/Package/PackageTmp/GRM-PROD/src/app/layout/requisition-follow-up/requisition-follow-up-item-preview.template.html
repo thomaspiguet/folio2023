@@ -1,0 +1,42 @@
+<div class="lightbox lightbox-full-height">
+  <div class="lightbox-header">
+    <div class="title">
+      {{ 'overviewRequisitionedProduct' | translate }}
+    </div>
+    <div class="actions">
+      <a title="{{ 'close' | translate }}" ng-href="#" ng-click="$ctrl.onClose($event)"><span class="mdi mdi-close"></span></a>
+    </div>
+  </div>
+  <div class="lightbox-content">
+    <div class="heading">
+      <div class="heading-title">
+        <span>{{ 'requisition' | translate }}&nbsp;<a ui-sref=".requisition.update({ id: $ctrl.currentItem().requisitionId, iid: $ctrl.currentItem().id, statusGroup: undefined })" ng-click="$ctrl.onClose()">{{ $ctrl.currentItem().requisitionId }}</a></span>
+      </div>
+      <div class="heading-actions">
+        <button class="action" title="{{ 'previous' | translate }}" ng-click="$ctrl.onPrevious($event)" ng-disabled="$ctrl.isPreviousDisabled()"><span class="mdi mdi-chevron-left mdi-22px"></span></button>
+        <button class="action" title="{{ 'next' | translate }}" ng-click="$ctrl.onNext($event)" ng-disabled="$ctrl.isNextDisabled()"><span class="mdi mdi-chevron-right mdi-22px"></span></button>
+      </div>
+      <div class="heading-actions-label">
+        <span>{{ 'product' | translate }}&nbsp;{{ $ctrl.model.pos + 1 }}/{{ $ctrl.model.items.length }}</span>
+      </div>
+    </div>
+    <div class="content content-scrollable">
+      <div class="row full-height">
+        <div class="col-lg-3 col-md-6 full-height">
+          <div class="full-height" ng-include="'product-card-view.template.html'"></div>
+        </div>
+        <div class="col-lg-3 col-md-6 full-height">
+          <div class="full-height" ng-include="'tracking-card-view.template.html'"></div>
+        </div>
+        <div class="col-lg-3 col-md-6 full-height">
+          <div ng-class="$ctrl.currentItem().buyer ? 'height-70 stacked-card-view' : 'full-height'" ng-include="'requisition-card-view.template.html'"></div>
+          <div class="height-30" ng-if="$ctrl.currentItem().buyer" ng-include="'buyer-card-view.template.html'"></div>
+        </div>
+        <div class="col-lg-3 col-md-6 full-height" ng-if="$ctrl.currentItem().orderId || $ctrl.currentItem().store">
+          <div class="height-70 stacked-card-view" ng-if="$ctrl.currentItem().orderId" ng-include="'order-card-view.template.html'"></div>
+          <div class="height-30" ng-if="$ctrl.currentItem().store" ng-include="'store-card-view.template.html'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

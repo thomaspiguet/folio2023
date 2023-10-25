@@ -1,0 +1,74 @@
+﻿@import "../../dist/css/scss/mixins/_colors.scss";
+@import "../../dist/css/scss/mixins/_variables.scss";
+
+
+.module-impression {
+
+
+    .icon-rounded {
+        background-color: #3F51B5;
+        color: #ffffff;
+    }
+
+    .icon-inner {
+        margin-right: 0px;
+        width: 66px;
+        height: 66px;
+        text-align: center;
+
+        &:before {
+            font-size: 28px;
+            color: #73879c;
+        }
+    }
+
+    .icon-rounded {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #fff;
+        color: #73879c !important;
+        border: 2px solid #73879c;
+    }
+
+    .icon-inner-small {
+        margin-right: 0px;
+        width: 66px;
+        height: 66px;
+        text-align: center;
+
+        &:before {
+            font-size: 28px;
+            color: #73879c;
+        }
+    }
+
+    .icon-rounded {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #fff;
+        color: #73879c !important;
+        border: 2px solid #73879c;
+    }
+
+
+
+    .print-to-list {
+        a {
+            display: block;
+            /*text-decoration: none;*/
+            padding: 10px;
+            margin-bottom: 10px;
+
+            &:hover {
+                -webkit-text-fill-color: $info;
+                -webkit-font-smoothing: subpixel-antialiased;
+                -webkit-transition: all .10ms linear;
+                transition: all .10ms linear;
+            }
+        }
+    }
+}

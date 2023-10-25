@@ -1,0 +1,32 @@
+<div class="authorization-actions-component">
+  <!-- refuse button -->
+  <button
+      title="{{ 'refuseAction' | translate }}"
+      id="authorizationActionRefuse"
+      type="button"
+      class="btn btn-primary min-width-90px"
+      ng-click="$ctrl.onRefuse($event)"
+      ng-disabled="$ctrl.isRefuseActionDisabled()">
+
+    <span>{{ 'refuseAction' | translate }}</span>
+    <span ng-show="$ctrl.authorizationSelectedCount" class="count-indicator">{{ $ctrl.authorizationSelectedCount }}</span>
+    <span ng-class="{'in-progress-indicator': $ctrl.isRefuseInProgress(), 'completed-indicator': !$ctrl.isRefuseIdle()}"></span>
+
+  </button>
+
+  <!-- authorize button -->
+  <button
+      title="{{ 'authorizeAction' | translate }}"
+      id="authorizationActionAuthorize"
+      type="button"
+      class="btn btn-primary min-width-90px sgui-btn-suggested"
+      ng-click="$ctrl.onAuthorize($event)"
+      ng-disabled="$ctrl.isAuthorizeActionDisabled()">
+
+    <span>{{ 'authorizeAction' | translate }}</span>
+    <span ng-show="$ctrl.authorizationSelectedCount" class="count-indicator">{{ $ctrl.authorizationSelectedCount }}</span>
+    <span ng-class="{'in-progress-indicator': $ctrl.isAuthorizeInProgress(), 'completed-indicator': !$ctrl.isAuthorizeIdle()}"></span>
+
+  </button>
+
+</div>

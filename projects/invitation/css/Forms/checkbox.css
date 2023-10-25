@@ -1,0 +1,231 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/*
+ * placeholder 
+ * 
+ */
+/*
+ * prefixs 
+ * 
+ */
+/*
+ * transition 
+ * 
+ */
+/*
+ * calc 
+ * 
+ */
+/*
+ * box-shadow 
+ * @include box-shadow(1px,1px,1px,0, #fff, true);
+ * 
+ */
+/*
+ * rotate 
+ * 
+ */
+/*
+ * scale 
+ * 
+ */
+/*
+ * translate 
+ * 
+ */
+/*
+ * skew 
+ * 
+ */
+/*
+ * flex 
+ * 
+ */
+/*
+ * absolute 
+ * 
+ */
+.checkbox, .radio {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 20px;
+}
+
+.checkbox input, .radio input {
+  outline: none !important;
+  display: none;
+}
+
+.checkbox .icons, .radio .icons {
+  color: #31b0d5;
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.checkbox .icons .first-icon, .radio .icons .first-icon, .checkbox .icons .second-icon, .radio .icons .second-icon {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  border: 1px solid #cfd8dc;
+  background: white;
+}
+
+.checkbox .icons .first-icon:before, .radio .icons .first-icon:before, .checkbox .icons .second-icon:before, .radio .icons .second-icon:before {
+  margin-top: 0px;
+  display: block;
+}
+
+.checkbox .icons .second-icon, .radio .icons .second-icon, .checkbox.checked .first-icon, .radio.checked .first-icon {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.checkbox.checked .second-icon, .radio.checked .second-icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  border-color: #cfd8dc;
+  -webkit-transition: color 0.25s linear;
+  transition: color 0.25s linear;
+}
+
+.checkbox.disabled, .radio.disabled {
+  cursor: default;
+}
+
+.checkbox.disabled .first-icon, .radio.disabled .first-icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background: #f2f3f6;
+}
+
+.checkbox.disabled .second-icon, .radio.disabled .second-icon {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background: #f2f3f6;
+}
+
+.checkbox.disabled.checked .first-icon, .radio.disabled.checked .first-icon {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.checkbox.disabled.checked .second-icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  color: #31b0d5;
+}
+
+.radio.disabled.checked .second-icon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  color: #31b0d5;
+}
+
+.radio .icons .first-icon, .radio .icons .second-icon {
+  border-radius: 50px;
+}
+
+.radio.checked .second-icon:before {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  background: #31b0d5;
+  position: absolute;
+  top: 50%;
+  border-radius: 8px;
+  left: 50%;
+  margin-top: -4px;
+  margin-left: -4px;
+}
+
+.radio.disabled.checked .second-icon:before {
+  background: #31b0d5;
+}
+
+.checkbox .icons .first-icon, .checkbox .icons .second-icon {
+  border-radius: 4px;
+}
+
+label {
+  font-weight: 400;
+  color: #73879c;
+}

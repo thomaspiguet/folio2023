@@ -1,0 +1,50 @@
+<div class="panel panel-primary panel-compact full-height">
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'order' | translate }}</span>
+    </div>
+    <div class="pull-right panel-heading-padded-container">
+      <span><a class="sgui-color-primary-inverse">{{ $ctrl.currentItem().orderId }}</a></span>
+    </div>
+  </div>
+  <div class="panel-body panel-body-contrast panel-body-scroll-vertical-overflow">
+    <form>
+      <div class="form-group" ng-if="$ctrl.currentItem().vendor">
+        <label for="vendor">{{ 'vendor' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="vendor">{{$ctrl.currentItem().vendor.code + ' - ' + $ctrl.currentItem().vendor.description}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().itemCode">
+        <label for="itemCode">{{ 'itemCode' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="itemCode">{{$ctrl.currentItem().itemCode}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().contractNumber">
+        <label for="itemCode">{{ 'contractNumber' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="contractNumber">{{$ctrl.currentItem().contractNumber}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().cgrNumber">
+        <label for="itemCode">{{ 'cgrNumber' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="cgrNumber">{{$ctrl.currentItem().cgrNumber}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().deliveryDate">
+        <label for="itemCode">{{ 'scheduledDelivery' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="deliveryDate">{{$ctrl.currentItem().deliveryDate | localeDate }}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().orderItemNote">
+        <label for="orderItemNote">{{ 'orderItemNote' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="orderItemNote">{{$ctrl.currentItem().orderItemNote}}</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,295 @@
+<div class="requisition-search-criteria-layout full-height">
+
+  <!--TODO: see if we need dirty state management (manage-form-state directive) for this form -->
+  <form name="requisitionSearchForm" class="requisition-search-criteria-form full-height" spellcheck="false">
+
+    <div class="panel panel-compact full-height">
+
+      <!-- Requisition search criteria top bar -->
+      <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+
+        <!-- Display label to the left -->
+        <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+
+          <span>{{ 'searchCriteria' | translate }}</span>
+
+        </div>
+
+      </div>
+      <div class="panel-body panel-body-content panel-body-scroll-vertical-overflow panel-body-with-absolute-footer">
+
+        <!-- display mode selector -->
+        <div class="form-group">
+          <label for="searchModeContainer">{{ 'display' | translate }}</label>
+          <br />
+          <div id="searchModeContainer" class="btn-group">
+            <label class="btn btn-primary" title="{{ 'searchByRequisitionHeader' | translate }}"
+              uib-btn-radio="$ctrl.model.searchModes.header"
+              ng-model="$ctrl.model.searchMode"
+              ng-click="$ctrl.onSearchModeChange($event)"
+            >{{ 'header' | translate }}</label>
+            <label class="btn btn-primary" title="{{ 'searchByRequisitionedProducts' | translate }}"
+              uib-btn-radio="$ctrl.model.searchModes.product"
+              ng-model="$ctrl.model.searchMode"
+              ng-click="$ctrl.onSearchModeChange($event)"
+            >{{ 'product' | translate }}</label>
+          </div>
+        </div>
+
+        <!-- header search criteria toggler -->
+        <div class="collapse-toggle" ng-init="headerCriteria = false">
+          <a ng-href="#" onclick="return false;" ng-click="headerCriteria = !headerCriteria" title="{{ 'collapseExpandThisSection' | translate }}">
+            <i class="fa fa-chevron-down" ng-show="!headerCriteria"></i>
+            <i class="fa fa-chevron-right" ng-show="headerCriteria"></i>
+          </a>
+          <label>{{ 'requisitionIdentification' | translate }}</label>
+        </div>
+
+        <!-- header search criteria -->
+        <div uib-collapse="headerCriteria" class="clearfix">
+
+          <!-- requisition id -->
+          <div class="form-group width-50">
+            <label for="requisitionId" class="control-label">{{ 'requisitionNumber' | translate }}</label>
+            <input type="text"
+                   class="form-control"
+                   id="requisitionId"
+                   name="requisitionId"
+                   ng-pattern="/^\d+$/"
+                   maxlength="8"
+                   ng-model="$ctrl.model.requisitionId"
+                   ng-change="$ctrl.onRequisitionIdChange()"/>
+          </div>
+
+          <!-- department -->
+          <div class="form-group">
+            <label for="administrativeUnit" class="control-label">{{ 'administrativeUnit' | translate }}</label>
+            <department-list
+              input-id="administrativeUnit"
+              input-name="administrativeUnit"
+              ng-model="$ctrl.model.department"
+              ng-change="$ctrl.onDepartmentChange()"
+              include-external-sales="$ctrl.isIncludeExternalSales()"
+            >
+            </department-list>
+          </div>
+
+          <!-- requester -->
+          <div class="form-group">
+            <label for="requester" class="control-label">{{ 'requester' | translate }}</label>
+            <requester-list
+              input-id="requester"
+              ng-model="$ctrl.model.requester"
+              ng-change="$ctrl.onRequesterChange()">
+            </requester-list>
+          </div>
+
+          <!-- site -->
+          <div class="form-group">
+            <label for="site" class="control-label">{{ 'site' | translate }}</label>
+            <site-list
+              input-id="site"
+              ng-model="$ctrl.model.site"
+              ng-change="$ctrl.onSiteChange()"
+              order-by="description">
+            </site-list>
+          </div>
+
+          <!-- delivery location -->
+          <div class="form-group">
+            <label for="deliveryLocation" class="control-label">{{ 'shippingLocation' | translate }}</label>
+            <delivery-location-list
+              input-id="deliveryLocation"
+              ng-model="$ctrl.model.deliveryLocation"
+              ng-change="$ctrl.onDeliveryLocationChange()">
+            </delivery-location-list>
+          </div>
+
+          <!-- installation location -->
+          <div class="form-group">
+            <label for="installationLocation" class="control-label">{{ 'installationLocation' | translate }}</label>
+            <delivery-location-list
+              input-id="installationLocation"
+              ng-model="$ctrl.model.installationLocation"
+              ng-change="$ctrl.onInstallationLocationChange()">
+            </delivery-location-list>
+          </div>
+
+          <!-- header status -->
+          <div class="form-group width-80">
+            <label for="requisitionStatus" class="control-label">{{ 'status' | translate }}</label>
+            <dynamic-lookup-select
+              select-id="requisitionStatus"
+              select-name="requisitionStatus"
+              ng-model="$ctrl.model.statuses"
+              lookup-name="requisitionStatuses"
+              ng-change="$ctrl.onRequisitionStatusChange()"
+              multiple="true">
+            </dynamic-lookup-select>
+          </div>
+
+          <!-- include cancelled requisitions -->
+          <div class="form-group">
+            <md-checkbox
+              md-no-ink
+              id="includeCancelledRequisitions"
+              name="includeCancelledRequisitions"
+              aria-label=" "
+              ng-model="$ctrl.model.includeCancelledRequisitions"
+              ng-change="$ctrl.onIncludeCancelledRequisitionsChange()">
+              {{ 'includeCancelledRequisitions' | translate }}
+            </md-checkbox>
+          </div>
+
+          <!-- created on -->
+          <div class="clearfix">
+            <div class="form-group pull-left width-45">
+              <label for="createdOnFrom" class="control-label text-nowrap">{{ 'dateCreatedFrom' | translate }}</label>
+              <date-box
+                id="createdOnFrom"
+                ng-model="$ctrl.model.createdOnFrom"
+                max-date="$ctrl.model.createdOnTo? $ctrl.model.createdOnTo : $ctrl.today"
+                ng-change="$ctrl.onCreatedOnFromChange()">
+              </date-box>
+            </div>
+            <div class="form-group pull-left width-45" style="padding-left:15px;">
+              <label for="createdOnTo" class="control-label text-nowrap">{{ 'to' | translate }}</label>
+              <date-box
+                id="createdOnTo"
+                ng-model="$ctrl.model.createdOnTo"
+                min-date="$ctrl.model.createdOnFrom"
+                max-date="$ctrl.today"
+                ng-change="$ctrl.onCreatedOnToChange()">
+              </date-box>
+            </div>
+          </div>
+
+          <!-- requisition type -->
+          <div class="form-group">
+            <label for="requisitionType" class="control-label">{{ 'type' | translate }}</label>
+            <dynamic-lookup-select
+              select-id="requisitionType"
+              select-name="requisitionType"
+              ng-model="$ctrl.model.requisitionTypes"
+              lookup-name="requisitionTypes"
+              ng-change="$ctrl.onRequisitionTypeChange()"
+              multiple="true">
+            </dynamic-lookup-select>
+          </div>
+
+          <!-- client -->
+          <div class="form-group" ng-hide="$ctrl.stateModel.client.hidden">
+            <label for="client" class="control-label">{{ 'client' | translate }}</label>
+            <client-list
+              input-id="client"
+              ng-model="$ctrl.model.client"
+              ng-change="$ctrl.onClientChange()">
+            </client-list>
+          </div>
+        </div>
+
+        <!-- item search criteria toggler -->
+        <div class="collapse-toggle" ng-init="itemCriteria = false" title="{{ 'collapseExpandThisSection' | translate }}">
+          <a ng-href="#" onclick="return false;" ng-click="itemCriteria = !itemCriteria">
+            <i class="fa fa-chevron-down" ng-show="!itemCriteria"></i>
+            <i class="fa fa-chevron-right" ng-show="itemCriteria"></i>
+          </a>
+          <label>{{ 'productIdentification' | translate }}</label>
+        </div>
+
+        <!-- item search criteria -->
+        <div uib-collapse="itemCriteria" class="clearfix">
+
+          <!-- product code -->
+          <div class="form-group width-50">
+            <label for="productCode" class="control-label">{{ 'productNumber' | translate }}</label>
+            <input type="text"
+                    class="form-control"
+                    id="productCode"
+                    name="productCode"
+                    ng-model="$ctrl.model.productCode"
+                    ng-change="$ctrl.onProductCodeChange()"/>
+          </div>
+
+          <!-- product description -->
+          <div class="form-group">
+            <label for="productDescription" class="control-label">{{ 'description' | translate }}</label>
+            <input type="text"
+                    class="form-control"
+                    id="productDescription"
+                    name="productDescription"
+                    ng-model="$ctrl.model.productDescription"
+                    ng-change="$ctrl.onProductDescriptionChange()"/>
+          </div>
+
+          <!-- store -->
+          <div class="form-group">
+            <label for="store">{{ 'store' | translate }}</label>
+            <store-list
+              input-id="store"
+              ng-model="$ctrl.model.store"
+              ng-change="$ctrl.onStoreChange()">
+            </store-list>
+          </div>
+
+          <!-- order -->
+          <div class="form-group width-50">
+            <label for="orderId" class="control-label">{{ 'orderNumber' | translate }}</label>
+            <input type="text"
+                    class="form-control"
+                    id="orderId"
+                    name="orderId"
+                    ng-model="$ctrl.model.orderId"
+                    ng-change="$ctrl.onOrderIdChange()"/>
+          </div>
+
+          <!-- header status -->
+          <div class="form-group">
+            <label for="itemStatus" class="control-label">{{ 'status' | translate }}</label>
+            <dynamic-lookup-select
+              select-id="itemStatus"
+              select-name="itemStatus"
+              ng-model="$ctrl.model.itemStatuses"
+              lookup-name="requisitionItemStatuses"
+              ng-change="$ctrl.onItemStatusChange()"
+              multiple="true">
+            </dynamic-lookup-select>
+          </div>
+        </div>
+      </div>
+
+      <!-- search criteria actions -->
+      <div class="panel-footer panel-footer-no-border panel-footer-absolute-gradient-with-controls" auto-adjust-width=".panel-body">
+        <div class="pull-right">
+
+          <!-- clear search criteria action -->
+          <button type="button"
+                  title="{{ 'clear' | translate }}"
+                  class="btn btn-default"
+                  ng-click="$ctrl.onClear($event)"
+                  ng-if="!$ctrl.stateModel.clear.hidden"
+                  ng-disabled="$ctrl.isClearDisabled()">
+            <i class="mdi mdi-filter-remove">
+            </i>
+            <span>{{ 'clear' | translate }}</span>
+          </button>
+
+          <!-- launch search action -->
+          <button type="button"
+                  title="{{ 'search' | translate }}"
+                  class="btn btn-primary"
+                  ng-click="$ctrl.onSearch($event)"
+                  ng-if="!$ctrl.stateModel.search.hidden"
+                  ng-disabled="$ctrl.isSearchDisabled()">
+            <i ng-if="!($ctrl.stateModel.search.running || $ctrl.stateModel.search.completed)"
+               class="mdi mdi-magnify"
+               aria-hidden="true">
+            </i>
+            <span ng-class="{'fa fa-spinner fa-spin': $ctrl.stateModel.search.running, 'fa fa-check': $ctrl.stateModel.search.completed}"></span>
+            <span>{{ 'search' | translate }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

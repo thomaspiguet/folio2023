@@ -1,0 +1,65 @@
+<div class="action-bar-actions btn-group" role="group" aria-label="{{ 'requisitionActions' | translate }}">
+
+  <!-- delete button -->
+  <button
+      title="{{ 'delete' | translate }}"
+      id="requisitionActionDelete"
+      type="button"
+      class="btn btn-primary min-width-90px"
+      ng-click="$ctrl.onDelete($event)"
+      ng-if="false === $ctrl.hideDelete"
+      ng-disabled="$ctrl.isDeleteActionDisabled()">
+
+    <span ng-hide="$ctrl.isDeleting()">{{ 'delete' | translate }}</span>
+    <span ng-class="{'fa fa-2x fa-spinner fa-spin': $ctrl.isDeleting()}"></span>
+
+  </button>
+
+  <!-- cancel button -->
+  <button
+      title="{{ 'cancel' | translate }}"
+      id="requisitionActionCancel"
+      type="button"
+      class="btn btn-primary min-width-90px"
+      ng-click="$ctrl.onCancel($event)"
+      ng-if="false === $ctrl.hideCancel"
+      ng-disabled="$ctrl.isCancelActionDisabled()">
+
+    <span ng-hide="$ctrl.isCancelling()">{{ 'cancel' | translate }}</span>
+    <span ng-class="{'fa fa-2x fa-spinner fa-spin': $ctrl.isCancelling(), 'fa fa-lg fa-check': $ctrl.isCancelled()}"></span>
+
+  </button>
+
+  <!-- save button -->
+  <button
+      title="{{ 'save' | translate }}"
+      id="requisitionActionSave"
+      type="button"
+      class="btn min-width-90px"
+      ng-class="!$ctrl.hideComplete ? 'btn-primary' : 'sgui-btn-suggested'"
+      ng-click="$ctrl.onSave($event)"
+      ng-if="false === $ctrl.hideSave"
+      ng-disabled="$ctrl.isSaveActionDisabled()">
+
+    <span ng-hide="$ctrl.isSaving() || $ctrl.isSaved()">{{ 'save' | translate }}</span>
+    <span ng-class="{'fa fa-2x fa-spinner fa-spin': $ctrl.isSaving(), 'fa fa-lg fa-check': $ctrl.isSaved()}">
+    </span>
+
+  </button>
+
+  <!-- complete button -->
+  <button
+      title="{{ 'complete' | translate }}"
+      id="requisitionActionComplete"
+      type="button"
+      class="btn sgui-btn-suggested min-width-90px"
+      ng-click="$ctrl.onComplete($event)"
+      ng-if="false === $ctrl.hideComplete"
+      ng-disabled="$ctrl.isCompleteActionDisabled()">
+
+    <span ng-hide="$ctrl.isCompleting() || $ctrl.isCompleted()">{{ 'complete' | translate }}</span>
+    <span ng-class="{'fa fa-2x fa-spinner fa-spin': $ctrl.isCompleting(), 'fa fa-lg fa-check': $ctrl.isCompleted()}"></span>
+
+  </button>
+
+</div>

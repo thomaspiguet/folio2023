@@ -1,0 +1,274 @@
+﻿[
+  {
+    "outputFile": "dist/css/scss/newstyle.css",
+    "inputFile": "dist/css/scss/newstyle.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_mixins.css",
+    "inputFile": "dist/css/scss/_mixins.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_newstyle.css",
+    "inputFile": "dist/css/scss/_newstyle.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/_variable.css",
+    "inputFile": "dist/css/scss/mixins/_variable.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/_color.css",
+    "inputFile": "dist/css/scss/mixins/_color.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/_variables.css",
+    "inputFile": "dist/css/scss/mixins/_variables.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/_colors.css",
+    "inputFile": "dist/css/scss/mixins/_colors.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_intermenu.css",
+    "inputFile": "dist/css/scss/intermenu.scss"
+  },
+  {
+    "outputFile": "components/main-header/_intermenu.css",
+    "inputFile": "components/main-header/scss/intermenu.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/font.css",
+    "inputFile": "dist/css/scss/mixins/font.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/fonts.css",
+    "inputFile": "dist/css/scss/mixins/fonts.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/documentation.css",
+    "inputFile": "dist/css/scss/documentation.scss"
+  },
+  {
+    "outputFile": "components/bootstrap/less/navs.css",
+    "inputFile": "components/bootstrap/less/navs.less"
+  },
+  {
+    "outputFile": "components/bootstrap/less/navbar.css",
+    "inputFile": "components/bootstrap/less/navbar.less"
+  },
+  {
+    "outputFile": "dist/css/scss/btn.css",
+    "inputFile": "dist/css/scss/btn.scss"
+  },
+  {
+    "outputFile": "components/medicine-and-health/font/_flaticon.css",
+    "inputFile": "components/medicine-and-health/font/_flaticon.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/_fonts.css",
+    "inputFile": "dist/css/scss/mixins/_fonts.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_documentation.css",
+    "inputFile": "dist/css/scss/_documentation.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_btn.css",
+    "inputFile": "dist/css/scss/_btn.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_datatables.css",
+    "inputFile": "dist/css/scss/_datatables.scss"
+  },
+  {
+    "outputFile": "DLGL/css/_special_style.css",
+    "inputFile": "DLGL/css/_special_style.scss"
+  },
+  {
+    "outputFile": "components/alerts/css/_alerts.css",
+    "inputFile": "components/alerts/css/_alerts.scss"
+  },
+  {
+    "outputFile": "components/checkbox/_select.css",
+    "inputFile": "components/checkbox/_select.scss"
+  },
+  {
+    "outputFile": "components/checkbox/_checkbox.css",
+    "inputFile": "components/checkbox/_checkbox.scss"
+  },
+  {
+    "outputFile": "components/main-header/_intermenu.css",
+    "inputFile": "components/main-header/scss/_intermenu.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_branding.css",
+    "inputFile": "dist/css/scss/_branding.scss"
+  },
+  {
+    "outputFile": "dist/css/_admin.css",
+    "inputFile": "dist/css/_admin.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_admin.css",
+    "inputFile": "dist/css/scss/_admin.scss"
+  },
+  {
+    "outputFile": "components/main-header/_intermenu.css",
+    "inputFile": "components/main-header/_intermenu.scss"
+  },
+  {
+    "outputFile": "recrutement/css/_recrutement-style.css",
+    "inputFile": "recrutement/css/_recrutement-style.scss"
+  },
+  {
+    "outputFile": "recrutement/css/_jquery.dataTables.css",
+    "inputFile": "recrutement/css/_jquery.dataTables.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_collapse.css",
+    "inputFile": "dist/css/scss/_collapse.scss"
+  },
+  {
+    "outputFile": "recrutement/css/_step-wizard.css",
+    "inputFile": "recrutement/css/_step-wizard.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/_utility.css",
+    "inputFile": "dist/css/scss/mixins/_utility.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_listing.css",
+    "inputFile": "dist/css/scss/_listing.scss"
+  },
+  {
+    "outputFile": "recrutement/css/_svg-animation.css",
+    "inputFile": "recrutement/css/_svg-animation.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/ux.css",
+    "inputFile": "dist/css/scss/ux.scss"
+  },
+  {
+    "outputFile": "recrutement/css/bg-video.css",
+    "inputFile": "recrutement/css/bg-video.scss"
+  },
+  {
+    "outputFile": "components/alerts/css/toastr.css",
+    "inputFile": "components/alerts/css/toastr.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_grf_style.css",
+    "inputFile": "dist/css/scss/_grf_style.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_toolbar_sidebar.css",
+    "inputFile": "dist/css/scss/_toolbar_sidebar.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/mixins/_variables_grf.css",
+    "inputFile": "dist/css/scss/mixins/_variables_grf.scss"
+  },
+  {
+    "outputFile": "components/wysihtml5/bootstrap3-wysihtml5.css",
+    "inputFile": "components/wysihtml5/bootstrap3-wysihtml5.scss"
+  },
+  {
+    "outputFile": "recrutement/css/_urgence-sante-style.css",
+    "inputFile": "recrutement/css/_urgence-sante-style.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_tree.css",
+    "inputFile": "dist/css/scss/_tree.scss"
+  },
+  {
+    "outputFile": "connex/themes/logibec/login/resources/css/style.css",
+    "inputFile": "connex/themes/logibec/login/resources/css/style.scss"
+  },
+  {
+    "outputFile": "GRF-PROD/src/styles/app.css",
+    "inputFile": "GRF-PROD/src/styles/app.scss"
+  },
+  {
+    "outputFile": "GRF-PROD/src/styles/breakpoints.css",
+    "inputFile": "GRF-PROD/src/styles/breakpoints.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_timeline.css",
+    "inputFile": "dist/css/scss/_timeline.scss"
+  },
+  {
+    "outputFile": "reorientation/css/_reorientation-style.css",
+    "inputFile": "reorientation/css/_reorientation-style.scss"
+  },
+  {
+    "outputFile": "reorientation/css/_reorientation.css",
+    "inputFile": "reorientation/css/_reorientation.scss"
+  },
+  {
+    "outputFile": "cms/_cms-style.css",
+    "inputFile": "cms/_cms-style.scss"
+  },
+  {
+    "outputFile": "cms/css/_cms-style.css",
+    "inputFile": "cms/css/_cms-style.scss"
+  },
+  {
+    "outputFile": "portail-client/css/_portail-client-style.css",
+    "inputFile": "portail-client/css/_portail-client-style.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_tabs.css",
+    "inputFile": "dist/css/scss/_tabs.scss"
+  },
+  {
+    "outputFile": "portail-client/css/_payment.css",
+    "inputFile": "portail-client/css/_payment.scss"
+  },
+  {
+    "outputFile": "portail-client/css/_step-wizard.css",
+    "inputFile": "portail-client/css/_step-wizard.scss"
+  },
+  {
+    "outputFile": "cms/css/_docs-index-style.css",
+    "inputFile": "cms/css/_docs-index-style.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_collapse_tables.css",
+    "inputFile": "dist/css/scss/_collapse_tables.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_grf-style-00.css",
+    "inputFile": "dist/css/scss/_grf-style-00.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/aszgv.css",
+    "inputFile": "dist/css/scss/aszgv.scss"
+  },
+  {
+    "outputFile": "cms/css/_landing-style.css",
+    "inputFile": "cms/css/_landing-style.scss"
+  },
+  {
+    "outputFile": "dist/css/scss/_ux.css",
+    "inputFile": "dist/css/scss/_ux.scss"
+  },
+  {
+    "outputFile": "grf/css/_grf-style-UPDATED.css",
+    "inputFile": "grf/css/_grf-style-UPDATED.scss"
+  },
+  {
+    "outputFile": "grf/css/_grf-style_updated.css",
+    "inputFile": "grf/css/_grf-style_updated.scss"
+  },
+  {
+    "outputFile": "grf/css/_grf-style.css",
+    "inputFile": "grf/css/_grf-style.scss"
+  },
+  {
+    "outputFile": "grf/css/_media_query.css",
+    "inputFile": "grf/css/_media_query.scss"
+  },
+  {
+    "outputFile": "radimage/css/_radimage-style.css",
+    "inputFile": "radimage/css/_radimage-style.scss"
+  }
+]

@@ -1,0 +1,76 @@
+export const REQUIRED_ATTENDANCE_DASHBOARD_APPLY_COLUMNS_CUSTOMIZATION = 'REQUIRED_ATTENDANCE_DASHBOARD_APPLY_COLUMNS_CUSTOMIZATION';
+export const REQUIRED_ATTENDANCE_DASHBOARD_RESET_COLUMNS_CUSTOMIZATION = 'REQUIRED_ATTENDANCE_DASHBOARD_RESET_COLUMNS_CUSTOMIZATION';
+export const REQUIRED_ATTENDANCE_DASHBOARD_EDIT_START = 'REQUIRED_ATTENDANCE_DASHBOARD_EDIT_START';
+export const REQUIRED_ATTENDANCE_DASHBOARD_EDIT_CANCEL = 'REQUIRED_ATTENDANCE_DASHBOARD_EDIT_CANCEL';
+export const REQUIRED_ATTENDANCE_DASHBOARD_EDIT_SAVE = 'REQUIRED_ATTENDANCE_DASHBOARD_EDIT_SAVE';
+export const REQUIRED_ATTENDANCE_DASHBOARD_EDIT_CONTINUE = 'REQUIRED_ATTENDANCE_DASHBOARD_EDIT_CONTINUE';
+export const REQUIRED_ATTENDANCE_DASHBOARD_SET_ENTRY = 'REQUIRED_ATTENDANCE_DASHBOARD_SET_ENTRY';
+export const REQUIRED_ATTENDANCE_DASHBOARD_LOAD_LIST = 'REQUIRED_ATTENDANCE_DASHBOARD_LOAD_LIST';
+export const REQUIRED_ATTENDANCE_DASHBOARD_RECALCULATE_ROW_TOTAL = 'REQUIRED_ATTENDANCE_DASHBOARD_RECALCULATE_ROW_TOTAL';
+export const REQUIRED_ATTENDANCE_DASHBOARD_INITIALIZE = 'REQUIRED_ATTENDANCE_DASHBOARD_INITIALIZE';
+
+export function initializeRequiredAttendances() {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_INITIALIZE,
+  };
+}
+
+export function recalculateRowTotal(index) {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_RECALCULATE_ROW_TOTAL,
+    payload: index,
+  };
+}
+
+export function applyColumnsCustomization(customizedColumns) {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_APPLY_COLUMNS_CUSTOMIZATION,
+    payload: customizedColumns,
+  };
+}
+
+export function resetColumnsCustomization() {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_RESET_COLUMNS_CUSTOMIZATION,
+  };
+}
+
+export function editStart() {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_EDIT_START,
+  };
+}
+
+export function editCancel() {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_EDIT_CANCEL,
+  };
+}
+
+export function editSave() {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_EDIT_SAVE,
+  };
+}
+
+export function editContinue() {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_EDIT_CONTINUE,
+  };
+}
+
+export function setEntry(payload, options) {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_SET_ENTRY,
+    payload,
+    options,
+  };
+}
+
+export function getRequiredAttendanceDashboardList(pageNo, pageSize, force) {
+  return {
+    type: REQUIRED_ATTENDANCE_DASHBOARD_LOAD_LIST,
+    payload: { pageNo, pageSize, force },
+  };
+}
+

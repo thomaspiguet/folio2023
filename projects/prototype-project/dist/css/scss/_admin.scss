@@ -1,0 +1,86 @@
+﻿@import "mixins/_colors.scss";
+@import "mixins/_variables.scss";
+
+
+.lockscreen-footer {
+    margin-top: 35%!important;
+}
+
+.lockscreen-image {
+    border-radius: 50%;
+    position: absolute;
+    left: -100px;
+    top: -25px;
+    padding: 6px;
+
+    img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.lockscreen-item {
+    border-radius: 4px;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    margin: 22px 19px 55px 100px;
+    width: 290px;
+}
+.lockscreen-credentials {
+    margin-left: 15px;
+}
+
+    .login-box-body .form-control-feedback, .register-box-body .form-control-feedback {
+        color: $text-secondary;
+    }
+
+    .text-muted {
+        color: $text-secondary;
+    }
+
+.lockscreen .lockscreen-name {
+    text-align: center;
+
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.help-block {
+    font-size:12px;
+    text-align:left;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.control-label {
+    font-size: 12px;
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+

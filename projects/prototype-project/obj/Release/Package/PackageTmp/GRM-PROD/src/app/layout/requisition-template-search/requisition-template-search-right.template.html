@@ -1,0 +1,37 @@
+<div class="panel panel-compact full-height" ng-if="!$ctrl.getHeaderListStateModel().hidden">
+
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'requisitionTemplateHeader' | translate }}</span>
+    </div>
+  </div>
+
+  <div class="panel-body panel-body-transparent panel-body-no-padding panel-body-content">
+    <requisition-template-header-list
+      model="$ctrl.getHeaderListDataModel()"
+      state-model="$ctrl.getHeaderListStateModel()"
+      view-model="$ctrl.getRequisitionTemplateSearchViewModel()"
+      action-handler="$ctrl.headerListActionHandler(obj)"
+    ></requisition-template-header-list>
+  </div>
+
+</div>
+
+<div class="panel panel-compact full-height" ng-if="!$ctrl.getProductListStateModel().hidden">
+
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'requisitionTemplateProducts' | translate }}</span>
+    </div>
+  </div>
+
+  <div class="panel-body panel-body-transparent panel-body-no-padding panel-body-content">
+    <requisition-template-product-list
+      model="$ctrl.getProductListDataModel()"
+      state-model="$ctrl.getProductListStateModel()"
+      view-model="$ctrl.getRequisitionTemplateSearchViewModel()"
+      action-handler="$ctrl.productListActionHandler(obj)"
+    ></requisition-template-product-list>
+  </div>
+
+</div>

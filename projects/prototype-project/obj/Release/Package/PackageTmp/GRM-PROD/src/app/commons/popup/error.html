@@ -1,0 +1,35 @@
+<div class="modal-header">
+  <h1 class="modal-title"><i class="glyphicon glyphicon-remove-sign text-danger"></i>&nbsp;<small>{{ opts.title | translate }}</small></h1>
+</div>
+<div class="modal-body" ng-switch="opts.translateContent">
+
+  <div ng-switch-when="true">
+    <div ng-if="opts.content">
+      <span ng-if="opts.isArray()">
+        <ul>
+          <li ng-repeat="error in opts.content"> {{ error.msg | translate:error.params }}</li>
+        </ul>
+      </span>
+      <span ng-if="!opts.isArray()">
+        <p>{{ opts.content.msg | translate:opts.content.params }}</p>
+      </span>
+    </div>
+  </div>
+  <div ng-switch-default>
+    <div ng-if="opts.content">
+      <span ng-if="opts.isArray()">
+        <ul>
+          <li ng-repeat="error in opts.content"> {{ error.msg }}</li>
+        </ul>
+      </span>
+      <span ng-if="!opts.isArray()">
+        <p>{{ opts.content.msg }}</p>
+      </span>
+    </div>
+  </div>
+
+  <pre ng-if="opts.error">{{ opts.error | json }}</pre>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-danger" autofocus ng-click="onClose()">{{ opts.btnClose | translate }}</button>
+</div>

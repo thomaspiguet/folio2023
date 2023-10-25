@@ -1,0 +1,101 @@
+<!-- Display filter criteria in a panel -->
+<div class="panel panel-compact full-height">
+  <!-- Filter header top bar -->
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+
+    <div id="actionMenuSearch" class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'search' | translate }}</span>
+    </div>
+
+    <div class="pull-right">
+      <!-- close the side panel -->
+      <button id="actionMenuClose" type="button" id="action_close" class="btn sgui-btn-icon sgui-btn-primary-inverted-no-bg" title="{{ 'close' | translate }}"
+        ng-click="$ctrl.onCloseSearchCriteria($event)">
+        <span class="mdi mdi-close"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Actual filter fields -->
+  <div class="panel-body panel-body-content-with-controls panel-body-scroll-vertical-overflow">
+
+    <!-- requisition number -->
+    <div class="form-group width-45">
+      <label for="requisitionId" class="control-label">{{ 'requisition' | translate }}</label>
+      <input type="text"
+             class="form-control"
+             id="requisitionId"
+             ng-model="$ctrl.model.requisitionId"
+             ng-change="$ctrl.onRequisitionIdChange()"
+             ng-pattern="/^\d+$/"
+              />
+    </div>
+
+	<!-- requisition requester -->
+    <div class="form-group">
+      <label for="requisitionRequester" class="control-label">{{ 'requester' | translate }}</label>
+      <requester-list
+        id="requisitionRequester"
+        input-id="requisitionRequester"
+        ng-model="$ctrl.model.requisitionRequester"
+        ng-change="$ctrl.onRequisitionRequesterChange()" >
+      </requester-list>
+    </div>
+
+	<!-- required on from/to -->
+    <div class="clearfix">
+      <div class="form-group pull-left width-45">
+        <label for="requiredOnFrom" class="control-label text-nowrap">{{ 'dateRequiredFrom' | translate }}</label>
+        <date-box
+          id="requiredOnFrom"
+          ng-model="$ctrl.model.requiredOnFrom"
+          max-date="$ctrl.model.requiredOnTo"
+          ng-change="$ctrl.onRequiredOnFromChange()" >
+        </date-box>
+      </div>
+      <div class="form-group pull-left width-45" style="padding-left:15px;">
+        <label for="requiredOnTo" class="control-label text-nowrap">{{ 'to' | translate }}</label>
+        <date-box
+          id="requiredOnTo"
+          ng-model="$ctrl.model.requiredOnTo"
+          min-date="$ctrl.model.requiredOnFrom"
+          ng-change="$ctrl.onRequiredOnToChange()" >
+        </date-box>
+      </div>
+    </div>
+
+	<!-- to authorize since -->
+    <div class="form-group width-45">
+      <label for="toAuthorizeSince" class="control-label text-nowrap">{{ 'toAuthorizeSinceXDays' | translate }}</label>
+      <input type="text"
+             class="form-control"
+             id="toAuthorizeSince"
+             ng-model="$ctrl.model.toAuthorizeSince"
+             ng-change="$ctrl.onToAuthorizeSinceChange()"
+             ng-pattern="/^\d+$/"
+      />
+    </div>
+
+  </div>
+
+  <!-- Search criteria actions -->
+  <div class="panel-footer panel-footer-with-controls">
+    <div class="pull-right">
+
+      <!-- clear search criteria -->
+      <button id="actionFilterClear" title="{{ 'clear' | translate }}" class="btn btn-default" ng-click="$ctrl.onClearSearchCriteria($event)"
+        ng-disabled="$ctrl.stateModel.clear.disabled">
+        <i class="mdi mdi-filter-remove"></i>
+        <span>{{ 'clear' | translate }}</span>
+      </button>
+
+      <!-- apply search criteria -->
+      <button id="actionFilterSearch" title="{{ 'search' | translate }}" class="btn btn-primary sgui-btn-with-icon" ng-click="$ctrl.onApplySearchCriteria($event)"
+        ng-disabled="$ctrl.stateModel.search.disabled">
+        <i class="mdi mdi-magnify"></i>
+        <span>{{ 'search' | translate }}</span>
+      </button>
+    </div>
+  </div>
+
+</div>

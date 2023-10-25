@@ -1,0 +1,84 @@
+﻿
+@import "_colors.css";
+
+
+.login .logo {
+    margin: 50px auto 0;
+    padding: 10px 0px 18px;
+    text-align: center;
+    width: 290px;
+}
+
+
+
+.login .content {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 400px;
+    margin: 40px auto 10px;
+    padding: 10px 30px 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.login .content .form-control {
+    /*background-color: #dde3ec;*/
+    background-color: white;
+    height: 43px;
+    color: #8290a3;
+    border: 1px solid #dde3ec;
+}
+.login .content {
+    margin: 20px auto 10px auto;
+    /*background-color: #eceef1;*/
+    background-color: white;
+}
+
+
+.login .content h3 {
+    color: #364150;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400 !important;
+}
+
+
+
+.login .content .form-actions .btn {
+    margin-top: 1px;
+    font-weight: 600;
+    padding: 10px 20px !important;
+    width: 100%;
+}
+
+
+.mt-checkbox, .mt-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 14px;
+    webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    float: left;
+}
+
+
+.login .content .forget-password {
+    font-size: 14px;
+    float: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+.login .content .rememberme {
+    margin-left: 0px;
+}

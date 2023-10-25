@@ -1,0 +1,26 @@
+<div class="panel panel-compact full-height">
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="centered-text panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ opts.title | translate }}</span>
+    </div>
+  </div>
+  <div class="panel-body" ng-switch="opts.translateContent">
+    <div ng-switch-when="true">{{ opts.content.msg | translate:opts.content.params }}</div>
+    <div ng-switch-default>{{ opts.content.msg }}</div>
+  </div>
+  <!-- Footer -->
+  <div class="panel-footer panel-footer-transparent panel-footer-no-border panel-footer-with-controls">
+    <div class="pull-right">
+      <button type="button"
+              class="btn btn-default"
+              ng-click="onClose()">
+        <span> {{ opts.btnClose | translate }} </span>
+      </button>
+      <button type="button"
+              class="btn btn-primary"
+              ng-click="onAction()">
+        <span>{{ opts.btnAction | translate }}</span>
+      </button>
+    </div>
+  </div>
+</div>

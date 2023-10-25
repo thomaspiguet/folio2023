@@ -1,0 +1,103 @@
+﻿@import "mixins/_colors.scss";
+@import "mixins/_variables.scss";
+
+pre {
+    width: 100%;
+    display: inline-block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    /*color: #333;*/
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: $white;
+    border: 1px solid $grey-inactive;
+    border-radius: 0px;
+    /*min-height: 75px;*/
+}
+
+/*.tag {
+    color: $info;
+}*/
+/*.pun, .opn, .clo, atv {
+    color: $grey-active;
+}*/
+
+/*.atn {
+    color: $danger;
+}*/
+
+.pln {
+    color: $danger-inactive;
+}
+
+
+.color-palette-big {
+    height: 150px;
+    line-height: 155px;
+    text-align: center;
+}
+.color-palette-medium {
+    height: 100px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.color-palette {
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.fa-lg {
+    font-size: 1.333333em;
+    line-height: 2.5em;
+    vertical-align: -15%;
+}
+
+
+.d-block {
+    display: block !important;
+}
+
+.mt-4 {
+    margin-top: 2.5rem !important;
+    padding-bottom: 12px;
+}
+
+.font-2xl {
+    font-size: 2.5rem !important;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-style: normal;
+    color: $text-primary !important;
+    /* line-height: 82px; */
+    font-size: 38px;
+    /* margin-left: 20px; */
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    display: block;
+    margin-top: 2.5rem !important;
+    padding-bottom: 12px;
+}
+
+
+/*[class^="bg-"].disabled {
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+}*/
+
+/*.bg-black-active {
+    background-color: $primary-active;
+    color: $white;
+}
+
+.bg-black-disabled {
+    background-color: $primary-inactive;
+    color: $white;
+}*/

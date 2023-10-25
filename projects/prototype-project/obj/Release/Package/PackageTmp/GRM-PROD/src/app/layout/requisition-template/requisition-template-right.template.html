@@ -1,0 +1,43 @@
+<!--<md-progress-circular ng-show="$ctrl.requisitionItemListModel.searching"
+                      id="spinner"
+                      ng-disabled="!$ctrl.requisitionItemListModel.searching"
+                      md-mode="indeterminate">
+</md-progress-circular>-->
+<!--Use global spinner-->
+
+<!-- Top section - expansible to full height -->
+<div class="panel panel-compact full-height">
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+
+    <div class="pull-right">      
+      <!-- The available requisition actions -->
+      <action-bar
+        action-state="$ctrl.getCurrentActionState()"
+        action-handler="$ctrl.onRequisitionTemplateActionsAction(obj)"
+        disable-cancel="$ctrl.getRequisitionTemplateActionBarStateModel().cancel.disabled"
+        disable-delete="$ctrl.getRequisitionTemplateActionBarStateModel().delete.disabled"
+        disable-save="$ctrl.getRequisitionTemplateActionBarStateModel().save.disabled"
+        hide-cancel="$ctrl.getRequisitionTemplateActionBarStateModel().cancel.hidden"
+        hide-complete="true"
+        hide-delete="$ctrl.getRequisitionTemplateActionBarStateModel().delete.hidden"
+        hide-save="$ctrl.getRequisitionTemplateActionBarStateModel().save.hidden"
+        >
+      </action-bar>
+
+    </div>
+  </div>
+
+  <div class="panel-body panel-body-transparent panel-body-no-padding panel-body-content">
+      <requisition-template-items
+        model="$ctrl.getRequisitionTemplateItemsModel()"
+        department-id="$ctrl.getRequisitionTemplateHeaderModel().department ? $ctrl.getRequisitionTemplateHeaderModel().department.id : null"
+        site-id="$ctrl.getRequisitionTemplateHeaderModel().site ? $ctrl.getRequisitionTemplateHeaderModel().site.id : null"
+        items-list-state="$ctrl.getCurrentItemsListState()"
+        state-model="$ctrl.getRequisitionTemplateItemsStateModel()"
+        action-handler="$ctrl.onRequisitionTemplateItemsAction(obj)"
+        edit-handler="$ctrl.onRequisitionTemplateItemsEdit(obj)"
+        check-handler="$ctrl.onRequisitionTemplateItemsCheck(obj)"
+        mode="$ctrl.mode">
+      </requisition-template-items>
+  </div>  
+</div>

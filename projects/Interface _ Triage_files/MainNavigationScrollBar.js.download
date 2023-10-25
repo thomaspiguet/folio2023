@@ -1,0 +1,29 @@
+﻿function settingScrollBar() {
+    function checkScrollBar(element, dir) {
+        dir = (dir === 'vertical') ?
+            'scrollTop' : 'scrollLeft';
+
+        var res = !!element[dir];
+
+        if (!res) {
+            element[dir] = 1;
+            res = !!element[dir];
+            element[dir] = 0;
+        }
+        return res;
+    } 
+
+    function addClassScrollBar() {
+        var el = document.getElementById('app-main-sidebar');
+        var vs = checkScrollBar(el, 'vertical');
+
+        if (vs) {
+            document.getElementById('app-main-sidebar').classList.add('scroll-main-sidebar');
+        } else {
+            document.getElementById('app-main-sidebar').classList.remove('scroll-main-sidebar');
+        }
+    }
+
+    addClassScrollBar();
+}
+

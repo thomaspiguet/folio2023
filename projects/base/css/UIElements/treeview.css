@@ -1,0 +1,316 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+.treeview {
+  min-height: 20px;
+  /*padding: 19px;*/
+  margin-bottom: 20px;
+  /*background-color: $color-white;*/
+  font-size: 14px;
+}
+
+.treeview .form-group {
+  margin-bottom: 0px;
+}
+
+.treeview .input-group-addon {
+  padding: 5px 10px;
+}
+
+.treeview .material-icons {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.treeview .input-group .fa {
+  padding-right: 0px;
+  font-size: 18px;
+}
+
+.treeview .xl {
+  padding-right: 6px;
+  font-size: 18px;
+}
+
+.treeview .md {
+  font-size: 16px;
+}
+
+.treeview .xs {
+  font-size: 14px;
+}
+
+.treeview ul {
+  -webkit-padding-start: 5px;
+}
+
+.treeview ul .first {
+  padding: 20px 5px 0px 5px;
+}
+
+.treeview li {
+  list-style-type: none;
+  margin: 0;
+  /*padding: 10px 5px 0 5px;*/
+  padding: 15px 5px 0px 30px;
+  position: relative;
+  /*span {
+            display: inline-block;
+            padding: 6px 8px;
+            text-decoration: none;
+            border-radius: 2px;
+        }*/
+}
+
+.treeview li::before, .treeview li::after {
+  content: '';
+  /*left: -20px;*/
+  left: 13px;
+  position: absolute;
+  right: auto;
+}
+
+.treeview li::before {
+  border-left: 1px solid #cfd8dc;
+  bottom: 50px;
+  height: 100%;
+  top: 0;
+  width: 1px;
+}
+
+.treeview li::after {
+  border-top: 1px solid #cfd8dc;
+  height: 20px;
+  top: 30px;
+  /*width: 25px;*/
+  width: 17px;
+}
+
+.treeview li.parent_li > span {
+  cursor: pointer;
+}
+
+.treeview li:last-child::before {
+  height: 30px;
+}
+
+.treeview li.parent_li > span:hover {
+  background: #f2f3f6;
+  border: 1px solid #cfd8dc;
+  color: #00c0f2;
+}
+
+.treeview li.parent_li > span:hover + ul li span {
+  background: #f2f3f6;
+  border: 1px solid #cfd8dc;
+  color: #00c0f2;
+}
+
+.treeview li .checkbox .first-icon {
+  left: 8px;
+  top: 8px;
+}
+
+.treeview li .checkbox .second-icon {
+  margin: 8px;
+  font-size: 16px;
+  /*left: 8px;
+                top: 8px;*/
+}
+
+.treeview li .second-icon:before {
+  margin-top: 0px !important;
+  display: block;
+  margin-left: 0px;
+}
+
+.treeview > ul > li::before, .treeview > ul > li::after {
+  border: 0;
+}
+
+.treeview .section {
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+  display: inline-block;
+  padding: 8px 8px;
+  text-decoration: none;
+  /*border-radius: 2px;*/
+  cursor: pointer;
+  color: #73879c;
+  min-width: 200px;
+}
+
+.treeview .input-group-addon {
+  display: table-cell;
+  width: inherit;
+  white-space: nowrap;
+  vertical-align: middle;
+  /*padding: 6px 12px;*/
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  /*color: $color-text;*/
+  text-align: center;
+  /*background-color: $color-background;*/
+  /*border: 1px solid $color-border;*/
+  border-radius: 2px;
+}
+
+.treeview .input-group-addon:hover {
+  color: #00c0f2;
+  cursor: pointer;
+}
+
+.treeview .input-group-addon:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  border-left: none;
+}
+
+.treeview .input-group-btn:first-child > .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -2px;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+}
+
+.treeview .input-group-first:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -1px;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+}
+
+.treeview .input-group-second {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -1px;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  border-right: 0;
+}
+
+.treeview .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: auto;
+  margin-bottom: 0;
+  display: table-cell;
+  background-color: #fff;
+}
+
+.treeview .form-control[disabled] {
+  opacity: 1;
+  cursor: not-allowed;
+  background-color: #f2f3f6 !important;
+}
+
+.tree li.parent_li > span {
+  cursor: pointer;
+}
+
+.tree li.parent_li > div {
+  cursor: pointer;
+}
+
+.treeview-transparent span {
+  /*border: 1px solid $color-border;
+        background-color: $color-white;*/
+  font-size: 14px;
+}
+
+.treeview-transparent span.first {
+  padding: 20px 5px 0px 0px;
+}
+
+.treeview-transparent i {
+  color: #73879c;
+}
+
+.treeview-transparent .fa {
+  /*color: $color-brand;*/
+  padding-right: 5px;
+}
+
+.treeview-transparent ul li {
+  padding: 23px 7px 1px 30px;
+}
+
+.treeview-transparent ul li::before {
+  left: 1px;
+  position: absolute;
+  right: auto;
+}
+
+.treeview-transparent ul li::after {
+  left: 1px;
+  position: absolute;
+  right: auto;
+  width: 25px;
+}

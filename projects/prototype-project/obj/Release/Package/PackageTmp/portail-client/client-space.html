@@ -1,0 +1,1583 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>client-space</title>
+
+
+    <link href="css/bootstrap-grid.css" rel="stylesheet" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!--<link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
+    <link href="../dist/css/style.css" rel="stylesheet">
+
+    <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+
+    <link href="../components/main-header/css/navbar.css" rel="stylesheet">
+    <link href="../components/main-header/_intermenu.css" rel="stylesheet" />
+
+
+
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_branding.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+    <link href="../components/checkbox/_checkbox.css" rel="stylesheet" />
+    <link href="../components/checkbox/_select.css" rel="stylesheet" />
+    <link href="../dist/css/scss/mixins/_utility.css" rel="stylesheet" />
+
+    <link href="css/_portail-client-style.css" rel="stylesheet" />
+    <!--<link href="css/_jquery.dataTables.css" rel="stylesheet" />-->
+    <link href="../dist/css/scss/_collapse.css" rel="stylesheet" />
+
+    <!-- Web components -->
+    <script src="../WEB-COMPONENTS/polyfills-0/webcomponents-lite.js"></script>
+    <script src="../WEB-COMPONENTS/template-components.js"></script>
+    <link rel="import" href="../WEB-COMPONENTS/navbar.html">
+    <link rel="import" href="../WEB-COMPONENTS/sidebar.html">
+    <link rel="import" href="../WEB-COMPONENTS/buttons.html">
+    <link rel="import" href="../WEB-COMPONENTS/color-palette.html">
+    <link rel="import" href="../WEB-COMPONENTS/modals.html">
+    <link rel="import" href="../WEB-COMPONENTS/toolbar.html">
+    <link rel="import" href="../WEB-COMPONENTS/nav-sidebar.html">
+    <link rel="import" href="../WEB-COMPONENTS/collapse-advance-grid.html">
+    <link rel="import" href="../WEB-COMPONENTS/account-builder.html">
+
+
+    <link href="components/main-header/_intermenu.css" rel="stylesheet" />
+
+
+
+
+    <!--<link href="../dist/css/scss/_grf_style.css" rel="stylesheet" />-->
+    <!--<link href="../dist/css/scss/_collapse_tables.css" rel="stylesheet" />-->
+
+
+    <script>
+
+        $(function () {
+
+            causeRepaintsOn = $("h1, h2, h3, p");
+
+            $(window).resize(function () {
+                causeRepaintsOn.css("z-index", 1);
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                $(".profile-info")
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                $(".account-creation")
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+
+
+</head>
+
+
+
+
+
+<body class="internal_pages" id="page-top">
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <div class="navbar-brand js-scroll-trigger">
+                <a href="index.html">
+                    <img src="img/BRAND-PORTAIL-CLIENT.svg" />
+                </a>
+            </div>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="client-space.html">ESPACE CLIENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#language">ENGLISH</a>
+                    </li>
+
+                    <li class="nav-item dropdown user user-menu">
+
+                        <a aria-expanded="false" class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown"
+                           href="#">
+                            <span class="hidden-xs">
+                                VOTRE COMPTE
+                            </span>
+                        </a>
+
+
+
+                        <ul class="dropdown-menu" id="myModal">
+                            <li class="user-header">
+
+                                <p>John Doe<small>Dernière connexion 2017/01/05</small></p>
+
+                                <!--<h4>Enregistrement</h4>-->
+                                <!--<div class="profile-info collapsed-box" style="display: none;">
+
+                    <p class="boxing-text user-header text-primary-color">User Name:<span class="text-secondary-color">Heushi01</span></p>
+                    <p class="text-primary-color">Email:<span class="text-secondary-color">
+                    shirley.heurtier@logibec.com</span></p>
+
+                </div>-->
+
+                            </li>
+
+                            <li class="user-body account-creation collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Créer votre compte utilisateur</p>
+
+                                    <!--<label class="control-label text-success-color" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>-->
+
+
+                                    <form action="../../index.html" method="post">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="Nom complet">
+                                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Confirmer le mot de passe">
+                                            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                                            <!--<span class="help-block danger-color">Help block with error</span>-->
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">S'inscrire</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+
+
+                            </li>
+
+                            <li class="user-body profile-info collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Ouvrir votre session</p>
+
+
+
+
+                                    <form action="../../index.html" method="post">
+
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <p class="small">
+                                            <a href="#">Récupérer votre mot de passe</a>
+
+                                        </p>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">Se connecter</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                            </li>
+
+
+                            <li class="user-footer">
+
+
+                                <!--<div class="">
+
+                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile"><span class="account-creation-btn">Créer votre compte</span></button>
+                </div>-->
+
+
+                                <div class="">
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile ">Profil</button>
+                                </div>
+
+                                <!--<div class="">
+                    <button type="button" onclick="window.location.href='applied-jobs.html'" class="btn btn btn-success bg-green-disabled btn-flat-mobile btn-block-mobile">Mes emplois postulés</button>
+                </div>-->
+
+                                <div class="">
+                                    <button type="button" onclick="window.location.href='index.html'" class="btn btn-danger btn-flat-mobile btn-block-mobile">Déconnexion</button>
+
+                                </div>
+
+                                <!--<div class="">
+                    <button type="button" data-widget="collapse" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile"><span class="profile-btn">Connexion</span></button>
+
+                </div>-->
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="applied-jobs.html" class="nav-link notification ">
+                            <i class="fa fa-bell-o text-danger-color btn-flash"></i>
+                            <span class="label-top-container label label-top label-warning bg-red-active">10</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- Header -->
+    <header class="banner second_banner">
+
+        <div class="container">
+
+            <div class="row intro-text second_banner-text">
+
+
+
+                <div class="col-lg-3">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <span class="label label-success float-right">Monthly</span>
+                            <h5>Solde</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins">5 000$</h1>
+                            <!--<div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>-->
+                            <small>Total income</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Informations de la facturation </h5>
+                        </div>
+
+
+                        <div class="ibox-content">
+                            <address>
+                                <strong>John Doe</strong><br>
+                                795 Folsom Ave, Suite 600<br>
+                                San Francisco, CA 94107<br>
+                                Phone: (555) 539-1037<br>
+                                Email: john.doe@example.com
+                            </address>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="ibox ">
+
+
+                        <div class="ibox-content" style="min-height: 200px; padding: 52px 20px 20px 20px;">
+
+                            <button type="button" onclick="window.location.href='check-out-personal-info.html'" class="btn btn-success bg-green-disabled disabled" style="margin-right: 40px; margin-bottom:20px;">Payer factures<i class="fa fa-angle-right"></i> </button>
+
+                            <!--<button type="button" onclick="window.location.href='check-out-personal-info.html'" class="btn btn-success bg-green-disabled" style="margin-right: 40px; margin-bottom:20px;">Payer Solde <i class="fa fa-angle-right"></i> </button>-->
+
+                            <button type="button" onclick="window.location.href='deposit-check-out-personal-info.html'" class="btn btn-success bg-green-disabled" style="margin-right: 40px;">Faire un dépôt<i class="fa fa-angle-right"></i> </button>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <section class="container">
+
+
+        <div class="row">
+            <div class="col-12">
+                <!-- Custom Tabs -->
+                <div class="nav-tabs-custom">
+
+
+                    <ul class="nav nav-tabs">
+                        <li id="head_tab_1" class="head-tab active"><a href="#tab_1" data-toggle="tab">Factures à payer</a></li>
+                        <li id="head_tab_2" class="head-tab"><a href="#tab_2" data-toggle="tab">Historiques des factures </a></li>
+                        <li id="head_tab_3" class="head-tab"><a href="#tab_3" data-toggle="tab">Historiques des paiements</a></li>
+
+                    </ul>
+
+
+
+                    <div class="">
+                        <div class="tab-content col-12">
+
+
+                            <!--TABS01-->
+
+                            <div class="tab-pane active" id="tab_1">
+
+
+                                <div class="panel-group" id="accordion">
+
+
+                                    <div class="panel panel-default " id="panel1">
+
+
+                                        <div class="panel-heading ">
+                                            <div class="panel-title row bg-grey-background">
+
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    <label class="checkbox " for="checkbox1">
+                                                        <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    N<sup>o</sup>
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell">
+                                                    DATE DÉMISSION
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell">
+                                                    RÉF.
+                                                </div>
+                                                <div class="col-sm-3 data-grid__cell">
+                                                    DESCRIPTION
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    MONTANT
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    SOLDE
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="panel-heading">
+                                            <div class="panel-title row ">
+
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    <label class="checkbox " for="checkbox1">
+                                                        <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    H58361
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    02/07/2018
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    455-981
+                                                </div>
+                                                <div class="col-sm-3 data-grid__cell text-align-left ">
+                                                Séjour hospitalisations juillet
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell text-align-left ">
+                                                    1265.24$
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    1265.24$
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell" style=" padding: 0.2%;">
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" data-target="#collapseOne" href="#collapseOne" aria-expanded="false">
+                                                        <i class="fa fa-eye text-info-color btn-flash"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-download text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-print text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href='check-out-personal-info.html'">
+                                                        <i class="fa fa-credit-card text-info-color"></i>
+                                                    </button>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+
+                                            <div class="panel-body">
+
+                                                <section class="invoice">
+                                                    <!-- title row -->
+                                                    <div class="row">
+
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- info row -->
+                                                    <div class="row invoice-info">
+                                                        <div class="col-sm-4 invoice-col"><br></div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+                                                    <!-- Table row -->
+                                                    <div class="row">
+                                                        <div class="col-xs-12 table-responsive">
+                                                            <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Qte</th>
+                                                                        <th>Taux</th>
+                                                                        <th>Référence</th>
+                                                                        <th>Description</th>
+                                                                        <th>Sous-total</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>31</td>
+                                                                        <td>29.80</td>
+                                                                        <td>455-981-221</td>
+                                                                        <td>Séjour hospitalisations juillet</td>
+                                                                        <td>923.72$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>90.00</td>
+                                                                        <td>247-925-726</td>
+                                                                        <td>Coiffure</td>
+                                                                        <td>&nbsp; 90.00$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>30.70</td>
+                                                                        <td>735-845-642</td>
+                                                                        <td>Cable distribution</td>
+                                                                        <td>&nbsp; 30.74$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>55.99</td>
+                                                                        <td>422-568-642</td>
+                                                                        <td>Accès internet haute-vitesse</td>
+                                                                        <td>&nbsp; 55.99$</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+
+                                                    <div class="row">
+                                                        <!-- accepted payments column -->
+                                                        <div class="col-6">
+                                                            <p class="lead">Mode de paiements:</p>
+                                                            <img src="../../dist/img/credit/visa.png" alt="Visa">
+                                                            <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
+                                                            <img src="../../dist/img/credit/american-express.png" alt="American Express">
+                                                            <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
+
+
+                                                        </div>
+                                                        <!-- /.col -->
+                                                        <div class="col-6">
+                                                            <p class="lead">Échéance: 02/08/2018</p>
+
+                                                            <div class="table-responsive">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th style="width:50%">Sous-total:</th>
+                                                                            <td>&nbsp;1 100.45$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>TPS (R119921286)</th>
+                                                                            <td>&nbsp; &nbsp; &nbsp; 55.02$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>TVQ (1008026781)</th>
+                                                                            <td>&nbsp; &nbsp; 109.77$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Total:</th>
+                                                                            <td>&nbsp;1 265.24$</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+                                                    <!-- this row will not appear when printing -->
+                                                    <div class="row no-print">
+                                                        <div class="col-12">
+                                                            <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Imprimer</a>
+                                                            <button type="button" class="btn btn-success pull-right" onclick="window.location.href='check-out-personal-info.html'">
+                                                                <i class="fa fa-credit-card"></i> Faire un paiement
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
+                                                                <i class="fa fa-download"></i> Générer un PDF
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <!--PANEL02-->
+
+                                    <div class="panel panel-default" id="panel2">
+
+
+                                        <div class="panel-heading">
+                                            <div class="panel-title row ">
+
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    <label class="checkbox " for="checkbox1">
+                                                        <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    H43246
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    02/04/2018
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    425-914
+                                                </div>
+                                                <div class="col-sm-3 data-grid__cell text-align-left">
+                                                    Séjour hospitalisations avril
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    1265.78$
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    1265.78$
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell" style=" padding: 0.2%;">
+
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" data-target="#collapseOne" href="#collapseOne" aria-expanded="false">
+                                                        <i class="fa fa-eye text-info-color "></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-download text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-print text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href='check-out-personal-info.html'">
+                                                        <i class="fa fa-credit-card text-info-color"></i>
+                                                    </button>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+
+                                            <div class="panel-body"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <!--PANEL03-->
+
+                                    <div class="panel panel-default" id="panel3">
+
+                                        <div class="panel-title row ">
+
+                                            <div class="col-sm-1 data-grid__cell ">
+                                                <label class="checkbox " for="checkbox1">
+                                                    <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-1 data-grid__cell ">
+                                                FA4365
+                                            </div>
+                                            <div class="col-sm-2 data-grid__cell ">
+                                                18/02/2018
+                                            </div>
+                                            <div class="col-sm-1 data-grid__cell ">
+                                                575-45
+                                            </div>
+                                            <div class="col-sm-3 data-grid__cell text-align-left">
+                                                Lentilles cornéennes multi-focales
+                                            </div>
+                                            <div class="col-sm-1 data-grid__cell ">
+                                                1587.36$
+                                            </div>
+                                            <div class="col-sm-1 data-grid__cell ">
+                                                1587.36$
+                                            </div>
+                                            <div class="col-sm-2 data-grid__cell" style=" padding: 0.2%;">
+                                                <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" data-target="#collapseOne" href="#collapseOne" aria-expanded="false">
+                                                    <i class="fa fa-eye text-info-color "></i>
+                                                </button>
+
+                                                <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                    <i class="fa fa-download text-info-color"></i>
+                                                </button>
+
+                                                <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                    <i class="fa fa-print text-info-color"></i>
+                                                </button>
+
+                                                <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href='check-out-personal-info.html'">
+                                                    <i class="fa fa-credit-card text-info-color"></i>
+                                                </button>
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <!--TABS02-->
+
+                            <div class="tab-pane" id="tab_2">
+
+
+                                <div class="panel-group" id="accordion">
+
+
+                                    <div class="panel panel-default " id="panel1">
+
+
+                                        <div class="panel-heading ">
+                                            <div class="panel-title row bg-grey-background">
+
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    <label class="checkbox " for="checkbox1">
+                                                        <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    N<sup>o</sup>
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell">
+                                                 ÉMISSION
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell">
+                                                    RÉF.
+                                                </div>
+                                                <div class="col-sm-3 data-grid__cell">
+                                                    DESCRIPTION
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    MONTANT
+                                                </div>
+
+                                                <div class="col-sm-2 data-grid__cell ">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="panel-heading">
+                                            <div class="panel-title row ">
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    <label class="checkbox " for="checkbox1">
+                                                        <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    H58361
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    02/07/2018
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    455-981
+                                                </div>
+                                                <div class="col-sm-3 data-grid__cell text-align-left ">
+                                                    Séjour hospitalisations juillet
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    1265.24$
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell" style=" padding: 0.2%;">
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" data-target="#collapseOne" href="#collapseOne" aria-expanded="false">
+                                                        <i class="fa fa-eye text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-download text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-print text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href='check-out-personal-info.html'">
+                                                        <i class="fa fa-credit-card text-info-color"></i>
+                                                    </button>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div id="collapseTwo" class="panel-collapse collapse in">
+
+                                            <div class="panel-body">
+
+                                                <section class="invoice">
+                                                    <!-- title row -->
+                                                    <div class="row">
+
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- info row -->
+                                                    <div class="row invoice-info">
+                                                        <div class="col-sm-4 invoice-col"><br></div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+                                                    <!-- Table row -->
+                                                    <div class="row">
+                                                        <div class="col-xs-12 table-responsive">
+                                                            <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Qte</th>
+                                                                        <th>Taux</th>
+                                                                        <th>Référence</th>
+                                                                        <th>Description</th>
+                                                                        <th>Sous-total</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>31</td>
+                                                                        <td>29.80</td>
+                                                                        <td>455-981-221</td>
+                                                                        <td>Séjour hospitalisations juillet</td>
+                                                                        <td>923.72$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>90.00</td>
+                                                                        <td>247-925-726</td>
+                                                                        <td>Coiffure</td>
+                                                                        <td>&nbsp; 90.00$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>30.70</td>
+                                                                        <td>735-845-642</td>
+                                                                        <td>Cable distribution</td>
+                                                                        <td>&nbsp; 30.74$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>55.99</td>
+                                                                        <td>422-568-642</td>
+                                                                        <td>Accès internet haute-vitesse</td>
+                                                                        <td>&nbsp; 55.99$</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+
+                                                    <div class="row">
+                                                        <!-- accepted payments column -->
+                                                        <div class="col-6">
+                                                            <p class="lead">Mode de paiements:</p>
+                                                            <img src="../../dist/img/credit/visa.png" alt="Visa">
+                                                            <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
+                                                            <img src="../../dist/img/credit/american-express.png" alt="American Express">
+                                                            <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
+
+
+                                                        </div>
+                                                        <!-- /.col -->
+                                                        <div class="col-6">
+                                                            <p class="lead">Échéance: 02/08/2018</p>
+
+                                                            <div class="table-responsive">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th style="width:50%">Sous-total:</th>
+                                                                            <td>&nbsp;1 100.45$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>TPS (R119921286)</th>
+                                                                            <td>&nbsp; &nbsp; &nbsp; 55.02$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>TVQ (1008026781)</th>
+                                                                            <td>&nbsp; &nbsp; 109.77$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Total:</th>
+                                                                            <td>&nbsp;1 265.24$</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+                                                    <!-- this row will not appear when printing -->
+                                                    <div class="row no-print">
+                                                        <div class="col-12">
+                                                            <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Imprimer</a>
+                                                            <button type="button" class="btn btn-success pull-right" onclick="window.location.href='check-out-personal-info.html'">
+                                                                <i class="fa fa-credit-card"></i> Faire un paiement
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
+                                                                <i class="fa fa-download"></i> Générer un PDF
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                    <div class="panel panel-default" id="panel2">
+
+                                        <div class="panel-title row ">
+
+                                            <div class="col-sm-1 data-grid__cell ">
+                                                <label class="checkbox " for="checkbox1">
+                                                    <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-1 data-grid__cell ">
+                                                FA4365
+                                            </div>
+                                            <div class="col-sm-2 data-grid__cell ">
+                                                18/02/2018
+                                            </div>
+                                            <div class="col-sm-2 data-grid__cell ">
+                                                575-45
+                                            </div>
+                                            <div class="col-sm-3 data-grid__cell text-align-left">
+                                                Lentilles cornéennes multi-focales
+                                            </div>
+                                            <div class="col-sm-1 data-grid__cell ">
+                                                1587.36$
+                                            </div>
+
+                                            <div class="col-sm-2 data-grid__cell" style=" padding: 0.2%;">
+                                                <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" data-target="#collapseOne" href="#collapseOne" aria-expanded="false">
+                                                    <i class="fa fa-eye text-info-color "></i>
+                                                </button>
+
+                                                <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                    <i class="fa fa-download text-info-color"></i>
+                                                </button>
+
+                                                <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                    <i class="fa fa-print text-info-color"></i>
+                                                </button>
+
+                                                <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href='check-out-personal-info.html'">
+                                                    <i class="fa fa-credit-card text-info-color"></i>
+                                                </button>
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body"></div>
+                                        </div>
+                                    </div>
+                        
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+                            <!--TABS03-->
+
+
+
+                            <div class="tab-pane" id="tab_3">
+
+
+                                <div class="panel-group" id="accordion">
+
+
+                                    <div class="panel panel-default " id="panel2">
+
+
+                                        <div class="panel-heading ">
+                                            <div class="panel-title row bg-grey-background">
+
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    N<sup>o</sup>
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell">
+                                                    DATE DÉMISSION
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    REÇU
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    MODE DE PAIEMENT
+                                                </div>
+                                                <div class="col-sm-3 data-grid__cell">
+                                                    DESCRIPTION
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    MONTANT
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                        <div class="panel-heading">
+                                            <div class="panel-title row ">
+
+
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    H58361
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    02/07/2018
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    00006516
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    Chèque
+                                                </div>
+                                                <div class="col-sm-3 data-grid__cell text-align-left ">
+                                                Séjour hospitalisations juillet
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    1265.24$
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell" style=" padding: 0.2%;">
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" data-target="#collapseTwo" href="#collapseTwo" aria-expanded="false">
+                                                        <i class="fa fa-eye text-info-color "></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-download text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-print text-info-color"></i>
+                                                    </button>
+
+
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div id="collapseTwo" class="panel-collapse collapse in">
+
+                                            <div class="panel-body">
+
+                                                <section class="invoice">
+                                                    <!-- title row -->
+                                                    <div class="row">
+
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- info row -->
+                                                    <div class="row invoice-info">
+                                                        <div class="col-sm-4 invoice-col"><br></div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+                                                    <!-- Table row -->
+                                                    <div class="row">
+                                                        <div class="col-xs-12 table-responsive">
+                                                            <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Qte</th>
+                                                                        <th>Taux</th>
+                                                                        <th>Référence</th>
+                                                                        <th>Description</th>
+                                                                        <th>Sous-total</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>31</td>
+                                                                        <td>29.80</td>
+                                                                        <td>455-981-221</td>
+                                                                        <td>Séjour hospitalisations juillet</td>
+                                                                        <td>923.72$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>90.00</td>
+                                                                        <td>247-925-726</td>
+                                                                        <td>Coiffure</td>
+                                                                        <td>&nbsp; 90.00$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>30.70</td>
+                                                                        <td>735-845-642</td>
+                                                                        <td>Cable distribution</td>
+                                                                        <td>&nbsp; 30.74$</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>55.99</td>
+                                                                        <td>422-568-642</td>
+                                                                        <td>Accès internet haute-vitesse</td>
+                                                                        <td>&nbsp; 55.99$</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+
+                                                    <div class="row">
+                                                        <!-- accepted payments column -->
+                                                        <div class="col-6">
+                                                            <p class="lead">Mode de paiements:</p>
+                                                            <img src="../../dist/img/credit/visa.png" alt="Visa">
+                                                            <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
+                                                            <img src="../../dist/img/credit/american-express.png" alt="American Express">
+                                                            <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
+
+
+                                                        </div>
+                                                        <!-- /.col -->
+                                                        <div class="col-6">
+                                                            <p class="lead">Échéance: 02/08/2018</p>
+
+                                                            <div class="table-responsive">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th style="width:50%">Sous-total:</th>
+                                                                            <td>&nbsp;1 100.45$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>TPS (R119921286)</th>
+                                                                            <td>&nbsp; &nbsp; &nbsp; 55.02$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>TVQ (1008026781)</th>
+                                                                            <td>&nbsp; &nbsp; 109.77$</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Total:</th>
+                                                                            <td>&nbsp;1 265.24$</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.col -->
+                                                    </div>
+                                                    <!-- /.row -->
+                                                    <!-- this row will not appear when printing -->
+                                                    <div class="row no-print">
+                                                        <div class="col-12">
+                                                            <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Imprimer</a>
+                                                            <button type="button" class="btn btn-success pull-right" onclick="window.location.href='check-out-personal-info.html'">
+                                                                <i class="fa fa-credit-card"></i> Faire un paiement
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
+                                                                <i class="fa fa-download"></i> Générer un PDF
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+
+                                    </div>
+
+                                    <!--PANEL02-->
+
+                                    <div class="panel panel-default" id="panel2">
+
+
+                                        <div class="panel-heading">
+                                            <div class="panel-title row ">
+
+
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    H43246
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    02/04/2018
+                                                </div>
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    00055546
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell ">
+                                                    Crédit
+                                                </div>
+                                                <div class="col-sm-3 data-grid__cell text-align-left">
+                                                    Séjour hospitalisations avril
+                                                </div>
+
+                                                <div class="col-sm-1 data-grid__cell ">
+                                                    1265.78$
+                                                </div>
+                                                <div class="col-sm-2 data-grid__cell" style=" padding: 0.2%;">
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" data-target="#collapseOne" href="#collapseOne" aria-expanded="false">
+                                                        <i class="fa fa-eye text-info-color "></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-download text-info-color"></i>
+                                                    </button>
+
+                                                    <button data-toggle="collapse" type="button" class="btn btn-box-tool btn-small-action collapsed" onclick="window.location.href=''">
+                                                        <i class="fa fa-print text-info-color"></i>
+                                                    </button>
+
+
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+
+                                            <div class="panel-body"></div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section></section>
+
+
+
+    <!--FOOTER-->
+
+
+    <section id="footer" class="footer-menu bg-text">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li>ANALYTIQUE</li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-item">
+                                <h3>Legale</h3>
+                                <ul>
+                                    <li>COOKIES</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Questions!</h3>
+                        <p>
+                            Des questions sur votre facture ou nos services ?
+                        </p>
+                        <!--<div class="input-group">
+                            <input type="text" class="form-control" placeholder="Entrez question">
+                            <input type="submit" class="form-control" value="Envoyer">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer" id="copyright">
+
+
+
+        <small>Copyright © <a href="http://logibec.com" target="_blank">Logibec Canada</a> 2018. Tous droits réservés.</small>
+
+        <div class="">
+            <small>Version 1.0.1 BETA</small>
+        </div>
+
+    </footer>
+
+
+    <!-- Scripts -->
+    <!-- Jquery js 1.11.3-->
+    <script src="../dist/js/jquery-1.11.3.js"></script>
+    <script>
+        // Make sure jQuery's "ready" event isn't fired before all custom elements
+        // have been upgraded.
+        (function (jQuery1113) {
+            jQuery1113.holdReady(true);
+            window.addEventListener('WebComponentsReady', function () {
+                jQuery1113.holdReady(false);
+            });
+        })(jQuery);
+    </script>
+
+
+    <script src="js/jquery.js"></script>
+
+    <!--<script src="../components/jquery/dist/jquery.min.js"></script>-->
+
+
+    <script src="js/jquery.easing.js"></script>
+
+    <script src="js/jquery.easing.compatibility.js"></script>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script src="../dist/js/obs-raw.js"></script>
+
+    <script src="js/dataTables.bootstrap4.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+
+    <script src="../components/checkbox/checkbox.js"></script>
+    <script src="../components/checkbox/radio.js"></script>
+
+    <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../components/checkbox/checkbox.js"></script>
+    <script src="../components/checkbox/radio.js"></script>
+    <script src="../dist/js/obs.js"></script>
+
+    <script src="../dist/js/jquery-1.11.3.js"></script>
+    <script src="components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Scripts -->
+    <!-- Jquery js 1.11.3-->
+    <script src="../dist/js/jquery-1.11.3.js"></script>
+    <script>
+        // Make sure jQuery's "ready" event isn't fired before all custom elements
+        // have been upgraded.
+        (function (jQuery1113) {
+            jQuery1113.holdReady(true);
+            window.addEventListener('WebComponentsReady', function () {
+                jQuery1113.holdReady(false);
+            });
+        })(jQuery);
+    </script>
+
+    <script>
+        $(function () {
+
+            $('#example').DataTable({
+                'paging': true,
+                'lengthChange': false,
+                'searching': false,
+                'ordering': false,
+                'info': false,
+                'autoWidth': true,
+                //'scrollY': '500vh',
+                //'scrollY': 500,
+                'scrollX': true
+                //'scrollCollapse': true,
+                //'lengthMenu': [20, 75, 90]
+            })
+        });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("button.profile-btn").click(function (e) {
+                e.stopPropagation();
+                $(".profile-info")
+                    .slideDown(1000);
+                //.slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button.account-creation-btn").click(function (e) {
+                e.stopPropagation();
+                $(".account-creation")
+                    .slideDown(1000);
+                //.slideToggle(1000);
+            });
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <!-- label-checkbox -->
+    <script>
+        $("label[for='checkbox1']").on("click", function () {
+            $(".btn").removeClass("disabled");
+        });
+    </script>
+    <!-- head-tab-active -->
+    <script>
+        $('li.head-tab').click(function () {
+            $('li.head-tab').removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
+    <script>
+            if (window.location.hash == '#historiques-paiements') {
+                $('li.head-tab, .tab-pane').removeClass("active");
+                $('#head_tab_3, #tab_3').addClass("active");
+            }
+    </script>
+</body >
+
+
+
+
+
+</html >

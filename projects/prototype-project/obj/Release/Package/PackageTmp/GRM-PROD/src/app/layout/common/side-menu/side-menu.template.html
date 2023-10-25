@@ -1,0 +1,67 @@
+<!-- menu toggler -->
+<div class="side-menu-toggle">
+  <button type="button" class="btn sgui-btn-icon sgui-btn-primary-no-bg side-menu-toggle-btn" title="{{ 'expandCollapseMenu' | translate }}" ng-click="$ctrl.onToggle($event)">
+    <span class="side-menu-toggle-icon mdi mdi-dots-vertical mdi-22px"></span>
+  </button>
+</div>
+
+<!-- module selector toggler -->
+<div class="side-menu-module-toggle">
+  <div class="side-menu-module-toggle-active" ng-click="$ctrl.onShowModules($event)" ng-if="$ctrl.getModules().length > 1">
+    <span class="icon side-menu-icon {{ $ctrl.getSelectedModule().iconClass }}"></span>
+    <span class="label">{{ $ctrl.getSelectedModule().label | translate }}</span>
+    <span class="trigger pull-right mdi mdi-22px" ng-class="$ctrl.showModules ? 'mdi-menu-up' : 'mdi-menu-down'"></span>
+  </div>
+  <div class="side-menu-module-toggle-inactive" ng-if="$ctrl.getModules().length <= 1">
+    <span class="icon side-menu-icon {{ $ctrl.getSelectedModule().iconClass }}"></span>
+    <span class="label">{{ $ctrl.getSelectedModule().label | translate }}</span>
+  </div>
+</div>
+
+<!-- modules -->
+<div class="side-menu-modules" ng-show="$ctrl.showModules && $ctrl.expanded">
+  <div class="side-menu-module"
+    ng-class="$ctrl.isModuleSelected(module) ? 'side-menu-module-selected' : ''"
+    ng-click="$ctrl.onSelectModule(module)"
+    ng-repeat="module in $ctrl.getModules() track by $index"
+  >
+    <span class="icon {{ module.iconClass }}"></span>
+    <span class="label">{{ module.label | translate }}</span>
+  </div>
+</div>
+
+<!-- menu items -->
+<div class="side-menu-items">
+  <div class="side-menu-item-container"
+    ng-init="menuItem.expanded = false"
+    ng-repeat="menuItem in $ctrl.getSelectedModule().states"
+    ng-class="$ctrl.isSideMenuItemSelected(menuItem.stateName) ? 'side-menu-item-container-selected' : ''"
+  >
+
+    <div class="side-menu-item">
+
+      <span class="icon side-menu-icon {{ menuItem.iconClass }}" ng-if="menuItem.stateName === undefined" ng-class="$ctrl.isSideMenuItemSelected(menuItem.stateName) ? 'selected' : ''"></span>
+      <a class="icon side-menu-icon {{ menuItem.iconClass }}" title="{{ menuItem.label | translate }}" ng-if="menuItem.stateName !== undefined" ng-href="#" ng-class="$ctrl.isSideMenuItemSelected(menuItem.stateName) ? 'selected' : ''" ui-sref="{{ menuItem.stateName }}({ clearState: true })"></a>
+
+      <span class="label" ng-if="$ctrl.expanded && menuItem.stateName === undefined" ng-class="$ctrl.isSideMenuItemSelected(menuItem.stateName) ? 'selected' : ''">{{ menuItem.label | translate }}</span>
+      <a class="label" title="{{ menuItem.label | translate }}" ng-if="$ctrl.expanded && menuItem.stateName !== undefined" ng-href="#" ng-class="$ctrl.isSideMenuItemSelected(menuItem.stateName) ? 'selected' : ''" ui-sref="{{ menuItem.stateName }}({ clearState: true })">{{ menuItem.label | translate }}</a>
+
+      <a href="#" ng-if="menuItem.states !== undefined" class="trigger pull-right mdi mdi-22px" ng-class="menuItem.expanded ? 'mdi-chevron-up' : 'mdi-chevron-down'" ng-click="menuItem.expanded = !menuItem.expanded"></a>
+    </div>
+    <div class="side-menu-sub-items" ng-show="menuItem.expanded && $ctrl.expanded">
+      <div class="side-menu-sub-item" ng-repeat="subMenuItem in menuItem.states">
+        <a class="label" ng-href="#" ui-sref="{{ subMenuItem.stateName }}({ clearState: true })" title="{{ subMenuItem.label | translate }}">{{ subMenuItem.label | translate }}</a>
+      </div>
+    </div>
+  </div>
+  <div class="side-menu-item-container"
+    ng-repeat="staticLink in $ctrl.getSelectedModule().staticLinks"
+    ng-class="$ctrl.isSideMenuItemSelected(menuItem.stateName) ? 'side-menu-item-container-selected' : ''"
+  >
+
+    <div class="side-menu-item">
+      <a class="icon side-menu-icon {{ staticLink.iconClass }}" title="{{ staticLink.label | translate }}" target="_blank" ng-href="{{ $ctrl.getLink(staticLink.link) }}" ng-class="$ctrl.isSideMenuItemSelected(staticLink.stateName) ? 'selected' : ''"></a>
+      <a class="label" title="{{ staticLink.label | translate }}" target="_blank" ng-if="$ctrl.expanded" ng-href="{{ $ctrl.getLink(staticLink.link) }}" ng-class="$ctrl.isSideMenuItemSelected(staticLink.stateName) ? 'selected' : ''">{{ staticLink.label | translate }}</a>
+    </div>
+  </div>
+</div>

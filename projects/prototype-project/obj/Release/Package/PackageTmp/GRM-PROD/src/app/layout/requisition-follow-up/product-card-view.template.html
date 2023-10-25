@@ -1,0 +1,95 @@
+<div class="panel panel-primary panel-compact full-height">
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'product' | translate }}</span>
+    </div>
+    <div class="pull-right panel-heading-padded-container">
+      <span ng-if="$ctrl.currentItem() && $ctrl.currentItem().code">{{ $ctrl.currentItem().code }}</span>
+      <span ng-if="$ctrl.currentItem() && !$ctrl.currentItem().code">{{ 'noProductCode' | translate }}</span>
+    </div>
+  </div>
+  <div class="panel-body panel-body-contrast panel-body-scroll-vertical-overflow">
+    <form ng-hide="!$ctrl.currentItem()">
+      <div class="form-group">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="description">{{ $ctrl.currentItem().description }}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().additionalDescription">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="additionalDescription">{{ $ctrl.currentItem().additionalDescription }}</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="dueDate">{{ 'requiredOn' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="dueDate">{{ $ctrl.currentItem().dueDate | localeDate }}</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4" ng-if="$ctrl.currentItem().quantity">
+            <label for="requestedQuantity">{{ 'requestedQuantityAbbreviated' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span class="form-control-static" id="requestedQuantity">{{ $ctrl.currentItem().quantity }}</span>
+            </div>
+          </div>
+          <div class="col-sm-4" ng-if="$ctrl.currentItem().deliveredQuantity">
+            <label for="deliveredQuantity">{{ 'deliveredQuantityAbbreviated' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span class="form-control-static" id="deliveredQuantity">{{ $ctrl.currentItem().deliveredQuantity }}</span>
+            </div>
+          </div>
+          <div class="col-sm-4" ng-if="$ctrl.currentItem().quantityToReceive">
+            <label for="quantityToDeliver">{{ 'quantityToDeliverAbbreviated' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span class="form-control-static" id="quantityToDeliver">{{ $ctrl.currentItem().quantityToReceive }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().formatDescription">
+            <span class="form-control-static" id="format">{{ $ctrl.currentItem().formatDescription }}</span>
+          </div>
+          <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().price">
+            <span class="form-control-static" id="price">{{ $ctrl.currentItem().price | productItemCurrency }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="total">{{ 'total' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="total">{{ $ctrl.currentItem().total | currency }}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().note">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static">{{ $ctrl.currentItem().note }}</span>
+        </div>
+      </div>
+      <div class="row" ng-if="$ctrl.showNonCataloguedInfo()">
+        <div class="collapse-toggle col-sm-12" ng-init="nonCataloguedProduct = false">
+          <a ng-href="#" onclick="return false;" ng-click="nonCataloguedProduct = !nonCataloguedProduct">
+            <i class="fa fa-chevron-down" ng-show="!nonCataloguedProduct"></i>
+            <i class="fa fa-chevron-right" ng-show="nonCataloguedProduct"></i>
+          </a>
+          <label>{{ 'nonCataloguedProduct' | translate }}</label>
+        </div>
+        <div uib-collapse="nonCataloguedProduct" class="col-sm-12 clearfix">
+          <div class="form-group" ng-if="$ctrl.currentItem().noteToBuyer">
+            <label for="noteToBuyer">{{ 'noteToBuyer' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span class="form-control-static" id="noteToBuyer">{{ $ctrl.currentItem().noteToBuyer }}</span>
+            </div>
+          </div>
+          <div class="form-group" ng-if="$ctrl.currentItem().noteToRequester">
+            <label for="noteToRequester">{{ 'noteToRequester' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span class="form-control-static" id="noteToRequester">{{ $ctrl.currentItem().noteToRequester }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

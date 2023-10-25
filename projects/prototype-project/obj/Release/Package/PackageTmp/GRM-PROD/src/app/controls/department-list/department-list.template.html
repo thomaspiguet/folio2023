@@ -1,0 +1,31 @@
+<md-autocomplete flex
+  md-autoselect="false"
+  md-clear-button="!$ctrl.disabled"
+  md-delay="300"
+  md-input-id="{{$ctrl.inputId}}"
+  md-input-name="{{$ctrl.inputName}}"
+  md-items="item in $ctrl.fetchDepartment($ctrl.searchText)"
+  md-item-text="item.code + ' - ' + item.description"
+  md-menu-class="autocomplete-custom-template"
+  md-min-length = "0"
+  md-no-cache="true"
+  md-require-match="true"
+  md-search-text="$ctrl.searchText"
+  md-search-text-change="$ctrl.onSearchTextChanged()"
+  md-selected-item="$ctrl.model"
+  md-selected-item-change="$ctrl.updateModel()"
+  md-select-on-match="true"
+  mdx-clear-handler
+  mdx-infinite-scroll="$ctrl.fetchMoreDepartment"
+  mdx-total-records-count="$ctrl.totalRecordsCount"
+  ng-disabled="$ctrl.disabled"
+  ng-required="$ctrl.required"
+>
+  <md-item-template>
+    <span class="item-code" md-highlight-text="$ctrl.searchText" style="font-weight:bold;">{{item.code}}</span>
+    <span class="item-description" md-highlight-text="$ctrl.searchText">{{item.description}}</span>
+  </md-item-template>
+  <md-not-found>
+    {{ 'noRecordsFound' | translate }}
+  </md-not-found>
+</md-autocomplete>

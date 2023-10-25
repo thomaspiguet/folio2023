@@ -1,0 +1,44 @@
+<div class="full-height">
+
+  <!-- results table -->
+  <table id="requisition-template-search-header-table"
+      class="table table-fixed-header-scrollable-content grm-data-table"
+      st-table="$ctrl.model.headers"
+      st-pagination-helper="$ctrl.viewModel.paging"
+      st-sorting-helper="$ctrl.viewModel.sorting"
+      st-pipe="$ctrl.pipe"
+      auto-adjust-header
+    >
+    <thead>
+      <tr>
+        <th class="width-7" st-sort="templateId" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'numberAbbreviated' | translate }}</a></th>
+        <th class="width-25" st-sort="templateDescription" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'templateDescription' | translate }}</a></th>
+        <th class="width-3 text-center">{{ 'active' | translate }}</th>
+        <th class="width-5 text-center">{{ 'automaticRequisitionAbbreviated' | translate }}</th>
+        <th class="width-15">{{ 'site' | translate }}</th>
+        <th class="width-15" st-sort="department" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'administrativeUnit' | translate }}</a></th>
+        <th class="width-15">{{ 'address' | translate }}</th>
+        <th class="width-15">{{ 'requester' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody class="scrollable full-height">
+      <tr class="selectable" ng-repeat="item in $ctrl.model.headers" ng-click="$ctrl.onRowSelect($event, $index)" ng-class="{ 'selected': item.selected }" ng-attr-id="{{ 'itemLine_' + $index }}">
+        <td class="width-7">
+          <a title="{{ 'drillDownRequisitionTemplateX' | translate:item.templateId }}" ui-sref=".requisition-template.update({ id: {{ item.templateId }} })">{{ ::item.templateId }}</a>
+        </td>
+        <td class="width-25">{{ ::item.templateDescription }}</td>
+        <td class="width-3 text-center"><span ng-if="item.isActive" class="mdi mdi-check"></span></td>
+        <td class="width-5 text-center"><span ng-if="item.isAutomaticGeneration" class="mdi mdi-check"></span></td>
+        <td class="width-15">{{ ::item.site.description }}</td>
+        <td class="width-15">{{ ::item.department.description }}</td>
+        <td class="width-15">{{ ::item.address.description }}</td>
+        <td class="width-15">{{ ::item.requester.description }}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="text-center" st-pagination st-items-by-page="$ctrl.viewModel.paging.size" colspan="8"></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>

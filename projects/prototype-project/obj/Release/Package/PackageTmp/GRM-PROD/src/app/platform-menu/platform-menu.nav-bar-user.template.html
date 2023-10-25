@@ -1,0 +1,26 @@
+<!-- User logo and name with dropdown options (logout, etc.) -->
+<div>
+    <ul class="nav navbar-nav navbar-right app-user-container">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="floating-box">
+                    <pastille id="user-pastille" info={{vm.userConfig.initial}}></pastille>
+                    <div class="pla-tooltip">
+                        <span class="user-name-label">{{vm.userConfig.nameToDisplay}}</span>
+                        <span ng-show="vm.userConfig.displayTooltip"  class="pla-tooltiptext">{{vm.userConfig.fullname}}</span>
+                    </div>
+                    <div class="arrow-drop-down-menu pull-right">
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </div>
+                </div>
+            </a>
+
+            <ul class="dropdown-menu app-user-options">
+                <li><a href="{{vm.userConfig.logoutUri}}">
+                    <span class="glyphicon glyphicon-log-out"></span>
+                    <span>Logout</span>
+                </a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

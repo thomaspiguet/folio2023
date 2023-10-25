@@ -1,0 +1,884 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <title>charts</title>
+
+    <!-- Styles -->
+    <link href="components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="components/main-header/css/navbar.css" rel="stylesheet">
+    <link href="components/main-header/css/sidebar.css" rel="stylesheet">
+
+    <link href="dist/css/style.css" rel="stylesheet">
+
+    <link href="dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <link href="dist/css/scss/_newstyle.css" rel="stylesheet" />
+    <link href="components/main-header/_intermenu.css" rel="stylesheet" />
+    <link href="dist/css/scss/_btn.css" rel="stylesheet" />
+    <link href="dist/css/scss/_documentation.css" rel="stylesheet" />
+
+    <!-- Web components -->
+    <script src="./WEB-COMPONENTS/polyfills-0/webcomponents-lite.js"></script>
+    <script src="./WEB-COMPONENTS/template-components.js"></script>
+    <link rel="import" href="./WEB-COMPONENTS/navbar.html">
+    <link rel="import" href="./WEB-COMPONENTS/sidebar-new.html">
+    <link rel="import" href="./WEB-COMPONENTS/buttons.html">
+    <link rel="import" href="./WEB-COMPONENTS/color-palette.html">
+
+
+    <style>
+        .navbar-header p {
+            margin: 3px 0px 30px 7px !important;
+            color: white !important;
+            font-size: 77% !important;
+            font-weight: lighter;
+            text-transform: uppercase;
+            position: relative;
+            top: -20px !important;
+            left: 40px !important;
+        }
+
+        .connex-product-new {
+            display: block !important;
+        }
+
+        .emploie-sante-qc {
+            display: none !important;
+        }
+
+        .navbar-header {
+            margin-right: 10px !important;
+            margin-left: -2px !important;
+            width: 250px !important;
+            padding-top: 4px;
+        }
+
+        .pmd-sidebar.pmd-sidebar-open {
+            min-width: 280px !important;
+            width: 330px !important;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .main-sidebar {
+            width: 275px !important;
+        }
+
+        .info-box {
+            display: block;
+            min-height: 80px;
+            background: #fff;
+            width: 100%;
+            border-radius: 2px;
+            margin-bottom: 15px;
+        }
+
+        .navbar-custom-menu {
+            display: none !important;
+        }
+
+        .control-sidebar {
+            display: none !important;
+        }
+
+    </style>
+
+
+</head>
+
+<body class="dashboard hold-transition sidebar-mini fixed">
+
+    <!--<body class="dashboard sidebar-mini fixed sidebar-mini-expand-feature control-sidebar-open" style="height: auto; min-height: 100%;">-->
+
+    <template-component-navbar></template-component-navbar>
+
+    <section id="pmd-main">
+        <template-component-sidebar-new></template-component-sidebar-new>
+    </section>
+
+    <section class="wrapper">
+        <header class="main-header fixed">
+            <nav class="navbar navbar-static-top">
+                <a href="#" class="sidebar-toggle sidebar-toggle
+                   " data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+
+                        <li>
+                            <a style="cursor:not-allowed;" href="#" data-toggle="control-sidebar"><i class="fa fa-search toolbar-btn-icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <aside class="main-sidebar">
+
+            <section class="sidebar">
+
+
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active treeview menu-open">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> <span class="text-sidebar">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop"></i>
+                            <span class="text-sidebar">UI Elements</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="colors.html" class="text-sidebar"><i class="fa "></i> Colors</a></li>
+                            <li><a href="buttons.html" class="text-sidebar"><i class="fa"></i> Buttons</a></li>
+                            <li><a href="modals.html" class="text-sidebar"><i class="fa"></i> Modals</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-font"></i>
+                            <span class="text-sidebar">Fonts & Icons</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="fonts.html" class="text-sidebar"><i class="fa"></i> Fonts</a></li>
+                            <li><a href="font-awesome.html" class="text-sidebar"><i class="fa"></i> Font-awesome</a></li>
+                            <li><a href="material-icons.html" class="text-sidebar"><i class="fa"></i> Material-icons</a></li>
+                            <li><a href="medicine-&-health-icons.html" class="text-sidebar"><i class="fa"></i> medicine-and-health-icons</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="treeview">
+                        <a href="#" style="cursor:not-allowed;">
+                            <i class="fa fa-edit"></i> <span>Forms</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
+                            <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+                            <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#" style="cursor:not-allowed;">
+                            <i class="fa fa-table"></i> <span>Tables</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+                            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="pages/calendar.html" style="cursor:not-allowed;">
+                            <i class="fa fa-calendar"></i> <span>Calendar</span>
+                            <span class="pull-right-container">
+                                <small class="label pull-right bg-red">3</small>
+                                <small class="label pull-right bg-blue">17</small>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/mailbox/mailbox.html" style="cursor:not-allowed;">
+                            <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                            <span class="pull-right-container">
+                                <small class="label pull-right bg-yellow">12</small>
+                                <small class="label pull-right bg-green">16</small>
+                                <small class="label pull-right bg-red">5</small>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#" style="cursor:not-allowed;">
+                            <i class="fa fa-folder"></i> <span>Examples</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+                            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+                            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+                            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+                            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+                            <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+                            <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+                            <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+                            <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview style=" cursor:not-allowed;"">
+                        <a href="#">
+                            <i class="fa fa-share"></i> <span>Multilevel</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="fa fa-circle-o"></i> Level One
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+                                    <li class="treeview">
+                                        <a href="#">
+                                            <i class="fa fa-circle-o"></i> Level Two
+                                            <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                                            <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://docs" style="cursor:not-allowed;"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+                    <li class="header">LABELS</li>
+                    <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+                    <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+                    <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+                </ul>
+            </section>
+
+        </aside>
+    </section>
+
+
+
+    <section class="content-wrapper">
+        <section class="content">
+
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- AREA CHART -->
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Area Chart</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <canvas id="areaChart" style="height:250px"></canvas>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                    <!-- DONUT CHART -->
+                    <div class="box box-danger">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Donut Chart</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <canvas id="pieChart" style="height:250px"></canvas>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+
+                </div>
+                <!-- /.col (LEFT) -->
+                <div class="col-md-6">
+                    <!-- LINE CHART -->
+                    <div class="box box-info">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Line Chart</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <canvas id="lineChart" style="height:250px"></canvas>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                    <!-- BAR CHART -->
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Bar Chart</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <canvas id="barChart" style="height:230px"></canvas>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-8">
+
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Bar Chart</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div style="width: 100%">
+                                <canvas id="canvas" height="450" width="600"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <small>Version 1.0.1</small>
+        </div>
+        <small>Copyright &copy; 2017 <a href="https://logibec.com/">Logibec Canada</a>. All rights reserved.</small>
+    </footer>
+
+
+    <!--<aside class="control-sidebar control-sidebar-light control-sidebar-open ">-->
+    <aside class="control-sidebar control-sidebar-light ">
+
+
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs ">
+            <!--<li class="active"><a href="#control-sidebar-theme-demo-options-tab" data-toggle="tab"><i class="fa fa-wrench"></i></a></li>-->
+            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div class="tab-pane" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">Recent Activity</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                                <p>Will be 23 on April 24th</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon fa fa-user bg-yellow"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading"> Updated His Profile</h4>
+
+                                <p>New phone +</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                                <p>@example.com</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                                <p>Execution time 5 seconds</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <h4 class="control-sidebar-subheading">
+                                Custom Template Design
+                                <span class="label label-danger pull-right">70%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <h4 class="control-sidebar-subheading">
+                                Update Resume
+                                <span class="label label-success pull-right">95%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <h4 class="control-sidebar-subheading">
+                                Laravel Integration
+                                <span class="label label-warning pull-right">50%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <h4 class="control-sidebar-subheading">
+                                Back End Framework
+                                <span class="label label-primary pull-right">68%</span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+                <form method="post">
+                    <h3 class="control-sidebar-heading">General Settings</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Report panel usage
+                            <input type="checkbox" class="pull-right" checked="">
+                        </label>
+
+                        <p>
+                            Some information about this general settings option
+                        </p>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Allow mail redirect
+                            <input type="checkbox" class="pull-right" checked="">
+                        </label>
+
+                        <p>
+                            Other sets of options are available
+                        </p>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Expose author name in posts
+                            <input type="checkbox" class="pull-right" checked="">
+                        </label>
+
+                        <p>
+                            Allow the user to show his name in blog posts
+                        </p>
+                    </div>
+
+
+                    <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Show me as online
+                            <input type="checkbox" class="pull-right" checked="">
+                        </label>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Turn off notifications
+                            <input type="checkbox" class="pull-right">
+                        </label>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Delete chat history
+                            <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <!-- Scripts -->
+    <!-- Jquery js 1.11.3-->
+    <script src="dist/js/jquery-1.11.3.js"></script>
+    <script>
+        // Make sure jQuery's "ready" event isn't fired before all custom elements
+        // have been upgraded.
+        (function (jQuery1113) {
+            jQuery1113.holdReady(true);
+            window.addEventListener('WebComponentsReady', function () {
+                jQuery1113.holdReady(false);
+            });
+        })(jQuery);
+    </script>
+
+
+    <!-- Propeller Sidebar js -->
+    <script language="javascript" src="components/main-header/js/sidebar.js" type="text/javascript"></script>
+    <!-- jQuery 3 -->
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/jquery.slimscroll.js"></script>
+    <script src="dist/js/obs-raw.js"></script>
+    <script src="dist/js/demo.js"></script>
+    <script src="components/chart.js/Chart.js"></script>
+
+    <script>
+        $(function () {
+            /* ChartJS
+             * -------
+             * Here we will create a few charts using ChartJS
+             */
+
+            //--------------
+            //- AREA CHART -
+            //--------------
+
+            // Get context with jQuery - using jQuery's .get() method.
+            var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
+            // This will get the first returned node in the jQuery collection.
+            var areaChart = new Chart(areaChartCanvas)
+
+            var areaChartData = {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [
+                    {
+                        label: 'Electronics',
+                        fillColor: 'rgba(230, 233, 237,1)',
+                        strokeColor: 'rgba(230, 233, 237,1)',
+                        pointColor: 'rgba(230, 233, 237,1)',
+                        pointStrokeColor: '#e6e9ed',
+                        pointHighlightFill: '#e6e9ed',
+                        pointHighlightStroke: 'rgba(230, 233, 237,1)',
+                        data: [65, 59, 80, 81, 56, 55, 40]
+                    },
+                    {
+                        label: 'Digital Goods',
+                        fillColor: 'rgba(0, 165, 158,0.8)',
+                        strokeColor: 'rgba(0, 165, 158,0.8)',
+                        pointColor: '#00a59e',
+                        pointStrokeColor: 'rgba(0, 165, 158,1)',
+                        pointHighlightFill: '#00a59e',
+                        pointHighlightStroke: 'rgba(0, 165, 158,1)',
+                        data: [28, 48, 40, 19, 86, 27, 90]
+                    }
+                ]
+            }
+
+            var areaChartOptions = {
+                //Boolean - If we should show the scale at all
+                showScale: true,
+                //Boolean - Whether grid lines are shown across the chart
+                scaleShowGridLines: false,
+                //String - Colour of the grid lines
+                scaleGridLineColor: 'rgba(0,0,0,.05)',
+                //Number - Width of the grid lines
+                scaleGridLineWidth: 1,
+                //Boolean - Whether to show horizontal lines (except X axis)
+                scaleShowHorizontalLines: true,
+                //Boolean - Whether to show vertical lines (except Y axis)
+                scaleShowVerticalLines: true,
+                //Boolean - Whether the line is curved between points
+                bezierCurve: true,
+                //Number - Tension of the bezier curve between points
+                bezierCurveTension: 0.3,
+                //Boolean - Whether to show a dot for each point
+                pointDot: false,
+                //Number - Radius of each point dot in pixels
+                pointDotRadius: 4,
+                //Number - Pixel width of point dot stroke
+                pointDotStrokeWidth: 1,
+                //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
+                pointHitDetectionRadius: 20,
+                //Boolean - Whether to show a stroke for datasets
+                datasetStroke: true,
+                //Number - Pixel width of dataset stroke
+                datasetStrokeWidth: 2,
+                //Boolean - Whether to fill the dataset with a color
+                datasetFill: true,
+                //String - A legend template
+                legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].lineColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
+                //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+                maintainAspectRatio: true,
+                //Boolean - whether to make the chart responsive to window resizing
+                responsive: true
+            }
+
+            //Create the line chart
+            areaChart.Line(areaChartData, areaChartOptions)
+
+            //-------------
+            //- LINE CHART -
+            //--------------
+            var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+            var lineChart = new Chart(lineChartCanvas)
+            var lineChartOptions = areaChartOptions
+            lineChartOptions.datasetFill = false
+            lineChart.Line(areaChartData, lineChartOptions)
+
+            //-------------
+            //- PIE CHART -
+            //-------------
+            // Get context with jQuery - using jQuery's .get() method.
+            var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+            var pieChart = new Chart(pieChartCanvas)
+            var PieData = [
+                {
+                    value: 700,
+                    color: '#d9534f',
+                    highlight: '#d43f3a',
+                    label: 'Test1'
+                },
+                {
+                    value: 500,
+                    color: '#00bfb6',
+                    highlight: '#00a59e',
+                    label: 'Test2'
+                },
+                {
+                    value: 400,
+                    color: '#ffc026',
+                    highlight: '#ffcf59',
+                    label: 'Test3'
+                },
+                {
+                    value: 600,
+                    color: '#5bc0de',
+                    highlight: '#31b0d5',
+                    label: 'Test4'
+                },
+                {
+                    value: 300,
+                    color: '#0066ab',
+                    highlight: '#0083a5',
+                    label: 'Test5'
+                },
+                {
+                    value: 100,
+                    color: '#e6e9ed',
+                    highlight: '#f2f3f6',
+                    label: 'Test6'
+                }
+            ]
+            var pieOptions = {
+                //Boolean - Whether we should show a stroke on each segment
+                segmentShowStroke: true,
+                //String - The colour of each segment stroke
+                segmentStrokeColor: '#fff',
+                //Number - The width of each segment stroke
+                segmentStrokeWidth: 2,
+                //Number - The percentage of the chart that we cut out of the middle
+                percentageInnerCutout: 50, // This is 0 for Pie charts
+                //Number - Amount of animation steps
+                animationSteps: 100,
+                //String - Animation easing effect
+                animationEasing: 'easeOutBounce',
+                //Boolean - Whether we animate the rotation of the Doughnut
+                animateRotate: true,
+                //Boolean - Whether we animate scaling the Doughnut from the centre
+                animateScale: false,
+                //Boolean - whether to make the chart responsive to window resizing
+                responsive: true,
+                // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+                maintainAspectRatio: true,
+                //String - A legend template
+                legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>'
+            }
+            //Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            pieChart.Doughnut(PieData, pieOptions)
+
+            //-------------
+            //- BAR CHART -
+            //-------------
+            var barChartCanvas = $('#barChart').get(0).getContext('2d')
+            var barChart = new Chart(barChartCanvas)
+            var barChartData = areaChartData
+            //barChartData.datasets[1].fillColor = '#00a65a'
+            //barChartData.datasets[1].strokeColor = '#00a65a'
+            //barChartData.datasets[1].pointColor = '#00a65a'
+            barChartData.datasets[1].fillColor = '#00bfb6'
+            barChartData.datasets[1].strokeColor = '#00bfb6'
+            barChartData.datasets[1].pointColor = '#ffc026'
+            var barChartOptions = {
+                //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+                scaleBeginAtZero: true,
+                //Boolean - Whether grid lines are shown across the chart
+                scaleShowGridLines: true,
+                //String - Colour of the grid lines
+                scaleGridLineColor: 'rgba(0,0,0,.05)',
+                //Number - Width of the grid lines
+                scaleGridLineWidth: 1,
+                //Boolean - Whether to show horizontal lines (except X axis)
+                scaleShowHorizontalLines: true,
+                //Boolean - Whether to show vertical lines (except Y axis)
+                scaleShowVerticalLines: true,
+                //Boolean - If there is a stroke on each bar
+                barShowStroke: true,
+                //Number - Pixel width of the bar stroke
+                barStrokeWidth: 2,
+                //Number - Spacing between each of the X value sets
+                barValueSpacing: 5,
+                //Number - Spacing between data sets within X values
+                barDatasetSpacing: 1,
+                //String - A legend template
+                legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].fillColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
+                //Boolean - whether to make the chart responsive
+                responsive: true,
+                maintainAspectRatio: true
+            }
+
+            barChartOptions.datasetFill = false
+            barChart.Bar(barChartData, barChartOptions)
+        })
+    </script>
+
+
+    <script>
+        var randomScalingFactor = function () { return Math.round(Math.random() * 100) };
+
+        var barChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    fillColor: '#00bfb6',
+                    strokeColor: '#00bfb6',
+                    highlightFill: "rgba(0, 191, 182,0.5)",
+                    highlightStroke: "rgba(0, 191, 182,1)",
+                    data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+                },
+                {
+                    fillColor: '#00acf2',
+                    strokeColor: '#00acf2',
+                    highlightFill: "rgba(0, 172, 242,0.5)",
+                    highlightStroke: "rgba(0, 172, 242,1)",
+                    data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+                },
+
+                    {
+                        fillColor: '#d9534f',
+                        strokeColor: '#d9534f',
+                        highlightFill: "rgba(217, 83, 79,0.5)",
+                        highlightStroke: "rgba(217, 83, 79,.1)",
+                        data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+                    },
+
+                {
+                    fillColor: "#b8c2cd",
+                    strokeColor: "#b8c2cd",
+                    highlightFill: "rgba(151,187,205,0.5)",
+                    highlightStroke: "rgba(151,187,205,1)",
+                    data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+                }
+            ]
+
+        }
+        window.onload = function () {
+            var ctx = document.getElementById("canvas").getContext("2d");
+            window.myBar = new Chart(ctx).Bar(barChartData, {
+                responsive: true
+            });
+        }
+
+    </script>
+
+
+</body >
+</html >

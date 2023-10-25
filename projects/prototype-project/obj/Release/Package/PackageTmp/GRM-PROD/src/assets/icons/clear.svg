@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>highlight_off_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_Filter_2" transform="translate(-501.000000, -697.000000)" fill-rule="nonzero" fill="#00778B">
+            <g id="Group-20" transform="translate(424.000000, 337.000000)">
+                <g id="Group-29" transform="translate(0.000000, 312.000000)">
+                    <g id="Group-53" transform="translate(16.000000, 39.000000)">
+                        <g id="Group-18-Copy">
+                            <g id="Group-3">
+                                <g id="Group-4">
+                                    <g id="Group-2">
+                                        <g id="Group-5">
+                                            <g id="highlight_off_24px" transform="translate(61.000000, 9.000000)">
+                                                <path d="M9.4425,4.5 L7.5,6.4425 L5.5575,4.5 L4.5,5.5575 L6.4425,7.5 L4.5,9.4425 L5.5575,10.5 L7.5,8.5575 L9.4425,10.5 L10.5,9.4425 L8.5575,7.5 L10.5,5.5575 L9.4425,4.5 Z M7.5,0 C3.3525,0 0,3.3525 0,7.5 C0,11.6475 3.3525,15 7.5,15 C11.6475,15 15,11.6475 15,7.5 C15,3.3525 11.6475,0 7.5,0 Z M7.5,13.5 C4.1925,13.5 1.5,10.8075 1.5,7.5 C1.5,4.1925 4.1925,1.5 7.5,1.5 C10.8075,1.5 13.5,4.1925 13.5,7.5 C13.5,10.8075 10.8075,13.5 7.5,13.5 Z" id="Shape"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

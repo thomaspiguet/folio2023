@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="15px" viewBox="0 0 13 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>report@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="13" height="15" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="report">
+            <g id="Rectangle-5-Copy-34">
+                <use fill="#CCF3FB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#00778B" stroke-width="1" x="0.5" y="0.5" width="12" height="14" rx="2"></rect>
+            </g>
+            <path d="M3,3 L6,3" id="Path-8-Copy-13" stroke="#00778B"></path>
+            <path d="M3,5 L8,5" id="Path-8-Copy-12" stroke="#00778B"></path>
+            <polyline id="Path-11-Copy" stroke="#00778B" points="3 12 5.15384615 9.22222222 6.76923077 10.8888889 10 7"></polyline>
+            <polyline id="Path-12-Copy" stroke="#00778B" points="10 9 10 7 8 7"></polyline>
+        </g>
+    </g>
+</svg>

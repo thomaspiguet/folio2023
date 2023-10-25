@@ -1,0 +1,2727 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">-->
+
+    <title>001-Questionnaire-Évaluation médicale pré-emploi</title>
+
+
+    <link href="../../css/bootstrap-grid.css" rel="stylesheet" />
+
+    <link href="../../css/bootstrap.css" rel="stylesheet" />
+
+    <link href="../../../dist/css/scss/_newstyle.css" rel="stylesheet" />
+    <link href="../../../dist/css/scss/mixins/_utility.css" rel="stylesheet" />
+
+    <link href="../../../components/main-header/css/navbar.css" rel="stylesheet" />
+    <link href="../../../components/main-header/_intermenu.css" rel="stylesheet" />
+
+    <link href="../../../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <link href="../../../dist/css/scss/_branding.css" rel="stylesheet" />
+
+    <link href="../../css/_recrutement-style.css" rel="stylesheet" />
+
+    <link href="../../../dist/css/scss/_admin.css" rel="stylesheet" />
+    <link href="../../../dist/css/scss/_collapse.css" rel="stylesheet" />
+
+
+
+    <link href="../../../components/checkbox/_checkbox.css" rel="stylesheet" />
+    <link href="../../../components/checkbox/_select.css" rel="stylesheet" />
+    <link href="../../../dist/css/scss/_btn.css" rel="stylesheet" />
+
+    <link href="../../../dist/css/scss/_listing.css" rel="stylesheet" />
+    <link href="../../css/_step-wizard.css" rel="stylesheet" />
+
+
+    <link href="../../../dist/css/scss/ux.css" rel="stylesheet" />
+
+
+
+    <style>
+        .box-header {
+            color: #444;
+            display: block;
+            padding: 15px 12px;
+            position: relative;
+        }
+
+        /*.btn-box-tool .left {
+            font-size: 22px !important;
+            line-height: 1 !important;
+        }*/
+    </style>
+
+    <script>
+
+        $(function () {
+
+            causeRepaintsOn = $("h1, h2, h3, p");
+
+            $(window).resize(function () {
+                causeRepaintsOn.css("z-index", 1);
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                e.stopPropagation();
+                $(".profile-info")
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                e.stopPropagation();
+                $(".account-creation")
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+
+
+</head>
+
+
+
+
+<body class="internal_pages" id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <div class="navbar-brand js-scroll-trigger">
+                <a href="index.html">
+                    <img src="img/BRAND-EMPLOI-SANTE.svg" />
+                </a>
+            </div>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="jobs-listing.html">AFFICHAGE PROVINCIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#language">ENGLISH</a>
+                    </li>
+
+                    <li class="nav-item dropdown user user-menu">
+
+                        <a aria-expanded="false" class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown"
+                           href="#">
+                            <span class="hidden-xs">
+                                VOTRE COMPTE
+                            </span>
+                        </a>
+
+
+
+                        <ul class="dropdown-menu" id="myModal">
+                            <li class="user-header">
+
+                                <p>John Smith<small>Dernière connexion 2017/01/05</small></p>
+
+                                <!--<h4>Enregistrement</h4>-->
+                                <!--<div class="profile-info collapsed-box" style="display: none;">
+
+                                    <p class="boxing-text user-header text-primary-color">User Name:<span class="text-secondary-color">Heushi01</span></p>
+                                    <p class="text-primary-color">Email:<span class="text-secondary-color">
+                                    shirley.heurtier@logibec.com</span></p>
+
+                                </div>-->
+
+                            </li>
+
+                            <li class="user-body account-creation collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Créer votre compte utilisateur</p>
+
+                                    <!--<label class="control-label text-success-color" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>-->
+
+
+                                    <form action="../../index.html" method="post">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="Nom complet">
+                                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Confirmer le mot de passe">
+                                            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                                            <!--<span class="help-block danger-color">Help block with error</span>-->
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">S'inscrire</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+
+
+                            </li>
+
+                            <li class="user-body profile-info collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Ouvrir votre session</p>
+
+
+
+
+                                    <form action="../../index.html" method="post">
+
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <p class="small">
+                                            <a href="#">Récupérer votre mot de passe</a>
+
+                                        </p>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">Se connecter</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                            </li>
+
+
+                            <li class="user-footer">
+
+
+                                <!--<div class="">
+
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile"><span class="account-creation-btn">Créer votre compte</span></button>
+                                </div>-->
+
+
+                                <div class="">
+                                    <button type="button" onclick="window.location.href='personal-info.html'" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile ">Profil</button>
+                                </div>
+
+                                <div class="">
+                                    <button type="button" onclick="window.location.href='applied-jobs.html'" class="btn btn btn-success bg-green-disabled btn-flat-mobile btn-block-mobile">Mes emplois postulés</button>
+                                </div>
+
+                                <div class="">
+                                    <button type="button" onclick="window.location.href='index.html'" class="btn btn-danger btn-flat-mobile btn-block-mobile">Déconnexion</button>
+
+                                </div>
+
+                                <!--<div class="">
+                                    <button type="button" data-widget="collapse" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile"><span class="profile-btn">Connexion</span></button>
+
+                                </div>-->
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="applied-jobs.html" class="nav-link notification ">
+                            <i class="fa fa-bell-o text-danger-color btn-flash"></i>
+                            <span class="label-top-container label label-top label-warning bg-red-active">10</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="banner second_banner">
+
+        <div class="container">
+
+            <div class="intro-text second_banner-text">
+
+                <h1 class="intro-heading-second-banner">Mes emplois postulés</h1>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <div class="ux-container">
+
+        <div class="ux-content">
+
+            <div class="row">
+
+                <div class="col-3">
+                    <p>Activate Workflow</p>
+                </div>
+
+                <div class="col-3">
+                    <label class="switch">
+                        <input type="checkbox" id="myCheck" onclick="myFunction()">
+                        <span class="slider round"></span>
+                    </label>
+
+                </div>
+                <script>
+                    function myFunction() {
+                        var checkBox = document.getElementById("myCheck");
+                        var text = document.getElementById("ux-workflow");
+                        if (checkBox.checked == true) {
+                            text.style.display = "block";
+                        } else {
+                            text.style.display = "none";
+                        }
+                    }
+                </script>
+
+
+
+
+
+
+                <div class="col-3 ">
+                    <p>Activate Exceptions</p>
+                </div>
+
+                <div class="col-3 exceptions">
+                    <label class="switch">
+                        <input type="checkbox" id="myCheck" onclick="myFunction()">
+                        <span class="slider round "></span>
+                    </label>
+
+                </div>
+
+                <!--<script>
+                function myFunction() {
+                    var checkBox = document.getElementById("myCheck");
+                    var text = document.getElementById("ux-workflow");
+                    if (checkBox.checked == true) {
+                        text.style.display = "block";
+                    } else {
+                        text.style.display = "none";
+                    }
+                }
+                </script>-->
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <section></section>
+
+
+
+
+    <section class="bg-grey-background utile-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <form>
+
+                        <div class="tab-content">
+
+
+
+                            <div class="tab-pane active" id="">
+
+                                <!--JOB 01-->
+
+                                <div class="box box-default collapsed-box" style="margin-bottom: 0px;">
+                                    <div class="box-header with-border">
+
+                                        <div class="box-tools pull-left">
+
+                                            <button type="button" class="btn btn-box-tool " data-widget="collapse">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+
+
+                                            <h4 class="box-title ">
+                                                <b>Infirmier(e) clinicien(ne)</b> - No de requête: 00696
+                                            </h4>
+
+
+
+                                            <small class="label label-info" style=" margin-left: 20px;">
+                                                <i class="fa fa-calendar"></i> Postulé le 15-01-2018
+                                            </small>
+                                            <small class="label label-info" style=" margin-left: 20px;">
+                                                <i class="fa fa-institution"></i> CHUM
+                                            </small>
+
+
+                                        </div>
+
+                                        <div class="box-tools pull-right">
+
+                                            <button type="button" class="btn btn-box-tool btn-small-action" data-widget="collapse">
+                                                <i class="fa fa-bell-o btn-flash"></i><span class="label-top-container label label-top label-warning bg-red-active">3</span>
+
+
+                                                <span id="ux-workflow" style="display:none" class="ux-label-top-container">
+                                                    <i data-toggle="tooltip" class="icon ux-round-shape-text">1</i>
+
+                                                </span>
+
+
+                                            </button>
+
+
+
+                                            <button type="button" onclick="window.open('/recrutement/job-posting.html')" class="btn btn-box-tool btn-small-action" data-widget=""><i class="fa fa-binoculars text-info-color"></i></button>
+
+                                            <button type="button" onclick="window.open('/recrutement/job-posting.html')" class="btn btn-box-tool btn-small-action" data-widget=""><i class="fa fa-eye text-info-color"></i></button>
+
+
+                                            <button type="button" class="btn btn-box-tool btn-small-action disabled " data-toggle="modal" data-target="#modal-danger-logout-fr"><i class="fa fa-trash-o text-danger-color"></i></button>
+
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+
+
+                                    <div class="box-body no-padding">
+
+
+                                        <div class="">
+
+                                            <div class="" id="accordion">
+
+
+
+
+                                                <!--Questionnaire - Évaluation médicale pré-emploi-->
+
+
+                                                <div class="box-header with-border">
+
+
+                                                    <div class="panel-heading">
+                                                        <h4 class="box-title">
+
+                                                            <a class="accordion-toggle btn btn-box-tool " data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                                <i class="fa fa-plus"></i>
+                                                                Questionnaire - Évaluation médicale pré-emploi
+                                                            </a>
+                                                        </h4>
+
+                                                        <div class="form-group has-error pull-right no-margin-bottom ">
+                                                            <label class="control-label" for="inputWarning"><i class="icon fa fa-exclamation-circle"></i>                                                                     Section obligatoire</label>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div id="collapseOne" class="panel-collapse collapse in">
+
+
+                                                        <div class="box-body row">
+
+                                                            <div class="col-12">
+                                                                <p class="text-primary-color">
+                                                                    <small>
+                                                                        Veuillez compléter ce questionnaire d’évaluation médicale pré-emploi afin de permettre à nos spécialistes en gestion du Mieux-Être de valider votre aptitude à occuper le poste convoité.
+
+                                                                        <i class="icon fa fa-info-circle alert-color" style="padding-right: 5px;"></i>Les informations fournies seront traité de façon confidentielle.
+                                                                    </small>
+
+                                                                </p>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Prénom : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="John" disabled="">
+                                                                    <!--<span class="help-block danger-color">Champs obligatoire</span>-->
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Nom : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="Smith" disabled="">
+                                                                    <!--<span class="help-block danger-color">Champs obligatoire</span>-->
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Adresse courriel : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="john.smith@test.com" disabled="">
+                                                                    <!--<span class="help-block danger-color">Adresse courriel invalide</span>-->
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Sexe : <span class="text-danger">*</span> </label>
+                                                                    <select class="form-control select2" style="width: 100%;">
+                                                                        <option selected="selected">- Aucun(e) -</option>
+                                                                    </select>
+                                                                    <!--<span class="help-block danger-color">Adresse courriel invalide</span>-->
+                                                                </div>
+
+                                                            </div>
+
+
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label>Adresse : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="xxxx, Ave. XXXXX" disabled="">
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Ville : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="Montreal" disabled="">
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Province : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <select class="form-control select2" style="width: 100%;" disabled="">
+                                                                        <option class="" value="">
+                                                                            Québec
+                                                                        </option>
+
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Pays : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="Canada" disabled="">
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Code postal : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="XXX XXX" disabled="">
+                                                                </div>
+
+                                                            </div>
+
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Téléphone : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="+1 514-444-4444" disabled="">
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Poste convoité : <!--<span class="text-danger">*</span>--> </label>
+                                                                    <input type="text" class="form-control" placeholder="Infirmier(e) clinicien(ne) - No de requête: 00696" disabled="">
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-12">
+                                                                <hr>
+                                                            </div>
+
+                                                            <div class="col-md-12">
+                                                                <ol>
+
+                                                                    <li>
+                                                                        <p class="text-primary-color">
+                                                                            Avez-vous des limitations fonctionnelles?
+                                                                        </p>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Aucune
+                                                                        </label>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Temporaires
+                                                                        </label>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Permanentes ou prolongées
+                                                                        </label>
+
+                                                                    </li>
+
+
+                                                                    <li class="">
+                                                                        <p class="text-primary-color">
+                                                                            Avez-vous déjà subi un accident de travail, faisant l’objet d’un dossier CNESST?
+                                                                            <smal>Si oui décrivez.</smal><br>
+                                                                        </p>
+
+                                                                        <div class="col-12">
+                                                                            <div class="form-group">
+                                                                                <label>Description : </label>
+                                                                                <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </li>
+
+
+                                                                    <li class="">
+                                                                        <p class="text-primary-color">
+                                                                            Avez-vous déjà été victime d’un geste criminel, faisant l’objet d’un dossier IVAC?
+                                                                            <br><small>Si oui décrivez.</small><br>
+                                                                        </p>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Oui
+                                                                        </label>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Non
+                                                                        </label>
+                                                                        <div class="col-12">
+                                                                            <div class="form-group">
+                                                                                <label>Description : </label>
+                                                                                <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </li>
+
+
+
+
+
+
+                                                                    <li class="">
+                                                                        <p class="text-primary-color">
+                                                                            Avez-vous un handicap? Si oui, avez-vous besoin d’aménagements techniques et/ou physiques à votre situation?        <br><small>Si oui décrivez.</small><br>
+                                                                        </p>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Oui
+                                                                        </label>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Non
+                                                                        </label>
+
+                                                                        <div class="col-12">
+                                                                            <div class="form-group">
+                                                                                <label>Description : </label>
+                                                                                <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </li>
+
+
+                                                                    <li>
+                                                                        <p class="text-primary-color">
+                                                                            Souffrez-vous d’une maladie ou devez-vous suivre un traitement médical? <br><small>Si oui décrivez.</small><br>
+                                                                        </p>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Oui
+                                                                        </label>
+                                                                        <label class="radio">
+                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                                                            Non
+                                                                        </label>
+                                                                        <div class="col-12">
+                                                                            <div class="form-group">
+                                                                                <label>Description : </label>
+                                                                                <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <p class="text-primary-color">
+                                                                            Prenez-vous des médicaments?
+                                                                            <br><small>Si oui, lesquels? </small><br>
+                                                                        </p>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Nom du médicament : </label>
+                                                                                    <input type="text" class="form-control" placeholder="">
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Dosage : </label>
+                                                                                    <input type="text" class="form-control" placeholder="">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label>Raison : </label>
+                                                                                    <textarea class="form-control" rows="1" placeholder=""></textarea>
+                                                                                </div>
+
+                                                                            </div>
+
+
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Nom du médicament : </label>
+                                                                                    <input type="text" class="form-control" placeholder="">
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Dosage : </label>
+                                                                                    <input type="text" class="form-control" placeholder="">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label>Raison : </label>
+                                                                                    <textarea class="form-control" rows="1" placeholder=""></textarea>
+                                                                                </div>
+
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Nom du médicament : </label>
+                                                                                    <input type="text" class="form-control" placeholder="">
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label>Dosage : </label>
+                                                                                    <input type="text" class="form-control" placeholder="">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label>Raison : </label>
+                                                                                    <textarea class="form-control" rows="1" placeholder=""></textarea>
+                                                                                </div>
+
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                    </li>
+
+
+                                                                </ol>
+
+
+
+                                                                <div class="col-12">
+                                                                    <hr>
+                                                                </div>
+
+
+                                                                <div class="col-12" style="border: 2px solid #00acf2; background-color:  #00acf2;">
+                                                                    <p class="" style="color: white;">
+                                                                        Autorisation <br>
+                                                                    </p>
+
+                                                                    <label class="checkbox " for="checkbox1" style="color: white;">
+                                                                        <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                                        J’autorise l’établissement X à effectuer des vérifications dans le cadre de mon évaluation médicale pré-emploi.
+                                                                    </label>
+
+                                                                </div>
+
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                        <div class="box-footer">
+
+                                                            <div class="">
+
+                                                                <span class="">
+                                                                    <button data-widget="collapse" class="btn btn-success btn-flat pull-right">Envoyer</button>
+                                                                </span>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+
+
+                                                <!--Avis de confirmation d’emploi conditionnelle à l’évaluation médicale-->
+
+                                                <div class="panel panel-default">
+                                                    <div class="box-header with-border">
+
+                                                        <h4 class="box-title">
+
+                                                            <a class="accordion-toggle btn btn-box-tool collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+                                                                <i class="fa fa-plus"></i>
+                                                                Avis de confirmation d’emploi conditionnelle à l’évaluation médicale
+                                                            </a>
+                                                        </h4>
+                                                        <div class="form-group has-error pull-right no-margin-bottom ">
+                                                            <label class="control-label" for="inputWarning"><i class="icon fa fa-exclamation-circle"></i>                                                                     Section obligatoire</label>
+
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+                                                    <div id="collapseTwo" class="panel-collapse collapse">
+
+                                                        <div class="box-body row">
+
+                                                            <div class="col-12">
+                                                                <p class="text-primary-color">
+                                                                    <small>
+                                                                        Nous sommes heureux de vous présenter cette offre d’emploi pour le poste (Poste) au sein de notre établissement.
+
+                                                                        <br><br>Les conditions d’emplois de notre offre se résument comme suit :
+                                                                    </small>
+
+                                                                </p>
+
+                                                            </div>
+
+
+                                                            <div class="col-12">
+                                                                <hr>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <p class="text-primary-color text-center no-margin">
+                                                                    (Poste)
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <p class="text-primary-color text-center no-margin">
+                                                                    (Établissement) + (Installation)
+                                                                </p>
+                                                            </div>
+
+
+                                                            <div class="col-12">
+                                                                <hr>
+                                                            </div>
+
+
+                                                            <div class="col-md-6">
+                                                                <p class="text-primary-color">
+                                                                    <small>
+                                                                        <b>Date d’entrée en fonction:</b> (Date de début proposée)
+                                                                    </small>
+
+                                                                </p>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <p class="text-primary-color">
+                                                                    <small>
+                                                                        <b>Salaire<span class="text-success-color">*</span> : </b> (Salaire offert Ex. : 18.53$) (Type de période Ex: Horaire)
+                                                                    </small>
+
+                                                                </p>
+
+                                                            </div>
+
+
+                                                            <div class="col-12">
+                                                                <p class="text-primary-color">
+                                                                    <small>
+                                                                        <i class="text-info"><span class="text-success-color">*</span>Cette offre salariale est conditionnelle à la présentation des attestations d’emploi confirmant votre expérience).</i>
+                                                                    </small>
+                                                                </p>
+                                                                <p>
+                                                                    <small>
+                                                                        Vos conditions d’emploi seront régies selon les normes et conventions collectives du Réseau de la santé et des services sociaux du Québec.
+                                                                    </small>
+                                                                </p>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6">
+                                                                <p class="text-primary-color">
+                                                                    <small>
+                                                                        <b>Note :</b>(Clause particulières)
+                                                                    </small>
+
+                                                                </p>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-12" style="border: 2px solid #ffc026; margin-bottom: 30px;">
+                                                                <p style="text-align: left; font-size:18px; margin-bottom: 10px;">
+                                                                    <span class="label bg-yellow">
+                                                                        <i class="fa fa-info"></i> Note:
+                                                                    </span> &nbsp;&nbsp;Veuillez prendre note que cette offre est conditionnelle à l’évaluation médicale pré-emploi.
+                                                                    <br /><br />
+                                                                    <small>
+                                                                        Notre service de santé vous fera parvenir sous peu, un questionnaire d’évaluation médicale à compléter et à nous retourner dans les meilleurs délais afin de valider si vous êtes apte à occuper le poste convoité.
+                                                                        <br><br>
+                                                                        Si vous avez des questions, veuillez communiquer avec notre service des ressources humaines au 514-511-5114 ou via l’adresse courriel <a style="color:#31b0d5;" href="mailto:someone@example.com?Subject=Hello%20again" target="_top"> recrutement@logibec.com</a>
+                                                                        <br /><br />
+                                                                        Veuillez confirmer votre acceptation de cette offre d’emploi ci-haut mentionnée, en cochant la case à cet effet.
+                                                                    </small>
+                                                                </p>
+
+                                                            </div>
+
+
+                                                            <div class="col-12" style="border: 2px solid #00acf2; background-color: #00acf2;">
+                                                                <p class="" style="color: white;">
+                                                                    Veuillez confirmer votre acceptation de cette offre d’emploi ci-haut mentionnée, en cochant la case à cet effet.<br>
+                                                                </p>
+
+                                                                <div class="row">
+
+                                                                    <div class="col-md-3">
+
+                                                                        <label class="checkbox" for="checkbox1" style="color: white;">
+                                                                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" />
+                                                                            J’accepte l’offre d’emploi
+                                                                        </label>
+                                                                    </div>
+
+                                                                    <div class="col-md-9">
+
+                                                                        <label class="checkbox" for="checkbox1" style="color: white;">
+                                                                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" />
+                                                                            Je refuse l’offre d’emploi
+                                                                        </label>
+                                                                        <i data-toggle="tooltip" class="icon fa fa-exclamation-circle ux-item-position" data-html="true" title="" data-original-title="Si refus, ---undisabled--- la boîte commentaire"></i>
+
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                                <div class="form-group">
+                                                                    <label style="color: white;">Commentaires pour le spécialiste Gestion des talents : </label>
+                                                                    <textarea class="form-control" rows="4" placeholder="" disabled></textarea>
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                        </div>
+
+
+                                                        <div class="box-footer">
+
+                                                            <div class="">
+
+                                                                <span class="">
+                                                                    <button data-widget="collapse" class="btn btn-success btn-flat pull-right">Envoyer</button>
+                                                                </span>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                            <!--Avis de convocation au tests de présélection-->
+
+
+                                            <div class="panel panel-default">
+                                                <div class="box-header with-border">
+
+
+                                                    <h4 class="box-title">
+
+                                                        <a class="accordion-toggle btn btn-box-tool collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false">
+                                                            <i class="fa fa-plus"></i>
+                                                            Avis de convocation au tests de présélection
+                                                        </a>
+                                                    </h4>
+
+
+                                                    <div class="form-group has-error pull-right no-margin-bottom ">
+                                                        <label class="control-label" for="inputWarning"><i class="icon fa fa-exclamation-circle"></i>                                                                     Section obligatoire</label>
+
+                                                    </div>
+
+                                                </div>
+
+
+
+
+
+                                                <div id="collapseThree" class="panel-collapse collapse">
+
+
+                                                    <div class="box-body row">
+
+                                                        <div class="col-12">
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    Il nous fait plaisir de vous convoquer en tests de présélection pour le poste ci-haut mentionné.
+
+                                                                    <br><br>Voici les informations importantes pour ce rendez-vous :
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+
+                                                        <div class="col-md-6">
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    <b>Test de sélection : </b> (Nom(s) du ou des Tests de sélection)
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+
+
+                                                        <div class="col-md-6">
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    <b>Date :</b> (Date du test)
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    <b>Heure de début :</b> (Heure de début du test)
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    <b>Heure de fin :</b> (Heure de fin du test)
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    <b>Lieu :</b> (Nom de l’installation*entrée manuelle)<br>(Adresse de l’installation*entrée manuelle)
+
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    <b>Salle :</b> (Salle)
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+
+                                                        <div class="col-md-12">
+
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    <b>Note : </b>(Commentaire)
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <p class="text-primary-color">
+                                                                <small>
+                                                                    <i class="icon fa fa-info-circle alert-color" style="padding-right: 5px;"></i> Si vous avez des questions, veuillez communiquer avec notre service des ressources humaines au 514-511-5114 ou via l’adresse courriel <a style="color:#31b0d5;" href="mailto:someone@example.com?Subject=Hello%20again" target="_top"> recrutement@logibec.com</a>
+                                                                </small>
+
+                                                            </p>
+
+                                                        </div>
+
+                                                        <div class="col-12" style="border: 2px solid #00acf2; background-color: #00acf2;">
+                                                            <p class="" style="color: white;">
+                                                                Veuillez confirmer votre présence à ce rendez-vous, pour la date et l’heure ci-haut mentionnée, en cochant la case à cet effet.<br>
+                                                            </p>
+
+                                                            <div class="row">
+
+                                                                <div class="col-md-3">
+
+                                                                    <label class="checkbox" for="checkbox1" style="color: white;">
+                                                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" />
+                                                                        J’accepte l'avis de convocation
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="col-md-9">
+
+                                                                    <label class="checkbox" for="checkbox1" style="color: white;">
+                                                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" />
+                                                                        Je refuse l'avis de convocation
+                                                                    </label>
+                                                                    <i data-toggle="tooltip" class="icon fa fa-exclamation-circle ux-item-position" data-html="true" title="" data-original-title="Si refus, ---undisabled--- la boîte commentaire"></i>
+
+                                                                </div>
+
+                                                            </div>
+
+
+                                                            <div class="form-group">
+                                                                <label style="color: white;">Commentaires pour le spécialiste Gestion des talents : </label>
+                                                                <textarea class="form-control" rows="4" placeholder="" disabled></textarea>
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+
+
+                                                    <div class="box-footer">
+
+                                                        <div class="">
+
+                                                            <span class="">
+                                                                <button data-widget="collapse" class="btn btn-success btn-flat pull-right">Envoyer</button>
+                                                            </span>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <!--Suivi des plages horaire -->
+
+                                            <div class="panel panel-default">
+                                                <div class="box-header with-border">
+
+
+                                                    <h4 class="box-title">
+
+                                                        <a class="accordion-toggle btn btn-box-tool collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false">
+                                                            <i class="fa fa-plus"></i>
+                                                            Suivi des plages horaire
+                                                        </a>
+                                                    </h4>
+
+                                                </div>
+
+
+                                                <div id="collapseFour" class="panel-collapse collapse">
+
+
+                                                    <div class="box-body row">
+
+                                                        <div class="col-12" style="border: 2px solid #00acf2; background-color: #00acf2;">
+                                                            <p class="white-text">
+                                                                Veuillez confirmer votre acceptation de cette offre d’emploi ci-haut mentionnée, en cochant la case à cet effet.<br>
+                                                            </p>
+
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 ">
+                                                                    <p class="white-text" style="margin-bottom: 8px;">Option 1</p>
+                                                                    <label class="checkbox white-text" for="checkbox1">
+                                                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked="" />
+                                                                        hour/mm/dd/yyyy
+                                                                    </label>
+
+
+                                                                </div>
+
+
+                                                                <div class="col-md-4">
+                                                                    <p class="white-text" style="margin-bottom: 8px;">Option 2</p>
+                                                                    <label class="checkbox white-text" for="checkbox1">
+                                                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked="" />
+                                                                        hour/mm/dd/yyyy
+                                                                    </label>
+
+
+                                                                </div>
+
+                                                                <div class="col-md-4">
+                                                                    <p class="white-text" style="margin-bottom: 8px;">Option 3</p>
+
+                                                                    <label class="checkbox white-text" for="checkbox1">
+                                                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked="" />
+                                                                        hour/mm/dd/yyyy
+                                                                    </label>
+
+
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <hr>
+                                                                </div>
+
+                                                                <div class="col-12">
+
+                                                                    <label class="checkbox white-text" for="checkbox1">
+                                                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked="" />
+                                                                        je ne suis pas disponible aux dates proposées
+                                                                    </label>
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="box-footer">
+
+                                                        <div class="">
+
+
+                                                            <span class="">
+                                                                <button type="button" data-toggle="modal" data-target="#modal-danger-logout-fr-send" class="btn btn-success btn-flat pull-right">Envoyer</button>
+                                                            </span>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="modal modal-warning fade " id="modal-danger-logout-fr-send" style="display: none;">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+
+
+                                                                    <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+
+                                                                </div>
+
+
+                                                                <div class="modal-body">
+                                                                    <p>Vous envoyer les plages horaire où vous seriez disponible à rencontrer le recrutement.</p>
+                                                                    <p>Voulez-vous continuer?</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                                    <button type="button" data-widget="remove" onclick="window.location.href='applied-jobs-step-01-notification.html'" class="btn btn-success pull-right ">Oui</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+
+
+                                            <!--Avis de votre candidature-->
+
+                                            <div class="panel panel-default">
+                                                <div class="box-header with-border">
+
+
+                                                    <h4 class="box-title">
+
+                                                        <a class="accordion-toggle btn btn-box-tool collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false">
+                                                            <i class="fa fa-plus"></i>
+                                                            Suivi de votre candidature
+                                                        </a>
+                                                    </h4>
+
+                                                </div>
+
+
+                                                <div id="collapseFive" class="panel-collapse collapse">
+
+
+                                                    <div class="box-body row">
+
+                                                        <div class="col-12">
+                                                            <p class="text-primary-color">
+
+                                                                À la suite de votre mise en candidature pour le poste ci-haut mentionné, nous avons le regret de vous informer que suite à notre analyse, nous n’avons pas sélectionné votre candidature pour le poste convoité.
+                                                                <br><br>
+                                                                Nous vous remercions de l'intérêt manifesté envers notre établissement. N’hésitez pas à consulter nos autres offres d’emploi disponibles.
+                                                                <br><br>
+                                                                <i class="left">Service des Ressources humaines</i>
+
+
+
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="box-footer">
+
+                                                        <div class="">
+
+                                                            <span class="">
+                                                                <button data-widget="collapse" class="btn btn-success btn-flat pull-right">Fermer</button>
+                                                            </span>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!--JOB 02-->
+
+                            <div class="box box-default collapsed-box" style="margin-bottom: 0px;">
+                                <div class="box-header with-border">
+
+                                    <div class="box-tools pull-left">
+                                        <button type="button" class="btn btn-box-tool " data-widget="">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+
+
+                                        <h4 class="box-title ">
+                                            <b>Infirmier(e) clinicien(ne)</b> - No de requête: 00052422725
+                                        </h4>
+
+
+                                        <small class="label label-info" style=" margin-left: 20px;">
+                                            <i class="fa fa-calendar"></i> Postulé le 15-01-2018
+                                        </small>
+                                        <small class="label label-info" style=" margin-left: 20px;">
+                                            <i class="fa fa-institution"></i> CHSLD
+                                        </small>
+
+
+                                    </div>
+
+                                    <div class="box-tools pull-right">
+
+                                        <!--<button type="button" class="btn btn-box-tool btn-small-action " data-widget="collapse"><i class="fa fa-bell-o btn-flash"></i></button>-->
+
+                                        <button type="button" onclick="window.open('/recrutement/job-posting.html')" class="btn btn-box-tool btn-small-action" data-widget=""><i class="fa fa-eye text-info-color"></i></button>
+
+
+                                        <button type="button" class="btn btn-box-tool btn-small-action " data-toggle="modal"><i class="fa fa-trash-o text-danger-color"></i></button>
+
+
+                                    </div>
+
+                                    <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+
+
+                                                    <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+
+                                                </div>
+
+
+                                                <div class="modal-body">
+                                                    <p>Vous souhaitez retirer votre candidature pour ce poste spécifique!</p>
+                                                    <p>Voulez-vous continuer?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                    <button type="button" data-widget="remove" class="btn btn-success pull-right ">Oui</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+
+                                                <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Vous allez quitter l'application.</p>
+                                                <p>Voulez-vous continuer?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                <button type="button" class="btn btn-success pull-right ">Oui</button>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="box-body">
+
+
+                                    <div class="row" style="padding-bottom: 15px;">
+                                        <div class="col-12">
+
+                                            <p>Indiquez la ou les plages horaire où vous seriez disponible à rencontrer le recrutement.<span class="text-danger">*</span></p>
+
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 1</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 2</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 3</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+
+
+                                            <label class="checkbox " for="checkbox1">
+                                                <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                je ne suis pas disponible aux dates proposées
+                                            </label>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                    <div class="row">
+
+
+                                        <div class="col-12">
+                                            <ul class="todo-list ui-sortable">
+
+                                                <li>
+                                                    <span class="text">Option 1 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Option 2 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Option 3 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Je ne suis pas disponible aux dates proposées</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+
+
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-12" style="border: 2px solid #00acf2;">
+                                            <p class="text-primary-color">
+                                                Voici les examens sommaire à l'étude de votre candidature. <br><small>Les examens sont complétées selon les exigences de l'établissement<br></small>
+
+                                                <small class="label label-info text-no-bold ">
+                                                    <i class="fa fa-file-text"></i> WORD
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> Excel
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> EXPRESSO
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> E-clini-base
+                                                </small>
+
+                                            </p>
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="box-footer">
+
+                                    <div class="">
+                                        <!--<span class="">
+                                            <button type="submit" class="btn btn-success btn-flat pull-right">Précédent</button>
+                                        </span>-->
+                                        <span class="">
+                                            <button data-widget="collapse" class="btn btn-success btn-flat pull-right">Envoyer</button>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!--JOB 03-->
+
+                            <div class="box box-default collapsed-box" style="margin-bottom: 0px;">
+                                <div class="box-header with-border">
+
+                                    <div class="box-tools pull-left">
+                                        <button type="button" class="btn btn-box-tool " data-widget="">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+
+
+                                        <h4 class="box-title ">
+                                            <b>Infirmier(e) clinicien(ne)</b> - No de requête: 000052725
+                                        </h4>
+
+
+                                        <!--<small class="text-danger-color" style=" margin-left: 20px;">
+                                            <i class="fa fa-circle danger-color"></i> <span>Inactif</span>
+                                        </small>-->
+
+
+                                        <small class="label label-info" style=" margin-left: 20px;">
+                                            <i class="fa fa-calendar"></i> Postulé le 15-01-2018
+                                        </small>
+                                        <small class="label label-info" style=" margin-left: 20px;">
+                                            <i class="fa fa-institution"></i> CHSLD
+                                        </small>
+
+
+                                    </div>
+
+                                    <div class="box-tools pull-right">
+
+                                        <!--<button type="button" class="btn btn-box-tool btn-small-action " data-widget="collapse"><i class="fa fa-bell-o btn-flash"></i></button>-->
+
+                                        <button type="button" onclick="window.open('/recrutement/job-posting.html')" class="btn btn-box-tool btn-small-action" data-widget=""><i class="fa fa-eye text-info-color"></i></button>
+
+
+                                        <button type="button" class="btn btn-box-tool btn-small-action " data-toggle="modal"><i class="fa fa-trash-o text-danger-color"></i></button>
+
+
+                                    </div>
+
+                                    <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>-->
+
+                                                    <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+
+                                                </div>
+
+
+                                                <div class="modal-body">
+                                                    <p>Vous souhaitez retirer votre candidature pour ce poste spécifique!</p>
+                                                    <p>Voulez-vous continuer?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                    <button type="button" data-widget="remove" class="btn btn-success pull-right ">Oui</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+
+                                                <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Vous allez quitter l'application.</p>
+                                                <p>Voulez-vous continuer?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                <button type="button" class="btn btn-success pull-right ">Oui</button>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="box-body">
+
+
+                                    <div class="row" style="padding-bottom: 15px;">
+                                        <div class="col-12">
+
+                                            <p>Indiquez la ou les plages horaire où vous seriez disponible à rencontrer le recrutement.<span class="text-danger">*</span></p>
+
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 1</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 2</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 3</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+
+
+                                            <label class="checkbox " for="checkbox1">
+                                                <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                je ne suis pas disponible aux dates proposées
+                                            </label>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                    <div class="row">
+
+
+                                        <div class="col-12">
+                                            <ul class="todo-list ui-sortable">
+
+                                                <li>
+                                                    <span class="text">Option 1 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Option 2 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Option 3 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Je ne suis pas disponible aux dates proposées</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+
+
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-12" style="border: 2px solid #00acf2;">
+                                            <p class="text-primary-color">
+                                                Voici les examens sommaire à l'étude de votre candidature. <br><small>Les examens sont complétées selon les exigences de l'établissement<br></small>
+
+                                                <small class="label label-info text-no-bold ">
+                                                    <i class="fa fa-file-text"></i> WORD
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> Excel
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> EXPRESSO
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> E-clini-base
+                                                </small>
+
+                                            </p>
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="box-footer">
+
+                                    <div class="">
+                                        <!--<span class="">
+                                            <button type="submit" class="btn btn-success btn-flat pull-right">Précédent</button>
+                                        </span>-->
+                                        <span class="">
+                                            <button data-widget="collapse" class="btn btn-success btn-flat pull-right">Envoyer</button>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <!--JOB 04-->
+
+                            <div class="box box-default collapsed-box" style="margin-bottom: 0px;">
+                                <div class="box-header with-border">
+
+                                    <div class="box-tools pull-left">
+                                        <button type="button" class="btn btn-box-tool " data-widget="">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+
+
+                                        <h4 class="box-title ">
+                                            <b>Infirmier(e) clinicien(ne)</b> - No de requête: 000052725
+                                        </h4>
+
+
+                                        <!--<small class="text-danger-color" style=" margin-left: 20px;">
+                                            <i class="fa fa-circle danger-color"></i> <span>Inactif</span>
+                                        </small>-->
+
+
+                                        <small class="label label-info" style=" margin-left: 20px;">
+                                            <i class="fa fa-calendar"></i> Postulé le 15-01-2018
+                                        </small>
+                                        <small class="label label-info" style=" margin-left: 20px;">
+                                            <i class="fa fa-institution"></i> CHSLD
+                                        </small>
+
+
+                                    </div>
+
+                                    <div class="box-tools pull-right">
+
+                                        <!--<button type="button" class="btn btn-box-tool btn-small-action " data-widget="collapse"><i class="fa fa-bell-o btn-flash"></i></button>-->
+
+                                        <button type="button" onclick="window.open('/recrutement/job-posting.html')" class="btn btn-box-tool btn-small-action" data-widget=""><i class="fa fa-eye text-info-color"></i></button>
+
+
+                                        <button type="button" class="btn btn-box-tool btn-small-action " data-toggle="modal" data-target="#modal-danger-logout-fr"><i class="fa fa-trash-o text-danger-color"></i></button>
+
+
+                                    </div>
+
+                                    <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>-->
+
+                                                    <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+
+                                                </div>
+
+
+                                                <div class="modal-body">
+                                                    <p>Vous souhaitez retirer votre candidature pour ce poste spécifique!</p>
+                                                    <p>Voulez-vous continuer?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                    <button type="button" data-widget="remove" class="btn btn-success pull-right ">Oui</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+
+                                                <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Vous allez quitter l'application.</p>
+                                                <p>Voulez-vous continuer?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                <button type="button" class="btn btn-success pull-right ">Oui</button>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="box-body">
+
+
+                                    <div class="row" style="padding-bottom: 15px;">
+                                        <div class="col-12">
+
+                                            <p>Indiquez la ou les plages horaire où vous seriez disponible à rencontrer le recrutement.<span class="text-danger">*</span></p>
+
+                                        </div>
+
+
+                                        <!--<div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 1</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>-->
+
+
+                                        <div class="col-md-4">
+                                            <label>Option 1</label>
+                                            <label class="checkbox " for="checkbox1">
+                                                <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+
+                                            </label>
+
+                                        </div>
+
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 2</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 3</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+
+
+                                            <label class="checkbox " for="checkbox1">
+                                                <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                je ne suis pas disponible aux dates proposées
+                                            </label>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                    <div class="row">
+
+
+                                        <div class="col-12">
+                                            <ul class="todo-list ui-sortable">
+
+                                                <li>
+                                                    <span class="text">Option 1 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Option 2 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Option 3 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Je ne suis pas disponible aux dates proposées</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+
+
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-12" style="border: 2px solid #00acf2;">
+                                            <p class="text-primary-color">
+                                                Voici les examens sommaire à l'étude de votre candidature. <br><small>Les examens sont complétées selon les exigences de l'établissement<br></small>
+
+                                                <small class="label label-info text-no-bold ">
+                                                    <i class="fa fa-file-text"></i> WORD
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> Excel
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> EXPRESSO
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> E-clini-base
+                                                </small>
+
+                                            </p>
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="box-footer">
+
+                                    <div class="">
+                                        <!--<span class="">
+                                            <button type="submit" class="btn btn-success btn-flat pull-right">Précédent</button>
+                                        </span>-->
+                                        <span class="">
+                                            <button data-widget="collapse" class="btn btn-success btn-flat pull-right">Envoyer</button>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!--JOB 05-->
+
+                            <div class="box box-default collapsed-box" style="margin-bottom: 0px;">
+                                <div class="box-header with-border">
+
+                                    <div class="box-tools pull-left">
+                                        <button type="button" class="btn btn-box-tool " data-widget="">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+
+
+                                        <h4 class="box-title ">
+                                            <b>Infirmier(e) clinicien(ne)</b> - No de requête: 000052725
+                                        </h4>
+
+
+                                        <!--<small class="text-danger-color" style=" margin-left: 20px;">
+                                            <i class="fa fa-circle danger-color"></i> <span>Inactif</span>
+                                        </small>-->
+
+
+                                        <small class="label label-info" style=" margin-left: 20px;">
+                                            <i class="fa fa-calendar"></i> Postulé le 15-01-2018
+                                        </small>
+                                        <small class="label label-info" style=" margin-left: 20px;">
+                                            <i class="fa fa-institution"></i> CHSLD
+                                        </small>
+
+
+                                    </div>
+
+                                    <div class="box-tools pull-right">
+
+                                        <!--<button type="button" class="btn btn-box-tool btn-small-action " data-widget="collapse"><i class="fa fa-bell-o btn-flash"></i></button>-->
+
+                                        <button type="button" onclick="window.open('/recrutement/job-posting.html')" class="btn btn-box-tool btn-small-action" data-widget=""><i class="fa fa-eye text-info-color"></i></button>
+
+
+                                        <button type="button" class="btn btn-box-tool btn-small-action " data-toggle="modal" data-target=""><i class="fa fa-trash-o text-danger-color"></i></button>
+
+
+                                    </div>
+
+                                    <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>-->
+
+                                                    <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+
+                                                </div>
+
+
+                                                <div class="modal-body">
+                                                    <p>Vous souhaitez retirer votre candidature pour ce poste spécifique!</p>
+                                                    <p>Voulez-vous continuer?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                    <button type="button" data-widget="remove" class="btn btn-success pull-right ">Oui</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+
+                                                <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Vous allez quitter l'application.</p>
+                                                <p>Voulez-vous continuer?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                                <button type="button" class="btn btn-success pull-right ">Oui</button>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="box-body">
+
+
+                                    <div class="row" style="padding-bottom: 15px;">
+                                        <div class="col-12">
+
+                                            <p>Indiquez la ou les plages horaire où vous seriez disponible à rencontrer le recrutement.<span class="text-danger">*</span></p>
+
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 1</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 2</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Option 3</label>
+
+                                                <div class="input-group ">
+
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-info" style="font-size: 12px;">Sélectionner</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+
+
+                                            <label class="checkbox " for="checkbox1">
+                                                <span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                                je ne suis pas disponible aux dates proposées
+                                            </label>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                    <div class="row">
+
+
+                                        <div class="col-12">
+                                            <ul class="todo-list ui-sortable">
+
+                                                <li>
+                                                    <span class="text">Option 1 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Option 2 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Option 3 - mm/dd/yyyy</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <span class="text">Je ne suis pas disponible aux dates proposées</span>
+
+
+                                                    <div class="tools">
+
+                                                        <i class="fa fa-trash-o danger-color"></i>
+
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+
+
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-12" style="border: 2px solid #00acf2;">
+                                            <p class="text-primary-color">
+                                                Voici les examens sommaire à l'étude de votre candidature. <br><small>Les examens sont complétées selon les exigences de l'établissement<br></small>
+
+                                                <small class="label label-info text-no-bold ">
+                                                    <i class="fa fa-file-text"></i> WORD
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> Excel
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> EXPRESSO
+                                                </small>
+                                                <small class="label label-info" style=" margin-left: 20px;">
+                                                    <i class="fa fa-file-text"></i> E-clini-base
+                                                </small>
+
+                                            </p>
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="box-footer">
+
+                                    <div class="">
+                                        <!--<span class="">
+                                            <button type="submit" class="btn btn-success btn-flat pull-right">Précédent</button>
+                                        </span>-->
+                                        <span class="">
+                                            <button data-widget="collapse" class="btn btn-success btn-flat pull-right">Envoyer</button>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+                        <div class="clearfix"></div>
+
+                </div>
+
+                </form>
+            </div>
+        </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section></section>
+
+    <section id="footer" class="footer-menu bg-text">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li>ANALYTIQUE</li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-item">
+                                <h3>Legale</h3>
+                                <ul>
+                                    <li>COOKIES</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Alertes-Emploi!</h3>
+                        <p>
+                            Si vous désirez recevoir des informations actuelles sur les postes, inscrivez-vous à notre Alertes Emploi.
+                        </p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Entrez votre courriel">
+                            <input type="submit" class="form-control" value="c'est gratuit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer" id="copyright">
+
+
+
+        <small>Copyright © <a href="http://logibec.com" target="_blank">Logibec Canada</a> 2018. Tous droits réservés.</small>
+
+        <div class="">
+            <small>Version 1.0.1 BETA</small>
+        </div>
+
+    </footer>
+
+
+
+    <script src="../../js/jquery.js"></script>
+
+    <script src="../../js/jquery.easing.js"></script>
+
+    <script src="../../js/jquery.easing.compatibility.js"></script>
+
+    <script src="../../js/bootstrap.bundle.js"></script>
+
+    <script src="../../../dist/js/obs-raw.js"></script>
+
+
+
+    <script src="../../../components/checkbox/checkbox.js"></script>
+    <script src="../../../components/checkbox/radio.js"></script>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                e.stopPropagation();
+                $(".profile-info")
+                    // .slideDown(1000);
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                e.stopPropagation();
+                $(".account-creation")
+                    //.slideDown(1000);
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.collapse').on('shown.bs.collapse', function () {
+                $(this).parent().find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hidden.bs.collapse', function () {
+                $(this).parent().find(".fa-minus").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+</body>
+
+</html>

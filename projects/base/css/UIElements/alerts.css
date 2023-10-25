@@ -1,0 +1,193 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/*
+ * placeholder 
+ * 
+ */
+/*
+ * prefixs 
+ * 
+ */
+/*
+ * transition 
+ * 
+ */
+/*
+ * calc 
+ * 
+ */
+/*
+ * box-shadow 
+ * @include box-shadow(1px,1px,1px,0, #fff, true);
+ * 
+ */
+/*
+ * rotate 
+ * 
+ */
+/*
+ * scale 
+ * 
+ */
+/*
+ * translate 
+ * 
+ */
+/*
+ * skew 
+ * 
+ */
+/*
+ * flex 
+ * 
+ */
+/*
+ * absolute 
+ * 
+ */
+/*
+ * Alerts
+ * 
+ */
+.alert {
+  border: 2px solid;
+  border-radius: 3px;
+  position: relative;
+}
+
+.alert h4 {
+  font-weight: 600;
+}
+
+.alert .icon {
+  margin-right: 10px;
+}
+
+.alert .alert-icons {
+  font-size: 2em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.alert .close {
+  color: #000;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.alert .close:hover {
+  opacity: 0.15;
+  filter: alpha(opacity=50);
+}
+
+.alert a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.alert-success {
+  border-color: #00a59e;
+  color: #00a59e;
+  background-color: rgba(0, 165, 158, 0.15);
+}
+
+.alert-danger,
+.alert-error {
+  border-color: #d43f3a;
+  color: #d43f3a;
+  background-color: rgba(212, 63, 58, 0.15);
+}
+
+.alert-warning {
+  border-color: #ffc026;
+  color: #ffc026;
+  background-color: rgba(255, 192, 38, 0.15);
+}
+
+.alert-info {
+  border-color: #31b0d5;
+  color: #31b0d5;
+  background-color: rgba(49, 176, 213, 0.15);
+}
+
+.alert-default, .alert-primary {
+  border-color: #0083a5;
+  color: #0083a5;
+  background-color: rgba(0, 131, 165, 0.15);
+}
+
+.alert-secondary {
+  border-color: #73879c;
+  color: #73879c;
+  background-color: rgba(115, 135, 156, 0.15);
+}
+
+.alert-with-icon {
+  padding-left: 45px;
+}

@@ -1,0 +1,57 @@
+<div class="product-list-cart-layout full-height">
+  <div class="panel panel-compact full-height">
+    <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-suggested clearfix">
+      <div class="pull-left panel-heading-padded-container">
+        <span class="mdi mdi-cart mdi-22px"></span>
+        <span>{{ 'nProductsSelected' | translate:$ctrl.model.items.length }}</span>
+      </div>
+      <button class="btn sgui-btn-icon sgui-btn-primary-inverted-no-bg pull-right" title="{{ 'close' | translate }}" ng-click="$ctrl.onCloseCart($event)">
+        <i class="mdi mdi-close"></i>
+      </button>
+    </div>
+    <div class="panel-body panel-body-transparent panel-body-content">
+      <table id="product-list-cart-item-table" auto-adjust-header class="table table-fixed-header-scrollable-content grm-data-table">
+        <thead>
+        <tr>
+          <th class="action-header-cell"></th>
+          <th class="width-25">{{ 'products' | translate }}</th>
+          <th class="width-65">{{ 'description' | translate }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr
+          id="{{'item' + $index}}"
+          class="selectable"
+          ng-repeat="item in $ctrl.model.items"
+          ng-init="$ctrl.scrollToAndFocus($index, $last)"
+        >
+          <td class="action-button-cell">
+            <button class="btn cart-button" blur title="{{ 'removeThisProductFromSelection' | translate }}" ng-click="$ctrl.onRemoveItem($event, item);"></button>
+          </td>
+          <td class="width-25">{{ item.code }}</td>
+          <td class="width-65">{{ item.description }}</td>
+        </tr>
+        </tbody>
+        <tfoot ng-show="$ctrl.model.items.length > 0">
+        <tr>
+          <td colspan="3">
+            <button class="btn sgui-btn-suggested width-100" title="{{ ($ctrl.productCartStateModel.showAddToRequisition ? 'addToRequisition' : 'addToRequisitionTemplate') | translate }}" ng-click="$ctrl.onApplyCart($event)">
+              <i class="mdi mdi-check-all"></i>
+              <span ng-show="$ctrl.productCartStateModel.showAddToRequisition">{{ 'addToRequisition' | translate }}</span>
+              <span ng-show="$ctrl.productCartStateModel.showAddToRequisitionTemplate">{{ 'addToRequisitionTemplate' | translate }}</span>
+            </button>
+          </td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="panel-footer panel-footer-transparent panel-footer-no-border">
+      <button class="btn" ng-click="$ctrl.onDiscardCart($event)">
+        <span>{{ 'cancel' | translate }}</span>
+      </button>
+      <button class="btn" ng-click="$ctrl.onClearCart($event)">
+        <span>{{ 'clearCart' | translate }}</span>
+      </button>
+    </div>
+  </div>
+</div>

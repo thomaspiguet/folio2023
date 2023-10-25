@@ -1,0 +1,561 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.table p {
+  color: #2f3943;
+  line-height: 1;
+}
+
+.table > thead > tr > th {
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  vertical-align: bottom;
+  border-bottom: 2px solid #cfd8dc;
+}
+
+.table > thead > tr > td {
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-bottom: 1px solid #cfd8dc;
+  background-color: #fff !important;
+}
+
+.table > thead > tr > td.active {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > th.active {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > td.success {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > th.success {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > td.info {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > th.info {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > td.warning {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > th.warning {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > td.danger {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr > th.danger {
+  background-color: #f2f3f6;
+}
+
+.table > thead:first-child > tr:first-child > th {
+  border-top: 0;
+}
+
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+.table > thead > tr.active > td {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.active > th {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.success > td {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.success > th {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.info > td {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.info > th {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.warning > td {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.warning > th {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.danger > td {
+  background-color: #f2f3f6;
+}
+
+.table > thead > tr.danger > th {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > th {
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.table > tbody > tr > td {
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.table > tbody > tr > td.active {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > th.active {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > td.success {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > th.success {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > td.info {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > th.info {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > td.warning {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > th.warning {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > td.danger {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr > th.danger {
+  background-color: #f2f3f6;
+}
+
+.table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+.table > tbody > tr.active > td {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.active > th {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.success > td {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.success > th {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.info > td {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.info > th {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.warning > td {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.warning > th {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.danger > td {
+  background-color: #f2f3f6;
+}
+
+.table > tbody > tr.danger > th {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > th {
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.table > tfoot > tr > td.active {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > th.active {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > td.success {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > th.success {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > td.info {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > th.info {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > td.warning {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > th.warning {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > td.danger {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr > th.danger {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.active > td {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.active > th {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.success > td {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.success > th {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.info > td {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.info > th {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.warning > td {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.warning > th {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.danger > td {
+  background-color: #f2f3f6;
+}
+
+.table > tfoot > tr.danger > th {
+  background-color: #f2f3f6;
+}
+
+.table > caption + thead > tr:first-child > th {
+  border-top: 0;
+}
+
+.table > caption + thead > tr:first-child > td {
+  border-top: 0;
+}
+
+.table > colgroup + thead > tr:first-child > th {
+  border-top: 0;
+}
+
+.table > colgroup + thead > tr:first-child > td {
+  border-top: 0;
+}
+
+.table .table {
+  background-color: #f2f3f6;
+}
+
+.table-condensed > thead > tr > th {
+  padding: 5px;
+}
+
+.table-condensed > thead > tr > td {
+  padding: 5px;
+}
+
+.table-condensed > tbody > tr > th {
+  padding: 5px;
+}
+
+.table-condensed > tbody > tr > td {
+  padding: 5px;
+}
+
+.table-condensed > tfoot > tr > th {
+  padding: 5px;
+}
+
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+
+.table-bordered {
+  border: 1px solid #ddd;
+}
+
+.table-bordered > thead > tr > th {
+  border: 1px solid #ddd;
+  border-bottom-width: 2px;
+}
+
+.table-bordered > thead > tr > td {
+  border: 1px solid #ddd;
+  border-bottom-width: 2px;
+}
+
+.table-bordered > tbody > tr > th {
+  border: 1px solid #ddd;
+}
+
+.table-bordered > tbody > tr > td {
+  border: 1px solid #ddd;
+}
+
+.table-bordered > tfoot > tr > th {
+  border: 1px solid #ddd;
+}
+
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr:hover > .active {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr:hover > .success {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr:hover > .info {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr:hover > .warning {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr:hover > .danger {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > td.active:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > th.active:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > td.success:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > th.success:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > td.info:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > th.info:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > td.warning:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > th.warning:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > td.danger:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr > th.danger:hover {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.active:hover > td {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.active:hover > th {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.success:hover > td {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.success:hover > th {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.info:hover > td {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.info:hover > th {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.warning:hover > td {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.warning:hover > th {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.danger:hover > td {
+  background-color: #f2f3f6;
+}
+
+.table-hover > tbody > tr.danger:hover > th {
+  background-color: #f2f3f6;
+}
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}

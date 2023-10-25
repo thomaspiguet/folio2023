@@ -1,0 +1,50 @@
+<div class="panel panel-primary panel-compact full-height">
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'requisition' | translate }}</span>
+    </div>
+    <div class="pull-right panel-heading-padded-container">
+      <span><a class="sgui-color-primary-inverse" ui-sref=".requisition.update({ id: $ctrl.currentItem().requisitionId, iid: $ctrl.currentItem().id, statusGroup: undefined })" ng-click="$ctrl.onClose()">{{ $ctrl.currentItem().requisitionId }}</a></span>
+    </div>
+  </div>
+  <div class="panel-body panel-body-contrast panel-body-scroll-vertical-overflow">
+    <form ng-hide="!$ctrl.currentItem()">
+      <div class="form-group">
+        <label for="administrativeUnit">{{ 'administrativeUnit' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="administrativeUnit">{{$ctrl.currentItem().department.code + ' - ' + $ctrl.currentItem().department.description}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().deliveryLocation">
+        <label for="deliveryLocation">{{ 'shippingLocation' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="deliveryLocation">{{$ctrl.currentItem().deliveryLocation.code + ' - ' + $ctrl.currentItem().deliveryLocation.description}}</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="site">{{ 'site' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="site">{{$ctrl.currentItem().site.code + ' - ' + $ctrl.currentItem().site.description}}</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="requesterName">{{ 'requester' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="requesterName">{{$ctrl.currentItem().requester.code + ' - ' + $ctrl.currentItem().requester.description}}</span>
+        </div>
+        <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().requester.phoneExtension">
+          <span class="form-control-static" id="requesterPhone" >{{$ctrl.currentItem().requester.phoneExtension}}</span>
+        </div>
+        <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().requester.email">
+          <span class="form-control-static" id="requesterEmail" ng-if="$ctrl.currentItem().requester.email">{{$ctrl.currentItem().requester.email}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().client">
+        <label for="client">{{ 'client' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="client">{{$ctrl.currentItem().client.code + ' - ' + $ctrl.currentItem().client.description}}</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

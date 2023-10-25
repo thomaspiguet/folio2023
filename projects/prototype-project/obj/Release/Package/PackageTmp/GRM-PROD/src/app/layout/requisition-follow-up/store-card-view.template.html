@@ -1,0 +1,31 @@
+<div class="panel panel-primary panel-compact full-height">
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'store' | translate }}</span>
+    </div>
+  </div>
+  <div class="panel-body panel-body-contrast panel-body-scroll-vertical-overflow">
+    <form>
+      <div class="form-group" ng-if="$ctrl.currentItem().store">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="store">{{$ctrl.currentItem().store.code + ' - ' + $ctrl.currentItem().store.description}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().store.site">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="site">{{$ctrl.currentItem().store.site.code + ' - ' + $ctrl.currentItem().store.site.description}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().store.phone">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="phone">{{$ctrl.currentItem().store.phone + ' - ' + $ctrl.currentItem().store.extension}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().store.email">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="email">{{$ctrl.currentItem().store.email}}</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

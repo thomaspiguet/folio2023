@@ -1,0 +1,413 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/*---------------------------------------------
+    Progress Bars
+----------------------------------------------*/
+/*
+.progress {
+    background-color: $color-background;
+    background-image: none;
+    -webkit-box-shadow: inset 0 -1px 2px rgba(150, 150, 150, .1);
+    -moz-box-shadow: inset 0 -1px 2px rgba(150, 150, 150, .1);
+    box-shadow: inset 0 -1px 2px rgba(150, 150, 150, .1);
+    border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.progress.progress-xs {
+    height: 4px;
+}
+
+.progress.progress-sm {
+    height: 10px;
+}
+
+.progress.progress-md {
+    height: 25px;
+}
+
+.progress.progress-lg {
+    height: 35px;
+}
+
+.progress.progress-xlg {
+    height: 40px;
+}
+
+.progress-bar {
+    background-image: none;
+    font-size: 12px;
+    line-height: 20px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(100, 100, 100, .15);
+    -moz-box-shadow: inset 0 -1px 0 rgba(100, 100, 100, .15);
+    box-shadow: inset 0 -1px 0 rgba(100, 100, 100, .15);
+}
+
+.progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+
+.progress-md .progress-bar {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.progress-lg .progress-bar {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.progress-xlg .progress-bar {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.progress-bar-purple {
+    background-color: #673AB7;
+}
+
+.progress-bar-primary {
+    background-color: $color-success;
+}
+
+.progress-bar-info {
+    background-color: $color-info;
+}
+
+.progress-bar-warning {
+    background-color: $color-alert;
+}
+
+.progress-bar-danger {
+    background-color: $color-danger;
+}
+
+.progress-bar-accent {
+    background-color: #E91E63;
+}
+
+.progress-bar-secondary {
+    background-color: $color-text-secondary;
+}
+*/
+/*----------------------------------------*/
+/*  8. Analytics
+/*----------------------------------------*/
+.payment-inner-pro i {
+  color: #006DF0;
+}
+
+.income-rate-total h3 {
+  color: #303030;
+  font-size: 20px;
+}
+
+.income-rate-total {
+  position: relative;
+}
+
+.price-graph {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.income-range p {
+  font-size: 14px;
+  color: #303030;
+  margin: 0;
+  float: left;
+}
+
+.income-range .income-percentange {
+  font-size: 13px;
+  color: #fff;
+  float: right;
+  padding: 0px 8px;
+  border-radius: 2px;
+}
+
+.progress-bar-edu-wrap {
+  overflow: hidden;
+}
+
+.analytics-edu {
+  background: #fff;
+  overflow: hidden;
+}
+
+.analytics-edu .skill {
+  overflow: hidden;
+}
+
+.analytics-edu .progress {
+  margin-bottom: 0px;
+}
+
+.analytics-edu2 .skill .progress-bar {
+  background: #ffc026 !important;
+}
+
+.analytics-edu3 .skill .progress-bar {
+  background: #ffc026 !important;
+}
+
+.analytics-edu4 .skill .progress-bar {
+  background: #ffc026 !important;
+}
+
+.analytics-sparkle-line .analytics-content h5, .analytics-rounded .analytics-rounded-content h5, .analysis-progrebar .analysis-progrebar-content h5 {
+  font-size: 16px;
+  color: #303030;
+}
+
+.analytics-sparkle-line .analytics-content h2, .analytics-rounded .analytics-rounded-content h2, .analysis-progrebar .analysis-progrebar-content h2, .analytics-edu .skill .progress .lead-content h3 {
+  font-size: 20px;
+  color: #303030;
+}
+
+.analytics-edu .skill .progress .lead-content {
+  top: -55px;
+}
+
+.analysis-progrebar-content .small p {
+  font-size: 14px;
+  color: #303030;
+  margin: 0px;
+}
+
+.analysis-progrebar-content .progress {
+  height: 5px;
+  margin-bottom: 10px;
+}
+
+.ug-1 .progress-bar {
+  background: #006DF0;
+}
+
+.ug-2 .progress-bar {
+  background: #933EC5;
+}
+
+.ug-3 .progress-bar.progress-bar-danger {
+  background: #65b12d;
+}
+
+.ug-4 .progress-bar.progress-bar-danger {
+  background: #D80027;
+}
+
+.skill-content-3 {
+  overflow: hidden;
+}
+
+.skill .progress .lead-content {
+  left: 0;
+  position: absolute;
+  top: -50px;
+  z-index: 9;
+  width: 100%;
+}
+
+.skill .progress .lead-content-p {
+  top: -20px;
+}
+
+.skill .progress .lead-content h3 {
+  font-size: 20px;
+  margin: 0px 0px;
+}
+
+.skill .progress .lead-content h4 {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.skill .progress .lead-content p {
+  font-size: 14px;
+  margin: -5px 0px;
+}
+
+.skill .progress {
+  background-color: #f0f0f0;
+  border-radius: 0;
+  box-shadow: none;
+  height: 5px;
+  overflow: visible;
+  position: relative;
+  margin: 60px 0px;
+  margin-bottom: 0px;
+}
+
+.skill .progress.progress-bt {
+  margin-bottom: 0px;
+}
+
+.skill .progress-bar > span {
+  background: #333 none repeat scroll 0 0;
+  float: right;
+  font-size: 11px;
+  margin-right: 10px;
+  margin-top: -26px;
+  position: relative;
+  padding: 0 5px;
+  z-index: 9;
+}
+
+.skill .progress-bar > span:before,
+.skill .progress-bar > span:after {
+  border: medium solid transparent;
+  content: " ";
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+
+.skill .progress-bar > span:before {
+  border-top-color: #333;
+  border-width: 5px;
+  left: 50%;
+  margin-left: -5px;
+}
+
+.holax-shop h3,
+.we-are-good-at h3 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.progress-bar.progress-bar-success {
+  background: #006DF0;
+}
+
+.progress-bar.progress-bar-danger.ctn-vs-1 {
+  background: #006DF0;
+}
+
+.progress-bar.progress-bar-info.ctn-vs-2 {
+  background: #933EC5;
+}
+
+.progress-bar.progress-bar-success.ctn-vs-3 {
+  background: #65b12d;
+}
+
+.progress-bar.progress-bar-success.ctn-vs-4 {
+  background: #D80027;
+}
+
+.progress-bar.progress-bar-inverse.ctn-vs-5 {
+  background: #555;
+}
+
+.skill .progress:nth-child(1) .progress-bar {
+  background: #31b0d5;
+}
+
+.skill .progress:nth-child(2) .progress-bar {
+  background: #ffc026;
+}
+
+.skill .progress:nth-child(3) .progress-bar {
+  background: #0057ab;
+}
+
+.storage-right {
+  float: right;
+  margin-bottom: 0px;
+  margin-top: -25px;
+}
+
+.progress-fct-wrap-one-line .skill .progress .lead-content {
+  left: 0px;
+  position: absolute;
+  top: -50px;
+  z-index: 9;
+  width: 100%;
+}
+
+.progress-fct-wrap-one-line .skill .progress {
+  margin: 10px 84px 6px 0px;
+}
+
+.progress-fct-wrap-one-line .skill .progress .lead-content-p {
+  top: -1px;
+}
+
+.progress-fct-wrap-one-line .skill .progress .lead-content {
+  left: 50px;
+}

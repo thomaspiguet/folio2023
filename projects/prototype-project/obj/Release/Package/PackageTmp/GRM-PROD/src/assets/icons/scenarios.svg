@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>scenarios@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="13" height="15" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="scenarios">
+            <g id="Rectangle-5-Copy-34">
+                <use fill="#CCF3FB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#00778B" stroke-width="1" x="0.5" y="0.5" width="12" height="14" rx="2"></rect>
+            </g>
+            <path d="M4.35640281,10.9018324 C4.93882008,11.6283636 5.86441619,12.0980762 6.90671737,12.0980762 L6.90671737,12.0980762 C8.66925619,12.0980762 10.0980762,10.7549305 10.0980762,9.09807621 C10.0980762,7.44122196 8.66925619,6.09807621 6.90671737,6.09807621 C5.69312908,6.09807621 4.6377552,6.7348549 4.09807621,7.67236687" id="Oval-Copy" stroke="#00778B" transform="translate(7.098076, 9.098076) rotate(-330.000000) translate(-7.098076, -9.098076) "></path>
+            <path d="M13.2462007,2.5 L3.50834902,15.1592072 C3.58785068,15.9127869 4.22534986,16.5 5,16.5 L14,16.5 C14.8284271,16.5 15.5,15.8284271 15.5,15 L15.5,4 C15.5,3.17157288 14.8284271,2.5 14,2.5 L13.2462007,2.5 Z" id="Rectangle-5-Copy-32" stroke="#00778B"></path>
+            <path d="M3,3 L6,3" id="Path-8-Copy-10" stroke="#00778B"></path>
+            <polyline id="Path-9-Copy" stroke="#00778B" points="3 10 4.2 9 6 9.5"></polyline>
+            <polyline id="Path-10-Copy" stroke="#00778B" points="7 7 7 9 8 10"></polyline>
+        </g>
+    </g>
+</svg>

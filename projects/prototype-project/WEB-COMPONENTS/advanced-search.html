@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        <template-advanced-search>
+    -->
+    <meta charset="utf-8" />
+    <style>
+        .search-advanced {
+            display: block;
+            margin: 10px 0;
+            border: 1px solid #E2ECEF;
+            border-radius: 2px;
+            background-color: white;
+            padding: 6px 16px;
+        }
+
+        #advanced-search {
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <template id="template-component-template-id">
+        <div class="base-list__search-advanced" id="advanced-search" style="height: 0px; overflow: hidden;">
+            <div class="search-advanced" >
+                <div class="search-advanced__content">
+                    <div class="form__row form__row--single">
+                        <div class="form__column">
+                            <div class="dropdown__container">
+                                <div class="styled-dropdown">
+                                    <div class="styled-dropdown__title">
+                                        <span>Unité administrative :</span>
+                                    </div>
+                                    <div class="styled-dropdown__input">
+                                        <div class="styled-dropdown__input-with-tags">
+                                            <input type="text" class="styled-dropdown__hidden-input styled-dropdown__hidden-input--no-selection" placeholder="Sélectionner une unité administrative..." minlength="0" size="1" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <div class="dropdown__container">
+                                <div class="styled-dropdown">
+                                    <div class="styled-dropdown__title">
+                                        <span>Titre d'emploi :</span>
+                                    </div>
+                                    <div class="styled-dropdown__input">
+                                        <div class="styled-dropdown__input-with-tags">
+                                            <input type="text" class="styled-dropdown__hidden-input styled-dropdown__hidden-input--no-selection" placeholder="Sélectionner le titre d'emploi..." minlength="0" size="1" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <div class="dropdown__container">
+                                <div class="styled-dropdown">
+                                    <div class="styled-dropdown__title">
+                                        <span>Groupe de titres d’emploi :</span>
+                                    </div>
+                                    <div class="styled-dropdown__input">
+                                        <div class="styled-dropdown__input-with-tags">
+                                            <input type="text" class="styled-dropdown__hidden-input styled-dropdown__hidden-input--no-selection" placeholder="Sélectionner le groupe de titres..." minlength="0" size="1" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <div class="dropdown__container">
+                                <div class="styled-dropdown">
+                                    <div class="styled-dropdown__title">
+                                        <span>Statut d'emploi :</span>
+                                    </div>
+                                    <div class="styled-dropdown__input">
+                                        <div class="styled-dropdown__input-with-tags">
+                                            <input type="text" class="styled-dropdown__hidden-input styled-dropdown__hidden-input--no-selection" placeholder="Sélectionner le statut d'emploi..." minlength="0" size="1" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row form__row--single">
+                        <div class="form__column form__column--column2">
+                            <div class="dropdown__container">
+                                <div class="styled-dropdown">
+                                    <div class="styled-dropdown__title">
+                                        <span>Type d'emploi:</span>
+                                    </div>
+                                    <div class="styled-dropdown__input">
+                                        <div class="styled-dropdown__input-with-tags">
+                                            <input type="text" class="styled-dropdown__hidden-input styled-dropdown__hidden-input--no-selection" placeholder="Sélectionner le type d'emploi..." minlength="0" size="1" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__column form__column--column2">
+                            <div class="field field--edit">
+                                <div class="field__label">Description :</div>
+                                <div class="field__input field__input--edit">
+                                    <input type="text" placeholder="Tapez la description ici..." value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__actions">
+                    <div class="form__footer-actions">
+                        <div class="form__action form__action--clear" tabindex="0">
+                            <span>VIDER</span>
+                        </div>
+                        <div class="form__action form__action--search" tabindex="0">
+                            <span>RECHERCHER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script>
+        'use strict';
+        templateComponents.define('template-advanced-search', { templateId: 'template-component-template-id' });
+    </script>
+</body>
+</html>

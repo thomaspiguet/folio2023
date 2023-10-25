@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      <template-component-modals>
+    -->
+</head>
+<body>
+
+    <template id="template-component-template-id">
+        <div class="content">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box box-default">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Modals -  Messages Français </h3>
+                        </div>
+
+                        <div class="box-header with-border">
+                            <p><b>Stade:</b> utilisateur quitte l’application à l’aide du «Logout»</p>
+
+                            <div class="box-body">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger-logout-fr">
+                                    Déconnexion
+                                </button>
+                            </div>
+
+                            <div class="modal modal-danger fade " id="modal-danger-logout-fr" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+
+                                            <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Vous allez quitter l'application.</p>
+                                            <p>Voulez-vous continuer?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                            <button type="button" class="btn btn-success pull-right ">Oui</button>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="box-header with-border">
+                            <p class=""><b>Stade:</b> utilisateur tente de quitter l’écran sans avoir sauvegardé</p>
+
+                            <div class="box-body">
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-warning-saving-fr">
+                                    Modifications
+                                </button>
+                            </div>
+
+                            <div class="modal modal-warning fade " id="modal-warning-saving-fr" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+
+                                            <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Avertissement!</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Vous n'avez pas sauvegardé les modifications apportées.</p>
+                                            <p>Vous allez perdre les modifications.</p>
+                                            <p>Voulez-vous continuer?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                                            <button type="button" class="btn btn-success pull-right ">Oui</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box box-default">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Modals -  Messages English </h3>
+                        </div>
+
+                        <div class="box-header with-border">
+                            <p><b>State:</b> user is trying to quit the application «Logout»</p>
+
+                            <div class="box-body">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger-logout-en">
+                                    Logout
+                                </button>
+                            </div>
+
+                            <div class="modal modal-danger fade " id="modal-danger-logout-en" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+
+                                            <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Warning!</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>You're quitting the application!</p>
+                                            <p>Do you want to quit the application?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                                            <button type="button" class="btn btn-success pull-right ">Yes</button>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="box-header with-border">
+                            <p class=""><b>State:</b> prompting a user to save changes </p>
+
+                            <div class="box-body">
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-warning-saving-en">
+                                    Unsaved changes
+                                </button>
+                            </div>
+
+                            <div class="modal modal-warning fade " id="modal-warning-saving-en" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+
+                                            <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Warning!</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>You have unsaved changes that will be lost if you decide to continue.</p>
+                                            <p>Do you want to continue?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                                            <button type="button" class="btn btn-success pull-right ">Yes</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div> 
+
+        <!--<div class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box box-default">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Modal Messages English IN WORKING PROGRESS</h3>
+                            </div>
+                            <div class="box-body">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                                    Launch Default Modal
+                                </button>
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
+                                    Launch Info Modal
+                                </button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger">
+                                    Launch Danger Modal
+                                </button>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-warning">
+                                    Launch Warning Modal
+                                </button>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                                    Launch Success Modal
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="modal-default">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title">Default Modal</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body…</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal modal-primary fade" id="modal-primary">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title">Primary Modal</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body…</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline">Save changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal modal-info fade" id="modal-info" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title">Info Modal</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body…</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline">Save changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal modal-warning fade" id="modal-warning">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title">Warning Modal</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body…</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline">Save changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal modal-success fade" id="modal-success">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title">Success Modal</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body…</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline">Save changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal modal-danger fade" id="modal-danger" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title">Danger Modal</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body…</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline">Save changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+        </div>-->
+
+
+    </template>
+
+
+
+    <script>
+        'use strict';
+
+        templateComponents.define('template-component-modals', { templateId: 'template-component-template-id' });
+    </script>
+
+</body>
+</html>

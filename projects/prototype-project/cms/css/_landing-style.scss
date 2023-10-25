@@ -1,0 +1,527 @@
+/* -admin style- */
+body {
+    #sfPageContainer{
+        .sfPublicWrapper{
+            a, p {
+                font-size: 14px;
+            }
+            max-width: initial;
+            margin: 20px auto;
+            padding: 30px;
+            width: 920px;
+            background-color: #ffffff;
+            .header + div{
+                margin-top: 0px;
+            }
+            .header {
+                padding: 0px;
+                .l-container{
+                    .sfContentBlock{
+                        >a{
+                            img{
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .fixed-top {
+                position: relative;
+            }
+            .content-main{
+                padding: 0;
+                background-color: #f2f3f6;
+                margin-left: 0px;
+                margin-right: 0px;
+                width: auto;
+            }
+        }
+    }
+}
+/* -frontend style- */
+body {
+    .sfPublicWrapper {
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #2f3943;
+            font-weight: 500;
+            line-height: 1;
+            font-style: normal;
+        }
+
+        a, p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #73879c;
+            line-height: 20px;
+            -webkit-transition: color 150ms ease-in-out 0s;
+            transition: color 150ms ease-in-out 0s;
+        }
+
+        a:hover {
+            color: #00c0f2;
+        }
+
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+        width: auto;
+
+        .header {
+            padding: 10px 0px;
+            background-color: rgba(248, 249, 250, 0.85);
+
+            .l-container {
+                .header-r {
+                    .brand-doc {
+                        > a {
+                            display: block;
+
+                            img {
+                                max-width: 300px;
+                            }
+                        }
+                    }
+                }
+
+                .header-l-search {
+                    .sfsearchBox {
+                        > span {
+                            border-width: 0px;
+                            position: relative;
+                            width: 70%;
+                            float: right;
+
+                            &:after {
+                                content: "\e13e";
+                                right: 0px;
+                                bottom: 0px;
+                                position: absolute;
+                                display: block;
+                                top: 0px;
+                                padding: 7px;
+                                width: 30px;
+                                background-image: none;
+                                font: 16px/1 WebComponentsIcons;
+                                font-variant: normal;
+                                text-transform: none;
+                                text-indent: 0;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                text-align: center;
+                                font-size: 20px;
+                                background-color: rgb(49, 176, 213);
+                                cursor: pointer;
+                                color: #ffffff;
+                                -webkit-transition: background-color 150ms ease-in-out 0s;
+                                transition: background-color 150ms ease-in-out 0s;
+                            }
+
+                            .sfsearchTxt {
+                                display: block;
+                                width: 65%;
+                                height: 34px;
+                                float: right;
+                                padding: 6px 12px;
+                                font-size: 14px;
+                                line-height: 1.42857143;
+                                color: #555;
+                                background-color: #fff;
+                                background-image: none;
+                                border: 1px solid #ccc;
+                                border-radius: 0px;
+                                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                                -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+                                -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                                transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+                                .sfsearchTxt.k-input:focus {
+                                    transition: border-color ease-in-out .15s;
+                                    border-color: rgb(49, 176, 213) !important;
+                                }
+                            }
+                        }
+
+                        > span.k-state-hover {
+                            &:after {
+                                background-color: #00acf2;
+                            }
+                        }
+
+                        .sfsearchSubmit {
+                            visibility: hidden;
+                            position: absolute;
+                            top: -32768px;
+                            left: -32768px;
+                        }
+                    }
+                }
+
+                .header-l-lang, .header-l-user {
+                    padding-top: 6px;
+
+                    .l-lang, .l-user {
+                        > a {
+                            text-transform: uppercase;
+                            color: #2f3943;
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            cursor: pointer;
+                            line-height: 1.5;
+
+                            &:hover {
+                                color: #00c0f2;
+                            }
+                        }
+
+                        .nav-link-user {
+                            position: relative;
+
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 42%;
+                                left: 100%;
+                                display: block;
+                                height: 0;
+                                margin-left: 0.255em;
+                                border-top: 0.3em solid;
+                                border-right: 0.3em solid transparent;
+                                border-bottom: 0;
+                                border-left: 0.3em solid transparent;
+                            }
+                        }
+                    }
+
+                    .l-lang {
+                        text-align: right;
+                        margin-right: 20px;
+                    }
+
+                    .l-user {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        /*.header + div {
+            margin-top: 58px;
+        }*/
+        .l-banner {
+            position: relative;
+            /*padding-bottom: 15%;*/
+            padding-bottom: 30%;
+            /*background-image: url('/images/default-source/default-album/example_doc.jpg');*/
+            background-image: url('/images/default-source/default-album/slide_solutions_patients-1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: top center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+
+            &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                /*background-color: #73879c;*/
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0.75;
+            }
+
+            .title-banner {
+                display: block;
+                text-align: left;
+                top: 50%;
+                left: 25%;
+                position: absolute;
+                /*-webkit-transform: translate(-50%, -50%);*/
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                color: #2f3943;
+
+                h1 {
+                    /*color: #ffffff;*/
+                    /*text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+                    font-size: 28px;
+                    margin-bottom: 5px;
+                    color: #2f3943;
+                }
+
+                p {
+                    /*color: #ffffff;
+                    text-shadow: 0 0 10px rgba(0,0,0,0.4);*/
+                    color: #2f3943;
+                }
+            }
+        }
+
+        .content-main-wrapper {
+            background-color: #f2f3f6;
+            // padding: 60px 0px;
+            .items-doc-wrapper {
+                padding: 60px 0px;
+
+                .items-doc-list {
+                    .sfexpandedListWrp {
+                        .sflistTitle {
+                            display: none;
+                        }
+
+                        .sflistList.sflist {
+                            display: table;
+                            margin: 0 auto;
+                            max-width: 991px;
+                            width: 100%;
+
+                            .sflistListItem.sflistitem {
+                                position: relative;
+                                padding: 8px 0%;
+                                display: inline-block;
+                                vertical-align: top;
+                                width: 33.33%;
+
+                                .sflistItemTitle.sftitle {
+                                    display: none;
+                                }
+
+                                .sflistItemContent.sfcontent {
+                                    position: relative;
+                                    padding: 10px 0px;
+                                    margin: 10px;
+                                    border: 1px solid #e5e5e5;
+                                    -webkit-transition: border-color 150ms ease-in-out 0s;
+                                    transition: border-color 150ms ease-in-out 0s;
+
+                                    &:hover {
+                                        border: 1px solid #00c0f2;
+                                    }
+
+                                    img {
+                                        height: 90px;
+                                        padding-left: 10px;
+                                    }
+
+                                    > a {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        padding-left: 115px;
+                                        padding-top: 14%;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-main {
+                display: table;
+                padding: 0px 15px;
+
+                .sidebar-wrap-l {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 60px 0px;
+                    position: relative;
+                    float: none;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 20px;
+                        bottom: 20px;
+                        right: 0px;
+                        width: 1px;
+                        background-color: #73879c;
+                        opacity: 0.5;
+                    }
+
+                    .sidebar-l {
+                        padding: 25px 0px;
+
+                        .k-treeview {
+                            display: table;
+                            white-space: normal;
+
+                            .k-i-collapse, .k-i-expand {
+                                &:before {
+                                    content: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content-wrap {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 60px 0px;
+                    float: none;
+
+                    .news-l {
+                        padding-top: 25px;
+
+                        .sfnewsList {
+                            .sfnewsListItem.sflistitem {
+                                padding-bottom: 30px;
+
+                                .sfnewsTitle.sftitle {
+                                    > a {
+                                        font-size: 22px;
+                                        color: #2f3943;
+                                        font-weight: 500;
+                                        line-height: 1;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            background-color: #ffffff;
+            padding: 25px 0px;
+            border-top: 1px solid #d2d6de;
+            vertical-align: bottom;
+            bottom: 0%;
+            position: absolute;
+
+            .footer-content {
+                p, a {
+                    color: #2f3943;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/*-custom-*/
+.l-container {
+    max-width: 1480px;
+}
+
+
+/* -bootstrap.css --- temporarily- */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOR THE DOCUMENTS LIST  TOM*/
+
+
+.documents-management {
+    font-size: 14px;
+    /*height: 30px;*/
+    thead {
+        font-weight: bold;
+    }
+
+    tr {
+
+
+        td {
+            font-weight: normal;
+            padding: 14px 15px;
+
+            a {
+                display: inline-block;
+                font-weight: 400;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                padding: 1px 8px;
+            }
+        }
+
+        td:last-child {
+            a {
+                background-color: #00bfb6 !important;
+                color: #fff;
+                display: inline-block;
+                font-weight: 400;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                padding: 4px 8px;
+            }
+        }
+    }
+}
+
+
+/*FOR THE DOCUMENTS LIST END*/

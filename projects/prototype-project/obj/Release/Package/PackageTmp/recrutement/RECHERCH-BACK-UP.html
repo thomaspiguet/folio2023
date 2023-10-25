@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Applied jobs</title>
+
+
+    <link href="css/bootstrap-grid.css" rel="stylesheet" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+    <link href="css/jquery.dataTables.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+    <link href="css/_recrutement-style.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_collapse.css" rel="stylesheet" />
+
+
+    <script>
+
+        $(function () {
+
+            causeRepaintsOn = $("h1, h2, h3, p");
+
+            $(window).resize(function () {
+                causeRepaintsOn.css("z-index", 1);
+            });
+
+        });
+    </script>
+
+</head>
+
+
+
+
+<body class="internal_pages" id="page-top">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="navbar-brand js-scroll-trigger">
+            <a href="index.html">
+                <img src="img/BRAND-EMPLOI-SANTE.svg" />
+            </a>
+        </div>
+
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">VOTRE COMPTE</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                </li>-->
+                <!--<li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="jobs-listing.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#language">ENGLISH</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Header -->
+    <header class="banner second_banner">
+
+        <div class="container">
+
+            <div class="intro-text second_banner-text">
+
+                <h1 class="intro-heading-second-banner">Emploi postulé</h1>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+    <section class="bg-white ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="box box-default collapsed-box ">
+                        <div class="box-header with-border">
+
+                            <div class="box-tools pull-left">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                                <h4 class="box-title">Recherche avancée</h4>
+                            </div>
+
+                        </div>
+
+
+                        <div class="box-body">
+
+
+
+                            <table cellpadding="3" cellspacing="0" border="0">
+
+                                <thead>
+                                    <tr></tr>
+                                </thead>
+
+                                <tbody class="float-left">
+                                    <tr id="filter_global">
+                                        <td>Recherche globale:<span class="danger-color">*</span> </td>
+                                        <td align="center"><input type="text" class="global_filter" id="global_filter"></td>
+
+                                    </tr>
+                                    <tr id="filter_col1" data-column="0">
+                                        <td>Étiquette:</td>
+                                        <td align="center"><input type="text" class="column_filter" id="col0_filter"></td>
+
+                                    </tr>
+                                    <tr id="filter_col2" data-column="1">
+                                        <td>Titre de l'emploi:</td>
+                                        <td align="center"><input type="text" class="column_filter" id="col1_filter"></td>
+
+                                    </tr>
+
+
+                                <tbody class="float-right">
+
+
+
+                                    <tr id="filter_co7" data-column="6">
+                                        <td>Emplacement:</td>
+                                        <td align="center"><input type="text" class="column_filter" id="col6_filter"></td>
+
+                                    </tr>
+                                    <tr id="filter_co8" data-column="7">
+                                        <td>Date d'affichage:</td>
+                                        <td align="center"><input type="text" class="column_filter" id="col7_filter"></td>
+                                    </tr>
+
+                                </tbody>
+
+
+
+
+
+                                <tbody class="float-right">
+
+
+                                    <tr id="filter_col3" data-column="2">
+                                        <td>No de requête:</td>
+                                        <td align="center"><input type="text" class="column_filter" id="col2_filter"></td>
+
+                                    </tr>
+
+
+                                    <tr id="filter_col4" data-column="3">
+                                        <td>Catégorie:</td>
+                                        <td align="center"><input type="text" class="column_filter" id="col3_filter"></td>
+
+                                    </tr>
+
+
+
+                                </tbody>
+
+
+                            </table>
+
+
+                        </div>
+
+                        <div class="box-footer">
+                            <form action="#" method="post">
+                                <div class="">
+
+                                    <span class="">
+                                        <button type="submit" class="btn btn-success btn-flat pull-right">Lancer la recherche</button>
+                                    </span>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                    <!--<table cellpadding="3" cellspacing="0" border="0" style="width: 67%; margin: 0 auto 2em auto;">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+
+                        <tbody class="float-left">
+                            <tr id="filter_global">
+                                <td>Recherche globale:* </td>
+                                <td align="center"><input type="text" class="global_filter" id="global_filter"></td>
+
+                            </tr>
+                            <tr id="filter_col1" data-column="0">
+                                <td>Étiquette:</td>
+                                <td align="center"><input type="text" class="column_filter" id="col0_filter"></td>
+
+                            </tr>
+                            <tr id="filter_col2" data-column="1">
+                                <td>Titre de l'emploi:</td>
+                                <td align="center"><input type="text" class="column_filter" id="col1_filter"></td>
+
+                            </tr>
+                            <tr id="filter_col3" data-column="2">
+                                <td>No de requête:</td>
+                                <td align="center"><input type="text" class="column_filter" id="col2_filter"></td>
+
+                            </tr>
+                            <tr id="filter_col4" data-column="3">
+                                <td>Catégorie:</td>
+                                <td align="center"><input type="text" class="column_filter" id="col3_filter"></td>
+
+                            </tr>
+                            <tr id="filter_col5" data-column="4">
+                                <td>Statut:</td>
+                                <td align="center"><input type="text" class="column_filter" id="col4_filter"></td>
+
+                            </tr>
+                        </tbody>
+
+
+                        <tbody class="float-right">
+
+                            <tr id="filter_col6" data-column="5">
+                                <td>Établissement</td>
+                                <td align="center"><input type="text" class="column_filter" id="col5_filter"></td>
+                            </tr>
+                            <tr id="filter_co7" data-column="6">
+                                <td>Emplacement:</td>
+                                <td align="center"><input type="text" class="column_filter" id="col6_filter"></td>
+
+                            </tr>
+                            <tr id="filter_co8" data-column="7">
+                                <td>Date d'affichage:</td>
+                                <td align="center"><input type="text" class="column_filter" id="col7_filter"></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>-->
+
+
+
+                    <table id="example" class="display table  " cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Date d'application</th>
+                                <th>Titre de l'emploi</th>
+                                <th>No de requête</th>
+                                <th>Catégorie</th>
+                                <th>Statut de la candidature</th>
+                                <th>Établissement </th>
+                                <th>Emplacement</th>
+                                <th>Notification</th>
+                                <th>Désistement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><small class="label pull-right bg-green">Nouveau</small></td>
+                                <td>Infirmier(e) clinicien(ne)</td>
+                                <td>00696</td>
+                                <td>Soins infirmiers</td>
+                                <td>Temps plein-Permanent</td>
+                                <td><img class="logo-establishment" src="img/logo01.png" /></td>
+                                <td>Montréal</td>
+                                <td>23-10-2017</td>
+                            </tr>
+                            <tr>
+                                <td><small class="label pull-right bg-red-active">Urgent</small></td>
+                                <td>Brancardier</td>
+                                <td>00696</td>
+                                <td>Soins infirmiers</td>
+                                <td>Temps plein-Permanent</td>
+                                <td><img class="logo-establishment" src="img/logo01.png" /></td>
+                                <td>Laval</td>
+                                <td>23-10-2016</td>
+                            </tr>
+
+                            <tr>
+                                <td><small class="label pull-right bg-red-active">Urgent</small></td>
+                                <td>Brancardier</td>
+                                <td>00696</td>
+                                <td>Soins infirmiers</td>
+                                <td>Temps plein-Permanent</td>
+                                <td><img class="logo-establishment" src="img/logo01.png" /></td>
+                                <td>Laval</td>
+                                <td>23-10-2016</td>
+                            </tr>
+
+                            <tr>
+                                <td><small class="label pull-right bg-red-active">Urgent</small></td>
+                                <td>Brancardier</td>
+                                <td>00696</td>
+                                <td>Soins infirmiers</td>
+                                <td>Temps plein-Permanent</td>
+                                <td><img class="logo-establishment" src="img/logo02.png" /></td>
+                                <td>Laval</td>
+                                <td>23-10-2016</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section></section>
+
+    <section id="footer" class="footer-menu bg-text">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li>ANALYTIQUE</li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-item">
+                                <h3>Legale</h3>
+                                <ul>
+                                    <li>COOKIES</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Alertes-Emploi!</h3>
+                        <p>
+                            Si vous désirez recevoir des informations actuelles sur les postes, inscrivez-vous à notre Alertes Emploi.
+                        </p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Entrez votre courriel">
+                            <input type="submit" class="form-control" value="c'est gratuit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer" id="copyright">
+
+
+
+        <small>Copyright © <a href="http://logibec.com" target="_blank">Logibec Canada</a> 2018. Tous droits réservés.</small>
+
+        <div class="">
+            <small>Version 1.0.1 BETA</small>
+        </div>
+
+    </footer>
+
+
+    <script src="js/jquery.js"></script>
+
+    <!--<script src="../components/jquery/dist/jquery.min.js"></script>-->
+
+
+    <script src="js/jquery.easing.js"></script>
+
+    <script src="js/jquery.easing.compatibility.js"></script>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script src="../dist/js/obs-raw.js"></script>
+
+    <script src="js/dataTables.bootstrap4.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+
+    <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <!--<script src="../dist/js/demo.js"></script>-->
+
+
+
+
+
+    <script>
+
+        $('#example').DataTable({
+            'paging': true,
+            'lengthChange': false,
+            'searching': true,
+            'ordering': true,
+            'info': false,
+            'autoWidth': true,
+            //'scrollY': '500vh',
+            //'scrollY': 500,
+            'scrollX': true
+            //'scrollCollapse': true,
+            //'lengthMenu': [20, 75, 90]
+        });
+
+        function filterGlobal() {
+            $('#example').DataTable().search(
+                $('#global_filter').val(),
+                $('#global_regex').prop('checked'),
+                $('#global_smart').prop('checked')
+            ).draw();
+        }
+
+        function filterColumn(i) {
+            $('#example').DataTable().column(i).search(
+                $('#col' + i + '_filter').val(),
+                $('#col' + i + '_regex').prop('checked'),
+                $('#col' + i + '_smart').prop('checked')
+            ).draw();
+        }
+
+        $(document).ready(function () {
+            $('#example').DataTable();
+
+            $('input.global_filter').on('keyup click', function () {
+                filterGlobal();
+            });
+
+            $('input.column_filter').on('keyup click', function () {
+                filterColumn($(this).parents('tr').attr('data-column'));
+            });
+        });
+    </script>
+
+</body>
+
+
+
+
+
+</html>

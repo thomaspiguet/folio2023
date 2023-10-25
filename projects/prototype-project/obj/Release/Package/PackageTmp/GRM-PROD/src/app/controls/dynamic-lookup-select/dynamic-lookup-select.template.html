@@ -1,0 +1,18 @@
+<md-input-container class="full-width">
+  <md-select class="md-no-underline"
+             md-container-class="custom-select-list"
+             id="{{$ctrl.selectId}}"
+             name="{{$ctrl.selectName}}"
+             aria-label=" "
+             multiple="$ctrl.multiple"
+             ng-disabled="$ctrl.disabled"
+             ng-required="$ctrl.required"
+             ng-model="$ctrl.model"
+             ng-change="$ctrl.updateModel()"
+             md-container-class="custom-select-list">
+    <md-option ng-value="lookup.code" ng-repeat="lookup in $ctrl.collection">
+      {{ $ctrl.getLookupLocalizedDescription(lookup.code) }}
+    </md-option>
+  </md-select>
+</md-input-container>
+

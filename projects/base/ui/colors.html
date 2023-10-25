@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Logibec | MVC - UIKit | BasicFormV1</title>
+    <meta name="author" content="Logibec">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Basic Styles -->
+
+
+
+
+
+    <!-- libs -->
+    <link rel="stylesheet" type="text/css" href="../css/base/boostrap.css">
+    <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" /> -->
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="../fonts/roboto/roboto.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/material-icons/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/simple-line-icons/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/medicine-and-health/font/flaticon.css">
+
+    <!-- Styles - base -->
+    <link rel="stylesheet" type="text/css" href="../css/base/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/colors.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/grid-system.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/mixins.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/transition.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/utility.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/variables.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/table.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/cursor.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/documentation.css">
+    <link href="../css/UIElements/list.css" rel="stylesheet">
+    <link href="../css/Widgets/widgets.css" rel="stylesheet">
+
+    <!-- Styles - components -->
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/progressbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/checkbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/inputs.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/inputV1.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/selectV1.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/tagsinput.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/button.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/alerts.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/tabs.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/treeview.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/badge.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/flowchart.css">
+
+    <!-- Styles - containers -->
+    <link rel="stylesheet" type="text/css" href="../css/Forms/wizard.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/Footer/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/Header/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/Sidebar/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/SidebarAppSwitch/SidebarAppSwitch.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/WidgetPanelActions/widgetpanelactions.css">
+
+    <!-- Styles - layouts -->
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Layouts/layout.css">
+
+
+
+
+    <!-- Custom Styles -->
+    
+    
+    
+        <link href="../css/Forms/checkboxV1.css" rel="stylesheet" type="text/css" media="screen">
+    
+
+
+    <!-- Overrides Styles -->
+
+
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="../css/base/boostrap.css">
+    <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" /> -->
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="../fonts/roboto/roboto.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/material-icons/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/simple-line-icons/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/medicine-and-health/font/flaticon.css">
+
+    <!-- Styles - base -->
+    <link rel="stylesheet" type="text/css" href="../css/base/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/colors.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/grid-system.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/mixins.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/transition.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/utility.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/variables.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/table.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/cursor.css">
+    <link rel="stylesheet" type="text/css" href="../css/base/documentation.css">
+    <link href="../css/UIElements/list.css" rel="stylesheet">
+    <link href="../css/Widgets/widgets.css" rel="stylesheet">
+
+    <!-- Styles - components -->
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/progressbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/checkbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/inputs.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/inputV1.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/selectV1.css">
+    <link rel="stylesheet" type="text/css" href="../css/Forms/tagsinput.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/button.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/alerts.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/tabs.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/treeview.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/badge.css">
+    <link rel="stylesheet" type="text/css" href="../css/UIElements/flowchart.css">
+    <link rel="stylesheet" type="text/css" href="../css/Tables/datatables.css">
+    <link rel="stylesheet" type="text/css" href="../css/Tables/tables-new-gen.css">
+    <link href="../css/UIElements/accordion.css" rel="stylesheet">
+
+
+    <!-- Styles - containers -->
+    <link rel="stylesheet" type="text/css" href="../css/Forms/wizard.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/Footer/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/Header/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/Sidebar/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/SidebarAppSwitch/SidebarAppSwitch.css">
+    <link rel="stylesheet" type="text/css" href="../css/Shared/Containers/WidgetPanelActions/widgetpanelactions.css">
+
+    <!-- Styles - layouts -->
+    <link href="../css/Projects/UI/Shared/Layout/MainLayoutInterface.css" rel="stylesheet">
+
+
+
+
+
+
+    <link href="../css/Projects/UI/Shared/Layout/MainLayoutInterface.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+    <!-- Header Panel -->
+
+    <!-- Sidebar Panel -->
+
+    <!-- SidebarAppSwitch -->
+
+
+    <!-- Main Panel -->
+    <div class="main">
+
+<style>
+    .color-palette-wrapper {
+        padding: 10px 0px 35px;
+    }
+
+    .color-palette-item.color-palette-big {
+        height: 180px;
+    }
+
+        .color-palette-item.color-palette-big .color-class {
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            right: 0px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+
+    .color-palette-item {
+        height: 60px;
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+
+        .color-palette-item .color-class {
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            right: 0px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+</style>
+
+
+<!-- Content Wrapper. Contains page content -->
+
+<div class="main-content">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <section class="widget-panel-in">
+
+                <div class="widget-body">
+
+                    <div class="row">
+                        <!-- brand -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Brand</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-brand color-palette-big" id="color-1">
+                                    <span class="color-class">$color-brand:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- primary action -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Primary Action</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-primary-disabled color-palette" id="color-2">
+                                    <span class="color-class">$color-primary-inactive:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-primary color-palette" id="color-3">
+                                    <span class="color-class">$color-primary:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-primary-active color-palette" id="color-4">
+                                    <span class="color-class">$color-primary-active:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- info -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Info</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-info color-palette-big" id="color-5">
+                                    <span class="color-class">$color-info:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- info action -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Info Action</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-info-disabled color-palette" id="color-6">
+                                    <span class="color-class">$color-info-inactive:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-info color-palette" id="color-7">
+                                    <span class="color-class">$color-info:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-info-active color-palette" id="color-8">
+                                    <span class="color-class">$color-info-active:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- text heading -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Text Heading</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-black color-palette-big" id="color-9">
+                                    <span class="color-class">$color-text-primary:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- text paragraph -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Text Paragraph</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-text color-palette-big" id="color-10">
+                                    <span class="color-class">$color-text-secondary:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grey -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Grey</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-grey-disabled color-palette text-primary-color" id="color-11">
+                                    <span class="color-class">$color-grey-inactive:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-grey color-palette text-primary-color" id="color-12">
+                                    <span class="color-class">$color-grey:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-grey-active color-palette text-primary-color" id="color-13">
+                                    <span class="color-class">$color-text-secondary:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bg -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Background</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-grey-background color-palette-big text-primary-color" id="color-14">
+                                    <span class="color-class">$color-background:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- success -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Success</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-green-disabled color-palette" id="color-15">
+                                    <span class="color-class">$color-success-inactive:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-green color-palette" id="color-16">
+                                    <span class="color-class">$color-success:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-green-active color-palette" id="color-17">
+                                    <span class="color-class">$color-success-active:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- danger -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Danger</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-red-disabled color-palette" id="color-18">
+                                    <span class="color-class">$color-danger-inactive:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-red color-palette" id="color-19">
+                                    <span class="color-class">$color-danger:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-red-active color-palette" id="color-20">
+                                    <span class="color-class">$color-danger-active:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- alert -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Alert</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-yellow-disabled color-palette" id="color-21">
+                                    <span class="color-class">$color-alert-inactive:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-yellow color-palette" id="color-22">
+                                    <span class="color-class">$color-alert:&nbsp;</span><br>
+                                </div>
+                                <div class="color-palette-item bg-yellow-active color-palette" id="color-23">
+                                    <span class="color-class">$color-alert-active:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- border-color -->
+                        <div class="col-md-12 col-lg-2">
+                            <h5 class="text-center">Border + Input</h5>
+                            <div class="color-palette-wrapper">
+                                <div class="color-palette-item bg-border color-palette-big" id="color-24">
+                                    <span class="color-class">$color-border:&nbsp;</span><br>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+    </div>
+
+</div>
+<script>
+
+    $(document).ready(function () {
+        $('.color-palette-item').each(function () {
+            var color = '';
+            var currentElement = $(this);
+            var currentElementId = $(this).attr("id");
+
+            var x = currentElement.css('backgroundColor');
+            function hexc(colorval) {
+                var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+                delete (parts[0]);
+                for (var i = 1; i <= 3; ++i) {
+                    parts[i] = parseInt(parts[i]).toString(16);
+                    if (parts[i].length == 1) parts[i] = '0' + parts[i];
+                }
+                color = '#' + parts.join('');
+            }
+            hexc(x);
+            // currentElement.append('<span class="color-code">hex:&nbsp;' + color + '</span>');
+            $('#' + currentElementId + ' ' + 'span.color-class').append(color);
+        })
+    }); 
+</script>
+
+
+
+
+
+</div>
+
+    <!-- Footer Panel -->
+
+    <!-- Structures Panel -->
+
+
+    <!-- Basic Scripts -->
+
+
+
+    <script src="../lib/jquery/dist/jquery.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../lib/moment/moment.js"></script>
+    <script src="../lib/chartjs/Chart.js" type="text/javascript"></script>
+    <script src="../lib/wow-js/wow.min.js" type="text/javascript"></script>
+    <script src="../lib/jquery-waypoints/jquery.waypoints.js" type="text/javascript"></script>
+    <script src="../lib/jquery-counterup/jquery.counterup.min.js" type="text/javascript"></script>
+    <script src="../js/SidebarAppSwitch.js"></script>
+    <script src="../js/site.js?v=Bnzn73zqVBHPllgkQBOgkXaZ7_c_Ut_OAZP_RCL9ah8"></script>
+
+
+    <!-- Custom Scripts -->
+    
+    
+    
+        <script src="../lib/select2/js/select2.js" type="text/javascript"></script>
+        <script src="../lib/tagsinput/js/bootstrap-tagsinput.js" type="text/javascript"></script>
+        <script src="../js/BasicFormV1.js" type="text/javascript"></script>
+        <script src="../js/checkbox.js" type="text/javascript"></script>
+        <script src="../js/radio.js" type="text/javascript"></script>
+        <script src="../js/Colors.js" type="text/javascript"></script>
+    
+
+
+    <!-- Overrides Scripts -->
+
+
+
+    <script src="../js/DataTables.js?v=C7VaAiwNg4ErbIooKGMFAl_nlfQ-v74j4nCxE0v9Yio"></script>
+
+
+
+
+
+</body>
+
+</html>

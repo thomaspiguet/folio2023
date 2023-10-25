@@ -1,0 +1,34 @@
+<svg id="b1820aea-976e-443e-bc7b-f690713a4b23" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="59.99" height="60" viewBox="0 0 59.99 60">
+  <defs>
+    <style>
+      .b36bbd16-d3d2-40e4-845d-26c189f7c444 {
+        fill: #6c9;
+      }
+
+      .a2fe9fae-d4e1-441b-8d79-cdddde8d3324, .b6be8cc6-c46c-4464-a46a-81be8b086ecb {
+        fill: #fff;
+      }
+
+      .b6be8cc6-c46c-4464-a46a-81be8b086ecb {
+        opacity: 0.2;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <title>gchvip-logotype</title>
+  <polyline class="b36bbd16-d3d2-40e4-845d-26c189f7c444" points="0 0 60 0 60 60 0 60 0 0"/>
+  <polygon class="b6be8cc6-c46c-4464-a46a-81be8b086ecb" points="60 60 60 0 30 30 60 60"/>
+  <g>
+    <g>
+      <rect class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" x="43.83" y="33.83" width="11.58" height="1.58"/>
+      <rect class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" x="43.83" y="29.5" width="11.58" height="1.58"/>
+      <rect class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" x="43.83" y="25.25" width="11.58" height="1.58"/>
+    </g>
+    <path class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" d="M34.42,49.58l-.5-1.66-4.34,4L35.33,53l-.5-1.83A26.27,26.27,0,0,0,49.42,39.75H47.58A25.09,25.09,0,0,1,34.42,49.58Z"/>
+    <path class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" d="M9.92,35.83h1.75L9.08,30.58,6.42,35.83H8.33A21.74,21.74,0,0,0,24,51.25V49.67A20,20,0,0,1,9.92,35.83Z"/>
+    <path class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" d="M23.25,11v1.92l5.25-2.59L23.25,7.67V9.42A21.74,21.74,0,0,0,7.92,25.92H9.5A20.42,20.42,0,0,1,23.25,11Z"/>
+    <path class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" d="M47,20.67h1.75A21.7,21.7,0,0,0,33.58,8.92V10.5A20.68,20.68,0,0,1,47,20.67Z"/>
+    <path class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" d="M29.08,33.33l-2.41-2.75H22v8.67H36.17V30.58H31.5Zm5.59-1.16v5.58H23.58V32.17H26l3.08,3.5,3.17-3.5Z"/>
+    <path class="a2fe9fae-d4e1-441b-8d79-cdddde8d3324" d="M23.83,25.25A5.25,5.25,0,1,0,29.08,20,5.23,5.23,0,0,0,23.83,25.25Zm5.25-3.75a3.75,3.75,0,1,1-3.75,3.75A3.79,3.79,0,0,1,29.08,21.5Z"/>
+  </g>
+</svg>

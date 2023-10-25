@@ -1,0 +1,349 @@
+<form name="requisitionHeaderForm" class="requisition-header-form" spellcheck="false" manage-form-state>
+  <div uib-collapse="$ctrl.stateModel.template.hidden">
+    <div class="form-group">
+      <label for="requisitionTemplate" class="control-label">{{ 'requisitionTemplate' | translate }}</label>
+      <requisition-template-list
+        input-id="requisitionTemplate"
+        department="$ctrl.dataModel.department"
+        requester="$ctrl.dataModel.requester"
+        site="$ctrl.dataModel.site"
+        client="$ctrl.dataModel.client"
+        ng-change="$ctrl.onSelectRequisitionTemplate()"
+        ng-disabled="$ctrl.stateModel.template.disabled"
+        ng-model="$ctrl.dataModel.requisitionTemplate">
+      </requisition-template-list>
+    </div>
+  </div>
+  <div class="collapse-toggle" ng-init="identificationCollapsed = false">
+    <a id="collapseIdentification" title="{{ 'collapseExpandThisSection' | translate }}" ng-href="#" onclick="return false;" ng-click="identificationCollapsed = !identificationCollapsed"><i class="fa fa-chevron-down" ng-show="!identificationCollapsed"></i><i class="fa fa-chevron-right" ng-show="identificationCollapsed"></i></a>
+    <label>{{ 'identification' | translate }}</label>
+  </div>
+  <div uib-collapse="identificationCollapsed" class="clearfix">
+    <div class="form-group">
+      <label for="administrativeUnit" class="control-label">{{ 'administrativeUnit' | translate }}</label>
+      <department-list
+        validation-popover="$ctrl.stateModel.department.validations"
+        input-id="administrativeUnit"
+        input-name="administrativeUnit"
+        ng-model="$ctrl.dataModel.department"
+        ng-change="$ctrl.onSelectDepartment()"
+        ng-disabled="$ctrl.stateModel.department.disabled"
+        ng-required="$ctrl.stateModel.department.required"
+        is-replenishment=false
+        is-active=true
+        include-default-values=true
+        include-external-sales="$ctrl.isIncludeExternalSales()">
+      </department-list>
+    </div>
+    <div class="form-group">
+
+      <!-- Create new delivery location action -->
+      <span class="pull-right" ng-hide="$ctrl.stateModel.createDeliveryLocation.hidden"><a ng-href="#" ng-click="$ctrl.onCreateDeliveryLocation($event)"><i class="mdi mdi-plus"></i></a></span>
+
+      <label for="deliveryLocation" class="control-label">{{ 'shippingLocation' | translate }}</label>
+      <delivery-location-list
+        input-id="deliveryLocation"
+        department="$ctrl.dataModel.department"
+        ng-model="$ctrl.dataModel.deliveryLocation"
+        ng-change="$ctrl.onSelectDeliveryLocation()"
+        ng-disabled="$ctrl.stateModel.deliveryLocation.disabled"
+        ng-required="$ctrl.stateModel.deliveryLocation.required"
+        on-search-text-change="$ctrl.onDeliveryLocationSearchTextChange(obj)"
+        delivery-location="$ctrl.dataModel.deliveryLocation"
+      >
+      </delivery-location-list>
+    </div>
+    <div class="form-group">
+      <label for="site" class="control-label">{{ 'site' | translate }}</label>
+      <site-list
+        input-id="site"
+        department="$ctrl.dataModel.department"
+        ng-model="$ctrl.dataModel.site"
+        ng-change="$ctrl.onSelectSite()"
+        ng-required="$ctrl.stateModel.site.required"
+        ng-disabled="$ctrl.stateModel.site.disabled">
+      </site-list>
+    </div>
+    <div class="form-group">
+      <label for="address" class="control-label">{{ 'address' | translate }}</label>
+      <address-list
+        input-id="address"
+        department="$ctrl.dataModel.department"
+        site="$ctrl.dataModel.site"
+        ng-model="$ctrl.dataModel.address"
+        ng-change="$ctrl.onSelectAddress()"
+        ng-required="$ctrl.stateModel.address.required"
+        ng-disabled="$ctrl.stateModel.address.disabled">
+      </address-list>
+    </div>
+
+    <div class="form-group pull-left width-70">
+      <label for="requester" class="control-label">{{ 'requester' | translate }}</label>
+      <requester-list
+        input-id="requester"
+        department="$ctrl.dataModel.department"
+        ng-model="$ctrl.dataModel.requester"
+        ng-change="$ctrl.onSelectRequester()"
+        ng-required="$ctrl.stateModel.requester.required"
+        ng-disabled="$ctrl.stateModel.requester.disabled">
+      </requester-list>
+    </div>
+
+    <div class="form-group pull-left width-30 left-gutted">
+      <label for="phone" class="control-label" ng-hide="$ctrl.stateModel.phone.hidden">{{ 'phone' | translate }}</label>
+      <div>
+        <input type="tel" maxlength="8" id="phone" class="form-control"
+          ng-model="$ctrl.dataModel.phoneExtension"
+          ng-change="$ctrl.onChangePhoneExtension()"
+          aria-label="{{ 'phone' | translate }}"
+          ng-hide="$ctrl.stateModel.phone.hidden"
+          ng-disabled="$ctrl.stateModel.phone.disabled"
+        />
+      </div>
+    </div>
+
+    <div class="form-group pull-left width-35">
+      <label for="requiredOn" class="control-label text-nowrap">{{ 'targetDate' | translate }}</label>
+        <date-box id="requiredOn"
+          input-name="requiredOn"
+          validation-popover="$ctrl.stateModel.requiredOn.validations"
+          min-date="$ctrl.validateRequiredOnMinDate()"
+          ng-model="$ctrl.dataModel.requiredOn"
+          ng-change="$ctrl.onSelectRequiredOn()"
+          ng-disabled="$ctrl.stateModel.requiredOn.disabled"
+          ng-required="$ctrl.stateModel.requiredOn.required">
+        </date-box>
+    </div>
+
+    <div class="form-group pull-left width-35 left-gutted">
+      <label for="createdOn" class="control-label text-nowrap">{{ 'registrationDate' | translate }}</label>
+      <div class="readonly-field-placeholder">
+        <span id="createdOn">{{ $ctrl.dataModel.createdOn | localeDate }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="collapse-toggle" ng-init="aboutCollapsed = false">
+    <a id="collapseAbout" title="{{ 'collapseExpandThisSection' | translate }}" ng-href="#" onclick="return false;" ng-click="aboutCollapsed = !aboutCollapsed"><i class="fa fa-chevron-down" ng-show="!aboutCollapsed"></i><i class="fa fa-chevron-right" ng-show="aboutCollapsed"></i></a>
+    <label>{{ 'about' | translate }}</label>
+  </div>
+  <div uib-collapse="aboutCollapsed">
+    <div class="form-group pull-left width-70">
+      <label for="requisitionType" class="control-label">{{ 'type' | translate }}</label>
+      <div>
+        <md-select aria-label=" " class="md-no-underline"
+            md-input-id="requisitionType"
+            md-container-class="custom-select-list"
+            ng-model="$ctrl.dataModel.type"
+            ng-change="$ctrl.onSelectRequisitionType()"
+            ng-disabled="$ctrl.stateModel.type.disabled">
+          <md-option ng-repeat="requisitionType in $ctrl.getRequisitionTypes()" ng-value="requisitionType.code">{{ $ctrl.getRequisitionTypeDescription(requisitionType.code) }}</md-option>
+        </md-select>
+      </div>
+    </div>
+
+    <div class="form-group clear-both" ng-hide="$ctrl.stateModel.installationSite.hidden">
+
+      <label for="installationSite" class="control-label">{{ 'installationSite' | translate }}</label>
+      <delivery-location-list
+        input-id="installationSite"
+        is-installation-location="true"
+        department="$ctrl.dataModel.department"
+        ng-model="$ctrl.dataModel.installationSite"
+        ng-change="$ctrl.onSelectInstallationSite()"
+        ng-disabled="$ctrl.stateModel.installationSite.disabled"
+        ng-required="$ctrl.stateModel.installationSite.required"
+        on-search-text-change="$ctrl.onInstallationSiteSearchTextChange(obj)"
+      >
+      </delivery-location-list>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-12">
+          <md-checkbox md-no-ink id="splitOnUniqueOrder" aria-label=" "
+              ng-model="$ctrl.dataModel.splitOnUniqueOrder"
+              ng-change="$ctrl.onSelectSplitOnUniqueOrder()"
+              ng-disabled="$ctrl.stateModel.splitOnUniqueOrder.disabled">
+            {{ 'uniquePerOrder' | translate }}
+          </md-checkbox>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <md-checkbox id="isWeeklyConsumptionDisplayed" aria-label=" " md-no-ink
+            ng-model="$ctrl.dataModel.isWeeklyConsommationDisplayed"
+            ng-change="$ctrl.onSelectIsWeeklyConsommationDisplayed()"
+            ng-disabled="$ctrl.stateModel.isWeeklyConsommationDisplayed.disabled">
+            {{ 'displayWeeklyConsumption' | translate }}
+          </md-checkbox>
+        </div>
+      </div>
+    </div>
+
+    <!-- client -->
+    <div class="form-group" ng-hide="$ctrl.stateModel.client.hidden">
+      <label for="client" class="control-label">{{ 'client' | translate }}</label>
+      <client-list
+        input-id="client"
+        ng-model="$ctrl.dataModel.client"
+        ng-change="$ctrl.onSelectClient()"
+        ng-disabled="$ctrl.stateModel.client.disabled"
+        ng-required="$ctrl.stateModel.client.required"
+        establishment-id="$ctrl.dataModel.department.establishmentId"
+        is-active=true>
+      </client-list>
+    </div>
+
+  </div>
+
+<!--==============================================================================================================================-->
+<!--==============================================================================================================================-->
+<!--==  NOTE COLLAPSIBLE AREA                                                                                                   ==-->
+<!--==============================================================================================================================-->
+<!--==============================================================================================================================-->
+
+  <div class="collapse-toggle" ng-init="noteCollapsed = false">
+    <a id="collapseNote" title="{{ 'collapseExpandThisSection' | translate }}" ng-href="#" onclick="return false;" ng-click="noteCollapsed = !noteCollapsed"><i class="fa fa-chevron-down" ng-show="!noteCollapsed"></i><i class="fa fa-chevron-right" ng-show="noteCollapsed"></i></a>
+    <label>{{ 'note' | translate }}</label>
+  </div>
+
+  <div uib-collapse="noteCollapsed">
+    <div class="form-group">
+      <md-input-container md-no-float>
+        <textarea
+          aria-label="{{ 'note' | translate }}"
+          id="note"
+          ng-model="$ctrl.dataModel.requesterNote"
+          ng-change="$ctrl.onChangeNote()"
+          manage-field-state
+          mode="$ctrl.mode"
+          max-rows="4"
+          maxlength=250
+          md-maxlength=250
+          md-no-resize>
+        </textarea>
+      </md-input-container>
+    </div>
+  </div>
+
+
+<!--==============================================================================================================================-->
+<!--==============================================================================================================================-->
+<!--==  SOURCES COLLAPSIBLE AREA                                                                                                ==-->
+<!--==============================================================================================================================-->
+<!--==============================================================================================================================-->
+
+  <div ng-if=$ctrl.dataModel.id>
+    <div class="collapse-toggle" ng-init="sourcesCollapsed = false">
+      <a id="collapseSources" title="{{ 'collapseExpandThisSection' | translate }}" ng-href="#" onclick="return false;" ng-click="sourcesCollapsed = !sourcesCollapsed"><i class="fa fa-chevron-down" ng-show="!sourcesCollapsed"></i><i class="fa fa-chevron-right" ng-show="sourcesCollapsed"></i></a>
+      <label>{{ 'sources' | translate }}</label>
+    </div>
+
+    <div uib-collapse="sourcesCollapsed">
+
+      <div class="form-group pull-left width-100">
+        <label for="originStatusDescription" class="control-label">{{ 'origin' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span id="originStatusDescription">{{ $ctrl.dataModel.originStatusDescription }}</span>
+        </div>
+      </div>
+
+      <div class="form-group pull-left width-100">
+        <label for="interface" class="control-label">{{ 'interface' | translate }}</label>
+        <div class="readonly-field-placeholder">
+            <span id="interface" ng-show="$ctrl.dataModel.interface">
+              {{$ctrl.dataModel.interface.code}} - {{$ctrl.dataModel.interface.description}}
+            </span>
+        </div>
+      </div>
+
+      <div class="form-group pull-left width-100">
+        <label for="repetitiveContractNumber" class="control-label">{{ 'repetitiveContract' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span id="repetitiveContractNumber">{{ $ctrl.dataModel.repetitiveContractNumber }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!--==============================================================================================================================-->
+<!--==============================================================================================================================-->
+<!--==  STAMPING COLLAPSIBLE AREA                                                                                               ==-->
+<!--==============================================================================================================================-->
+<!--==============================================================================================================================-->
+
+  <div ng-if=$ctrl.dataModel.id>
+    <div class="collapse-toggle" ng-init="stampingCollapsed = false">
+      <a id="collapseStamping" title="{{ 'collapseExpandThisSection' | translate }}" ng-href="#" onclick="return false;" ng-click="stampingCollapsed = !stampingCollapsed"><i class="fa fa-chevron-down" ng-show="!stampingCollapsed"></i><i class="fa fa-chevron-right" ng-show="stampingCollapsed"></i></a>
+      <label>{{ 'stamping' | translate }}</label>
+    </div>
+
+    <div uib-collapse="stampingCollapsed">
+
+      <div class="row width-100">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="completedBy" class="control-label">{{ 'completedBy' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span id="completedBy">{{ $ctrl.dataModel.completedBy }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" ng-if="$ctrl.dataModel.completedOn">
+          <div class="form-group">
+            <label for="completedOn" class="control-label">{{ 'completedOn' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span id="completedOn">{{ $ctrl.dataModel.completedOn | date:'short' }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row width-100">
+        <div class="col-md-5">
+          <div class="form-group">
+            <label for="wmsLastShipmentDate" class="control-label text-nowrap">{{ 'wmsLastShipmentDate' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span id="wmsLastShipmentDate">{{ $ctrl.dataModel.wmsLastShipmentDate | date:'short' }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7 vertical-center-checkbox">
+          <div class="readonly-field-placeholder">
+            <md-checkbox id="wmsLocked" aria-label=" " md-no-ink
+                ng-model="$ctrl.dataModel.wmsLocked"
+                ng-disabled="$ctrl.stateModel.wmsLocked.disabled"
+                ng-show="$ctrl.dataModel.wmsLastShipmentDate">
+              {{ 'wmsLocked' | translate }}
+            </md-checkbox>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pull-left width-100">
+        <div class="col-md-5">
+          <div class="form-group">
+            <label for="updatedOn" class="control-label text-nowrap">{{ 'updatedOn' | translate }}</label>
+            <div class="readonly-field-placeholder">
+              <span id="updatedOn">{{ $ctrl.dataModel.modifiedOn | date:'short' }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="form-group">
+            <label>&nbsp</label>
+            <div class="readonly-field-placeholder">
+              <i class="fa fa-user-o" ng-show="$ctrl.dataModel.modifiedByUsername"></i>
+              <span id="modifiedBy" class="">{{$ctrl.dataModel.modifiedByUsername}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</form>

@@ -1,0 +1,85 @@
+﻿@import "_variables.scss";
+@import "_colors.scss";
+@import url('../../../../components/roboto/roboto.css');
+@import url('../../../../components/font-awesome/css/font-awesome.css');
+@import url('../../../../components/simple-line-icons/simple-line-icons.css');
+@import url('../../../../components/medicine-and-health/font/_flaticon.css');
+@import url('../../../../components/material-icons/material-icons.css');
+@import url('../../../../components/medicine-and-health/font/flaticon.css');
+//fonts
+/*$font_0: 'fontAwesome';
+$font_1: 'Helvetica Neue';
+$font_2: 'Helvetica';
+$font_3: 'Arial';
+$font_4: 'sans-serif';*/
+
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-style: normal;
+    color: $white;
+    /* line-height: 82px; */
+    font-size: 38px;
+    /* margin-left: 20px; */
+}
+
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: $text-primary;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: $text-primary;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: $text-primary;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: $text-primary;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    color: $text-secondary;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+small, .small {
+    font-size: 85%;
+}
+
+
+.text-bold, .text-bold.table td, .text-bold.table th {
+    font-weight: 500;
+}
+
+.boxing-text {
+    margin: 0px;
+}
+

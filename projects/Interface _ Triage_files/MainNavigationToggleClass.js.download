@@ -1,0 +1,40 @@
+﻿
+function mainSidebarToggleClass() {
+
+    // trigger element
+    var appMainSidebarToggle = document.getElementById('app-main-sidebar-toggle');
+
+    // target element
+    var appMainSidebar = document.getElementById('app-main-sidebar');
+
+    // sidebar items list
+    var sidebarItemsList = document.getElementById('sidebar-items-list');
+
+    // main
+    var appMainWrapper = document.getElementById('app-main-wrapper');
+
+    // Toggle class function
+    function toggleClass(element, className) {
+        if (!element || !className) {
+            return;
+        }
+        var classString = element.className, nameIndex = classString.indexOf(className);
+        if (nameIndex == -1) {
+            classString += ' ' + className;
+        }
+        else {
+            classString = classString.substr(0, nameIndex) + classString.substr(nameIndex + className.length);
+        }
+        element.className = classString;
+    }
+
+
+    // Toggles active class
+    appMainSidebarToggle.onclick = function () {
+        toggleClass(appMainSidebar, 'main-sidebar-expanded');
+        toggleClass(appMainWrapper, 'app-main-push-over');
+        sidebarItemsList.classList.add('opacity-0');
+        setTimeout(function () { sidebarItemsList.classList.remove('opacity-0'); }, 275);
+    };
+
+};

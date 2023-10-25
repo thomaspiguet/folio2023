@@ -1,0 +1,271 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+<head>
+    <!-- BEGIN META -->
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Application web - Logibec Reorientation" name="description">
+    <meta content="Logibec - Contact: Alexandre Couillard" name="author">
+
+    <!--<script src="https://www.google.com/recaptcha/api.js?hl=fr-CA"></script>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+
+
+    <link href="../../assets/pages/css/login.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/css/components-rounded.min.css" id="style_components" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/global/css/custom.css" rel="stylesheet" type="text/css">
+
+
+    <link href="../../assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/layouts/layout3/css/themes/green-haze.min.css" rel="stylesheet" type="text/css" id="style_color">
+    <link href="../../assets/layouts/layout3/css/custom.css" rel="stylesheet" type="text/css">-->
+
+
+    <link href="../components/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/_reorientation.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+    <link href="css/_reorientation-style.css" rel="stylesheet" />
+
+</head><!-- END HEAD -->
+
+
+
+<!-- BEGIN BODY -->
+<body class="login">
+    <!-- BEGIN HEADER --><!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+    <div class="menu-toggler sidebar-toggler"></div><!-- END SIDEBAR TOGGLER BUTTON -->
+    <!-- BEGIN LOGO -->
+
+    <div class="logo"><a href="/"><img src="img/logo-reorientation.svg" alt="" ></a></div><!-- END LOGO --><!-- END HEADER -->
+
+    <div class="content">
+        <!-- BEGIN LOGIN FORM -->
+        <form action="/login" method="post" class="login-form">
+            <h3 class="form-title">Connectez-vous</h3>
+            <div class="alert alert-danger display-hide">
+                <button data-close="alert" class="close"></button><span>L'identifiant (courriel valide) et le mot de passe sonts requis.</span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="_csrf" value="xJqmnQnq-_aYQNpOivZY06OYnp5EJEytf7ww"><!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                <label class="control-label visible-ie8 visible-ie9">Identifiant</label>
+                <input type="email" autocomplete="off" placeholder="Identifiant (courriel)" name="login" required class="form-control form-control-solid placeholder-no-fix">
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Mot de passe</label>
+                <input type="password" autocomplete="off" placeholder="Mot de passe" name="pass" required class="form-control form-control-solid placeholder-no-fix">
+            </div>
+
+
+            <!--<div class="form-actions">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-success uppercase">Connexion</button>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="rememberMe-container col-md-12">
+                        <label class="rememberme check mt-checkbox mt-checkbox-outline">
+                            Se souvenir de moi
+                            <input type="checkbox" name="remember" value="1"><span></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 "><a href="javascript:;" id="forget-password" class="forget-password">Oublié votre mot de passe?</a></div>
+                </div>
+
+                <div class="row">
+                    <div class="rememberMe-container col-md-12">
+                        <label class="rememberme check mt-checkbox mt-checkbox-outline">
+                            Se souvenir de moi
+                            <input type="checkbox" name="remember" value="1"><span></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 "><a href="javascript:;" id="forget-password" class="forget-password">Oublié votre mot de passe?</a></div>
+                </div>
+            </div>-->
+
+            <div class="form-actions">
+                <div class="row">
+                    <div class="col-md-5">
+                        <button type="submit" class="btn btn-success uppercase">Connexion</button>
+                    </div>
+                    <div class="rememberMe-container col-md-7">
+                        <label class="rememberme check mt-checkbox mt-checkbox-outline">
+                            Se souvenir de moi
+                            <input type="checkbox" name="remember" value="1"><span></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 pull-right"><a href="javascript:;" id="forget-password" style="float: right;" class="forget-password">Oublié votre mot de passe?</a></div>
+                </div>
+            </div>
+
+
+            <div class="create-account">
+                <p><a href="javascript:;" id="register-btn" class="uppercase">Créer un compte</a></p>
+            </div>
+        </form><!-- END LOGIN FORM -->
+        <!-- BEGIN FORGOT PASSWORD FORM -->
+        <form action="/submitPassReset" method="post" class="forget-form">
+            <h3>Vous avez oublié votre mot de passe?</h3>
+            <p>Veuillez indiquer votre addresse courriel pour réinitialiser votre mot de passe.</p>
+            <div class="form-group">
+                <input type="hidden" name="_csrf" value="xJqmnQnq-_aYQNpOivZY06OYnp5EJEytf7ww">
+                <input type="email" autocomplete="off" placeholder="Courriel" name="emailForRecovery" class="form-control placeholder-no-fix">
+            </div>
+            <div class="form-actions">
+                <button type="button" id="back-btn" class="btn btn-default">Retour</button>
+                <button type="submit" class="btn btn-success uppercase pull-right">Soumettre</button><!-- button.btn.gray.uppercase.pull-right(type="button" id="back-btn") À venir... -->
+            </div>
+        </form><!-- END FORGOT PASSWORD FORM -->
+        <!-- BEGIN REGISTRATION FORM -->
+        <form action="/register" method="post" class="register-form">
+            <h3>Enregistrez-vous</h3>
+            <p class="hint">Identification du compte</p>
+            <div class="form-group">
+                <div class="registerWithEmail-container">
+                    <label class="control-label visible-ie8 visible-ie9">Adresse courriel</label>
+                    <input id="registeringEmail" type="email" autocomplete="off" placeholder="Adresse courriel" name="email" class="form-control placeholder-no-fix">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="_csrf" value="xJqmnQnq-_aYQNpOivZY06OYnp5EJEytf7ww">
+                <label class="control-label visible-ie8 visible-ie9">Mot de passe</label>
+                <input type="password" autocomplete="off" id="register_password" placeholder="Mot de passe" name="password" class="form-control placeholder-no-fix">
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Entrez votre mot de passe à nouveau</label>
+                <input type="password" autocomplete="off" placeholder="Mot de passe (confirmation)" name="rpassword" class="form-control placeholder-no-fix">
+            </div>
+            <p class="hint">Renseignements personnels</p>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Prénom</label>
+                <input type="text" placeholder="Prénom" name="prenom" class="form-control placeholder-no-fix">
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Nom</label>
+                <input type="text" placeholder="Nom" name="nom" class="form-control placeholder-no-fix">
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                        <label class="control-label visible-ie8 visible-ie9">Téléphone</label>
+                        <input id="mask_phone" type="text" placeholder="No de téléphone" name="telephone" class="form-control placeholder-no-fix">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                        <label class="control-label visible-ie8 visible-ie9">Poste</label>
+                        <input type="number" placeholder="# poste" name="poste" maxlength="5" autocomplete="off" class="form-control placeholder-no-fix">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Lieu</label>
+                <select name="lieuPratique" class="form-control">
+                    <option value="">Lieu de pratique</option>
+                    <optgroup label="Hôpitaux">
+                        <option value="09">Hôpital Fleury</option>
+                        <option value="05">Hôpital Jean-Talon</option>
+                        <option value="01">Hôpital Sacré-Coeur de Montréal</option>
+                    </optgroup>
+                    <optgroup label="Cliniques">
+                        <option value="07">Polyclinique Coeur de l'Île</option>
+                        <option value="11">Clinique Forcemedic (Henri-Bourassa)</option>
+                        <option value="06">Clinique Forcemedic (Jean-Talon)</option>
+                        <option value="10">Clinique médicale Gouin</option>
+                        <option value="04">Centre Médical Le Plein Ciel</option>
+                        <option value="08">Clinique Papineau Villeray</option>
+                        <option value="03">Clinique d'urgence Saint-Laurent</option>
+                        <option value="02">Clinique d'urgence Salaberry</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <div data-sitekey="6LdyvlgUAAAAAHX4pfox-4dOM5fX68bzMQYfaRzd" class="g-recaptcha"></div>
+            </div>
+            <p class="hint">L'enregistrement est réservé au personnel désigné. Votre compte devra être activé par un administrateur. Veuillez donc fournir des renseignements vérifiables.</p>
+            <div class="form-group margin-top-20 margin-bottom-20"></div>
+            <div class="register_tnc_error"></div>
+            <div class="form-actions">
+                <button id="register-back-btn" type="button" class="btn btn-default">Retour</button>
+                <button id="register-submit-btn" type="submit" class="btn btn-success uppercase pull-right">Soumettre</button>
+            </div>
+        </form>
+    </div><br><br><br><br><br><br><br><!-- END LOGIN PAGE -->
+    <!-- BEGIN PRE-FOOTER-->
+    <div class="page-prefooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-6 col-xs-12 footer-block">
+                    <h2>À propos de Logibec Réorientation</h2>
+                    <p>
+                        Bienvenue sur <strong class="font-green-haze">Logibec Réorientation</strong>, un système permettant de soutenir le
+                        professionnel du triage à l’urgence dans le processus de réorientation des
+                        patients. Grâce à un algorithme médical unique et éprouvé, notre outil permet
+                        d’identifier les patients pouvant être référés de façon sécuritaire vers les
+                        cliniques réseaux de leur choix.
+                    </p>
+                    <h2 class="mt-3">Vision</h2>
+                    <p>
+                        Créer les conditions propices pour désengorger et réduire le temps d’attente
+                        dans les urgences des hôpitaux.
+                    </p>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12 footer-block">
+                    <h2>Mission</h2>
+                    <p>
+                        Offrir un outil fonctionnel <em>24 h/24</em>, <em>7 j/7</em>, afin de mettre en relation les
+                        établissements et les cliniques réseaux et diriger le patient vers l’endroit
+                        le plus approprié à sa condition.
+                    </p>
+                    <h2 class="mt-3">Qui sommes-nous ?</h2>
+                    <p>
+                        Logibec offre depuis 35 ans une expertise et des solutions innovatrices pour
+                        ce qui touche l’optimisation des processus et la gestion de la performance
+                        clinique et financière des établissements de soins de santé. <span class="font-green-haze">info@logibec.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PRE-FOOTER-->
+    <!-- BEGIN FOOTER-->
+    <div class="page-footer">
+        <div class="container">
+            <div class="pull-left">2015 © D<sup>r</sup> Alexandre Messier</div>
+            <div class="pull-right">TransfertClinique v2.36</div>
+        </div>
+    </div>
+    <div class="scroll-to-top"><i class="icon-arrow-up"></i></div>
+    <!-- END FOOTER-->
+</body>
+
+
+
+
+
+</html>

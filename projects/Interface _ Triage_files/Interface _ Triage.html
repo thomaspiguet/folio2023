@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://prototype-client-mvc.azurewebsites.net/triage/Assesment -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Interface | Triage</title>
+    <meta name="author" content="Logibec">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://prototype-client-mvc.azurewebsites.net/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://prototype-client-mvc.azurewebsites.net/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Styles -->
+
+
+
+
+    <!-- Styles - boostrap -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/boostrap.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/roboto.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/flaticon.css">
+
+    <!-- Styles - base -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/base.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/colors.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/grid-system.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/mixins.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/utility.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/variables.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/table.css">
+    <link href="./Interface _ Triage_files/loader.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/inputs.css" rel="stylesheet">
+
+    <!-- Styles - layouts -->
+    <link href="./Interface _ Triage_files/MainLayoutInterfaceWorkboard.css" rel="stylesheet">
+
+
+    <!-- Styles - components -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/button.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/badge.css">
+
+    <!-- Styles - containers connex -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/header.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/footer.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/SidebarAppSwitch.css">
+
+    <!-- Styles - containers interface -->
+    <link href="./Interface _ Triage_files/TopHeaderWorkboard.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/MainNavigationWorkboard.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/NavigationSubModule.css" rel="stylesheet">
+
+    <link href="./Interface _ Triage_files/ToolsSidebar.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/SidePanel.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/PriorityWidgetTriage.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/TopHeaderWorkboard(1).css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/widgets.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/NavigationPatientSearch.css" rel="stylesheet">
+
+    
+
+
+    <!-- Styles - boostrap -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/boostrap.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/roboto.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/flaticon.css">
+
+    <!-- Styles - base -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/base.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/colors.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/grid-system.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/mixins.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/utility.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/variables.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/table.css">
+    <link href="./Interface _ Triage_files/loader.css" rel="stylesheet">
+
+
+    <!-- Styles - layouts -->
+    <link href="./Interface _ Triage_files/MainLayoutInterface.css" rel="stylesheet">
+
+
+    <!-- Styles - components -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/button.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/badge.css">
+
+    <!-- Styles - containers connex -->
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/header.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/footer.css">
+    <link rel="stylesheet" type="text/css" href="./Interface _ Triage_files/SidebarAppSwitch.css">
+
+    <!-- Styles - containers interface -->
+    <link href="./Interface _ Triage_files/TopHeader.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/MainNavigation.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/ToolsSidebar.css" rel="stylesheet">
+    <link href="./Interface _ Triage_files/SidePanel.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+    <!-- Header Panel Connex -->
+
+
+<div class="header">
+
+
+
+
+<style>
+
+    #connex-app {
+        display: none;
+    }
+
+    #strom-app {
+        display: none;
+    }
+</style>
+
+
+<div class="header-left">
+
+    <div class="logo" id="connex-app">
+        <a id="to-app-switcher" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment#">    
+                <img class="display-none-xs" src="./Interface _ Triage_files/connex-logo-reverse.svg">
+                <img class="display-xs" src="./Interface _ Triage_files/connex-logotype-reverse.svg">
+            <i class="fa fa-angle-down right dropdown-icon"></i>
+        </a>
+
+    </div>
+
+
+    <div class="logo" id="strom-app">
+        <a id="to-app-switcher" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment#">
+                <img class="display-none-xs" src="./Interface _ Triage_files/STROM-logo-reverse.svg">
+                <img class="display-xs" src="./Interface _ Triage_files/STROM-logotype.svg">
+            <i class="fa fa-angle-down right dropdown-icon"></i>
+        </a>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+    
+
+<ul class="header-right">
+
+<li class="header-item-right" id="user-cta">
+    <a class="user-dropdown-link" aria-expanded="true" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment#">
+
+
+        <i class="material-icons badge-round-medium bg-white text-main-color">person</i>
+
+
+        <i class="fa fa-angle-down right dropdown-icon"></i>
+    </a>
+
+
+
+
+    <ul class="user-dropdown-content">
+
+
+<li class="user-header">
+
+
+    <i class="material-icons badge-round-large bg-brand white-text">person</i>
+
+
+
+
+    <p class="user-header-desc">
+        John Smith - Manager<small>Last connection 2017/01/05</small>
+    </p>
+</li>
+        
+
+
+<li class="user-body">
+    <div class="pull-left">
+        <a href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment#" class="language-select-btn">
+            <i class="icon-globe icons user-body-icon"></i><span class="language-select-btn">Languages</span>
+        </a>
+    </div>
+
+    <div class="pull-right">
+        <a href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment#" class="client-services-btn disabled-cta">
+            <i class="icon-people icons user-body-icon"></i><span class="client-services-btn">Client Services</span>
+        </a>
+    </div>
+</li>
+        
+
+<li class="user-body-lang-select"></li>
+        
+
+<li class="user-footer">
+    <div class="pull-left">
+        <button type="button" data-widget="collapse" class="btn btn-info profile-btn">Profile</button>
+    </div>
+
+    <div class="pull-right">
+        <button type="button" class="btn btn-danger btn-flat" data-toggle="modal" data-target="#modal-danger-logout-en">Sign out</button>
+    </div>
+</li>
+    </ul>
+</li>
+
+
+
+
+</ul>
+</div>
+
+    <!-- SidebarAppSwitch Connex -->
+
+<style>
+    /*::-webkit-scrollbar {
+        width: 5px;
+        padding-right: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #f2f3f6;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #b8c2cd;
+        border-radius: 10px;
+    }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b8c2cd;
+
+        }*/
+
+</style>
+
+
+
+<div id="app-hub" class="cx-app-hub">
+    <div id="app-hub-overlay" class="cx-app-hub-overlay transparent"></div>
+    <div id="app-switcher" class="sidebar-app-switch" role="navigation">
+
+        <ul class=" products-sidebar-container">
+
+            <li class="products-sidebar-menu">
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment">
+                    <span class="products-menu-logo">
+                        <img src="./Interface _ Triage_files/gchvip-logotype.svg">
+                    </span>
+                    <span class="products-menu-text">GCH VIP</span>
+                </a>
+
+            </li>
+
+            <li class="products-sidebar-menu">
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment">
+                    <span class="products-menu-logo">
+                        <img src="./Interface _ Triage_files/grf-logotype.svg">
+                    </span>
+                    <span class="products-menu-text">GRF</span>
+                </a>
+            </li>
+
+            <li class="products-sidebar-menu">
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment">
+                    <span class="products-menu-logo">
+                        <img src="./Interface _ Triage_files/grm-logotype.svg">
+                    </span>
+                    <span class="products-menu-text">GRM</span>
+                </a>
+            </li>
+
+
+            <hr>
+
+            <li class="products-sidebar-menu">
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment">
+                    <span class="products-menu-logo">
+                        <img src="./Interface _ Triage_files/readmissionai-logotype.svg">
+                    </span>
+                    <span class="products-menu-text">readmissionai</span>
+                </a>
+            </li>
+
+
+            <hr>
+
+
+            <li class="products-sidebar-menu">
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment">
+                    <span class="products-menu-logo">
+                        <img class="" src="./Interface _ Triage_files/connex-logotype.svg">
+                    </span>
+                    <span class="products-menu-text">CONNEX</span>
+                </a>
+            </li>
+
+            <li class="products-sidebar-menu">
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment">
+                    <span class="products-menu-logo">
+                        <img class="" src="./Interface _ Triage_files/moodle-logotype.svg">
+                    </span>
+                    <span class="products-menu-text">MOODLE</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+    <!-- Boby -->
+
+    <div class="">
+
+        <!-- Main  -->
+        <div id="" class="main">
+            <!-- Main Content -->
+            <!-- TopHeader -->
+
+            <div class="main-content">
+
+                <div class="main-content-body toggle-float-right toggle-nav-indent active-left">
+                    <!-- TopHeader -->
+
+<div class="display-none-desktop mobile-nav-cta">
+
+    <button class="btn btn-box-tool btn-small-action text-info-color space-left" onclick="myFunction()" href="#">
+        <i class="fa fa-align-right no-text"></i>
+    </button>
+
+</div>
+
+
+
+<div id="top-header" class="bg-white">
+
+
+    <div class="row d-flex ">
+
+
+        <div class="p-2 col-sm-12 col-md-8 col-lg-10 content">
+
+            <div class="row ">
+
+
+
+                <div class="col-md-auto">
+                    <div>
+                        <a class=" badges-text large ">
+                            VL
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <h4>
+                        <span class="form-label">Last Name : </span>Very Long Last Name
+                    </h4>
+                    <h4>
+                        <span class="form-label">Name : </span> Very Long Name, Very Long Name
+                    </h4>
+                </div>
+
+
+                <div class="col-4">
+
+
+                    <h4>
+                        <span class="form-label">Record Files : </span>#######
+                    </h4>
+                    <h4></h4>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6 no-padding-right">
+                            <h4>
+                                <span class="form-label">Age : </span>8 years
+                            </h4>
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <h4>
+                                <span class="form-label">Gender : </span> Female
+                            </h4>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <div class="col-3">
+                    <nav class="" id="">
+
+                        <div class="sidebar-top-header">
+
+                            <div class="">
+
+                                <div class="navigation-app">
+
+
+                                    <a class=" " id="" href="https://prototype-client-mvc.azurewebsites.net/triage/TriagePatientSearch">
+                                        <span>
+
+                                            <span class="symbol">
+                                                <i class="fa fa-search-plus"></i>
+                                            </span>
+
+                                            <span class="text">New Patient Search</span>
+
+                                        </span>
+                                    </a>
+                                    <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Triage">
+                                        <span>
+
+                                            <span class="symbol glyph-icon flaticon-medical-control">
+                                            </span>
+
+
+                                            <span class="text">Temporary Record</span>
+
+                                        </span>
+
+                                    </a>
+
+
+
+                                    <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Triage">
+                                        <span>
+
+                                            <span class="symbol">
+                                                <i class="material-icons">directions_walk</i>
+                                            </span>
+
+
+                                            <span class="text">Active Patient</span>
+
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="p-2 order-first order-lg-2 col-sm-12 col-md-4 col-lg-2 no-padding">
+
+
+
+
+<div id="widget-priority" class="">
+
+
+    <h3 class="center-content">PRIORITY</h3>
+    <div class="">
+
+        <div class="">
+
+
+
+
+            <div id="widget-priority-state">
+                <div class="scene">
+                    <div class="cube show-left">
+                        <div class="cube__face cube__face--bottom">NA</div>
+                        <div class="cube__face cube__face--front">N4</div>
+                        <div class="cube__face cube__face--right">N3</div>
+                        <div class="cube__face cube__face--back">N2</div>
+                        <div class="cube__face cube__face--left">N1</div>
+                        <div class="cube__face cube__face--top">N5</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+    var cube = document.querySelector('.cube');
+    cube.addEventListener('click', function () {
+        cube.classList.toggle('show-bottom');
+    });
+</script>
+
+
+<script type="text/javascript">
+    function myFunction() {
+        var element = document.getElementById("toggle-nav");
+        element.classList.toggle("toggle-nav");
+        var element = document.getElementById("toggle-active");
+        element.classList.toggle("active");
+        var element = document.getElementById("toggle-header");
+        element.classList.toggle("toggle-top-header");
+    }
+
+</script>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+                    
+<link href="./Interface _ Triage_files/switch.css" rel="stylesheet">
+
+
+
+
+
+<style>
+    .main-nav-triage-activated, .main-nav-assesment-activated {
+        background-color: #fff;
+        color: #00acf2 !important;
+        border: solid #00acf2 1.5px;
+    }
+
+    .main-nav-assesment-activated {
+        background-color: #fff;
+        color: #00acf2 !important;
+        border: solid #00acf2 1.5px;
+    }
+</style>
+
+
+<div id="" class=" bg-white">
+
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    /*.navsubmodulelevelopen {
+        display: none;
+    }*/
+
+    .mystyle02 {
+        background-color: coral;
+    }
+</style>
+
+
+
+
+
+<nav class="nav-full" id="navsubmoduleleveltest">
+
+
+
+    <div class="nav-submodule">
+
+
+
+
+
+
+        <div class="nav-submodule-top-level">
+
+
+            <div class="navigation-app ">
+
+                <a class=" " href="https://prototype-client-mvc.azurewebsites.net/triage/AcuityScale">
+                    <span>
+
+                        <span class="symbol glyph-icon flaticon-medical-prescription">
+                        </span>
+
+                        <span class="text">Acuity Scale</span>
+
+                    </span>
+                </a>
+
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/VitalSign">
+                    <span>
+
+                        <span class="symbol icon-share-alt icons">
+                        </span>
+
+
+                        <span class="text">Vital Sign</span>
+
+                    </span>
+                </a>
+
+
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Triage">
+                    <span>
+
+                        <span class="symbol icon-share-alt icons">
+                        </span>
+
+
+                        <span class="text">Pain Assesment</span>
+
+                    </span>
+                </a>
+
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Triage">
+                    <span>
+
+                        <span class="symbol icon-share-alt icons">
+                        </span>
+
+
+                        <span class="text">Neurology</span>
+
+                    </span>
+                </a>
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/Triage">
+                    <span>
+
+                        <span class="symbol icon-share-alt icons">
+                        </span>
+
+
+                        <span class="text">Traumatology</span>
+
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="navigation-app nav-submodule-level " id="navsubmodulelevel">
+
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">Général et mineur</span>
+
+                </span>
+            </a>
+
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">
+                        Gastro-intestinal
+                    </span>
+
+                </span>
+            </a>
+
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">Ophtalmologie</span>
+
+                </span>
+            </a>
+
+
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">Traumatisme</span>
+
+                </span>
+            </a>
+
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">
+                        Pédiatrie
+                    </span>
+
+                </span>
+            </a>
+
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">Respiratoire</span>
+
+                </span>
+            </a>
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">Ophtalmologie</span>
+
+                </span>
+            </a>
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">Pédiatrie</span>
+
+                </span>
+            </a>
+
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">Respiratoire</span>
+
+                </span>
+            </a>
+
+            <a>
+                <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                    <span class="symbol glyph-icon flaticon-shield">
+                    </span>
+
+                    <span class="text">Gynéco-obstétrique</span>
+
+                </span>
+            </a>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+</nav>
+
+
+
+
+
+<script>
+    function navsubmodule() {
+        var element = document.getElementById("navsubmodulelevel");
+        element.classList.toggle("navsubmodulelevelopen");
+    }
+</script>
+
+
+
+            <a onclick="navsubmodule()" class="right" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment#">
+                <span class=" btn btn-box-tool btn-box-tool-nav  btn-small-action text-info-color">
+                    <i class="material-icons">view_comfy</i>
+                </span>
+            </a>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="row header-container">
+    
+
+
+
+    <div class="col-sm-12 col-md-6 ">
+        <h3>
+            Gestion des utilisateurs
+        </h3>
+
+        <h4>Création et modification d'utilisateurs</h4>
+    </div>
+
+    <div class="col-sm-12  col-md-6 content-center-vertical-end ">
+
+
+        <div class="form-group no-margin-bottom">
+            <div class="input-group">
+                <input type="text" name="" class="form-control" placeholder="Search...">
+
+                <div class="input-group-addon">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <button type="button" class="btn btn-box-tool btn-small-action text-info-color space-left" title="Create New Role">
+                <i class="material-icons">group_add</i>
+            </button>
+        </div>
+        <a class="btn btn-box-tool btn-small-action text-info-color space-left active" title="View List" href="https://prototype-client-mvc.azurewebsites.net/Strom/ScheduleDate">
+            <i class="material-icons">view_comfy</i>
+        </a>
+
+    </div>
+</div>
+
+<script>
+
+
+    var cube = document.querySelector('.cube');
+    var radioGroup = document.querySelector('.radio-group');
+    var currentClass = '';
+
+    function changeSide() {
+        var checkedRadio = radioGroup.querySelector(':checked');
+        var showClass = 'show-' + checkedRadio.value;
+        if (currentClass) {
+            cube.classList.remove(currentClass);
+        }
+        cube.classList.add(showClass);
+        currentClass = showClass;
+    }
+    // set initial side
+    changeSide();
+
+    radioGroup.addEventListener('change', changeSide);
+
+
+</script>
+
+
+
+
+                </div>
+
+                <!-- Main Navigation -->
+
+
+
+
+<div class="mobile-display-none  btn-toggle-nav-indent">
+
+
+
+
+    <a class="" href="https://prototype-client-mvc.azurewebsites.net/Interface/WorkboardRight">
+        <span class=" btn btn-box-tool btn-small-action text-info-color">
+            <i class="fa fa-outdent no-text"></i>
+        </span>
+    </a>
+
+</div>
+
+
+<nav class="sidebar-left toggle-nav-indent active-left" id="toggle-nav">
+
+    <div class="sidebar-workboard">
+
+        <div class="">
+
+            <div class="navigation-app">
+
+
+                <a class="" href="https://prototype-client-mvc.azurewebsites.net/triage/workboard">
+                    <span>
+
+                        <span class="symbol glyph-icon flaticon-medical-prescription">
+                        </span>
+
+                        <span class="text">Workboard</span>
+
+                    </span>
+                </a>
+
+                <a class=" main-nav-triage-activated" href="https://prototype-client-mvc.azurewebsites.net/triage/Triage">
+                    <span>
+
+                        <span class="symbol icon-share-alt icons">
+                        </span>
+
+
+                        <span class="text">Triage</span>
+
+                    </span>
+                </a>
+
+            </div>
+
+
+
+
+            <div class="navigation-app">
+
+                <a>
+                    <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                        <span class="symbol glyph-icon flaticon-shield">
+                        </span>
+
+                        <span class="text">Orange Code</span>
+
+                    </span>
+                </a>
+
+                <a>
+                    <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                        <span class="symbol glyph-icon flaticon-shield">
+                        </span>
+
+                        <span class="text">Expected Patient</span>
+
+                    </span>
+                </a>
+
+                <a>
+                    <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                        <span class="symbol glyph-icon flaticon-shield">
+                        </span>
+
+                        <span class="text">Quick Look</span>
+
+                    </span>
+                </a>
+
+
+
+
+                <a class="active main-nav-assesment-activated" href="https://prototype-client-mvc.azurewebsites.net/triage/Assesment">
+                    <span>
+                        <span class="symbol glyph-icon flaticon-shield">
+                        </span>
+
+                        <span class="text">Assesment</span>
+                    </span>
+                </a>
+
+
+                <a>
+                    <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                        <span class="symbol glyph-icon flaticon-shield">
+                        </span>
+
+                        <span class="text">Reassesment</span>
+
+                    </span>
+                </a>
+
+                <a>
+                    <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                        <span class="symbol glyph-icon flaticon-shield">
+                        </span>
+
+                        <span class="text">P1</span>
+
+                    </span>
+                </a>
+            </div>
+
+
+
+            <div class="navigation-app">
+
+                <a>
+                    <span asp-controller="Interface" asp-action="" class="" title="">
+
+                        <span class="symbol">
+                            <i class="material-icons">compare</i>
+                        </span>
+
+                        <span class="text">Screening</span>
+
+                    </span>
+                </a>
+
+                <a>
+                    <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                        <span class="symbol glyph-icon flaticon-2-medicine-kit">
+                        </span>
+
+                        <span class="text">Medical History</span>
+
+                    </span>
+                </a>
+
+                <a>
+                    <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                        <span class="symbol glyph-icon flaticon-drug-abuse-symbol">
+                        </span>
+
+                        <span class="text">Infection</span>
+
+                    </span>
+                </a>
+
+                <a>
+                    <span asp-controller="Interface" asp-action="Workboard01" class="" title="">
+
+                        <span class="symbol glyph-icon flaticon-first-aid-sign-with-phone">
+                        </span>
+
+                        <span class="text">Patient Call</span>
+
+                    </span>
+                </a>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</nav>
+
+<script type="text/javascript">
+    function myFunction() {
+        var element = document.getElementById("toggle-nav");
+        element.classList.toggle("toggle-nav");
+        var element = document.getElementById("toggle-active");
+        element.classList.toggle("active");
+        var element = document.getElementById("toggle-header");
+        element.classList.toggle("toggle-top-header");
+    }
+
+</script>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer Panel -->
+
+
+
+<footer class="footer">
+    <div class="pull-right hidden-xs">
+        <small>Version 1.0.1</small>
+    </div>
+    <small>Copyright © 2020 <a target="_blank" href="https://www.logibec.com/">Logibec Inc.</a> All rights reserved.</small>
+</footer>
+
+    <!-- Basic Scripts -->
+
+
+
+    <script src="./Interface _ Triage_files/jquery.js.download"></script>
+    <script src="./Interface _ Triage_files/MainNavigationToggleClass.js.download"></script>
+    <script src="./Interface _ Triage_files/MainNavigationOpenSubMenu.js.download"></script>
+    <script src="./Interface _ Triage_files/MainNavigationScrollBar.js.download"></script>
+    <script src="./Interface _ Triage_files/SidebarAppSwitch.js.download"></script>
+    <script src="./Interface _ Triage_files/site.js.download"></script>
+
+
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#top-header').addClass('top-header-minified');
+            } else {
+                $('#top-header').removeClass('top-header-minified');
+            }
+        });
+    </script>
+
+    <script>
+
+
+        var cube = document.querySelector('.cube');
+        var radioGroup = document.querySelector('.radio-group');
+        var currentClass = '';
+
+        function changeSide() {
+            var checkedRadio = radioGroup.querySelector(':checked');
+            var showClass = 'show-' + checkedRadio.value;
+            if (currentClass) {
+                cube.classList.remove(currentClass);
+            }
+            cube.classList.add(showClass);
+            currentClass = showClass;
+        }
+        // set initial side
+        changeSide();
+
+        radioGroup.addEventListener('change', changeSide);
+    </script>
+
+
+</body></html>

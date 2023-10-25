@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    <template-component-sidebar>
+  -->
+</head>
+<body>
+
+  <template id="template-component-template-id">
+
+    <aside class="pmd-sidebar sidebar-default pmd-sidebar-left-fixed pmd-sidebar-left pmd-z-depth"
+           role="navigation">
+      <ul class="nav pmd-sidebar-nav">
+        <li>
+          <div class="products__domain-menu">
+            <img src="../dist/img/BRAND02.svg" class="domain-menu-logo">
+            <div class="products__domain-title">PLATFORM</div>
+          </div>
+        </li>
+        <li>
+          <div class="products__domain-menu">
+
+              <img src="../dist/img/BRAND05.svg" class="domain-menu-logo">
+            <div class="products__domain-title">SI-GFA</div>
+            <span><i class="fa fa-angle-down" style="margin-left: 6em;font-size: 24px;"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="products__domain-menu">
+              <img src="../dist/img/BRAND04.svg" class="domain-menu-logo">
+            <div class="products__domain-title">GRM</div>
+          </div>
+        </li>
+        <li>
+          <div class="products__domain-menu">
+              <img src="../dist/img/BRAND04.svg" class="domain-menu-logo">
+            <div class="products__domain-title">GRF</div>
+          </div>
+        </li>
+        <li>
+          <div class="products__domain-menu">
+            <img src="../dist/img/BRAND04.svg" class="domain-menu-logo">
+            <div class="products__domain-title">BI</div>
+          </div>
+        </li>
+        <li>
+          <div class="products__domain-menu">
+            <img src="../dist/img/BRAND03.svg" class="domain-menu-logo">
+            <div class="products__domain-title">IDS</div>
+          </div>
+        </li>
+    </aside>
+
+    <div class="pmd-sidebar-overlay"></div>
+  
+  </template>
+
+  <script>
+    'use strict';
+
+    templateComponents.define('template-component-sidebar', { templateId: 'template-component-template-id' });
+  </script>
+
+</body>
+</html>

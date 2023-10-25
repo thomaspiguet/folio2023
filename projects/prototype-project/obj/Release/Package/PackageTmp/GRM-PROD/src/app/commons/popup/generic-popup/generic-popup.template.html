@@ -1,0 +1,37 @@
+<div class="panel panel-compact full-height">
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="centered-text panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{$ctrl.config.title}}</span>
+    </div>
+  </div>
+  <div class="panel-body panel-body-scroll-vertical-overflow panel-body-with-absolute-footer">
+    <!-- Dynamically appended component -->
+  </div>
+  <!-- Footer -->
+  <div class="panel-footer panel-footer-no-border panel-footer-absolute-gradient-with-controls" auto-adjust-width=".panel-body">
+    <div class="pull-right">
+      <button type="button"
+              class="btn btn-default"
+              ng-disabled="$ctrl.stateModel.cancelButton.disabled"
+              ng-hide="$ctrl.stateModel.cancelButton.hidden"
+              ng-click="$ctrl.cancel()">
+        <span>{{ 'cancel' | translate }}</span>
+      </button>
+      <button type="button"
+              class="btn btn-success"
+              ng-disabled="$ctrl.stateModel.okButton.disabled"
+              ng-hide="$ctrl.stateModel.okButton.hidden"
+              ng-click="$ctrl.ok()">
+        <span>{{ $ctrl.config.okButton.text }}</span>
+      </button>
+      <button type="button"
+              ng-disabled="$ctrl.stateModel.closeButton.disabled"
+              ng-hide="$ctrl.stateModel.closeButton.hidden"
+              class="btn btn-primary"
+              ng-click="$ctrl.quit()">
+        <i class="mdi mdi-close" aria-hidden="true"></i>
+        <span>{{ 'close' | translate }}</span>
+      </button>
+    </div>
+  </div>
+</div>

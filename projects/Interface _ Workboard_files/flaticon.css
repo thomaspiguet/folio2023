@@ -1,0 +1,233 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:04
+    */
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-style: normal;
+    /*color: #333;*/
+    /*line-height: 82px;*/
+    font-size: 28px;
+    /*margin-left: 20px;*/
+}
+
+.flaticon-2-medicine-kit:before { content: "\f100"; }
+.flaticon-24-hours-drugs-delivery:before { content: "\f101"; }
+.flaticon-24-hours-emergency-ambulance:before { content: "\f102"; }
+.flaticon-24-hours-medical-assistance:before { content: "\f103"; }
+.flaticon-24-hours-medical-assistance-by-phone:before { content: "\f104"; }
+.flaticon-24-hours-of-repose-in-bed:before { content: "\f105"; }
+.flaticon-24-hours-protection-sign-with-an-umbrella:before { content: "\f106"; }
+.flaticon-a-heart-beside-the-book:before { content: "\f107"; }
+.flaticon-alarm:before { content: "\f108"; }
+.flaticon-ambulance:before { content: "\f109"; }
+.flaticon-ambulance-assistance-24-hours:before { content: "\f10a"; }
+.flaticon-apple-and-a-shield:before { content: "\f10b"; }
+.flaticon-apple-and-water-bottle:before { content: "\f10c"; }
+.flaticon-apple-diet:before { content: "\f10d"; }
+.flaticon-apple-on-a-fork:before { content: "\f10e"; }
+.flaticon-apple-outline:before { content: "\f10f"; }
+.flaticon-asterisk-outline-variant:before { content: "\f110"; }
+.flaticon-baby-carrot-on-a-fork:before { content: "\f111"; }
+.flaticon-ball-shaped-medicine-container:before { content: "\f112"; }
+.flaticon-band-aid:before { content: "\f113"; }
+.flaticon-band-aids-cross:before { content: "\f114"; }
+.flaticon-bar-graph-with-a-cross:before { content: "\f115"; }
+.flaticon-beaker-symbol:before { content: "\f116"; }
+.flaticon-bed:before { content: "\f117"; }
+.flaticon-bicycle-healthy-transport:before { content: "\f118"; }
+.flaticon-blood-drop:before { content: "\f119"; }
+.flaticon-blood-drop-symbol:before { content: "\f11a"; }
+.flaticon-blood-type:before { content: "\f11b"; }
+.flaticon-blood-type-ab:before { content: "\f11c"; }
+.flaticon-blood-type-b:before { content: "\f11d"; }
+.flaticon-caduceus-variant:before { content: "\f11e"; }
+.flaticon-calendar-beside-medicine:before { content: "\f11f"; }
+.flaticon-calls-tool-for-medical-assistance:before { content: "\f120"; }
+.flaticon-cardiac-graphic:before { content: "\f121"; }
+.flaticon-catholic-hospital-building:before { content: "\f122"; }
+.flaticon-cell-variant-with-receptors:before { content: "\f123"; }
+.flaticon-circle-outline-with-an-arrow-pointing-up:before { content: "\f124"; }
+.flaticon-clinic-history-folder-with-plus-sign:before { content: "\f125"; }
+.flaticon-clock-beside-apple:before { content: "\f126"; }
+.flaticon-conversations-about-medicine-and-health:before { content: "\f127"; }
+.flaticon-cross:before { content: "\f128"; }
+.flaticon-curved-hyssop:before { content: "\f129"; }
+.flaticon-dentist-assistance-24-hours-a-day:before { content: "\f12a"; }
+.flaticon-dentist-chat:before { content: "\f12b"; }
+.flaticon-dentist-date-for-personal-care:before { content: "\f12c"; }
+.flaticon-dentist-guidance-books:before { content: "\f12d"; }
+.flaticon-dentist-tool-and-a-tooth-outline:before { content: "\f12e"; }
+.flaticon-dentist-tools-set:before { content: "\f12f"; }
+.flaticon-diet-for-health:before { content: "\f130"; }
+.flaticon-disease-symbol:before { content: "\f131"; }
+.flaticon-dna-deoxyribonucleic-acid-chain:before { content: "\f132"; }
+.flaticon-drop-and-a-shield:before { content: "\f133"; }
+.flaticon-drop-of-liquid:before { content: "\f134"; }
+.flaticon-dropper-for-liquid-drugs-dosage-in-drops:before { content: "\f135"; }
+.flaticon-drug-abuse-symbol:before { content: "\f136"; }
+.flaticon-drug-pills-container:before { content: "\f137"; }
+.flaticon-drugs-bottle:before { content: "\f138"; }
+.flaticon-drugs-discount:before { content: "\f139"; }
+.flaticon-drugs-on-a-pharmacy-truck-for-delivery:before { content: "\f13a"; }
+.flaticon-dumbbell-for-exercise-for-health-care:before { content: "\f13b"; }
+.flaticon-ear-increase-audio-symbol:before { content: "\f13c"; }
+.flaticon-energy-symbol:before { content: "\f13d"; }
+.flaticon-eye-beside-a-cross:before { content: "\f13e"; }
+.flaticon-eye-glass:before { content: "\f13f"; }
+.flaticon-female-gender:before { content: "\f140"; }
+.flaticon-first-aid-kit-outline:before { content: "\f141"; }
+.flaticon-first-aid-sign-with-phone:before { content: "\f142"; }
+.flaticon-flag-with-cross:before { content: "\f143"; }
+.flaticon-flask:before { content: "\f144"; }
+.flaticon-fork-and-spoon-cross:before { content: "\f145"; }
+.flaticon-frequency:before { content: "\f146"; }
+.flaticon-glass-cup-with-a-wavy-line:before { content: "\f147"; }
+.flaticon-hand-with-a-heart:before { content: "\f148"; }
+.flaticon-handicapped-sign:before { content: "\f149"; }
+.flaticon-health-care-with-healthy-food-diet:before { content: "\f14a"; }
+.flaticon-health-insurance-or-hospital-costs:before { content: "\f14b"; }
+.flaticon-healthy-food-for-heart-health-care:before { content: "\f14c"; }
+.flaticon-healthy-tooth:before { content: "\f14d"; }
+.flaticon-heart-and-shield:before { content: "\f14e"; }
+.flaticon-heart-beside-a-calendar:before { content: "\f14f"; }
+.flaticon-heart-frequency:before { content: "\f150"; }
+.flaticon-heart-outline-with-a-plus-sign:before { content: "\f151"; }
+.flaticon-heart-outline-with-a-plus-sign-inside:before { content: "\f152"; }
+.flaticon-heartbeat:before { content: "\f153"; }
+.flaticon-heartbeats-monitoring:before { content: "\f154"; }
+.flaticon-helicopter-24-hours-a-day:before { content: "\f155"; }
+.flaticon-herbal-infusion-in-hot-cup:before { content: "\f156"; }
+.flaticon-honeycomb:before { content: "\f157"; }
+.flaticon-hospital:before { content: "\f158"; }
+.flaticon-hospital-call:before { content: "\f159"; }
+.flaticon-hospital-litter-with-wheels:before { content: "\f15a"; }
+.flaticon-hospital-placeholder:before { content: "\f15b"; font-size:45px; }
+.flaticon-hospital-sign-of-letter-h-inside-circles:before { content: "\f15c"; }
+.flaticon-human-organ-with-plus-sign:before { content: "\f15d"; }
+.flaticon-human-sleeping-on-bed:before { content: "\f15e"; }
+.flaticon-immunity-drugs:before { content: "\f15f"; }
+.flaticon-increasing-bargraph:before { content: "\f160"; }
+.flaticon-inhaler:before { content: "\f161"; }
+.flaticon-injection:before { content: "\f162"; }
+.flaticon-intravenous-medicines:before { content: "\f163"; }
+.flaticon-knife:before { content: "\f164"; }
+.flaticon-leaf-outline-with-plus-sign:before { content: "\f165"; }
+.flaticon-lifeline-in-a-heart-outline:before { content: "\f166"; }
+.flaticon-lifeline-on-a-tv-monitor-screen-of-a-medical-program:before { content: "\f167"; }
+.flaticon-liquid-drug:before { content: "\f168"; }
+.flaticon-liver-organ-with-a-plus-sign:before { content: "\f169"; }
+.flaticon-male-and-female-gender-symbols:before { content: "\f16a"; }
+.flaticon-male-side-view-with-plus-sign:before { content: "\f16b"; }
+.flaticon-masculine-and-feminine-genders-symbols-with-a-plus-sign:before { content: "\f16c"; }
+.flaticon-medical-archive-folders:before { content: "\f16d"; }
+.flaticon-medical-assistance:before { content: "\f16e"; }
+.flaticon-medical-assistance-24-hours:before { content: "\f16f"; }
+.flaticon-medical-assistance-24-hours-a-day:before { content: "\f170"; }
+.flaticon-medical-calendar:before { content: "\f171"; }
+.flaticon-medical-chat-communication:before { content: "\f172"; }
+.flaticon-medical-control:before { content: "\f173"; }
+.flaticon-medical-equipment-with-heart-symbol:before { content: "\f174"; }
+.flaticon-medical-graphic-with-ascendant-line:before { content: "\f175"; }
+.flaticon-medical-graphic-with-descendant-line:before { content: "\f176"; }
+.flaticon-medical-heart-health-check:before { content: "\f177"; }
+.flaticon-medical-helicopter:before { content: "\f178"; }
+.flaticon-medical-kit-bag:before { content: "\f179"; }
+.flaticon-medical-prescription:before { content: "\f17a"; }
+.flaticon-medical-shape:before { content: "\f17b"; }
+.flaticon-medical-thought-bubble:before { content: "\f17c"; }
+.flaticon-medical-tool:before { content: "\f17d"; }
+.flaticon-medical-tool-1:before { content: "\f17e"; }
+.flaticon-medical-tool-2:before { content: "\f17f"; }
+.flaticon-medicine:before { content: "\f180"; }
+.flaticon-medicine-1:before { content: "\f181"; }
+.flaticon-medicine-2:before { content: "\f182"; }
+.flaticon-medicine-bottle:before { content: "\f183"; }
+.flaticon-medicine-capsule:before { content: "\f184"; }
+.flaticon-medicine-kit-symbol:before { content: "\f185"; }
+.flaticon-medicine-symbol:before { content: "\f186"; }
+.flaticon-medicine-tablets-and-a-glass:before { content: "\f187"; }
+.flaticon-medicine-with-cup:before { content: "\f188"; }
+.flaticon-medicines:before { content: "\f189"; }
+.flaticon-medicines-bunch-and-a-glass:before { content: "\f18a"; }
+.flaticon-medicines-time:before { content: "\f18b"; }
+.flaticon-mortar-and-pestle:before { content: "\f18c"; }
+.flaticon-mortar-tool-pharmacy-delivery:before { content: "\f18d"; }
+.flaticon-music-from-phone:before { content: "\f18e"; }
+.flaticon-natural-herbs-and-a-mortar-for-healing:before { content: "\f18f"; }
+.flaticon-no-smoking:before { content: "\f190"; }
+.flaticon-nurse:before { content: "\f191"; }
+.flaticon-oxygen-symbol:before { content: "\f192"; }
+.flaticon-pharmaceutical-delivery-symbol-with-drugs:before { content: "\f193"; }
+.flaticon-pharmaceutical-drugs:before { content: "\f194"; }
+.flaticon-pharmacy-call-for-drugs-delivery:before { content: "\f195"; }
+.flaticon-pharmacy-delivery:before { content: "\f196"; }
+.flaticon-pharmacy-delivery-of-herbs-and-mortar-for-preparation-of-natural-healthy-medicines:before { content: "\f197"; }
+.flaticon-plaster-symbol:before { content: "\f198"; }
+.flaticon-plus-sign-and-human-organs:before { content: "\f199"; }
+.flaticon-plus-sign-on-eye-ball:before { content: "\f19a"; }
+.flaticon-pressuring-tool:before { content: "\f19b"; }
+.flaticon-radish-outline:before { content: "\f19c"; }
+.flaticon-red-cross-symbol:before { content: "\f19d"; }
+.flaticon-right-angle-line-beside-the-heart:before { content: "\f19e"; }
+.flaticon-scissor:before { content: "\f19f"; }
+.flaticon-searching-in-archive-folder:before { content: "\f1a0"; }
+.flaticon-shield:before { content: "\f1a1"; }
+.flaticon-skull-inside-a-jar-for-experimentation-or-observation:before { content: "\f1a2"; }
+.flaticon-smile-emoticon:before { content: "\f1a3"; }
+.flaticon-sparkling-drink-on-glass-with-straw-and-lemon:before { content: "\f1a4"; }
+.flaticon-speech-bubbles-with-a-heart-with-a-lifeline:before { content: "\f1a5"; }
+.flaticon-sperms-with-plus-sign:before { content: "\f1a6"; }
+.flaticon-spheres-connected-by-lines:before { content: "\f1a7"; }
+.flaticon-spoon-and-fork-on-a-plate:before { content: "\f1a8"; }
+.flaticon-stethoscope-outline-variant:before { content: "\f1a9"; }
+.flaticon-stick-man-in-yoga-position:before { content: "\f1aa"; }
+.flaticon-syringe-point-tool:before { content: "\f1ab"; }
+.flaticon-syringe-pointing-down:before { content: "\f1ac"; }
+.flaticon-tablet-pad:before { content: "\f1ad"; }
+.flaticon-tape-measure:before { content: "\f1ae"; }
+.flaticon-telephone-auricular-with-numeral-sign-outlines:before { content: "\f1af"; }
+.flaticon-test-tube-and-flask:before { content: "\f1b0"; }
+.flaticon-test-tube-flask-and-drop-of-blood:before { content: "\f1b1"; }
+.flaticon-test-tubes-couple:before { content: "\f1b2"; }
+.flaticon-test-tubes-with-liquid:before { content: "\f1b3"; }
+.flaticon-thermometer-in-celsius-degrees:before { content: "\f1b4"; }
+.flaticon-three-curved-lines-or-circles-parts-symbol:before { content: "\f1b5"; }
+.flaticon-three-triangles-forming-a-triangle:before { content: "\f1b6"; }
+.flaticon-time-for-bicycle-exercise:before { content: "\f1b7"; }
+.flaticon-time-for-medicine:before { content: "\f1b8"; }
+.flaticon-timer:before { content: "\f1b9"; }
+.flaticon-tooth:before { content: "\f1ba"; }
+.flaticon-tooth-and-dentist-tool-outlines:before { content: "\f1bb"; }
+.flaticon-tooth-outline-and-toothpaste-variants:before { content: "\f1bc"; }
+.flaticon-tooth-with-a-dentist-tool-outline:before { content: "\f1bd"; }
+.flaticon-tooth-with-a-dentist-tool-outlines:before { content: "\f1be"; }
+.flaticon-tooth-with-a-plus-sign-outlines:before { content: "\f1bf"; }
+.flaticon-tooth-with-mouthwash:before { content: "\f1c0"; }
+.flaticon-umbrella-with-plus-sign:before { content: "\f1c1"; }
+.flaticon-vegetarian-diet:before { content: "\f1c2"; }
+.flaticon-wall-circular-clock:before { content: "\f1c3"; }
+.flaticon-water-droplet-and-apple-outline:before { content: "\f1c4"; }
+.flaticon-wheelchair-symbol:before { content: "\f1c5"; }
+.flaticon-wineglass-with-telephone:before { content: "\f1c6"; }
+.flaticon-zzz-sleep-symbol:before { content: "\f1c7"; }

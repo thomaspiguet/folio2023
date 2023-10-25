@@ -1,0 +1,231 @@
+@import "_colors.scss";
+
+/* General Links */
+a {
+    color: $text-secondary;
+    text-decoration: none!important;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none!important;
+    color:$info;
+}
+
+
+.bg-white {
+    background-color: $white !important;
+}
+
+.bg-red {
+    background-color: $danger !important;
+}
+
+
+.bg-blue {
+    background-color: $primary-active !important;
+}
+
+.bg-blue {
+    background-color: $primary-active !important;
+}
+
+.bg-green {
+    background-color: $success !important;
+}
+
+.bg-black {
+    background-color: $text-primary !important;
+}
+
+.bg-grey {
+    background-color: $background-color !important;
+}
+
+.bg-grey-background {
+    background-color: $background-color !important;
+}
+
+.bg-yellow {
+    background-color: $alert !important;
+}
+
+
+
+
+.bg-logo-grey {
+    background-color: $logo-grey !important;
+    color: $white !important;
+}
+
+.bg-logo-grey-second {
+    background-color: $logo-grey-second !important;
+    color: $white !important;
+}
+.bg-logo-grey-third {
+    background-color: $logo-grey-third !important;
+    color: $white !important;
+}
+
+.bg-sub-brand-blue {
+    background-color: $sub-brand-blue !important;
+    color: $white !important;
+}
+
+.bg-sub-brand-orange {
+    background-color: $sub-brand-orange !important;
+    color: $white !important;
+}
+
+.bg-sub-brand-green {
+    background-color: $sub-brand-green !important;
+    color: $white !important;
+}
+.bg-sub-brand-light-blue {
+    background-color: $sub-brand-light-blue !important;
+    color: $white !important;
+}
+
+
+
+.bg-brand, .label-brand, .modal-brand .modal-brand {
+    background-color: $brand !important;
+    color: $white;
+}
+
+.bg-primary, .label-primary, .modal-primary .modal-primary {
+    background-color: $primary !important;
+    color: $white;
+}
+
+.bg-primary-active {
+    background-color: $primary-active;
+    color: $white;
+}
+
+.bg-primary-disabled {
+    background-color: $primary-inactive;
+    color: $white;
+}
+
+.bg-info, .label-info, .modal-info .modal-info {
+    background-color: $info;
+    color: $white;
+}
+
+.bg-info-active {
+    background-color: $info-active;
+    color: $white;
+}
+
+.bg-info-disabled {
+    background-color: $info-inactive;
+    color: $white;
+}
+
+.bg-grey, .label-grey, .modal-grey .modal-grey {
+    background-color: $grey !important;
+    color: $white;
+}
+
+.bg-grey-active {
+    background-color: $grey-active;
+    color: $white;
+}
+
+.bg-grey-disabled {
+    background-color: $grey-inactive;
+    color: $white;
+}
+
+.bg-red-active {
+    background-color: $danger-active;
+    color: $white;
+}
+
+.bg-red-disabled {
+    background-color: $danger-inactive;
+    color: $white;
+}
+
+.bg-text {
+    background-color: $text-secondary;
+    color: $white;
+}
+
+.bg-green-active {
+    background-color: $success-active;
+    color: $white;
+}
+
+.bg-green-disabled {
+    background-color: $success-inactive !important;
+    color: $white;
+}
+
+.bg-yellow-active {
+    background-color: $alert-active;
+    color: $white;
+}
+
+.bg-yellow-disabled {
+    background-color: $alert-inactive;
+    color: $white;
+}
+
+.white-text {
+    color: $white!important;
+}
+
+.text-main-color {
+    color: $brand !important;
+}
+
+.text-primary-color {
+    color: $text-primary !important;
+}
+
+.text-secondary-color {
+    color: $text-secondary !important;
+}
+.text-info-color {
+    color: $info !important;
+}
+
+.text-info-active {
+    color: $info-active;
+}
+
+.text-danger-color {
+    color: $danger-active !important;
+}
+.text-success-color {
+    color: $success-inactive !important;
+}
+.success-color {
+    color: $success !important;
+}
+
+.alert-color {
+    color: $alert !important;
+}
+
+.danger-color {
+    color: $danger-active !important;
+    .bold {
+        font-weight:500;
+    }
+}
+
+
+
+.label-warning {
+    background-color: $alert;
+}
+
+.label-warning[href]:hover,
+.label-warning[href]:focus {
+    background-color: $alert-active;
+}

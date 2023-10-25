@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Master detail_active (on click)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Master-detail_active-(on-click)">
+            <path d="M8,0 C3.584,0 0,3.584 0,8 C0,12.416 3.584,16 8,16 C12.416,16 16,12.416 16,8 C16,3.584 12.416,0 8,0 Z M8.8,12 L7.2,12 L7.2,7.2 L8.8,7.2 L8.8,12 Z M8.8,5.6 L7.2,5.6 L7.2,4 L8.8,4 L8.8,5.6 Z" id="Shape" fill="#00778B" fill-rule="nonzero"></path>
+            <polygon id="Path" fill="#FFFFFF" points="8.8 12 7.2 12 7.2 7.2 8.8 7.2"></polygon>
+            <polygon id="Path" fill="#FFFFFF" points="8.8 5.6 7.2 5.6 7.2 4 8.8 4"></polygon>
+        </g>
+    </g>
+</svg>

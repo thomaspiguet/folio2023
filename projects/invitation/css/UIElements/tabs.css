@@ -1,0 +1,329 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * placeholder 
+ * 
+ */
+/*
+ * prefixs 
+ * 
+ */
+/*
+ * transition 
+ * 
+ */
+/*
+ * calc 
+ * 
+ */
+/*
+ * box-shadow 
+ * @include box-shadow(1px,1px,1px,0, #fff, true);
+ * 
+ */
+/*
+ * rotate 
+ * 
+ */
+/*
+ * scale 
+ * 
+ */
+/*
+ * translate 
+ * 
+ */
+/*
+ * skew 
+ * 
+ */
+/*
+ * flex 
+ * 
+ */
+/*
+ * absolute 
+ * 
+ */
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/*---------------------------------------------
+      Tabs
+----------------------------------------------*/
+.tabs-area.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.nav-tabs > li > a.active i, .nav-tabs > li > a.active:hover i, .nav-tabs > li > a.active:focus i {
+  color: #2f3943;
+}
+
+.nav-tabs > li > a.active, .nav-tabs > li > a.active:hover, .nav-tabs > li > a.active:focus {
+  color: #555555;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs.nav-justified > li > a, .nav-tabs > li > a {
+  border: 1px solid #cfd8dc;
+  border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  /*background-color: #f5f5f5;*/
+  color: #333333;
+  /*margin-right: 5px;*/
+  text-decoration: none;
+}
+
+.nav-tabs > li > a i {
+  color: #999999;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.nav-tabs > li > a {
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.nav-tabs.nav-justified, .nav-tabs {
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.nav-tabs.nav-justified > li > a, .nav-tabs > li {
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: #cfd8dc;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  /*background-color: #fafafa;*/
+}
+
+.tab-content {
+  padding: 15px;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+  border-top: 0px;
+}
+
+.nav-tabs.nav-justified > li:last-child > a {
+  margin-right: 0px;
+}
+
+.nav-tabs.nav-justified > li > a.active, .nav-tabs.nav-justified > li > a.active:hover, .nav-tabs.nav-justified > li > a.active:focus {
+  border: 1px solid #cfd8dc;
+  border-bottom-color: transparent;
+  background-color: #fff;
+  color: #00acf2;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #f5f5f5;
+  border-color: #cfd8dc;
+  color: #00acf2;
+}
+
+.nav.primary .open > a, .nav.primary .open > a:hover, .nav.primary .open > a:focus {
+  background-color: #0083a5;
+  border-color: #0083a5;
+  color: #00acf2;
+}
+
+/*transparent*/
+.nav-tabs.transparent > li > a {
+  /*background-color: $color-background;*/
+  color: #73879c;
+}
+
+.nav.transparent > li > a:hover, .nav.transparent > li > a:focus {
+  background-color: transparent;
+}
+
+.nav-tabs.transparent > li > a.active, .nav-tabs.transparent > li > a.active:hover, .nav-tabs.transparent > li > a.active:focus {
+  color: #00acf2;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  border-bottom-color: transparent;
+  text-decoration: none;
+}
+
+/*primary*/
+.nav-tabs.primary > li > a i {
+  color: #0083a5;
+}
+
+.nav-tabs.primary > li > a.active i, .nav-tabs.primary > li > a:focus i, .nav-tabs.primary > li > a:hover i {
+  color: #fff;
+}
+
+.nav-tabs.primary > li > a.active i, .nav-tabs.primary > li > a.active:hover i, .nav-tabs.primary > li > a.active:focus i {
+  color: #fff;
+}
+
+.nav-tabs.primary > li > a {
+  background-color: rgba(0, 131, 165, 0.15);
+  color: #0083a5;
+  border: 1px solid #0083a5;
+}
+
+.nav.primary > li > a:hover, .nav.primary > li > a:focus {
+  background-color: #0083a5;
+  color: #fff;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs.primary > li > a.active, .nav-tabs.primary > li > a.active, .nav-tabs.primary > li > a.active:hover, .nav-tabs.primary > li > a.active:focus {
+  color: #fff;
+  background-color: #0083a5;
+  border: 1px solid #0083a5;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs.primary {
+  border-bottom: 1px solid #0083a5;
+}
+
+.tab-content.primary {
+  border: 1px solid #0083a5;
+  border-top: 0px;
+}
+
+/*primary-simple*/
+.nav-tabs.primary-simple > li > a i {
+  color: #73879c;
+}
+
+.nav-tabs.primary-simple > li > a.active i, .nav-tabs.primary > li:focus > a i, .nav-tabs.primary > li:hover > a i {
+  color: #2f3943;
+}
+
+.nav-tabs.primary-simple > li > a {
+  background-color: #fff;
+  color: #73879c;
+  border-top: 3px solid transparent;
+  border-bottom: 1px solid #cfd8dc;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.nav.primary-simple > li > a:hover, .nav.primary-simple > li > a:focus {
+  background-color: #fff;
+  color: #2f3943;
+  border-top: 3px solid transparent;
+  border-bottom: 1px solid #cfd8dc;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.nav-tabs.primary-simple > li > a.active, .nav-tabs.primary-simple > li > a.active:hover, .nav-tabs.primary-simple > li > a.active:focus {
+  color: #2f3943;
+  background-color: #fff;
+  border-top: 3px solid #0083a5;
+  border-bottom: 1px solid #cfd8dc;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.nav-tabs.primary-simple {
+  border-bottom: 0px;
+}
+
+.tab-content.primary-simple {
+  border: 1px solid #cfd8dc;
+  background-color: #f2f3f6;
+}
+
+/*horizontal right aligned*/
+.nav-tabs.right-aligned li {
+  float: right;
+}
+
+.nav-tabs.right-aligned li a {
+  margin-right: 0px;
+  /*margin-left: 5px;*/
+}
+
+.aside-panel .tab-content {
+  padding: 0px;
+  /*border: 1px solid #cfd8dc;
+        background-color: #fff;
+        border-top: 0px;*/
+  border: none;
+  padding-top: 15px;
+}
+
+.aside-panel .nav-tabs > li {
+  margin-bottom: -1px;
+  width: 50%;
+  text-align: center;
+}

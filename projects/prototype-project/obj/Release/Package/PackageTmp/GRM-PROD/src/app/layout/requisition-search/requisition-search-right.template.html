@@ -1,0 +1,51 @@
+<div class="panel panel-compact" ng-class="!$ctrl.getHeaderDetailStateModel().hidden ? 'height-70' : 'full-height'" ng-if="!$ctrl.getHeaderListStateModel().hidden">
+
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'requisitionHeaders' | translate }}</span>
+    </div>
+  </div>
+
+  <div class="panel-body panel-body-transparent panel-body-no-padding panel-body-content">
+    <requisition-search-header-list
+      model="$ctrl.getHeaderListDataModel()"
+      state-model="$ctrl.getHeaderListStateModel()"
+      view-model="$ctrl.getRequisitionSearchViewModel()"
+      action-handler="$ctrl.headerListActionHandler(obj)"
+    ></requisition-search-header-list>
+  </div>
+
+</div>
+
+<div class="panel panel-compact" ng-class="!$ctrl.getProductDetailStateModel().hidden ? 'height-70' : 'full-height'" ng-if="!$ctrl.getProductListStateModel().hidden">
+
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'requisitionedProducts' | translate }}</span>
+    </div>
+  </div>
+
+  <div class="panel-body panel-body-transparent panel-body-no-padding panel-body-content">
+    <requisition-search-product-list
+      model="$ctrl.getProductListDataModel()"
+      state-model="$ctrl.getProductListStateModel()"
+      view-model="$ctrl.getRequisitionSearchViewModel()"
+      action-handler="$ctrl.productListActionHandler(obj)"
+    ></requisition-search-product-list>
+  </div>
+
+</div>
+
+<div class="height-30 scrollable-v" ng-if="!$ctrl.getHeaderDetailStateModel().hidden">
+  <requisition-search-header-detail
+    model="$ctrl.getHeaderDetailDataModel()"
+    state-model="$ctrl.getHeaderDetailStateModel()"
+  ></requisition-search-header-detail>
+</div>
+
+<div class="height-30 scrollable-v" ng-if="!$ctrl.getProductDetailStateModel().hidden">
+  <requisition-search-product-detail
+    model="$ctrl.getProductDetailDataModel()"
+    state-model="$ctrl.getProductDetailStateModel()">
+  </requisition-search-productr-detail>
+</div>

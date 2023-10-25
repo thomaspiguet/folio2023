@@ -1,0 +1,7 @@
+<div id="requisitionStatus_toComplete" class="requisition-progress-step" ng-class="{ 'active arrow-box': $ctrl.isToComplete() }">{{ 'toComplete' | translate }}</div>
+<div id="requisitionStatus_toAuthorize" class="requisition-progress-step" ng-class="{ 'active arrow-box': $ctrl.isToAuthorize() }">{{ 'toAuthorize' | translate }}</div>
+<div id="requisitionStatus_inPreparation" class="requisition-progress-step" ng-class="{ 'active arrow-box': $ctrl.isInPreparation() }">{{ 'inPreparation' | translate }}</div>
+<div id="requisitionStatus_ordered" class="requisition-progress-step" ng-class="{ 'active arrow-box': $ctrl.isOrdered() }">{{ 'ordered' | translate }}</div>
+<div id="requisitionStatus_awaitingDelivery" class="requisition-progress-step" ng-class="{ 'requisition-progress-step-hidden': $ctrl.isAwaitingDelivery() || $ctrl.isDelivered() }">{{ 'delivery' | translate }}</div>
+<div id="requisitionStatus_inPartialDelivery" class="requisition-progress-step" ng-class="$ctrl.isAwaitingDelivery() ? 'active arrow-box' : 'requisition-progress-step-hidden'">{{ 'partialDelivery' | translate }}</div>
+<div id="requisitionStatus_delivered" class="requisition-progress-step" ng-class="$ctrl.isDelivered() ? 'active arrow-box' : 'requisition-progress-step-hidden'">{{ 'completeDelivery' | translate }}</div>

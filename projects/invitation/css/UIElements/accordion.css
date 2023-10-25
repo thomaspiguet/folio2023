@@ -1,0 +1,395 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/*
+ * placeholder 
+ * 
+ */
+/*
+ * prefixs 
+ * 
+ */
+/*
+ * transition 
+ * 
+ */
+/*
+ * calc 
+ * 
+ */
+/*
+ * box-shadow 
+ * @include box-shadow(1px,1px,1px,0, #fff, true);
+ * 
+ */
+/*
+ * rotate 
+ * 
+ */
+/*
+ * scale 
+ * 
+ */
+/*
+ * translate 
+ * 
+ */
+/*
+ * skew 
+ * 
+ */
+/*
+ * flex 
+ * 
+ */
+/*
+ * absolute 
+ * 
+ */
+/*
+ * Accordion
+ * 
+ */
+.btn-accordion-unfold:after {
+  /*font-family: 'Material Icons';
+        content: "\f000";*/
+  /*content: "\f000";
+        font-family: FontAwesome;*/
+  font-family: "Material Icons";
+  content: '\e5d7';
+  /*padding: 5px !important;*/
+  font-size: 18px !important;
+  line-height: 1.5;
+}
+
+.btn-accordion-unfold.collapsed:after {
+  font-family: "Material Icons";
+  content: '\e5d6';
+  /*padding: 5px !important;*/
+  font-size: 18px !important;
+  line-height: 1.5;
+}
+
+.btn-accordion-fold:after {
+  /*font-family: 'Material Icons';
+        content: "\f000";*/
+  /*content: "\f000";
+        font-family: FontAwesome;*/
+  font-family: "Material Icons";
+  content: '\e313';
+  /*padding: 5px !important;*/
+  font-size: 22px !important;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.btn-accordion-fold.collapsed:after {
+  font-family: "Material Icons";
+  content: '\e315';
+  /*padding: 5px !important;*/
+  font-size: 22px !important;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.btn-accordion-plus:after {
+  /*font-family: 'Material Icons';
+        content: "\f000";*/
+  /*content: "\f000";
+        font-family: FontAwesome;*/
+  font-family: FontAwesome;
+  content: '\f068';
+  /*padding: 5px !important;*/
+  font-size: 14px !important;
+  line-height: 2;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.btn-accordion-plus.collapsed:after {
+  font-family: FontAwesome;
+  content: '\f067';
+  /*padding: 5px !important;*/
+  font-size: 14px !important;
+  line-height: 2;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.accordion-wrapper {
+  position: relative;
+  max-width: 700px;
+  height: auto;
+  margin: 15px 15px 15px 0px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.accordion-wrapper .label-title {
+  font-size: 16px !important;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.accordion-wrapper .checkbox {
+  position: relative;
+  display: inline-table;
+  margin-top: inherit;
+  margin-bottom: inherit;
+}
+
+.accordion-set {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.accordion-set.set-l-1 > a {
+  padding-left: 9%;
+}
+
+.accordion-set.set-l-2 > a {
+  padding-left: 12%;
+}
+
+.accordion-set.set-l-3 > a {
+  padding-left: 18%;
+}
+
+.accordion-set > a {
+  display: block;
+  font-size: 14px;
+  padding: 18px 15px;
+  text-decoration: none;
+  font-weight: 400;
+  -webkit-transition: all 200ms ease-in-out 0ms;
+  transition: all 200ms ease-in-out 0ms;
+}
+
+.accordion-set > a i {
+  margin: 2px 10px 0px 0px;
+  -webkit-transition: all 200ms ease-in-out 0ms;
+  transition: all 200ms ease-in-out 0ms;
+}
+
+.accordion-content {
+  background-color: #fff;
+  border-bottom: 1px solid #cfd8dc;
+  display: none;
+}
+
+.accordion-content-inner {
+  padding: 10px 15px;
+  margin: 0;
+  color: #2f3943;
+}
+
+.accordion-content-inner.set-l-1 {
+  padding-left: 9%;
+}
+
+.accordion-content-inner.set-l-2 {
+  padding-left: 12%;
+}
+
+.accordion-content-inner.set-l-3 {
+  padding-left: 18%;
+}
+
+/*.accordion-primary {
+    .accordion-set {
+        background-color: rgba($color-brand, 0.15);
+
+        > a {
+            border-bottom: 1px solid $color-brand;
+            color: $color-brand;
+
+            icon {
+                color: $color-brand;
+            }
+        }
+
+        > a.active {
+            background-color: $color-white;
+            color: $color-white;
+        }
+
+        .accordion-content {
+            border-bottom: 1px solid $color-brand;
+        }
+    }
+}*/
+.accordion-default .accordion-set {
+  background-color: #fff;
+}
+
+.accordion-default .accordion-set > a {
+  border-bottom: 1px solid #cfd8dc;
+  color: #73879c;
+}
+
+.accordion-default .accordion-set > a i {
+  color: #73879c;
+}
+
+.accordion-default .accordion-set > a:hover {
+  color: #31b0d5;
+}
+
+.accordion-default .accordion-set > a:hover i {
+  color: #31b0d5;
+}
+
+.accordion-default .accordion-set > a.active {
+  color: #73879c;
+}
+
+.accordion-default .accordion-set > a.active i {
+  color: #73879c;
+}
+
+/* Accordion Side Bar */
+/*#accordian {
+    background-color: $color-grey-inactive;
+    width: 320px;
+    margin: 0 auto 0 0;
+    color: $color-text-primary;
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+#accordian h3 {
+    background-color: $color-background;
+    border-bottom: 1px solid $color-border;
+}
+
+#accordian h3 a {
+    padding: 8px 10px;
+    font-size: 15px;
+    display: block;
+    color: $color-text-primary;
+    text-decoration: none;
+}
+
+#accordian h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+
+#accordian li {
+    list-style-type: none;
+}
+
+#accordian ul ul li a,
+#accordian h4 {
+    color: $color-text-primary;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 28px;
+    display: block;
+    padding: 0 15px;
+    @include transition(all, 200ms);
+    position: relative;
+    border-left: 3px solid transparent;
+}
+
+#accordian ul ul li a:hover {
+    background-color: $color-background;
+    border-left: 3px solid $color-info;
+}
+
+#accordian ul {
+    padding: 0px;
+}
+
+#accordian ul ul {
+    display: none;
+}
+
+#accordian li.active > ul {
+    display: block;
+}
+
+#accordian ul ul ul {
+    margin-left: 15px;
+}
+
+#accordian a:not(:only-child):after {
+    content: "\f104";
+    font-family: fontawesome;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 16px;
+    font-weight: $semi-bold-font;
+}
+
+#accordian .active > a:not(:only-child):after {
+    content: "\f107";
+}*/

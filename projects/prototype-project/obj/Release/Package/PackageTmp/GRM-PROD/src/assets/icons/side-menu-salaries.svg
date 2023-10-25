@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>payment_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Dashboard_collapsed-side-navigation" transform="translate(-27.000000, -261.000000)" fill-rule="nonzero" fill="#00778B">
+            <g id="Group-19" transform="translate(26.000000, 176.000000)">
+                <g id="Group-12">
+                    <g id="payment_24px" transform="translate(1.000000, 85.000000)">
+                        <path d="M16.2,0 L1.8,0 C0.801,0 0.009,0.77875 0.009,1.75 L0,12.25 C0,13.22125 0.801,14 1.8,14 L16.2,14 C17.199,14 18,13.22125 18,12.25 L18,1.75 C18,0.77875 17.199,0 16.2,0 Z M16.2,12.25 L1.8,12.25 L1.8,7 L16.2,7 L16.2,12.25 Z M16.2,3.5 L1.8,3.5 L1.8,1.75 L16.2,1.75 L16.2,3.5 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

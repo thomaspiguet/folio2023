@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">-->
+
+    <title>Profile</title>
+
+    <!--<link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
+    <link href="css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+
+    <link href="../components/main-header/css/navbar.css" rel="stylesheet">
+    <link href="../components/main-header/_intermenu.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/_branding.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+
+    <link href="../components/checkbox/_checkbox.css" rel="stylesheet" />
+    <link href="../components/checkbox/_select.css" rel="stylesheet" />
+
+    <!--<link href="css/_recrutement-style.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_admin.css" rel="stylesheet" />-->
+
+    <link href="../dist/css/scss/_collapse.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_listing.css" rel="stylesheet" />
+
+
+
+    <link href="css/_step-wizard.css" rel="stylesheet" />
+    <link href="css/_portail-client-style.css" rel="stylesheet" />
+
+
+
+
+
+
+    <!--<script>
+
+        $(function () {
+
+            causeRepaintsOn = $("h1, h2, h3, p");
+
+            $(window).resize(function () {
+                causeRepaintsOn.css("z-index", 1);
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                e.stopPropagation();
+                $(".profile-info")
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                e.stopPropagation();
+                $(".account-creation")
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>-->
+
+
+</head>
+
+
+
+
+<body class="internal_pages" id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <div class="navbar-brand js-scroll-trigger">
+                <a href="index.html">
+                    <img src="img/BRAND-PORTAIL-CLIENT.svg" />
+                </a>
+            </div>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="client-space.html">ESPACE CLIENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#language">ENGLISH</a>
+                    </li>
+
+                    <li class="nav-item dropdown user user-menu">
+
+                        <a aria-expanded="false" class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown"
+                           href="#">
+                            <span class="hidden-xs">
+                                VOTRE COMPTE
+                            </span>
+                        </a>
+
+
+
+                        <ul class="dropdown-menu" id="myModal">
+                            <li class="user-header">
+
+                                <p>John Doe<small>Dernière connexion 2017/01/05</small></p>
+
+                                <!--<h4>Enregistrement</h4>-->
+                                <!--<div class="profile-info collapsed-box" style="display: none;">
+
+                                    <p class="boxing-text user-header text-primary-color">User Name:<span class="text-secondary-color">Heushi01</span></p>
+                                    <p class="text-primary-color">Email:<span class="text-secondary-color">
+                                    shirley.heurtier@logibec.com</span></p>
+
+                                </div>-->
+
+                            </li>
+
+                            <li class="user-body account-creation collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Créer votre compte utilisateur</p>
+
+                                    <!--<label class="control-label text-success-color" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>-->
+
+
+                                    <form action="../../index.html" method="post">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="Nom complet">
+                                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Confirmer le mot de passe">
+                                            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                                            <!--<span class="help-block danger-color">Help block with error</span>-->
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">S'inscrire</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+
+
+                            </li>
+
+                            <li class="user-body profile-info collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Ouvrir votre session</p>
+
+
+
+
+                                    <form action="../../index.html" method="post">
+
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <p class="small">
+                                            <a href="#">Récupérer votre mot de passe</a>
+
+                                        </p>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">Se connecter</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                            </li>
+
+
+                            <li class="user-footer">
+
+
+                                <!--<div class="">
+
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile"><span class="account-creation-btn">Créer votre compte</span></button>
+                                </div>-->
+
+
+                                <div class="">
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile ">Profil</button>
+                                </div>
+
+                                <!--<div class="">
+                                    <button type="button" onclick="window.location.href='applied-jobs.html'" class="btn btn btn-success bg-green-disabled btn-flat-mobile btn-block-mobile">Mes emplois postulés</button>
+                                </div>-->
+
+                                <div class="">
+                                    <button type="button" onclick="window.location.href='index.html'" class="btn btn-danger btn-flat-mobile btn-block-mobile">Déconnexion</button>
+
+                                </div>
+
+                                <!--<div class="">
+                                    <button type="button" data-widget="collapse" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile"><span class="profile-btn">Connexion</span></button>
+
+                                </div>-->
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="applied-jobs.html" class="nav-link notification ">
+                            <i class="fa fa-bell-o text-danger-color btn-flash"></i>
+                            <span class="label-top-container label label-top label-warning bg-red-active">10</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="banner second_banner">
+
+        <div class="container">
+
+            <div class="intro-text third_banner-text">
+
+                <h1 class="intro-heading-second-banner">Paiement</h1>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+    <section class="bg-step-wizard utile-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="wizard">
+
+                        <ul class="nav nav-wizard ">
+
+                            <li class="active" style="padding: 0px 105px 0 105px;">
+                                <a href="check-out-personal-info.html">1<span class="small">Renseignements personnels</span></a>
+                            </li>
+
+                            <li class="disable" style="padding: 0px 105px 0 105px;">
+                                <a href="check-out-payment.html">2<span class="small">Paiement</span></a>
+                            </li>
+
+
+                            <li class="disable" style="padding: 0px 105px 0 105px">
+                                <a href="check-out-completed.html">3<span class="small">Confirmation</span></a>
+                            </li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-grey-background utile-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <form>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="step1">
+                                <div class="box box-default" style="margin-bottom: 0px;">
+
+
+
+                                    <div class="box-body  no-padding-bottom">
+
+                                        <div class="row">
+
+                                            <div class="col-12">
+                                                <!--<p class="text-primary-color">Indiquez les programmes de formation académique que vous suivez ou avez suivis</p>-->
+
+                                                <p style="text-align: left; font-size:18px;">
+                                                    <span class="label bg-yellow">
+                                                        <i class="fa fa-info"></i> Note:
+                                                    </span>&nbsp;&nbsp;Veuillez valider vos informations personnelles générales, si vous les modifier, elle seront aussi modifié dans votre profil
+                                                </p>
+
+
+                                                <!--<div class="form-group has-error pull-right no-margin-bottom ">
+                <label class="control-label" for="inputWarning"><i class="icon fa fa-ifo-circle"></i>                             Section obligatoire</label>
+            </div>-->
+
+
+
+                                            </div>
+
+
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>Prénom : <!--<span class="text-danger">*</span>--> </label>
+                                                    <input type="text" class="form-control" placeholder="John" >
+                                                    <!--<span class="help-block danger-color">Champs obligatoire</span>-->
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>Nom : <!--<span class="text-danger">*</span>--> </label>
+                                                    <input type="text" class="form-control" placeholder="Doe" >
+                                                    <!--<span class="help-block danger-color">Champs obligatoire</span>-->
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Adresse courriel : <!--<span class="text-danger">*</span>--> </label>
+                                                    <input type="text" class="form-control" placeholder="john.doe@test.com" >
+                                                    <!--<span class="help-block danger-color">Adresse courriel invalide</span>-->
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Adresse : <!--<span class="text-danger">*</span>--> </label>
+                                                    <input type="text" class="form-control" placeholder="xxxx, Ave. XXXXX" >
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label>Ville : <!--<span class="text-danger">*</span>--> </label>
+                                                    <input type="text" class="form-control" placeholder="Montreal" >
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label>Province : <!--<span class="text-danger">*</span>--> </label>
+                                                    <select class="form-control select2" style="width: 100%;" >
+                                                        <option class="" value="">
+                                                            Québec
+                                                        </option>
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label>Pays : <!--<span class="text-danger">*</span>--> </label>
+                                                    <input type="text" class="form-control" placeholder="Canada" >
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label>Code postal : <!--<span class="text-danger">*</span>--> </label>
+                                                    <input type="text" class="form-control" placeholder="XXX XXX" >
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Téléphone : <!--<span class="text-danger">*</span>--> </label>
+                                                    <input type="text" class="form-control" placeholder="" >
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+
+
+
+
+                                    </div>
+
+
+                            
+
+
+                                </div>
+                                <ul class="list-inline pull-right">
+                                    <li><button onclick="window.location.href='deposit-check-out-payment.html'" type="button" class="btn btn-info">Suivant</button></li>
+                                </ul>
+
+
+                            </div>
+
+                            <div class="tab-pane" id="step2">
+                                <h3>Step 2</h3>
+                                <p>This is step 2</p>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary">Suivant</button></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="tab-pane" id="step3">
+                                <h3>Step 3</h3>
+                                <p>This is step 3</p>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary">Suivant</button></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="tab-pane" id="step4">
+
+
+
+                            </div>
+
+
+
+
+                            <div class="tab-pane" id="step5">
+                                <h3>Complete</h3>
+                                <p>You have successfully completed all steps.</p>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section></section>
+
+    <section id="footer" class="footer-menu bg-text">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li>ANALYTIQUE</li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-item">
+                                <h3>Legale</h3>
+                                <ul>
+                                    <li>COOKIES</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Questions!</h3>
+                        <p>
+                            Des questions sur votre facture ou nos services ?
+                        </p>
+                        <!--<div class="input-group">
+                            <input type="text" class="form-control" placeholder="Entrez question">
+                            <input type="submit" class="form-control" value="Envoyer">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer" id="copyright">
+
+
+
+        <small>Copyright © <a href="http://logibec.com" target="_blank">Logibec Canada</a> 2018. Tous droits réservés.</small>
+
+        <div class="">
+            <small>Version 1.0.1 BETA</small>
+        </div>
+
+    </footer>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.easing.compatibility.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="../dist/js/obs-raw.js"></script>
+
+    <script src="../components/checkbox/checkbox.js"></script>
+    <script src="../components/checkbox/radio.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                e.stopPropagation();
+                $(".profile-info")
+                    // .slideDown(1000);
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                e.stopPropagation();
+                $(".account-creation")
+                    //.slideDown(1000);
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+
+
+
+    <!--<script>
+        $(document).ready(function () {
+
+
+            $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+                var $target = $(e.target);
+
+                if ($target.parent().hasClass('disabled')) {
+                    return false;
+                }
+            });
+
+            $(".btn-primary").click(function (e) {
+
+                var $active = $('.wizard .nav-wizard li.active');
+                $active.next().removeClass('disabled');
+                nextTab($active);
+
+            });
+        });
+
+        function nextTab(elem) {
+            $(elem).next().find('a[data-toggle="tab"]').click();
+        }
+
+    </script>-->
+
+</body>
+
+</html>

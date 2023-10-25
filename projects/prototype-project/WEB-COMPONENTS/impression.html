@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      <template-component-impression>
+    -->
+</head>
+<body>
+
+    <template id="template-component-template-id">
+
+        <div class="content">
+            <div class="box-header with-border">
+                <h3 class="box-title">Color Palette</h3>
+            </div>
+
+
+
+
+            <div class="row show-grid" style="width:1000px; background-color: white;">
+
+                <div class="col-md-4 col-md-offset-2 print-to-list">
+
+                    <a style="" href="#">
+                        <div class=" icon-inner icon-rounded flaticon-stethoscope-outline-variant center-content-auto"></div>
+                        <h4 class="text-align-center">Impression des rapports Confirmés</h4>
+                        <p class="text-align-center">Impression des rapports confirmés électroniquement sur les étages et aux archives</p>
+                    </a>
+
+                </div>
+
+
+                <div class="col-md-4 ">
+                    <div class=" icon-inner icon-rounded flaticon-stethoscope-outline-variant center-content-auto"></div>
+                    <h4 class="text-align-center">Impression des rapports Confirmés</h4>
+
+                </div>
+            </div>
+
+
+            <div class="row show-grid">
+                <form id="wizard-1" novalidate="novalidate">
+                    <div id="bootstrap-wizard-1" class="col-sm-12">
+
+                        <div class="form-bootstrapWizard">
+                            <ul class="bootstrapWizard form-wizard">
+                                <li class="active" data-target="#step1">
+                                    <a href="#tab1" data-toggle="tab"> <span class="step">1</span> <span class="title">Basic information</span> </a>
+                                </li>
+                                <li data-target="#step2">
+                                    <a href="#tab2" data-toggle="tab"> <span class="step">2</span> <span class="title">Billing information</span> </a>
+                                </li>
+                                <li data-target="#step3">
+                                    <a href="#tab3" data-toggle="tab"> <span class="step">3</span> <span class="title">Domain Setup</span> </a>
+                                </li>
+                                <li data-target="#step4">
+                                    <a href="#tab4" data-toggle="tab"> <span class="step">4</span> <span class="title">Save Form</span> </a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+
+
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <br>
+                                <h3><strong>Step 1 </strong> - Basic Information</h3>
+
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+
+                                        <div class="form-group">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <br>
+                                <h3><strong>Step 2</strong> - Billing Information</h3>
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+
+
+                                    </div>
+
+
+                                    <div class="col-sm-4">
+
+                                    </div>
+                                    <div class="col-sm-4">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+
+                                    </div>
+                                    <div class="col-sm-6">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                <br>
+                                <h3><strong>Step 3</strong> - Domain Setup</h3>
+
+
+                                <div class="form-group">
+                                    <label>This is a label</label>
+                                    <input class="form-control input-lg" placeholder="Another input box here..." type="text" name="etc" id="etc">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab4">
+                                <br>
+                                <h3><strong>Step 4</strong> - Save Form</h3>
+                                <br>
+
+                                <br>
+                                <br>
+                            </div>
+
+                            <div class="form-actions">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="pager wizard no-margin">
+                                            <!--<li class="previous first disabled">
+                                    <a href="javascript:void(0);" class="btn btn-lg btn-default"> First </a>
+                                    </li>-->
+                                            <li class="previous disabled">
+                                                <a href="javascript:void(0);" class="btn btn-lg btn-default"> Previous </a>
+                                            </li>
+                                            <!--<li class="next last">
+                                    <a href="javascript:void(0);" class="btn btn-lg btn-primary"> Last </a>
+                                    </li>-->
+                                            <li class="next">
+                                                <a href="javascript:void(0);" class="btn btn-lg txt-color-darken"> Next </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </form>
+            </div>
+
+
+        </div> 
+
+
+
+
+    </template>
+
+
+
+    <script>
+        'use strict';
+
+        templateComponents.define('template-component-impression', { templateId: 'template-component-template-id' });
+    </script>
+
+</body>
+</html>

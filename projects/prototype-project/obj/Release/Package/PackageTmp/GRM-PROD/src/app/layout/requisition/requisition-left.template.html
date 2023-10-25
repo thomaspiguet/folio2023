@@ -1,0 +1,53 @@
+<!-- Display requisition header components in a panel -->
+<div class="panel panel-compact full-height">
+
+  <!-- Requisition header top bar -->
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+
+    <!-- Left section toggler -->
+    <!--
+    <div class="btn-group sgui-bgcolor-primary pull-left" role="group" aria-label="{{ 'hideLeftSection' | translate }}">
+      <button type="button" class="btn sgui-btn-icon sgui-btn-primary-inverted-no-bg" title="{{ 'hideLeftSection' | translate }}" ng-click="$ctrl.leftSectionCollapsed = !$ctrl.leftSectionCollapsed">
+        <i class="fa fa-fast-backward"></i>
+      </button>
+    </div>
+    -->
+
+    <!-- Display requisition identifier to the left -->
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+
+      <!-- The requisition identifier - display the requistion number -->
+      <!--
+      <requisition-identifier model="$ctrl.getRequisitionEditIdentifierModel()"></requisition-identifier>
+      -->
+      <span id="requisitionNumber">{{ $ctrl.getRequisitionLabel() }}</span>
+
+    </div>
+
+    <!-- Display requisition header actions to the right -->
+    <div class="pull-right">
+
+      <!-- The requisition header actions -->
+      <requisition-header-actions
+        state-model="$ctrl.getRequisitionHeaderActionsStateModel()"
+        action-handler="$ctrl.onRequisitionHeaderActionsAction(obj)">
+      </requisition-header-actions>
+
+    </div>
+
+  </div>
+
+  <!-- Requisition header content -->
+  <div class="panel-body panel-body-content panel-body-scroll-vertical-overflow">
+
+    <!-- The requisition header -->
+    <requisition-header
+      model="$ctrl.getRequisitionHeaderModel()"
+      state-model="$ctrl.getRequisitionHeaderStateModel()"
+      action-handler="$ctrl.onRequisitionHeaderAction(obj)"
+      edit-handler="$ctrl.onRequisitionHeaderEdit(obj)"
+      create-mode="$ctrl.isCreateMode()">
+    </requisition-header>
+
+  </div>
+</div>

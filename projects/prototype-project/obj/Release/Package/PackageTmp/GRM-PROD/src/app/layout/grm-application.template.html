@@ -1,0 +1,59 @@
+<div class="grm-application full-width full-height">
+
+  <!-- Initialization progress bar - displayed only while application is loading -->
+  <div ng-show="$ctrl.isInitializing" class="animate-hide-fast">
+    <uib-progressbar
+      class="progress-striped active absolute-centered centered-from-body"
+      max="100"
+      value="$ctrl.initializingProgress">
+    </uib-progressbar>
+  </div>
+
+  <!-- Loading indicator - displayed while an ajax call is performed  -->
+  <div ng-show="$ctrl.isLoading" class="animate-hide-fast loading-overlay">
+    <div class="spinner-container">
+      <md-progress-circular
+        ng-show="$ctrl.isLoading"
+        id="spinner"
+        ng-disabled="!$ctrl.isLoading"
+        md-mode="indeterminate">
+      </md-progress-circular>
+      <div class="spinner-label">{{ 'pleaseWaitDots' | translateStateful }}</div>
+    </div>
+  </div>
+
+  <!-- The application navigation menu - displayed on the left -->
+  <div
+    class="side-menu-container full-height"
+    ng-hide="!$ctrl.isInitialized"
+    ng-class="$ctrl.sideMenuExpanded ? 'side-menu-expanded' : 'side-menu-collapsed'"
+    ng-cloak>
+
+    <div ui-view="side-menu-view-container" class="side-menu"></div>
+
+  </div>
+
+  <div class="application-container application-container-expanded full-height" ng-class="$ctrl.sideMenuExpanded ? 'application-container-collapsed' : 'application-container-expanded'">
+
+    <div class="application-bar-container">
+
+      <!-- The main application top bar -->
+      <div class="application-bar" ng-hide="!$ctrl.isInitialized">
+
+        <!-- Application breadcrumbs container -->
+        <div ui-view="application-breadcrumbs-view-container" class="full-height pull-left"></div>
+
+        <!-- Application static global actions container -->
+        <div ui-view="application-static-actions-view-container" class="full-height pull-right"></div>
+
+        <!-- Facet contextual action bar container -->
+        <div ui-view="application-contextual-actions-view-container" class="full-height pull-right"></div>
+      </div>
+
+    </div>
+
+    <!-- The main view for displaying the application's facets (tracking, requistion, templates, products, etc...) -->
+    <div ui-view="facet-view-container" class="application-facet"></div>
+  </div>
+
+</div>

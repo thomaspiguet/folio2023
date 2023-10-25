@@ -1,0 +1,43 @@
+<form name="requisitionItemTabsForm" class="requisition-item-tabs-form full-height" spellcheck="false" manage-form-state>
+  <div class="requisition-item-tabs full-height">
+    <!-- tab set component -->
+    <uib-tabset active="0">
+
+      <!-- product details -->
+      <uib-tab index="0" heading="{{ 'product' | translate }}" select="$ctrl.onSelectTab($event, 0)" deselect="$ctrl.onDeselectTab($event, 0)" ng-if="!$ctrl.stateModel.tabs.product.hidden">
+          <div class="full-height" ng-include="'tab-product.template.html'"></div>
+      </uib-tab>
+
+      <!-- quantities -->
+      <!--
+      <uib-tab index="1" heading="{{ 'quantities' | translate }}" select="$ctrl.onSelectTab($event, 1)" deselect="$ctrl.onDeselectTab($event, 1)" ng-if="$ctrl.model.requisitionStatus > 1">
+      -->
+      <uib-tab index="1" heading="{{ 'quantities' | translate }}" select="$ctrl.onSelectTab($event, 1)" deselect="$ctrl.onDeselectTab($event, 1)" ng-if="!$ctrl.stateModel.tabs.quantities.hidden">
+          <div class="full-height" ng-include="'tab-quantities.template.html'"></div>
+      </uib-tab>
+
+      <!-- purchase process -->
+      <!--
+      <uib-tab index="2" heading="{{ 'purchaseProcess' | translate }}" select="$ctrl.onSelectTab($event, 2)" deselect="$ctrl.onDeselectTab($event, 2)" ng-if=$ctrl.model.isPurchaseProcessActive>
+      -->
+      <uib-tab index="2" heading="{{ 'purchaseProcess' | translate }}" select="$ctrl.onSelectTab($event, 2)" deselect="$ctrl.onDeselectTab($event, 2)" ng-if="!$ctrl.stateModel.tabs.purchaseProcess.hidden">
+          <div class="full-height" ng-include="'tab-purchase-process.template.html'"></div>
+      </uib-tab>
+
+      <!-- fixed assets -->
+      <uib-tab index="3" heading="{{ 'fixedAssets' | translate }}" select="$ctrl.onSelectTab($event, 3)" deselect="$ctrl.onDeselectTab($event, 3)" ng-if="!$ctrl.stateModel.tabs.fixedAssets.hidden">
+          <div class="full-height" ng-include="'tab-fixed-assets.template.html'"></div>
+      </uib-tab>
+
+      <!-- authorizations -->
+      <!--
+      <uib-tab index="4" heading="{{ 'authorizations' | translate }}" select="$ctrl.onSelectTab($event, 4)" deselect="$ctrl.onDeselectTab($event, 4)" ng-if="$ctrl.model.requisitionStatus > 1">
+      -->
+      <uib-tab index="4" heading="{{ 'authorizations' | translate }}" select="$ctrl.onSelectTab($event, 4)" deselect="$ctrl.onDeselectTab($event, 4)" ng-if="!$ctrl.stateModel.tabs.authorizations.hidden">
+          <div class="full-height" ng-include="'tab-authorizations.template.html'"></div>
+      </uib-tab>
+
+    </uib-tabset>
+
+  </div>
+</form>

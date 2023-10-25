@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        <template-filter-by>
+    -->
+    <meta charset="utf-8" />
+    <style>
+    </style>
+</head>
+<body>
+    <template id="template-component-template-id">
+        <div class="dropdown__box filter-dropdown__modifier" style="position: relative; right: 150px; top: 26px; overflow: hidden;">
+            <div class="scroll-boxy" style="height: 100%;">
+                <!--<div class="scroll-boxy__viewport">-->
+                <div class="scroll-boxy__viewport">
+                    <div class="scroll-boxy__container" tabindex="0">
+                        <div class="dropdown__options">
+                            <div class="dropdown__option dropdown__option--active" tabindex="0">Tous</div>
+                            <div class="dropdown__option" tabindex="0">Direction</div>
+                            <div class="dropdown__option" tabindex="0">Sous-direction</div>
+                            <div class="dropdown__option" tabindex="0">Programme</div>
+                            <div class="dropdown__option" tabindex="0">Sous-programme</div>
+                            <div class="dropdown__option" tabindex="0">Centre d'activité</div>
+                            <div class="dropdown__option" tabindex="0">Sous-centre d'activité</div>
+                            <div class="dropdown__option" tabindex="0">Sous-sous-centre d'act.</div>
+                            <div class="dropdown__option" tabindex="0">Installation</div>
+                            <div class="dropdown__option" tabindex="0">Groupe codes primaires</div>
+                            <div class="dropdown__option" tabindex="0">Unité administrative</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-boxy__scroller scroll-boxy__scroller--visible">
+                    <div class="scroll-boxy__bar"></div>
+                    <div class="scroll-boxy__active"></div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script>
+        'use strict';
+        templateComponents.define('template-filter-by', { templateId: 'template-component-template-id' });
+    </script>
+</body>
+</html>

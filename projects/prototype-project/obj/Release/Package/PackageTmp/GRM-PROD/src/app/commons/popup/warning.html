@@ -1,0 +1,10 @@
+<div class="modal-header">
+    <h1 class="modal-title"><i class="glyphicon glyphicon-warning-sign text-warning"></i>&nbsp;<small>{{ opts.title | translate }}</small></h1>
+</div>
+<div class="modal-body" ng-switch="opts.translateContent">
+    <div ng-switch-when="true">{{ opts.content.msg | translate:opts.content.params }}</div>
+    <div ng-switch-default>{{ opts.content.msg }}</div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-warning" autofocus ng-click="onClose()">{{ opts.btnClose | translate }}</button>
+</div>

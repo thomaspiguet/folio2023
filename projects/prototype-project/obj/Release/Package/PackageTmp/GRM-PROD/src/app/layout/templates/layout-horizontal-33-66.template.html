@@ -1,0 +1,22 @@
+<!-- A fluid container - we'll be using rows and cols -->
+<!-- The container is set to occupy parent's full height -->
+<div class="grm-container-fluid full-height">
+
+  <!-- One big row, split vertically in two sections -->
+  <div class="row full-height">
+
+    <!-- Left section - collapsible -->
+    <div class="full-height" ng-class="$ctrl.leftSectionCollapsed ? 'left-section-collapsed' : 'left-section'">
+
+      <ui-view name="left-section"></ui-view>
+
+    </div>
+
+    <!-- Right section  - expansible to full width -->
+    <div class="full-height" ng-class="$ctrl.leftSectionCollapsed ? 'right-section-expanded' : 'right-section'">
+
+      <ui-view name="right-section"></ui-view>
+
+    </div>
+  </div>
+</div>

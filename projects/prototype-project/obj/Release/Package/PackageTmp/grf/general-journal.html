@@ -1,0 +1,1749 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>general-journal</title>
+
+
+    <!--<link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
+    <link href="../components/bootstrap-grid/bootstrap-grid.css" rel="stylesheet" />
+
+    <link href="../components/checkbox/_select.css" rel="stylesheet" />
+    <link href="../components/checkbox/_checkbox.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+    <link href="css/_grf-style_updated.css" rel="stylesheet" />
+    <link href="../../components/material-icons/material-icons.css" rel="stylesheet" />
+    <link href="css/_grf-style.css" rel="stylesheet" />
+
+
+
+
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <link href="../components/main-header/_intermenu.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+
+
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <!--<link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />-->
+    <link href="../dist/css/scss/mixins/_utility.css" rel="stylesheet" />
+
+    <!-- Web Components -->
+    <script src="../WEB-COMPONENTS/polyfills-0/webcomponents-lite.js"></script>
+    <script src="../WEB-COMPONENTS/template-components.js"></script>
+    <link rel="import" href="../WEB-COMPONENTS/simple-search.html" />
+    <link rel="import" href="../WEB-COMPONENTS/advanced-reference.html" />
+    <link rel="import" href="../WEB-COMPONENTS/filter-by.html" />
+    <link rel="import" href="../WEB-COMPONENTS/toolbar.html">
+    <link href="../dist/css/scss/_toolbar_sidebar.css" rel="stylesheet" />
+
+
+    <script src="../js/jquery.js"></script>
+
+
+
+
+</head>
+
+<body class="no-overflow-y">
+    <div id="root" >
+        <div class="app">
+            <div class="app__top-header">
+                <div class="top-header">
+                    <div class="top-header__left">
+                        <div class="top-header__logo">
+                            <a href="/5176/dashboard"></a>
+                        </div>
+                        <div class="top-header__products">
+                            <div class="products">
+                                <div class="products__button">
+                                    <div class="products__icon"></div>
+                                </div>
+                                <div class="products__menu">
+                                    <div class="products__domains">
+                                        <div class="products__domain">
+                                            <div class="products__domain-menu">
+                                                <div class="products__domain-icon products__domain-icon--GRF"></div><a class="products__application-link products__application-link--domain" href="https://grf.qa.logibec.cloud">GRF</a>
+                                                <div class="products__domain-expander"></div>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero products__applications" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="products__application">
+                                                        <a class="products__application-link" href="https://grf.qa.logibec.cloud">GRF</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products__domain">
+                                            <div class="products__domain-menu">
+                                                <div class="products__domain-icon products__domain-icon--PLATFORM"></div><a class="products__application-link products__application-link--domain" href="https://platform.int.logibec.cloud">PLATFORM</a>
+                                                <div class="products__domain-expander"></div>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero products__applications" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="products__application">
+                                                        <a class="products__application-link" href="https://platform.int.logibec.cloud">PLATFORM</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products__domain">
+                                            <div class="products__domain-menu">
+                                                <div class="products__domain-icon products__domain-icon--IDS"></div><a class="products__application-link products__application-link--domain" href="https://identity-server-console.int.logibec.cloud">IDS</a>
+                                                <div class="products__domain-expander"></div>
+                                            </div>
+                                            <div aria-hidden="true" class="rah-static rah-static--height-zero products__applications" style="height: 0px; overflow: hidden;">
+                                                <div style="display: none;">
+                                                    <div class="products__application">
+                                                        <a class="products__application-link" href="https://identity-server-console.int.logibec.cloud">IDS</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-header__right">
+                        <div class="top-header__info">
+                            13
+                        </div>
+                        <div class="top-header__delim"></div>
+                        <div class="top-header__user">
+                            <div class="user">
+                                <div class="user__photo">
+                                    <div class="user__img">
+                                        TP
+                                    </div>
+                                </div>
+                                <div class="user__info">
+                                    <div class="user__name">
+                                        Thomas Piguet
+                                    </div>
+                                    <div class="user__job-title">
+                                        Manager
+                                    </div>
+                                </div>
+                                <div class="user-menu">
+                                    <div class="user-menu__arrow">
+                                        <div class="user-menu__select"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app__vbox">
+                <div class="app__box">
+                    <div class="app__side-menu">
+                        <div class="side-menu side-menu--expanded">
+                            <div class="scroll-box scroll-box--wrapped scroll-box--enable-y scroll-box--requires-y" style="height: 100%;" tabindex="-1">
+                                <div class="scroll-box__viewport" style="height: 100%; width: 103%;">
+                                    <div class="side-menu__toggle-block">
+                                        <div class="side-menu__module">
+                                            <div class="side-menu__name">
+                                                <span>
+                                                    General Ledger
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="side-menu__module-menu"></div>
+                                        <div class="side-menu__toggle side-menu__toggle--expanded"></div>
+                                    </div>
+                                    <div class="side-menu__items">
+                                        <div class="side-menu__bucket">
+                                            <div class="side-menu__item">
+                                                <a class="side-menu__link side-menu__link--dashboard" href="/5176/dashboard">
+                                                    <div class="side-menu__name">
+                                                        <span>General journal</span>
+                                                    </div>
+                                                    <div class="side-menu__dropdown side-menu__dropdown--expanded" role="button" tabindex="0"></div>
+                                                </a>
+                                            </div>
+                                            <div aria-hidden="false" class="rah-static rah-static--height-auto side-menu__subitems" style="height: auto; overflow: visible;">
+                                                <!--<div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/1">Salaires</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/2">Temps supplémentaire</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/3">M.O.I.</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/4">Primes</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/5">Autres</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/8">Autres dépenses</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/9">Revenus</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/16">Av. soc. gén.</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/17">Fournitures</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/18">Av. soc. part.</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/19">Charges soc. global</a>
+                                                    </div>
+                                                    <div class="side-menu__subitem">
+                                                        <a class="side-menu__sublink" href="/5176/dashboard/20">Charges sociales</a>
+                                                    </div>
+                                                </div>-->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="scroll-box__track scroll-box__track--x" style="display: none;">
+                                    <div class="scroll-box__handle scroll-box__handle--x" style="width: 100%;"></div>
+                                </div>
+                                <div class="scroll-box__track scroll-box__track--y" style="display: none;">
+                                    <div class="scroll-box__handle scroll-box__handle--y" style="height: 75.3724%; top: 181px;">
+                                        <div class="scroll-box__handle--y-view"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="app__content">
+                        <!--<div class="app__top-menu">
+
+
+        <div class="top-menu">
+            <div class="top-menu__scenario">
+                <div class="top-menu__info">
+                    <div class="top-menu__info-top">
+                        <span>2018</span><span class="top-menu__info-delim">/</span><span>0011</span>
+                    </div>
+                    <div class="top-menu__info-scenario">
+                        BGU_2018_Original
+                    </div>
+                </div><a class="top-menu__button" href="/modal/scenario"><span class="top-menu__button-text"><span>Changer de scénario</span></span></a>
+            </div>
+
+
+
+            <div class="top-menu__right">
+                <div class="top-menu__field--hide">
+                    <div class="top-menu__field-name">
+                        <span>STATUT</span>
+                    </div>
+                    <div class="top-menu__field-value top-menu__field-value--status-active">
+                        Active
+                    </div>
+                </div>
+                <div class="top-menu__field--hide">
+                    <div class="top-menu__field-name">
+                        <span>APPROUVÉ PAR</span>
+                    </div>
+                    <div class="top-menu__field-value">
+                        Ronald Watkins
+                    </div>
+                </div>
+                <div class="top-menu__field--hide">
+                    <div class="top-menu__field-name">
+                        <span>DATE D'APPROBATION</span>
+                    </div>
+                    <div class="top-menu__field-value">
+                        25/01/2017
+                    </div>
+                </div>
+                <div class="top-menu__delim--hide"></div>
+                <div class="top-menu__field">
+                    <div class="top-menu__field-name">
+                        <span>FILTRER PAR</span>
+                    </div>
+                    <div class="top-menu__field-value">
+                        <div class="dropdown__container">
+                            <div class="dropdown">
+                                <div class="dropdown__label"></div>
+                                <div class="dropdown__value" id="expand-dropdown">
+                                    <span>Tous</span>
+                                    <div class="dropdown__select" id="expand-dropdown-target">
+
+
+                                        <template-component-filter-by></template-component-filter-by>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-menu__field">
+                    <div class="top-menu__field-name">
+                        <span>SÉLECTION</span>
+                    </div>
+                    <div class="top-menu__field-value">
+                        <div class="filter-dropdown">
+                            <div class="filter-dropdown__value--disabled">
+                                Toutes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-menu__field">
+                    <div class="top-menu__submenu"></div>
+                </div>
+            </div>
+
+            <div class="top-menu__right">
+                <div class="top-menu__vertical-separator"></div>
+                <div class="top-menu__field">
+                    <div class="top-menu__field-name">
+                        <span>STATUS</span>
+                    </div>
+                    <div class="top-menu__status-in-progress">
+                        In progress
+                    </div>
+                </div>
+                <div class="top-menu__vertical-separator"></div>
+                <div class="top-menu__field">
+                    <div class="top-menu__status-follow-up-report top-menu__status-follow-up-report--green">
+                        FOLLOW-UP REPORT
+                    </div>
+                    <div class="top-menu__status-completed top-menu__status-completed--green">
+                        COMPLETE
+                    </div>
+                </div>
+                <div class="top-menu__vertical-separator"></div>
+                <div class="top-menu__field">
+                    <div class="top-menu__field-name">
+                        APPROVED
+                    </div>
+                    <div class="top-menu__status-not-approved"></div>
+                </div>
+                <div class="top-menu__vertical-separator"></div>
+                <div class="top-menu__field">
+                    <div class="top-menu__field-name">
+                        <span>FILTER BY</span>
+                    </div>
+                    <div class="top-menu__field-value">
+                        <div class="dropdown__container">
+                            <div class="dropdown" id="filter-by">
+                                <div class="dropdown__label"></div>
+                                <div class="dropdown__value">
+                                    <span>All</span>
+                                    <div class="dropdown__select"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-menu__field">
+                    <div class="top-menu__field-name">
+                        <span>SELECTION</span>
+                    </div>
+                    <div class="top-menu__field-value">
+                        <div class="filter-dropdown">
+                            <div class="filter-dropdown__value--disabled">
+                                All
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-menu__field">
+                    <div class="timestamp timestamp--default"></div>
+                </div>
+                <div class="top-menu__field">
+                    <div class="dropdown__container">
+                        <div class="dropdown" id="top-menu">
+                            <div class="routes-dropdown__ellipsis">
+                                <div class="dropdown__select"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>-->
+
+
+
+
+                        <div class="app__breadcrumbs">
+                            <div class="breadcrumbs">
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="">Account Query</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="">General Ledger</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <div class="breadcrumbs__active">
+                                        General journal
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                        <div class="app__view">
+
+
+                            <div class="">
+                                <div class="position__gradient content-gradient"></div>
+
+                                <div class="scroll-boxy__viewport">
+                                    <div class="scroll-boxy__container" tabindex="0">
+                                        <div class="position__form">
+                                            <div class="form">
+                                                <div class="form__actions">
+                                                    <div class="form__actions-left">
+                                                        <div class="form__title form__title--position">
+                                                            <span>General Journal</span> <span></span>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form__actions-right">
+
+                                                        <div class="toolbar-btn-icon" data-toolbar="user-options" id="" style="margin-right: 10px;">
+                                                            <i class="material-icons toolbar-btn-icon toolbar-btn-material-icons">history</i>
+                                                        </div>
+
+
+                                                        <div id="button" data-toolbar="user-options" class="toolbar-btn-icon">
+                                                            <i class="material-icons toolbar-btn-icon   toolbar-btn-material-icons">more_vert</i>
+
+                                                        </div>
+
+                                                        <div id="toolbar-options" class=" tool-item tool-container" style="display: none">
+
+
+
+
+                                                            <a href="#" data-toggle="" class="tool-explanation-container">
+                                                                <i class="fa fa-calculator"></i>
+                                                                <div class="tool-explanation">Budget Calculation</div>
+                                                            </a>
+
+                                                            <a href="#" data-toggle="" class="tool-explanation-container">
+                                                                <i class="material-icons toolbar-btn-icon-attachments-tool-item">assignment</i>
+
+                                                                <div class="tool-explanation tool-explanation-large">Calculation Follow-Up</div>
+                                                            </a>
+
+
+                                                            <!--<a href="#" data-toggle="control-sidebar"><i class="fa fa-sticky-note-fourth"></i></a>-->
+
+
+                                                            <a href="#" data-toggle="control-sidebar"><i class="material-icons toolbar-btn-icon-attachments-tool-item">attach_file</i></a>
+
+                                                            <!--<a href="#" class="disabled"><i class="fa fa-file-excel-o"></i></a>-->
+                                                            <!--<a href="#"><i class="material-icons toolbar-btn-icon-attachments-tool-item">mode_edit</i></a>-->
+
+                                                            <a href="#"><i class="material-icons toolbar-btn-icon-attachments-tool-item">content_copy</i></a>
+
+
+
+                                                            <!--<a href="#" class="disabled"><i class="material-icons toolbar-btn-icon-attachments-tool-item">delete</i></a>-->
+
+                                                            <a href="#" data-toggle="" class="tool-explanation-container">
+                                                                <i class="material-icons toolbar-btn-icon-attachments-tool-item">mode_edit</i>
+
+                                                                <div class="tool-explanation tool-explanation-small">Edith</div>
+                                                            </a>
+
+
+
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class=" form__tabs form-tabs">
+
+
+
+                                                    <div class="form-tabs__body">
+                                                        <div class="form__tab">
+
+
+                                                            <div class="row form__row">
+
+                                                                <div class="form__column col-3">
+
+
+
+                                                                    <div class="form-group field">
+                                                                        <label class="field__label">Entry number:</label>
+                                                                        <input class="form-control" placeholder="65" type="text" disabled>
+                                                                    </div>
+
+
+
+                                                                </div>
+
+
+                                                                <div class="form__column col-3" style="display: -webkit-box;">
+
+
+                                                                    <div class="form__column form__column--column2 col-6 no-padding-right-left">
+
+                                                                        <div class="form__column__full no-margin-top no-padding-left">
+                                                                            <div class="form-group field">
+                                                                                <label>Entry template:</label>
+                                                                                <div class="input-group">
+                                                                                    <input class="form-control" name="q" placeholder="Select" type="text">
+                                                                                    <div class="input-group-addon" style="color: #0083a5; background-color: #f2f6f7;">
+                                                                                        <i class="fa fa-search"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="form__column  form__column--column2 col-6 no-padding-right-left">
+
+                                                                        <div class="form-group">
+                                                                            <label>Entry type:</label>
+                                                                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                                                <option selected="selected">Selected</option>
+                                                                                <option>Type</option>
+
+                                                                            </select>
+                                                                            <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;">
+                                                                                <span class="selection">
+                                                                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-yw6b-container">
+                                                                                        <span class="select2-selection__rendered" id="select2-yw6b-container" title="Type">Interface de paie</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+                                                                                    </span>
+                                                                                </span><span class="dropdown-wrapper" aria-hidden="true"></span>
+                                                                            </span>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+                                                                </div>
+
+
+
+                                                                <div class="form__column col-3 ">
+
+
+                                                                        <div class="date-picker col-12 no-padding-right-left" style="display: -webkit-box;">
+                                                                            <div class="field field--edit">
+                                                                                <div class="field__label">
+                                                                                    Date:
+                                                                                </div>
+                                                                                <div class="field__input field__input--edit">
+                                                                                    <input placeholder="yyyy-mm-dd" type="text" value="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="date-picker__button" style="right: 4px;"></div>
+                                                                        </div>
+
+                                                                </div>
+
+
+
+                                                                <div class="form__column form__column--required-attendance row">
+
+                                                                    <div class="required-attendance__premiums-header --header-column  " style="padding: 5px 0;"> 
+                                                                        <div class="required-attendance__premiums-header--left --r-item">
+                                                                            <div class="field field--small field--selected">
+                                                                                <div class="field__label">
+                                                                                    APPROBATION STATUS
+                                                                                </div>
+                                                                                <!--<div class="field__value" style="background-color: #ecfbf1; color: #00d470;">
+                                                                                    APPROVED
+                                                                                </div>-->
+
+                                                                                <div class="field__value__label">
+
+                                                                                    <div ><span>APPROVED</span></div>
+
+                                                                                </div>
+
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                        <div class="required-attendance__premiums-header--right text-align-center --r-item">
+                                                                            <div class="field field--small">
+                                                                                <div class="field__label">
+                                                                                    APPROVED BY
+                                                                                </div>
+                                                                                <div class="field__value">
+                                                                                    Tony Stark
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="required-attendance__premiums-header--right text-align-center --r-item">
+                                                                            <div class="field field--small">
+                                                                                <div class="field__label">
+                                                                                    APPROVED DATES
+                                                                                </div>
+                                                                                <div class="field__value">
+                                                                                    2015/05/09 12:08
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <!--<div class="form__separator"></div>-->
+
+
+                                                            <div class="row form__row">
+
+                                                                <div class="form__column col-12 col-lg-3">
+
+
+                                                                    <div class="form-group">
+                                                                        <label>Functional center:</label> <select aria-hidden="true" class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1">
+                                                                            <option selected="selected">
+                                                                                Selected
+                                                                            </option>
+                                                                            <option>
+                                                                                Type
+                                                                            </option>
+                                                                        </select> <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span aria-expanded="false" aria-haspopup="true" aria-labelledby="select2-yw6b-container" class="select2-selection select2-selection--single" role="combobox" tabindex="0"><span class="select2-selection__rendered" id="select2-yw6b-container" title="Type">001171 600001</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span aria-hidden="true" class="dropdown-wrapper"></span></span>
+                                                                    </div>
+
+
+                                                                </div>
+
+                                                                <div class="form__column col-3">
+                                                                    <div class="field">
+                                                                        <div class="field__info-box">
+                                                                            <div class="field__pointer"></div>
+                                                                            <div class="field__info"></div>
+                                                                            <div class="field__value field__value--info">
+                                                                                Fonds d'exploitation (Logibec)
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="form__column col-3" style="display: -webkit-box;">
+                                                                    <div class="field field--edit field--number col-3 no-padding-right-left">
+                                                                        <div class="field__label">
+                                                                            Year:
+                                                                        </div>
+                                                                        <div class="field__input field__input--edit field__input--number">
+                                                                            <input placeholder="2018" type="text" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field col-4 no-padding-right">
+                                                                        <div class="field__label field__label">
+                                                                            Period:
+                                                                        </div>
+                                                                        <div class="field__dropdown field__dropdown--mandatory" tabindex="0">
+                                                                            <div class="dropdown__container">
+                                                                                <div class="dropdown dropdown--field">
+                                                                                    <div class="dropdown__label"></div>
+                                                                                    <div class="dropdown__value--field dropdown__value">
+                                                                                        <span>01</span>
+                                                                                        <div class="dropdown__select"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form__column col-5 no-padding-right">
+                                                                        <div class="field" style="width: 116px;">
+                                                                            <div class="field__info-box">
+                                                                                <div class="field__pointer"></div>
+                                                                                <div class="field__info"></div>
+                                                                                <div class="field__value field__value--info">
+                                                                                    Previous
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+
+
+
+
+                                                            </div>
+
+
+
+
+
+
+
+
+
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <div class="base-list">
+
+
+
+
+
+
+
+
+
+
+                                <div class="base-list__gradient content-gradient"></div>
+                                <div class="base-list__table">
+                                    <div class="data-grid">
+
+
+
+
+
+
+
+                                        <div class="scroll-box scroll-box--wrapped scroll-box--enable-y scroll-box--requires-y" style="height: 100%;" tabindex="-1">
+                                            <div class="scroll-box__viewport" style="height: 100%; width: 103%;">
+                                                <div class="data-grid__header">
+
+                                                    <div class="base-list__actions">
+                                                        <div class="base-list__actions-left">
+                                                            <div class="base-list__title base-list__title--employees">
+                                                                <!--<span>Présences requises</span>-->
+                                                            </div>
+                                                        </div>
+                                                        <div class="base-list__actions-right">
+                                                            <div class="base-list__search-simple">
+                                                                <div class="search-simple">
+                                                                    <div class="field search-simple__field field--edit">
+                                                                        <div class="field__input field__input--edit">
+                                                                            <input type="text" placeholder="Research reference..." value="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="base-list__search-action">
+                                                                <div class="search-action" style="margin-right: 12px;">
+                                                                    <div class="button button__search disabled" id="search-button" tabindex="0"></div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <button class="button btn btn-icons" style="color: #0083a5;">
+                                                                BATCH UPDATE
+                                                                <!--<i class="fa fa-magic"></i>-->
+                                                                <i class="material-icons ">dehaze</i>
+                                                            </button>
+
+
+                                                            <div class="button button__add" tabindex="0">
+                                                                <span>ADD</span>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <template-advanced-reference></template-advanced-reference>
+                                                </div>
+
+
+
+
+
+
+
+
+                                                <div class="data-grid__joined">
+
+
+                                                    <div class="data-grid__fixed">
+                                                        <div class="ReactTable ReactTable--column-groups">
+                                                            <div class="rt-table" role="grid">
+                                                                <div class="rt-thead -headerGroups" style="min-width: 250px;">
+                                                                    <div class="rt-tr"></div>
+                                                                </div>
+                                                                <div class="rt-thead -header" style="min-width: 250px;">
+                                                                    <div class="rt-tr">
+                                                                        <div class="rt-th grid-column__header grid-column__header--left grid-column__header--draggable rt-resizable-header" role="columnheader" style="flex: 50 0 auto;width: 50px;padding-left: 13px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header data-grid-header--sortable" draggable="true" id="generalInformation.functionalCenter-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            <span>SEQ.</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header grid-column__header--left grid-column__header--draggable rt-resizable-header" role="columnheader" style="flex: 150 0 auto; width: 150px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header data-grid-header--sortable" draggable="true" id="generalInformation.functionalCenter-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            <span>DESCRIPTION</span>
+                                                                                        </div><!--<div class="data-grid-header__filter"><span></span></div>-->
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header grid-column__header--left grid-column__header--draggable rt-resizable-header" role="columnheader" style="flex: 50 0 auto; width: 50px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header data-grid-header--sortable" draggable="true" id="generalInformation.functionalCenter-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="rt-tbody" style="min-width: 250px;">
+                                                                    <div class="rt-tr grid-row -odd">
+                                                                        <div class="rt-td" style="flex: 50 0 auto; width: 50px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="generalInformation.functionalCenter-cell">
+                                                                                <a class="salaries__link" href="/6371/dashboard/lines/1/origin/Positions/6"><span style="color: rgb(51, 51, 51);">10</span><br></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell" id="generalInformation.detail-cell">
+                                                                                BANQ NO 01 A 01
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 50 0 auto;width: 51px;">
+                                                                            <div class="data-grid__cell grid-column__cell" id="generalInformation.detail-cell" style="line-height: 43px;padding: 5px 9px 0 14px; color: #0083a5;">
+                                                                                <i class="material-icons add-ref-icon" style="font-size: 23px;">playlist_add</i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rt-tbody" style="min-width: 250px;">
+                                                                    <div class="rt-tr grid-row -odd">
+                                                                        <div class="rt-td" style="flex: 50 0 auto; width: 50px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="generalInformation.functionalCenter-cell">
+                                                                                <a class="salaries__link" href="/6371/dashboard/lines/1/origin/Positions/6"><span style="color: rgb(51, 51, 51);">10</span><br></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell" id="generalInformation.detail-cell">
+                                                                                BANQ NO 01 A 01
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 50 0 auto;width: 51px;">
+                                                                            <div class="data-grid__cell grid-column__cell" id="generalInformation.detail-cell" style="line-height: 43px;padding: 5px 9px 0 14px; color: #0083a5;">
+                                                                                <i class="material-icons add-ref-icon" style="font-size: 23px;">playlist_add</i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rt-tbody" style="min-width: 250px;">
+                                                                    <div class="rt-tr grid-row -odd">
+                                                                        <div class="rt-td" style="flex: 50 0 auto; width: 50px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="generalInformation.functionalCenter-cell">
+                                                                                <a class="salaries__link" href="/6371/dashboard/lines/1/origin/Positions/6"><span style="color: rgb(51, 51, 51);">10</span><br></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell" id="generalInformation.detail-cell">
+                                                                                BANQ NO 01 A 01
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 50 0 auto;width: 51px;">
+                                                                            <div class="data-grid__cell grid-column__cell" id="generalInformation.detail-cell" style="line-height: 43px;padding: 5px 9px 0 14px; color: #0083a5;">
+                                                                                <i class="material-icons add-ref-icon" style="font-size: 23px;">playlist_add</i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rt-tbody" style="min-width: 250px;">
+                                                                    <div class="rt-tr grid-row -odd">
+                                                                        <div class="rt-td" style="flex: 50 0 auto; width: 50px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="generalInformation.functionalCenter-cell">
+                                                                                <a class="salaries__link" href="/6371/dashboard/lines/1/origin/Positions/6"><span style="color: rgb(51, 51, 51);">10</span><br></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell" id="generalInformation.detail-cell">
+                                                                                BANQ NO 01 A 01
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 50 0 auto;width: 51px;">
+                                                                            <div class="data-grid__cell grid-column__cell" id="generalInformation.detail-cell" style="line-height: 43px;padding: 5px 9px 0 14px; color: #0083a5;">
+                                                                                <i class="material-icons add-ref-icon" style="font-size: 23px;">playlist_add</i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rt-tbody" style="min-width: 250px;">
+                                                                    <div class="rt-tr grid-row -odd">
+                                                                        <div class="rt-td" style="flex: 50 0 auto; width: 50px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="generalInformation.functionalCenter-cell">
+                                                                                <a class="salaries__link" href="/6371/dashboard/lines/1/origin/Positions/6"><span style="color: rgb(51, 51, 51);">10</span><br></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                            <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell" id="generalInformation.detail-cell">
+                                                                                BANQ NO 01 A 01
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rt-td" style="flex: 50 0 auto;width: 51px;">
+                                                                            <div class="data-grid__cell grid-column__cell" id="generalInformation.detail-cell" style="line-height: 43px;padding: 5px 9px 0 14px; color: #0083a5;">
+                                                                                <i class="material-icons add-ref-icon" style="font-size: 23px;">playlist_add</i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="pagination-bottom"></div>
+                                                            <div class="-loading">
+                                                                <div class="-loading-inner">
+                                                                    Loading...
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="data-grid__scrolled">
+                                                        <div class="ReactTable ReactTable--column-groups --tab-ref-open">
+                                                            <div class="rt-table" role="grid">
+                                                                <div class="rt-thead -headerGroups" style="min-width: 500px; width: 2500px; overflow: visible;">
+                                                                    <div class="rt-tr"></div>
+                                                                </div>
+                                                                <div class="rt-thead -header" style="min-width: 500px; width: ; overflow: visible;">
+                                                                    <div class="rt-tr">
+                                                                        <div class="rt-th grid-column__header rt-resizable-header" role="columnheader" style="flex: 150 0 auto; width: 125px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="amountsTotal-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            <span>ACCOUNT</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header rt-resizable-header" role="columnheader" style="flex: 100 0 auto; width: 75px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="amounts1-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            <span>PROJECT</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header rt-resizable-header" role="columnheader" style="flex: 75 0 auto; width: 75px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="amounts2-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            <span>ACTIVITY</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header rt-resizable-header" role="columnheader" style="flex: 150 0 auto; width: 150px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="amounts3-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            STATISTICAL ACCOUNT
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header rt-resizable-header" role="columnheader" style="flex: 75 0 auto; width: 75px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="amounts4-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            PROJECT
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header r rt-resizable-header" role="columnheader" style="flex: 100 0 auto; width: 75px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="amounts5-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            ACTIVITY<br>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header rt-resizable-header" role="columnheader" style="flex: 130 0 auto; width: 130px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="amounts6-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            AMOUNT
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header rt-resizable-header" role="columnheader" style="flex: 100 0 auto; width: 50px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="amounts7-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            <span><br></span>
+                                                                                        </div>
+                                                                                        <div class="data-grid-header__message">
+                                                                                            UNIT
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                        <div class="rt-th grid-column__header grid-column__header--left grid-column__header--number rt-resizable-header" role="columnheader" style="flex: 50 0 auto; width: 51px;" tabindex="-1">
+                                                                            <div class="rt-resizable-header-content">
+                                                                                <div class="data-grid-header" draggable="true" id="units3-header">
+                                                                                    <div class="data-grid-header__column data-grid-header__column--left">
+                                                                                        <div class="data-grid-header__message">
+                                                                                            <span></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-resizer"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="rt-tbody" style="min-width: 500px;">
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup">
+                                                                        <div class="rt-tr grid-row -odd">
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 125px;">
+                                                                                <div class="data-grid__cell grid-column__cell" id="amountsTotal-cell">
+                                                                                    001111 12722
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts1-cell">
+                                                                                    49
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts2-cell">
+                                                                                    100
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts3-cell">
+                                                                                    -
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts4-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts5-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 130 0 auto; width: 130px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts6-cell">
+                                                                                    999,999,999.000<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 50px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts7-cell">
+                                                                                    0.00<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 50 auto; width: 50x;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="units8-cell">
+                                                                                    <i class="material-icons" style="font-size: 19px;color: #0083a5;line-height: 1.5;">delete</i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup"></div>
+                                                                </div>
+
+                                                                <div class="rt-tbody" style="min-width: 500px;">
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup">
+                                                                        <div class="rt-tr grid-row -odd">
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 125px;">
+                                                                                <div class="data-grid__cell grid-column__cell" id="amountsTotal-cell">
+                                                                                    001111 12722
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts1-cell">
+                                                                                    49
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts2-cell">
+                                                                                    100
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts3-cell">
+                                                                                    -
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts4-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts5-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 130 0 auto; width: 130px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts6-cell">
+                                                                                    999,999,999.000<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 50px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts7-cell">
+                                                                                    0.00<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 50 auto; width: 50x;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="units8-cell">
+                                                                                    <i class="material-icons" style="font-size: 19px;color: #0083a5;line-height: 1.5;">delete</i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup"></div>
+                                                                </div>
+                                                                <div class="rt-tbody" style="min-width: 500px;">
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup">
+                                                                        <div class="rt-tr grid-row -odd">
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 125px;">
+                                                                                <div class="data-grid__cell grid-column__cell" id="amountsTotal-cell">
+                                                                                    001111 12722
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts1-cell">
+                                                                                    49
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts2-cell">
+                                                                                    100
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts3-cell">
+                                                                                    -
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts4-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts5-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 130 0 auto; width: 130px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts6-cell">
+                                                                                    999,999,999.000<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 50px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts7-cell">
+                                                                                    0.00<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 50 auto; width: 50x;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="units8-cell">
+                                                                                    <i class="material-icons" style="font-size: 19px;color: #0083a5;line-height: 1.5;">delete</i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup"></div>
+                                                                </div>
+                                                                <div class="rt-tbody" style="min-width: 500px;">
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup">
+                                                                        <div class="rt-tr grid-row -odd">
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 125px;">
+                                                                                <div class="data-grid__cell grid-column__cell" id="amountsTotal-cell">
+                                                                                    001111 12722
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts1-cell">
+                                                                                    49
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts2-cell">
+                                                                                    100
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts3-cell">
+                                                                                    -
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts4-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts5-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 130 0 auto; width: 130px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts6-cell">
+                                                                                    999,999,999.000<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 50px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts7-cell">
+                                                                                    0.00<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 50 auto; width: 50x;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="units8-cell">
+                                                                                    <i class="material-icons" style="font-size: 19px;color: #0083a5;line-height: 1.5;">delete</i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup"></div>
+                                                                </div>
+                                                                <div class="rt-tbody" style="min-width: 500px;">
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup">
+                                                                        <div class="rt-tr grid-row -odd">
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 125px;">
+                                                                                <div class="data-grid__cell grid-column__cell" id="amountsTotal-cell">
+                                                                                    001111 12722
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts1-cell">
+                                                                                    49
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts2-cell">
+                                                                                    100
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 150 0 auto; width: 150px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts3-cell">
+                                                                                    -
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 75 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts4-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 75px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left" id="amounts5-cell">
+                                                                                    -<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 130 0 auto; width: 130px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts6-cell">
+                                                                                    999,999,999.000<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 100 0 auto; width: 50px;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="amounts7-cell">
+                                                                                    0.00<br>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rt-td" style="flex: 50 auto; width: 50x;">
+                                                                                <div class="data-grid__cell grid-column__cell grid-column__cell--left grid-column__cell--number" id="units8-cell">
+                                                                                    <i class="material-icons" style="font-size: 19px;color: #0083a5;line-height: 1.5;">delete</i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rt-tr-group grid-row-group" role="rowgroup"></div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="pagination-bottom">
+                                                                <div class="data-grid-pagination data-grid-pagination--last" id="grid-pagination" style="width: 100%;">
+                                                                    <div class="data-grid-pagination__bottom"></div>
+                                                                    <div class="data-grid-pagination__scroller">
+                                                                        <div class="data-grid-pagination__scroll-prev"></div>
+                                                                        <div class="data-grid-pagination__scroll-bar" style="width: 1289px;">
+                                                                            <div class="data-grid-pagination__scroll-line" style="width: 1289px;"></div><!--<div class="data-grid-pagination__scroll-active" style="width: 473px; left: 9px;"></div>-->
+                                                                            <div class="data-grid-pagination__scroll-active"></div>
+                                                                        </div>
+                                                                        <div class="data-grid-pagination__scroll-next"></div>
+                                                                    </div>
+                                                                    <div class="data-grid-pagination__pager">
+                                                                        <div class="data-grid-pagination__rows">
+                                                                            <div class="data-grid-pagination__text">
+                                                                                <span>Rows per page:</span>
+                                                                            </div>
+                                                                            <div class="dropdown__container">
+                                                                                <div class="dropdown data-grid-pagination__dropdown" id="grid-pagination-page-lines-dropdown">
+                                                                                    <div class="dropdown__label"></div>
+                                                                                    <div class="dropdown__value">
+                                                                                        <span>30</span>
+                                                                                        <div class="dropdown__select dropdown__select--upward"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="data-grid-pagination__pages">
+                                                                            1<span>of</span>9
+                                                                        </div>
+                                                                        <div class="data-grid-pagination__arrow data-grid-pagination__arrow--previous data-grid-pagination__arrow--disabled" id="grid-pagination-previous-arrow-button"></div>
+                                                                        <div class="data-grid-pagination__arrow data-grid-pagination__arrow--next" id="grid-pagination-next-arrow-button"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="-loading">
+                                                                <div class="-loading-inner">
+                                                                    Loading...
+                                                                </div>
+                                                            </div><!--<div id="ReactTable==tab-open-1" class="ReactTable==tab-open bg-white">-->
+                                                            <div class="ReactTable--tab-open bg-white" id="ReactTable--tab-open-1">
+                                                                <div class="ReactTable--tab-open__in">
+                                                                    <div class="ReactTable--tab-open__body" style="margin-top: -15px;">
+                                                                        <div class=" form__row row">
+                                                                            <div class="col-12 no-padding-left" style="height: 50px;">
+                                                                                <div class="form__title form__title--position">
+                                                                                    <span>Adm. des soins infirmiers x SGA groupe TE</span> <span></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-2 no-padding-right-left">
+                                                                                <div class="ReactTable--tab-open__title__grid">
+                                                                                    <span>Details</span>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Description:</label> <input class="form-control" placeholder="BANQ NO 01 A 01" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Amount</label> <input class="form-control" placeholder="001111 12722" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label>Statistical account:</label>
+                                                                                        <div class="input-group">
+                                                                                            <input class="form-control" name="q" placeholder="-" type="text">
+                                                                                            <div class="input-group-addon" style="color: #0083a5; background-color: #f2f6f7;">
+                                                                                                <i class="fa fa-search"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-2 no-padding-right-left">
+                                                                                <div class="ReactTable--tab-open__title__grid">
+                                                                                    <span>&nbsp;</span>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Amount:</label> <input class="form-control text-align-right" placeholder="999,999,999.000" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Project:</label> <input class="form-control" placeholder="49" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Project:</label> <input class="form-control" placeholder="49" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-2 no-padding-left">
+                                                                                <div class="ReactTable--tab-open__title__grid">
+                                                                                    <span>&nbsp;</span>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Unit:</label> <input class="form-control text-align-right" placeholder="100" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Activity:</label> <input class="form-control" placeholder="100" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label>Activity:</label>
+                                                                                        <div class="input-group">
+                                                                                            <input class="form-control" name="q" placeholder="-" type="text">
+                                                                                            <div class="input-group-addon" style="color: #0083a5; background-color: #f2f6f7;">
+                                                                                                <i class="fa fa-search"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-3">
+                                                                                <div class="ReactTable--tab-open__title__grid">
+                                                                                    <span>References</span>
+                                                                                </div>
+                                                                                <div class="form__column__full">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Reference #1:</label> <input class="form-control te" placeholder="001111 12722" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Reference #2:</label> <input class="form-control" placeholder="000000000000000000" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Reference #3:</label> <input class="form-control" placeholder="SGA - Paie Logibec" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form__column__full">
+                                                                                    <div class="form-group field">
+                                                                                        <label class="field__label">Reference #4:</label> <input class="form-control" placeholder="NoEmploye=01234" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <div class="col-3 no-padding-left">
+                                                                                <div class="ReactTable--tab-open__title__grid">
+                                                                                    <span>Groups</span>
+                                                                                </div>
+                                                                                <div class="form__column__full no-padding-right">
+                                                                                    <div class="form-group field">
+                                                                                        <label>Activity:</label>
+                                                                                        <div class="input-group">
+                                                                                            <input class="form-control" name="q" placeholder="-" type="text">
+                                                                                            <div class="input-group-addon" style="color: #0083a5; background-color: #f2f6f7;">
+                                                                                                <i class="fa fa-ellipsis-h"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><i class="material-icons clear-tab-ref" style="font-size: 23px; top: 10px;">clear</i>
+                                                                    <div class="form__action form__action--ref" tabindex="0">
+                                                                        <span>OK</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data-grid__resizer" style="position: relative;">
+                                                            <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                                                                <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                                                                    <div style="position: absolute; left: 0px; top: 0px; width: 1359px; height: 20px;"></div>
+                                                                </div>
+                                                                <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                                                                    <div style="position: absolute; left: 0px; top: 0px; width: 200%; height: 200%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+
+
+                                                <div class="form__footer-actions" style="position: relative; top: -180px; margin-left: -27px;">
+                                                    <div class="form__action form__action--cancel" tabindex="0">
+                                                        <span>CANCEL</span>
+                                                    </div>
+                                                    <div class="form__action form__action--save" tabindex="0">
+                                                        <span>SAVE</span>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                            </div>
+                                            <div class="scroll-box__track scroll-box__track--x" style="display: none;">
+                                                <div class="scroll-box__handle scroll-box__handle--x" style="width: 83.2158%; left: 0px;"></div>
+                                            </div>
+                                            <div class="scroll-box__track scroll-box__track--y scroll-box__track--hover" style="display: none;">
+                                                <div class="scroll-box__handle scroll-box__handle--y" style="height: 47.5992%; top: 0px;">
+                                                    <div class="scroll-box__handle--y-view"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup">
+                                <div class="popup__box">
+                                    <div class="popup__box__content">
+                                        <div class="popup-dialog">
+                                            <div class="popup-dialog__header popup-dialog__header--undefined"></div>
+                                            <div class="popup-dialog__actions" tabindex="0"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel"></div>
+                            <div class="alert alert--undefined">
+                                <div class="alert__column-left">
+                                    <div class="alert__icon--undefined"></div>
+                                </div>
+                                <div class="alert__column-right">
+                                    <div class="alert__close-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Propeller Sidebar js -->
+    <!--<script language="javascript" src="../components/main-header/js/sidebar.js" type="text/javascript"></script>-->
+    <!-- jQuery 3 -->
+    <script src="../components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Propeller Sidebar js -->
+    <script language="javascript" src="../components/main-header/js/sidebar.js" type="text/javascript"></script>
+    <!-- jQuery 3 -->
+    <script src="../components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/jquery.slimscroll.js"></script>
+
+    <script src="../dist/js/obs-raw.js"></script>
+
+
+    <script src="../dist/js/pages/dashboard2.js"></script>
+
+    <script src="../dist/js/toolbar-sidebar-attachments.js"></script>
+    <script src="../dist/js/toolbar-sidebar-notes.js"></script>
+
+    <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/jquery.slimscroll.js"></script>
+    <script src="../dist/js/demo.js"></script>
+    <script src="../components/checkbox/icheck.js"></script>
+    <script src="../components/checkbox/select2.full.js"></script>
+    <script src="../components/checkbox/moment.js"></script>
+    <script src="../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="../plugins/timepicker/bootstrap-timepicker.js"></script>
+    <script src="../plugins/pace/pace.js"></script>
+    <script src="../plugins/jQueryUI/jquery-ui.js"></script>
+    <script src="../plugins/iCheck/icheck.js"></script>
+    <script src="../plugins/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js"></script>
+    <script src="../components/fastclick/lib/fastclick.js"></script>
+    <script src="../components/checkbox/checkbox.js"></script>
+    <script src="../components/checkbox/radio.js"></script>
+
+
+
+
+    <script src="../dist/js/jquery.toolbar.js"></script>
+
+
+
+
+
+
+
+    <script>
+        // Make sure jQuery's "ready" event isn't fired before all custom elements
+        // have been upgraded.
+        (function (jQuery1113) {
+            jQuery1113.holdReady(true);
+            window.addEventListener('WebComponentsReady', function () {
+                jQuery1113.holdReady(false);
+            });
+        })(jQuery);
+    </script>
+
+    <script>
+        // #region Advanced Search
+
+        //$("#search-button").click(function () {
+        //    var $advSearch = $("#advanced-search");
+        //    $advSearch.slideToggle(200);
+        //});
+
+        var heightElem = 230;
+        var advSearchVisible = false;
+        var btn = document.querySelector('#search-button');
+        btn.addEventListener('click',
+            function (e) {
+                advSearchVisible = !advSearchVisible;
+                var elem = document.querySelector('#advanced-reference');
+                if (!advSearchVisible) {
+                    elem.style.height = '0px';
+                } else {
+                    elem.style.height = heightElem + 'px';
+                }
+            });
+
+        // #endregion
+
+        // #region Filter By
+
+        var filterByExpandVisible = false;
+        var filterByBtn = document.querySelector('#expand-dropdown');
+        filterByBtn.addEventListener('click',
+            function (e) {
+                filterByExpandVisible = !filterByExpandVisible;
+                var filterByTarget = document.querySelector('#expand-dropdown-target');
+
+                if (filterByExpandVisible) {        // Add the className.
+                    var classTmp = filterByTarget.className;
+                    var newClass = classTmp.concat(" dropdown__select--expanded");
+                    filterByTarget.className = newClass;
+                } else {
+                    filterByTarget.className = filterByTarget.className.replace(' dropdown__select--expanded', '');
+                }
+            });
+
+        // #endregion
+
+    </script>
+
+
+    <script>
+        $(function () {
+            $('#button').toolbar({
+                content: '#toolbar-options',
+                position: 'bottom',
+                animation: 'top'
+            });
+        });
+    </script>
+
+
+
+    <script>
+        $(function () {
+            $('#button1').toolbar({
+                content: '#toolbar-options',
+                position: 'bottom',
+                animation: 'top',
+                event: 'click'
+
+            });
+        });
+    </script>
+
+
+    <!-- ReactTable--open -->
+    <script>
+        $(document).ready(function () {
+            $(".add-ref-icon").click(function () {
+                $("#ReactTable--tab-open-1").addClass("--ReactTable--tab-open-full");
+            });
+            $(".clear-tab-ref").click(function () {
+                $("#ReactTable--tab-open-1").removeClass("--ReactTable--tab-open-full");
+            });
+
+            $('.header-tag').click(function () {
+                $('.header-tag').removeClass('form-tabs__header--active');
+                $(this).addClass('form-tabs__header--active');
+                $('.body-tag').removeClass('form-tabs__body--active');
+                var dataL = $(this).data("link");
+                $('#' + dataL).addClass('form-tabs__body--active');
+            });
+
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>

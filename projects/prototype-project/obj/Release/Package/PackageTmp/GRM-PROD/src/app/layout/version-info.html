@@ -1,0 +1,24 @@
+<div class="modal-header">
+    <h1 class="modal-title"><i class="glyphicon glyphicon-info-sign text-info"></i>&nbsp;<small>{{ 'aboutThisApp' | translate }}</small></h1>
+</div>
+<div class="modal-body" ng-switch="opts.translateContent">
+  <dl class="dl-version-info">
+    <dt>{{ 'webApplicationVersionColon' | translate }}</dt>
+    <!-- <dd>20171114.1500</dd> -->
+    <dd>{{ data.webApplicationVersion }}</dd>
+    <dt>{{ 'apiVersionColon' | translate }}</dt>
+    <dd>{{ data.apiVersion }}</dd>
+    <dt>{{ 'databaseVersionColon' | translate }}</dt>
+    <dd>{{ data.databaseFixNumber ? data.databaseVersion + '-' + data.databaseFixNumber : data.databaseVersion }}</dd>
+    <dt>{{ 'databaseNameColon' | translate }}</dt>
+    <dd>{{ data.databaseName }}</dd>
+  </dl>
+  <div>
+    <a ng-href="#" ng-click="onStartTracing()" title="{{ 'startTracing' | translate }}" ng-if="tracingDisabled()">{{ 'startTracing' | translate }}</a>
+    <a ng-href="#" ng-click="onStopTracing()" title="{{ 'stopTracing' | translate }}" ng-if="tracingEnabled()">{{ 'stopTracing' | translate }}</a>
+  </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" title="{{ 'close' | translate }}" ng-click="onClose()">{{ 'btnClose' | translate }}</button>
+</div>
+

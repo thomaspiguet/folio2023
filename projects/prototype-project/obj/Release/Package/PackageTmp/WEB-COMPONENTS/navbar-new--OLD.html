@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      <template-component-navbar-new>
+    -->
+</head>
+<body>
+
+    <template id="template-component-template-id">
+
+        <style>
+            i#icon.fa.fa-chevron-right {
+                transform: rotate(0deg);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            body.pmd-body-open i#icon.fa.fa-chevron-right {
+                transform: rotate(90deg);
+            }
+
+            .brand {
+                width: 240px;
+                margin: 0px -25px -18px
+            }
+            .brand_client {
+                color: white;
+                font-size: 80%;
+            }
+            .navbar-header p {
+                margin: 1px 5px 24px 5px;
+                color: white;
+                font-size: 74%;
+                font-weight: lighter;
+                text-transform: uppercase;
+            }
+            /*.user-body {
+                padding: 10px;
+                border-radius: 0px;
+                border-bottom: 0px solid #cfd8dc!important;
+                background-color: #fff;
+            }*/
+            .user-image {
+                float: left;
+                width: 40px !important;
+                height: 40px !important;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-top: -6px !important;
+            }
+            .dropdown-menu {
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                padding: 1px 0 0 0;
+                border-top-width: 0;
+                width: auto !important;
+                min-width: 245px !important;
+            }
+
+            /*.navbar-header p {
+                margin: 3px 0px 30px 6px;
+                color: white;
+                font-size: 63%;
+                font-weight: lighter;
+                text-transform: uppercase;
+                position: relative;
+                top: -20px;
+                left: 37px;
+            }*/
+
+
+            .grh-product {
+                display:none;
+            }
+            .gch-product {
+                display: none;
+            }
+            .connex-product-new {
+                display: none;
+            }
+            .connex-product {
+                display: none;
+            }
+            .gch-product-test {
+                display: none;
+            }
+
+        </style>
+
+        <nav class="navbar navbar-fixed-top pmd-z-depth" id="top-main-header" style="position:fixed;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <img style="width: 100%;" class="connex-product-new" src="../branding-products/img/connex.svg" />
+
+                    <img style="width: 100%;" alt="" class=" grh-product" src="../dist/img/BRAND01-template-01.svg">
+
+                    <img style="width: 100%;" alt="" class=" gch-product" src="../branding-products/img/gch.svg">
+
+                    <img style="width: 100%;" alt="" class=" gch-product-test" src="../branding-products/img/gch-test.svg">
+
+                    <img class="brand connex-product" src="../dist/img/BRAND01-template-01.svg" />
+                    <!--<img alt="" class="brand connex-product" src="../dist/img/BRAND01-template-01.svg">-->
+
+                    <img class="brand emploie-sante-qc" src="../branding-products/img/BRAND-EMPLOI-SANTE-reverse.svg" />
+
+                    <p >CIUSSS du Saguenay-Lac-Saint-Jean</p>
+
+                </div>
+
+
+                <a id="container" class="btn btn-sm navbar-toggler pmd-sidebar-toggle" href="javascript:void(0);">
+                    <i id="icon" class="fa fa-chevron-right"></i>
+                </a>
+
+                <div class="navbar-custom-menu" style="float:right;">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown user user-menu " >
+
+                            <span id="ux-workflow" style="display:none" class="ux-item ">
+                                <i data-toggle="tooltip" class="icon ux-round-shape-text">1</i>
+                            </span>
+
+                            <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown"
+                               href="#">
+                                <img alt="User Image" class="user-image" src="../dist/img/user2-160x160.png">
+
+                       
+                                <!--<span class="hidden-xs" style="line-height: 1.9;">John Smith</span>-->
+                                <i id="icon-2" class="fa fa-angle-down pull-right" style="line-height: 1.9;"></i>
+                            </a>
+
+
+
+
+                            <ul class="dropdown-menu" style="top: 55px;" id="myModal">
+                                <!--<ul class="dropdown-menu" style="top: 55px; display: block;" id="myModal">-->
+
+
+
+
+                                <li class="user-header">
+
+
+                                    <span id="ux-translation" style="display:none" class="ux-item">
+                                        <i data-toggle="tooltip" class="icon fa fa-exclamation-circle ux-item-position-translation" style="top: 90px;
+    left: 11px;" data-html="true" title="" data-original-title="John Smith - Directeur   Dernière connexion 2017/01/05"></i>
+                                    </span>
+
+
+                                    <img alt="User Image" cla ss="img-circle" src="../dist/img/user-01.svg">
+
+                                    <p>John Smith - Manager<small>Last connection 2017/01/05</small></p>
+
+
+
+
+                                    <div class="profile-info collapsed-box" style="display: none;">
+
+                                        <p class="boxing-text user-header text-primary-color">User Name:<span class="text-secondary-color">Heushi01</span></p>
+                                        <p class="text-primary-color">Email:<span class="text-secondary-color">shirley.heurtier@logibec.com</span></p>
+
+                                    </div>
+
+
+
+
+
+                                <li class="user-body client-services text-center collapsed-box" style="display: none;">
+                                    <h4>Logibec Head Office</h4>
+                                    <p>
+                                        700 Wellington Street<br>
+                                        Suite 1500, Montreal, QC  H3C 3S4
+                                    </p>
+                                    <div>
+                                        <button type="button" class="btn btn-info btn-flat-mobile btn-block" onclick="window.location='tel:18003619659';"><i class="fa fa-phone"></i> 1-800-361-9659</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile disabled"><i class="fa fa-commenting"></i> Service Requests </button>
+                                    </div>
+
+                                </li>
+
+
+
+
+
+
+                                    <li class="user-body">
+
+
+                                        <div class="pull-left">
+
+
+                                            <span id="ux-workflow" style="display:none" class="ux-item ">
+                                                <i data-toggle="tooltip" class="icon ux-round-shape-text">2</i>
+                                            </span>
+
+
+                                            <a href="#" class="language-select-btn">
+                                                <i class="icon-globe icons"></i><span class="language-select-btn">Languages</span>
+                                            </a>
+                                        </div>
+
+
+                                        <div class="pull-right">
+
+
+
+                                            <span id="ux-translation" style="display:none" class="ux-item">
+
+
+
+                                                <i data-toggle="tooltip" class="icon fa fa-exclamation-circle ux-item-position-translation " data-html="true" title="" data-original-title="Service Client"></i>
+                                            </span>
+
+
+                                            <a href="#" class="client-services-btn disabled-cta">
+                                                <i class="icon-people icons "></i><span class="client-services-btn">Client Services</span>
+                                            </a>
+                                        </div>
+
+                                    </li>
+
+
+
+
+                                <li class="language-select-warning bg-yellow" style="display: none;">
+
+
+                                    <!--<span id="ux-notification" style="display:none" class="ux-item">
+                                        <i data-toggle="tooltip" class="icon fa fa-exclamation-circle ux-item-position" data-html="true" title="" data-original-title="Après avoir vue la notication ----Suivi de votre candidature---- <br> l'utilisateur ne peux pas retirer sa candidature pour ce poste "></i>
+                                    </span>-->
+
+                                    <span id="ux-translation" style="display:none" class="ux-item">
+                                        <i data-toggle="tooltip" class="icon fa fa-exclamation-circle ux-item-position-translation " data-html="true" title="" data-original-title="La langue sélectionné n'est pas supporté par le système pour cette fonction."></i>
+                                    </span>
+
+                                    <p class="white-text">The selected language is not supported by the system for this fonction.</p>
+
+
+
+                                </li>
+
+
+                                <li class="user-body language-select text-center collapsed-box menu-language" style="display: none;">
+
+                                    <ul class="menu-language">
+
+                                        <li>
+                                            <a href="#">
+                                                <i class=""></i> Français (Canada)‬
+                                            </a>
+                                        </li>
+
+
+
+                                        <li>
+
+                                            <span id="ux-workflow" style="display:none" class="ux-item ">
+                                                <i data-toggle="tooltip" class="icon ux-round-shape-text">3</i>
+                                            </span>
+
+                                            <a href="#" class="language-select-warning-btn">
+                                                <i class="icon-ban icons alert-color"></i>
+                                                <span class="language-select-warning-btn">English (United States)</span>
+                                            </a>
+
+                                        </li>
+
+
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-globe icons text-success-color"></i> ‪English (Canada)
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+
+
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <!--<a class="btn btn-info btn-flat" href="#">Profile</a>-->
+                                            <button type="button" data-widget="collapse" class="btn btn-info profile-btn"><span class="profile-btn">Profile</span></button>
+                                        </div>
+
+
+                                        <div class="pull-right">
+
+
+                                            <span id="ux-translation" style="display:none" class="ux-item">
+                                                <i data-toggle="tooltip" class="icon fa fa-exclamation-circle ux-item-position-translation " data-html="true" title="" data-original-title="Déconnexion"></i>
+                                            </span>
+
+
+                                            <button type="button" class="btn btn-danger btn-flat" data-toggle="modal" data-target="#modal-danger-logout-en">Sign out</button>
+
+
+                                     
+                                        </div>
+
+                                    </li>
+                                </ul>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal modal-danger fade " id="modal-danger-logout-en" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+
+                        <h2 class="modal-title"><i class="material-icons dp48">report_problem</i>Warning!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>You're quitting the application!</p>
+                        <p>Do you want to quit the application?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-success pull-right ">Yes</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </template>
+
+
+    <script>
+    'use strict';
+
+    templateComponents.define('template-component-navbar-new', { templateId: 'template-component-template-id' });
+    </script>
+
+</body>
+</html>

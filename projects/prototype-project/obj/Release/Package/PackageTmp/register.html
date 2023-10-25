@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <title>register</title>
+
+    <!-- Styles -->
+    <link href="components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="components/main-header/css/navbar.css" rel="stylesheet">
+    <link href="components/main-header/css/sidebar.css" rel="stylesheet">
+
+    <link href="dist/css/style.css" rel="stylesheet">
+
+    <link href="dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+    <link href="dist/css/scss/_newstyle.css" rel="stylesheet" />
+    <link href="components/main-header/_intermenu.css" rel="stylesheet" />
+    <link href="dist/css/scss/_btn.css" rel="stylesheet" />
+    <link href="dist/css/scss/_branding.css" rel="stylesheet" />    
+    <link href="dist/css/scss/_admin.css" rel="stylesheet" />  
+    <link href="components/checkbox/_checkbox.css" rel="stylesheet" />
+
+
+    <!-- Web components -->
+    <script src="./WEB-COMPONENTS/polyfills-0/webcomponents-lite.js"></script>
+    <script src="./WEB-COMPONENTS/template-components.js"></script>
+    <link rel="import" href="./WEB-COMPONENTS/navbar-new.html">
+    <link rel="import" href="./WEB-COMPONENTS/sidebar-new.html">
+    <link rel="import" href="./WEB-COMPONENTS/buttons.html">
+
+
+</head>
+
+
+
+<body class="hold-transition register-page">
+    <div class="register-box">
+        <div class="register-logo">
+
+            <img alt="BRAND" class="" src="../dist/img/BRAND-CONNEX-GREEN.svg">
+
+        </div>
+        <div class="register-box-body">
+            <p class="login-box-msg">Register a new membership</p>
+            <form action="../../index.html" method="post">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Full name">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Retype password">
+                    <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+
+
+                        <!--<div class="checkbox icheck">
+                            <label>
+                                <input type="checkbox"> I agree to the <a href="#">terms</a>
+                            </label>
+                        </div>-->
+
+                        <label class="checkbox checked" for="checkbox1">
+                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked="" />I agree to the <a href="#">terms</a>
+                        </label>
+
+
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+
+            <div class="social-auth-links text-center" style="display:none;">
+                <p>- OR -</p>
+                <a href="#" class="btn btn-block btn-social btn-facebook btn-flat">
+                    <i class="fa fa-facebook"></i> Sign up using
+                    Facebook
+                </a>
+                <a href="#" class="btn btn-block btn-social btn-google btn-flat">
+                    <i class="fa fa-google-plus"></i> Sign up using
+                    Google+
+                </a>
+            </div>
+
+            <a href="login.html" class="text-center">I already have a membership</a>
+        </div>
+        <br>
+
+        <div class="text-center">
+
+            <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+
+        </div>
+
+        <div class="lockscreen-footer text-center">
+
+
+            <small>Copyright © 2017 <a href="https://logibec.com/">Logibec Canada</a>. All rights reserved.</small>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Scripts -->
+    <!-- Jquery js 1.11.3-->
+    <script src="dist/js/jquery-1.11.3.js"></script>
+    <script>
+        // Make sure jQuery's "ready" event isn't fired before all custom elements
+        // have been upgraded.
+        (function (jQuery1113) {
+            jQuery1113.holdReady(true);
+            window.addEventListener('WebComponentsReady', function () {
+                jQuery1113.holdReady(false);
+            });
+        })(jQuery);
+    </script>
+
+
+    <!-- Propeller Sidebar js -->
+    <script language="javascript" src="components/main-header/js/sidebar.js" type="text/javascript"></script>
+    <!-- jQuery 3 -->
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/jquery.slimscroll.js"></script>
+    <!--<script src="dist/js/obs-raw.js"></script>-->
+    <script src="dist/js/obs.js"></script>
+    <script src="dist/js/demo.js"></script>
+    <script src="components/Chart.js/Chart.js"></script>
+    <!--<script src="dist/js/pages/dashboard2.js"></script>-->
+    <script src="components/checkbox/checkbox.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".profile-info").toggle();
+            });
+        });
+
+    </script>
+
+</body>
+</html>

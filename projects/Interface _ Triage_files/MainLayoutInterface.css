@@ -1,0 +1,251 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/*
+ * placeholder 
+ * 
+ */
+/*
+ * prefixs 
+ * 
+ */
+/*
+ * transition 
+ * 
+ */
+/*
+ * calc 
+ * 
+ */
+/*
+ * box-shadow 
+ * @include box-shadow(1px,1px,1px,0, #fff, true);
+ * 
+ */
+/*
+ * rotate 
+ * 
+ */
+/*
+ * scale 
+ * 
+ */
+/*
+ * translate 
+ * 
+ */
+/*
+ * skew 
+ * 
+ */
+/*
+ * flex 
+ * 
+ */
+/*
+ * absolute 
+ * 
+ */
+html {
+  height: 100%;
+}
+
+.layout-boxed html, .layout-boxed body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /*position: relative;*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #2f3943;
+  background-color: #f2f3f6;
+}
+
+#connex-app {
+  display: block !important;
+}
+
+.app-wrapper {
+  /*position: relative;*/
+  margin-top: 55px;
+}
+
+.app-main-tools-sidebar-wrapper {
+  /*position: relative;*/
+  margin-top: 55px;
+}
+
+.app-main-push-right {
+  /*padding-right: $main-sidepanel-width-expanded !important;*/
+  margin-right: 335px !important;
+  -webkit-transition: margin 300ms ease-in-out 0ms;
+  transition: margin 300ms ease-in-out 0ms;
+  -webkit-transition: padding 300ms ease-in-out 0ms;
+  transition: padding 300ms ease-in-out 0ms;
+}
+
+.app-main-push-over {
+  padding-left: 250px !important;
+  -webkit-transition: margin 300ms ease-in-out 0ms;
+  transition: margin 300ms ease-in-out 0ms;
+  -webkit-transition: padding 300ms ease-in-out 0ms;
+  transition: padding 300ms ease-in-out 0ms;
+}
+
+.aside-panel-active {
+  display: block !important;
+}
+
+.main {
+  /*position: relative;*/
+  /*margin: 0px $main-toolbar-width-minified 0px $main-sidebar-width-minified;*/
+  padding: 0px 55px 0px 55px;
+  /*padding: 0px;*/
+  /*@include calc(min-height, '100vh - 50px');*/
+  /*@include calc(min-height, '100vh - 50px');*/
+  /*min-height: 100vh;*/
+  -webkit-transition: margin 300ms ease-in-out 0ms;
+  transition: margin 300ms ease-in-out 0ms;
+  -webkit-transition: padding 300ms ease-in-out 0ms;
+  transition: padding 300ms ease-in-out 0ms;
+  padding-top: 55px;
+  /*.app-main-push-over-right {
+        padding-right: $main-sidepanel-width-expanded;
+    }
+
+    .app-main-push-over {
+        padding-left: $main-sidebar-width-expanded;
+    }
+    &.app-main-push-over {
+        padding-left: $main-sidebar-width-expanded;
+    }
+
+    &.app-main-push-over-right {
+        padding-right: $main-sidepanel-width-expanded;
+    }*/
+}
+
+.main .header-container {
+  padding-bottom: 10px;
+}
+
+.main .main-content {
+  padding: 20px;
+  margin: 0px auto;
+  /*min-height: 250px;*/
+}
+
+.main .main-content .widget-panel {
+  background-color: #fff;
+  margin: 0 0 20px;
+}
+
+.main .main-content.no-top-header {
+  margin-top: -55px;
+}
+
+.main .main-content .widget-header {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.main .main-content .widget-header .box-title {
+  margin: 0px;
+}
+
+.main .main-content .widget-body {
+  position: relative;
+  /*margin-bottom: 20px;
+            padding: 15px;*/
+}
+
+@media (max-width: 992px) {
+  /*&.app-main-push-over {
+            margin-left: $main-sidebar-width-minified;
+        }*/
+  .app-main-push-right {
+    /*padding-right: $main-sidepanel-width-expanded !important;*/
+    margin-right: 0px !important;
+  }
+  .app-main-push-over {
+    padding-left: 55px !important;
+  }
+  .aside-panel-active-mobile {
+    margin-right: 335px !important;
+  }
+  /*&.app-main-push-over-right {
+            margin-right: $main-sidebar-width-minified;
+        }*/
+}

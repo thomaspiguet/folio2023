@@ -1,0 +1,252 @@
+<!-- list action buttons -->
+<div class="authorization-list-actions">
+
+  <div class="filtering">
+    <!-- Search panel trigger -->
+    <a ng-href="#" title="{{ 'search' | translate }}" ng-click="$ctrl.onSearchClick($event)">
+      <i class="mdi mdi-20px" ng-class="true === $ctrl.dataModel.searchCriteriaApplied ? 'mdi-magnify-plus-outline' : 'mdi-magnify'"></i>
+    </a>
+  </div>
+
+</div>
+
+<!-- the actual list -->
+<div class="authorization-list">
+  <table class="table table-fixed-header-scrollable-content grm-data-table grm-data-table-extended"
+    auto-adjust-header="$ctrl.dataModel.authorizations"
+    st-sorting-helper="$ctrl.dataModel.sorting"
+    st-table="$ctrl.dataModel.authorizations"
+    st-pipe="$ctrl.pipe"
+    ng-hide="$ctrl.dataModel.authorizations.length === 0"
+  >
+    <thead>
+      <tr>
+        <th class="width-3 text-center">
+          <input type="checkbox" title="{{ 'selectAll' | translate }}" ng-model="$ctrl.dataModel.selectAll" ng-change="$ctrl.listSelectionHandler()" />
+        </th>
+        <th class="width-4 text-center" st-sort="typeDescription" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'type' | translate }}</a></th>
+        <th class="text-right width-8" st-sort="amount" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'value' | translate }}</a></th>
+        <th class="width-7" st-sort="statusDescription" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'status' | translate }}</a></th>
+        <th class="width-7" st-sort="requisitionId" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'requisition' | translate }}</a></th>
+        <th class="width-30" st-sort="['department.code', 'department.description']" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'administrativeUnit' | translate }}</a></th>
+        <th class="width-24" st-sort="['requester.code', 'requester.description']" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'requester' | translate }}</a></th>
+        <th class="width-7" st-sort="requiredOn" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'dateRequired' | translate }}</a></th>
+        <th class="width-7" st-sort="delay" title="{{ 'sortOnThisColumn' | translate }}"><a ng-href="#" prevent-default>{{ 'delay' | translate }}</a></th>
+        <th class="width-3"></th>
+      </tr>
+    </thead>
+    <tbody scrolling-tracker="$ctrl.onScrollAuthorizationList(scrollPosition)" initial-scroll-position="$ctrl.dataModel.scrollPosition">
+      <tr class="selectable" ng-repeat-start="requisitionGroup in $ctrl.dataModel.authorizations" ng-click="$ctrl.onRowSelect($event, $index)" ng-class="{ 'selected': requisitionGroup.rowSelected, 'hovered': requisitionGroup.hovered }" ng-mouseenter="requisitionGroup.hovered = true" ng-mouseleave="requisitionGroup.hovered = undefined">
+        <td class="width-3 text-center">
+          <input type="checkbox" title="{{ 'selectThisRow' | translate }}" ng-model="requisitionGroup.selected" ng-change="$ctrl.itemSelectionHandler($index)" />
+        </td>
+        <td class="width-4 text-center" title="{{ ::$ctrl.getAuthorizationTypeDescription(requisitionGroup) }}">
+          <div class="mdi mdi-20px" ng-class="requisitionGroup.typeCode === '1' ? 'mdi-currency-usd' : 'mdi-format-title'"></div>
+        </td>
+        <td class="text-right width-8"><span ng-if="requisitionGroup.typeCode === '1'">{{ ::requisitionGroup.amount | currency }}</span></td>
+        <td class="width-7"><span ng-if="requisitionGroup.typeCode === '1'">{{ ::requisitionGroup.statusDescription }}</span></td>
+        <td class="width-7">
+          <a title="{{ 'drillDownRequisitionX' | translate:requisitionGroup.requisitionId }}"
+            ui-sref=".requisition.update({ id: {{ requisitionGroup.requisitionId }} })"
+          >
+            {{ ::requisitionGroup.requisitionId }}
+          </a>
+        </td>
+        <td class="width-30">{{ ::requisitionGroup.department.code }} - {{ ::requisitionGroup.department.description }}</td>
+        <td class="width-24">
+          <a title="{{ 'requesterDetails' | translate }}"
+            ng-href="#"
+            uib-popover-template="'person-details.html'"
+            popover-trigger="'outsideClick'"
+            ng-click="$ctrl.person = requisitionGroup.requester"
+          >
+            {{ ::requisitionGroup.requester.code }} - {{ ::requisitionGroup.requester.description }}</td>
+          </a>
+        <td class="width-7">{{ ::requisitionGroup.requiredOn | date:'shortDate' }}</td>
+        <td class="width-7">{{ ::requisitionGroup.toAuthorizeSince | sinceDate:3 }}</td>
+        <td class="width-3">
+          <a ng-href="#" title="{{ 'toggleDetailSectionForThisRow' | translate }}" ng-click="$ctrl.onToggleProductLines($index)">
+            <i class="mdi mdi-20px" ng-class="true === requisitionGroup.expanded ? 'mdi-chevron-up' : 'mdi-chevron-down'"></i>
+          </a>
+        </td>
+      </tr>
+      <tr class="summary-panel" ng-if="requisitionGroup.typeCode === '2'" ng-click="$ctrl.onRowSelect($event, $index)" ng-class="{ 'selectable selected': requisitionGroup.rowSelected, 'hovered': requisitionGroup.hovered }" ng-mouseenter="requisitionGroup.hovered = true" ng-mouseleave="requisitionGroup.hovered = undefined">
+        <td class="width-22">&nbsp;</td>
+        <td class="width-78">
+          <div class="">{{ 'originColon' | translate }}&nbsp;{{ ::requisitionGroup.technicalOrigin }}&nbsp;{{ ::requisitionGroup.technicalValue }}</div>
+          <div class="">{{ 'explanationColon' | translate }}&nbsp;{{ ::requisitionGroup.explanation }}</div>
+        </td>
+      </tr>
+      <tr ng-repeat-end class="detail-panel" ng-if="requisitionGroup.expanded">
+        <td class="width-100">
+          <div>
+            <div class="" style="padding-left:10%;">{{ 'relatedRequestedProducts' | translate }}</div>
+            <div class="" ng-attr-id="'requisitionLines_' + $index" ng-if="requisitionGroup.authorizationDetails.length">
+              <table class="table table-fixed-header-scrollable-content">
+                <thead>
+                  <tr>
+                    <th class="width-7"></th>
+                    <th class="width-8 text-right">{{ 'value' | translate }}</th>
+                    <th class="width-5">{{ 'product' | translate }}</th>
+                    <th class="width-3">{{ 'type' | translate }}</th>
+                    <th class="width-25">{{ 'description' | translate }}</th>
+                    <th class="width-5 text-right">{{ 'quantity' | translate }}</th>
+                    <th class="width-10">{{ 'format' | translate }}</th>
+                    <th class="width-5 text-right">{{ 'price' | translate }}</th>
+                    <th class="width-32">{{ 'account' | translate }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="slim" ng-repeat-start="authorizationDetail in requisitionGroup.authorizationDetails">
+                    <td class="width-7"></td>
+                    <td class="width-8 text-right">{{ ::authorizationDetail.amount | currency }}</td>
+                    <td class="width-5">
+                      <a title="{{ 'drillDownRequisitionX' | translate:requisitionGroup.requisitionId }}"
+                        ui-sref=".requisition.update({ id: {{ requisitionGroup.requisitionId }}, iid: {{ authorizationDetail.requisitionItemId }} })"
+                      >
+                        <span ng-if="'0' === authorizationDetail.product.code">{{ 'noProductCode' | translate }}</span>
+                        <span ng-if="'0' !== authorizationDetail.product.code">{{ ::authorizationDetail.product.code }}</span>
+                      </a>
+                    </td>
+                    <td class="width-3" title="{{ $ctrl.getTypeDescription(authorizationDetail.product.type) | translate }}">{{ ::$ctrl.getTypeLabel(authorizationDetail.product.type) | translate }}</td>
+                    <td class="width-25"
+                      ng-init="authorizationDetail.showDescriptionTrigger = false"
+                      ng-init="authorizationDetail.showDescriptionPopover = false"
+                      ng-mouseenter="authorizationDetail.showDescriptionTrigger = true"
+                      ng-mouseleave="authorizationDetail.showDescriptionTrigger = false"
+                      uib-popover-template="'product-description.html'"
+                      popover-class="no-max-width-popover"
+                      popover-placement="auto top-left"
+                      popover-trigger="'outsideClick'"
+                    >
+                      <a
+                        ng-show="authorizationDetail.showDescriptionTrigger"
+                        ng-href="#"
+                        title="{{ 'clickToShowCompleteValue' | translate }}"
+                        style="float:right;color:gray;"
+                      >
+                        <i class="mdi mdi-information-outline"></i>
+                      </a>
+
+                      {{ ::authorizationDetail.product.description }}
+                      <br />
+                      {{ ::authorizationDetail.product.complementaryDescription }}
+
+                    </td>
+                    <td class="width-5 text-right">{{ ::authorizationDetail.quantity }}</td>
+                    <td class="width-10">{{ ::authorizationDetail.formatDescription }}</td>
+                    <td class="width-5 text-right">{{ ::authorizationDetail.price | currency }}</td>
+                    <td class="width-32"
+                      ng-init="authorizationDetail.showAccountDescriptionTrigger = false"
+                      ng-init="authorizationDetail.showAccountDescriptionPopover = false"
+                      ng-mouseenter="authorizationDetail.showAccountDescriptionTrigger = true"
+                      ng-mouseleave="authorizationDetail.showAccountDescriptionTrigger = false"
+                      uib-popover-template="'account-description.html'"
+                      popover-class="no-max-width-popover"
+                      popover-placement="auto top-left"
+                      popover-trigger="'outsideClick'"
+                    >
+                      <a
+                        ng-show="authorizationDetail.showAccountDescriptionTrigger"
+                        ng-href="#"
+                        title="{{ 'clickToShowCompleteValue' | translate }}"
+                        style="float:right;color:gray;"
+                      >
+                        <i class="mdi mdi-information-outline"></i>
+                      </a>
+                    {{ ::authorizationDetail.account.code }} - {{ ::authorizationDetail.account.description }}
+                    </td>
+                  </tr>
+                  <tr ng-repeat-end ng-if="authorizationDetail.requisitionItemNote">
+                    <td class="width-13"></td>
+                    <td class="width-25 requisition-item-note-container">
+                        <span class="requisition-item-note-icon" title="{{ 'note' | translate }}"></span>
+                        <span class="requisition-item-note">{{ ::authorizationDetail.requisitionItemNote }}</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="padding-left:10%">
+              <span>{{ 'associatedAuthorizationsFollowUp' | translate }}</span>
+              <a style="position:relative; top:4px" ng-href="#" title="{{ 'toggleAssociatedAuthorizationsSectionForThisRow' | translate }}" ng-click="$ctrl.onToggleRelatedAuthorizations($index)">
+                <i class="mdi mdi-20px" ng-class="true === requisitionGroup.expandedAssociatedAuthorizationsSection ? 'mdi-chevron-up' : 'mdi-chevron-down'"></i>
+              </a>
+            </div>
+            <div class="" ng-attr-id="'associatedAuthorizations_' + $index" ng-if="requisitionGroup.expandedAssociatedAuthorizationsSection">
+              <table class="table table-fixed-header-scrollable-content" ng-if="requisitionGroup.associatedGroups.length">
+                <thead>
+                  <tr>
+                    <th class="width-7"></th>
+                    <th class="width-8 text-right">{{ 'value' | translate }}</th>
+                    <th class="width-5">{{ 'status' | translate }}</th>
+                    <th class="width-20">{{ 'authorizer' | translate }}</th>
+                    <th class="width-10">{{ 'authorizedOn' | translate }}</th>
+                    <th class="width-7">{{ 'source' | translate }}</th>
+                    <th class="width-20">{{ 'exceptionBy' | translate }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="slim" ng-repeat="associatedGroup in requisitionGroup.associatedGroups">
+                    <td class="width-7"></td>
+                    <td class="width-8 text-right">{{ ::associatedGroup.authorizerAmount | currency }}</td>
+                    <td class="width-5">{{ ::associatedGroup.statusDescription }}</td>
+                    <td class="width-20">
+
+                      <a title="{{ 'authorizerDetails' | translate }}"
+                        ng-href="#"
+                        uib-popover-template="'person-details.html'"
+                        popover-trigger="'outsideClick'"
+                        ng-click="$ctrl.person = associatedGroup.requester"
+                      >
+                        {{ ::associatedGroup.requester.code }} - {{ ::associatedGroup.requester.description }}
+                      </a>
+
+                    </td>
+                    <td class="width-10">{{ ::associatedGroup.authorizedOn | date:'short' }}</td>
+                    <td class="width-7">{{ ::associatedGroup.exceptionSourceDescription }}</td>
+                    <td class="width-20">{{ associatedGroup.exceptionRequester ? associatedGroup.exceptionRequester.code + ' - ' + associatedGroup.exceptionRequester.description : '' }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- product description template -->
+<script type="text/ng-template" id="product-description.html">
+  <div>{{ ::authorizationDetail.product.description }}<br/>{{ ::authorizationDetail.product.complementaryDescription }}</div>
+</script>
+
+<!-- account description template -->
+<script type="text/ng-template" id="account-description.html">
+  <div style="white-space:nowrap;">{{ ::authorizationDetail.account.code }} - {{ ::authorizationDetail.account.description }}</div>
+</script>
+
+<!-- person detailed info tempplate -->
+<script type="text/ng-template" id="person-details.html">
+  <div class="">
+    <form>
+      <div class="form-group">
+        <label for="requesterNumber">{{ 'number' | translate }}</label>
+        <div id="requesterNumber">{{ ::$ctrl.person.code }}</div>
+      </div>
+      <div class="form-group">
+        <label for="requesterName">{{ 'name' | translate }}</label>
+        <div id="requesterName">{{ ::$ctrl.person.description }}</div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.person.phoneNumber || $ctrl.person.phoneExtension">
+        <label for="requesterPhone">{{ 'phone' | translate }}</label>
+        <div id="requesterPhone">{{ ::$ctrl.person.phoneNumber }}<span style="margin-left:24px;">{{ ::$ctrl.person.phoneExtension }}</span></div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.person.email">
+        <label for="requesterEmail">{{ 'email' | translate }}</label>
+        <div id="requesterEmail">{{ ::$ctrl.person.email }}</div>
+      </div>
+    </form>
+  </div>
+</script>

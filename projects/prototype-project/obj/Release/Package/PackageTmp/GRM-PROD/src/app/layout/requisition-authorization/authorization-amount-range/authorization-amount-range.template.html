@@ -1,0 +1,29 @@
+<div class="amount-range-component">
+  <div class="amount-range-total-container">
+      <div id="totalLabel" class="amount-range-total-label">{{ 'toAuthorize' | translate }}</div>
+      <div id="totalCount" class="amount-range-total-count">{{ $ctrl.dataModel.totalCount }}</div>
+  </div>
+  <div class="amount-range-counts-container" ng-class="{'filled': true === $ctrl.hasCountData()}">
+
+    <div class="amount-range-item-container" 
+      title="{{ (range.selected ? 'removeFilterX' : 'addFilterX') | translate:$ctrl.getDisplayRangeAmount(range) }}"
+      ng-repeat="range in $ctrl.dataModel.amountRanges" 
+      ng-click="$ctrl.onRangeClick($event, range)" 
+      ng-attr-id="{{ 'range_' + $index }}">
+      <div class="amount-range-item" ng-class="{'selected': true === range.selected, 'released': false === range.selected}">
+        <div ng-attr-id="{{ 'rangeLabel_' + $index }}" class="amount-range-item-label">{{ $ctrl.getDisplayRangeAmount(range) }}</div>
+        <div ng-attr-id="{{ 'rangeCount_' + $index }}" class="amount-range-item-count">{{ range.count }}</div>
+      </div>
+    </div>
+
+    <div class="amount-range-item-container technical-count" ng-show="$ctrl.dataModel.amountRanges.length > 0">
+      <div class="amount-range-item" 
+        ng-class="{'selected': true === $ctrl.dataModel.technicalsSelected, 'released': false === $ctrl.dataModel.technicalsSelected}"
+        ng-click="$ctrl.onTechnicalClick($event)">
+        <div id="technicalTotalLabel" class="amount-range-item-label">{{ 'technicalCount' | translate }}</div>
+        <div id="technicalTotalCount" class="amount-range-item-count">{{ $ctrl.dataModel.technicalCount }}</div>
+      </div>
+    </div>
+
+  </div>
+</div>

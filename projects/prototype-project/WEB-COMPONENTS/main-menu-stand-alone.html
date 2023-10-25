@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+  <title>Main Menu Stand Alone &mdash; Logibec UI Kit</title>
+
+  <!-- Style -->
+  <link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="../components/main-header/css/navbar.css" rel="stylesheet">
+  <link href="../components/main-header/css/sidebar.css" rel="stylesheet">
+  <link href="../dist/css/style.css" rel="stylesheet">
+  <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+  <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+  <link href="../components/main-header/_intermenu.css" rel="stylesheet" />
+  <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+  <link href="../dist/css/scss/_documentation.css" rel="stylesheet" />
+
+  <style>
+    body {
+      height: auto;
+      min-height: 100%;
+    }
+  </style>
+
+  <!-- Import required web components -->
+  <script src="./polyfills-0/webcomponents-lite.js"></script>
+  <script src="./template-components.js"></script>
+  <link rel="import" href="./navbar.html">
+  <link rel="import" href="./sidebar.html">
+</head>
+
+<body style="background-color:#f2f3f6">
+
+  <template-component-navbar></template-component-navbar>
+
+  <section id="pmd-main">
+
+    <template-component-sidebar></template-component-sidebar>
+  
+  </section>
+
+    <!-- Scripts -->
+    <!-- Jquery js 1.11.3-->
+    <script src="../dist/js/jquery-1.11.3.js"></script>
+    <script>
+      // Make sure jQuery's "ready" event isn't fired before all custom elements
+      // have been upgraded.
+      (function(jQuery1113) {
+        jQuery1113.holdReady(true);
+        window.addEventListener('WebComponentsReady', function() {
+          jQuery1113.holdReady(false);
+        });
+      })(jQuery);
+    </script>
+    <!-- Propeller Sidebar js -->
+    <script src="../components/main-header/js/sidebar.js"></script>
+    <!-- jQuery 3 -->
+    <script src="../components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/jquery.slimscroll.js"></script>
+    <script src="../dist/js/obs.js"></script>
+
+</body>
+</html>

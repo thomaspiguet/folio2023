@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">-->
+
+    <title>Profile</title>
+
+    <!--<link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
+    <link href="css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_newstyle.css" rel="stylesheet" />
+
+    <link href="../components/main-header/css/navbar.css" rel="stylesheet">
+    <link href="../components/main-header/_intermenu.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/_branding.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/_btn.css" rel="stylesheet" />
+
+    <link href="css/_recrutement-style.css" rel="stylesheet" />
+    <link href="../dist/css/scss/_admin.css" rel="stylesheet" />
+
+    <link href="../dist/css/scss/_collapse.css" rel="stylesheet" />
+
+    <link href="../components/checkbox/_checkbox.css" rel="stylesheet" />
+    <link href="../components/checkbox/_select.css" rel="stylesheet" />
+
+    <link href="css/_step-wizard.css" rel="stylesheet" />
+
+
+
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-dT8WZNLW+WmnMquYY8GD+px5+PPMy/Rz1pZTBuLQv7EfAZG0xhipTd08JFVCf8bp" crossorigin="anonymous">-->
+
+
+
+    <script>
+
+        $(function () {
+
+            causeRepaintsOn = $("h1, h2, h3, p");
+
+            $(window).resize(function () {
+                causeRepaintsOn.css("z-index", 1);
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                e.stopPropagation();
+                $(".profile-info")
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                e.stopPropagation();
+                $(".account-creation")
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+</head>
+
+
+
+
+<body class="internal_pages" id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <div class="navbar-brand js-scroll-trigger">
+                <a href="index.html">
+                    <img src="img/BRAND-EMPLOI-SANTE.svg" />
+                </a>
+            </div>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="jobs-listing.html">AFFICHAGE PROVINCIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#language">ENGLISH</a>
+                    </li>
+
+                    <li class="nav-item dropdown user user-menu">
+
+                        <a aria-expanded="false" class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown"
+                           href="#">
+                            <span class="hidden-xs">
+                                VOTRE COMPTE
+                            </span>
+                        </a>
+
+
+
+                        <ul class="dropdown-menu" id="myModal">
+                            <li class="user-header">
+
+                                <p>John Smith<small>Dernière connexion 2017/01/05</small></p>
+
+                                <!--<h4>Enregistrement</h4>-->
+                                <!--<div class="profile-info collapsed-box" style="display: none;">
+
+                                    <p class="boxing-text user-header text-primary-color">User Name:<span class="text-secondary-color">Heushi01</span></p>
+                                    <p class="text-primary-color">Email:<span class="text-secondary-color">
+                                    shirley.heurtier@logibec.com</span></p>
+
+                                </div>-->
+
+                            </li>
+
+                            <li class="user-body account-creation collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Créer votre compte utilisateur</p>
+
+                                    <!--<label class="control-label text-success-color" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>-->
+
+
+                                    <form action="../../index.html" method="post">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="Nom complet">
+                                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Confirmer le mot de passe">
+                                            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                                            <!--<span class="help-block danger-color">Help block with error</span>-->
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">S'inscrire</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+
+
+                            </li>
+
+                            <li class="user-body profile-info collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Ouvrir votre session</p>
+
+
+
+
+                                    <form action="../../index.html" method="post">
+
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <p class="small">
+                                            <a href="#">Récupérer votre mot de passe</a>
+
+                                        </p>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">Se connecter</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                            </li>
+
+
+                            <li class="user-footer">
+
+
+                                <!--<div class="">
+
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile"><span class="account-creation-btn">Créer votre compte</span></button>
+                                </div>-->
+
+                                <div class="">
+
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile ">Profile</button>
+                                </div>
+
+                                <div class="">
+                                    <button type="button" onclick="window.location.href='index.html'" class="btn btn-danger btn-flat-mobile btn-block-mobile">Déconnexion</button>
+
+                                </div>
+
+                                <!--<div class="">
+                                    <button type="button" data-widget="collapse" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile"><span class="profile-btn">Connexion</span></button>
+
+                                </div>-->
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="applied-jobs.html" class="nav-link notification ">
+                            <i class="fa fa-bell-o text-danger-color btn-flash"></i>
+                            <span class="label-top-container label label-top label-warning bg-red-active">10</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="banner second_banner">
+
+        <div class="container">
+
+            <div class="intro-text second_banner-text">
+
+                <h1 class="intro-heading-second-banner">Votre Profil</h1>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <section></section>
+
+
+
+    <!--<div class="container">
+        <div class="row">
+            <section>
+                <div class="wizard">
+
+                    <ul class="nav nav-wizard">
+                        <li class="active">
+                            <a href="#step1" data-toggle="tab">Billing Details</a>
+                        </li>
+                        <li class="disabled">
+                            <a href="#step2" data-toggle="tab">Delivery Method</a>
+                        </li>
+                        <li class="disabled">
+                            <a href="#step3" data-toggle="tab">Payment Method</a>
+                        </li>
+
+                        <li class="disabled">
+                            <a href="#step4" data-toggle="tab">Confirm Order</a>
+                        </li>
+                    </ul>
+
+                    <form>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="step1">
+                                <h3>Step 1</h3>
+                                <p>This is step 1</p>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary">Continue</button></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="step2">
+                                <h3>Step 2</h3>
+                                <p>This is step 2</p>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary">Continue</button></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="step3">
+                                <h3>Step 3</h3>
+                                <p>This is step 3</p>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary">Continue</button></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="step4">
+                                <h3>Complete</h3>
+                                <p>You have successfully completed all steps.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>-->
+
+    <section class="bg-step-wizard utile-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="wizard">
+
+                        <ul class="nav nav-wizard ">
+
+                            <li class="active">
+                                <a href="#step1" data-toggle="tab">1<span class="small">Renseignements personnels</span></a>
+                            </li>
+
+                            <li class="disabled">
+                                <a href="#step2" data-toggle="tab">2<span class="small">Alerte emploi</span></a>
+                            </li>
+
+                            <li class="disabled">
+                                <a href="#step3" data-toggle="tab">3<span class="small">Questionnaire</span></a>
+                            </li>
+
+                            <li class="disabled">
+                                <a href="#step4" data-toggle="tab">4<span class="small">Mon profil</span></a>
+                            </li>
+
+                            <li class="disabled">
+                                <a href="#step5" data-toggle="tab">5<span class="small">Confirmation</span></a>
+                            </li>
+
+
+
+
+                            <!--<li class="active ">
+                                <a href="#step1" data-toggle="tab">1</a>
+                            </li>
+                            <li class="active-title ">
+                                <a href="#step1" data-toggle="tab" class="small">Renseignements personnels</a>
+                            </li>
+
+
+                            <li class="disabled">
+                                <a href="#step2" data-toggle="tab">2</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#step2" data-toggle="tab" class="small">Alerte emploi
+                                </a>
+                            </li>
+
+
+                            <li class="disabled">
+                                <a href="#step3" data-toggle="tab">3</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#step3" data-toggle="tab" class="small">Payment Method</a>
+                            </li>
+
+
+                            <li class="disabled">
+                                <a href="#step4" data-toggle="tab">4</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#step4" data-toggle="tab" class="small">Confirm Order</a>
+                            </li>-->
+
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-grey-background utile-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <form>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active " id="step1">
+
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary">Continue</button></li>
+                                </ul>
+
+
+                            </div>
+
+                            <div class="tab-pane" id="step2">
+                                <h3>Step 2</h3>
+                                <p>This is step 2</p>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary">Continue</button></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="tab-pane" id="step3">
+                                <h3>Step 3</h3>
+                                <p>This is step 3</p>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary">Continue</button></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="tab-pane" id="step4">
+                                <div class="box box-default  ">
+
+                                    <div class="box-header with-border">
+
+                                        <div class="box-tools pull-left">
+                                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                            <h4 class="box-title">Établissement</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-body">
+                                        <!--<div class="row">
+                        <div class="col-12">
+                            <p>Indiquez les établissements où vous seriez intéressé à travailler.</p>
+                        </div>
+                    </div>-->
+
+                                        <div class="row">
+                                            <div class="col-12">
+
+                                                <div class="form-group">
+                                                    <label>Indiquez les établissements où vous seriez intéressé à travailler.</label>
+                                                    <select class="form-control select2" style="width: 100%;">
+                                                        <option selected="selected">- Aucun(e) -</option>
+                                                        <option class="" value="">
+                                                            CISSS Abitibi-Témiscamigue
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de Chaudière-Appalaches
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de l'Outaouais
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de la Côte-Nord
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de la Gaspésie
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de la Montérégie-Centre
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de la Montérégie-Est
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de la Montérégie-Ouest
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de Lanaudière
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS de Laval
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS des Îles
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS des Laurentides
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CISSS du Bas-Saint-Laurent
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS C-Ouest Île-de-Montréal
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS C-Sud Île-de-Montréal
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS Capitale-Nationale
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS Est - Île-de-Montréal
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS Estrie-Univ. Sherbrooke
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS Mauricie-Centre-du-Qué
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS Nord - Île-de-Montréal
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS Ouest - Île-de-Montréal
+                                                        </option>
+                                                        <option class="" value="">
+                                                            CIUSSS Saguenay-Lac-Saint-Jean
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-6">
+
+                                                <button type="submit" class="btn btn-success btn-flat pull-right">Ajouter</button>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p>CISSS Abitibi-Témiscamigue</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <button type="button" class="btn btn-danger btn-xs pull-right"><i class="fa fa-trash-o"></i></button>
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+                                        <ul class="list-inline pull-right">
+                                            <li><button type="button" class="btn btn-primary">Continue</button></li>
+                                        </ul>
+
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane" id="step5">
+                                    <h3>Complete</h3>
+                                    <p>You have successfully completed all steps.</p>
+                                </div>
+
+
+
+
+                                <div class="clearfix"></div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+    <section></section>
+
+    <section id="footer" class="footer-menu bg-text">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li>ANALYTIQUE</li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-item">
+                                <h3>Legale</h3>
+                                <ul>
+                                    <li>COOKIES</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Alertes-Emploi!</h3>
+                        <p>
+                            Si vous désirez recevoir des informations actuelles sur les postes, inscrivez-vous à notre Alertes Emploi.
+                        </p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Entrez votre courriel">
+                            <input type="submit" class="form-control" value="c'est gratuit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer" id="copyright">
+
+
+
+        <small>Copyright © <a href="http://logibec.com" target="_blank">Logibec Canada</a> 2018. Tous droits réservés.</small>
+
+        <div class="">
+            <small>Version 1.0.1 BETA</small>
+        </div>
+
+    </footer>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.easing.compatibility.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="../dist/js/obs-raw.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                e.stopPropagation();
+                $(".profile-info")
+                    // .slideDown(1000);
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                e.stopPropagation();
+                $(".account-creation")
+                    //.slideDown(1000);
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+
+
+
+    <!--<script>
+        $(document).ready(function () {
+
+
+            $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+                var $target = $(e.target);
+
+                if ($target.parent().hasClass('disabled')) {
+                    return false;
+                }
+            });
+
+            $(".btn-primary").click(function (e) {
+
+                var $active = $('.wizard .nav-wizard li.active');
+                $active.next().removeClass('disabled');
+                nextTab($active);
+
+            });
+        });
+
+        function nextTab(elem) {
+            $(elem).next().find('a[data-toggle="tab"]').click();
+        }
+
+    </script>-->
+
+</body>
+
+</html>

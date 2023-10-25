@@ -1,0 +1,26 @@
+<div class="panel panel-primary panel-compact full-height">
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'buyer' | translate }}</span>
+    </div>
+  </div>
+  <div class="panel-body panel-body-contrast panel-body-scroll-vertical-overflow">
+    <form>
+      <div class="form-group">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="buyerName">{{$ctrl.currentItem().buyer.code + ' - ' + $ctrl.currentItem().buyer.description}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().buyer.telephone">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="buyerPhone">{{$ctrl.currentItem().buyer.telephone}}</span>
+        </div>
+      </div>
+      <div class="form-group" ng-if="$ctrl.currentItem().buyer.email">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="buyerEmail">{{$ctrl.currentItem().buyer.email}}</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

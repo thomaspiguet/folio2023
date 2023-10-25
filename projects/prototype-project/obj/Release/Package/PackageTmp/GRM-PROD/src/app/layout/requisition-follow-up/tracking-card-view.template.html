@@ -1,0 +1,68 @@
+<div class="panel panel-primary panel-compact full-height">
+
+  <div class="panel-heading panel-heading-no-padding panel-heading-no-border sgui-bgcolor-primary clearfix">
+    <div class="pull-left panel-heading-padded-container sgui-color-primary-inverse">
+      <span>{{ 'tracking' | translate }}</span>
+    </div>
+  </div>
+
+  <div class="panel-body panel-body-contrast panel-body-scroll-vertical-overflow">
+    <form ng-hide="!$ctrl.currentItem()">
+      <div class="form-group">
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="statusDescription">{{ $ctrl.currentItem().statusDescription }}</span>
+        </div>
+        <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().daysLate">
+          <span ng-attr-id="{{ 'itemDeliveryDaysLate' }}" class="alert-indicator"></span>
+          <span class="form-control-static" id="days">&nbsp;{{ $ctrl.currentItem().daysLate }}&nbsp;{{ 'daysLate' | translate }}</span>
+        </div>
+
+        <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().isOrderWithReceivingWorksheet">
+          <span class="mdi mdi-18px mdi-truck" id="itemReceivingWorksheetIndicator" ></span>
+          <span class="form-control-static" id="itemReceivingWorksheetMsg" >
+            &nbsp;{{ 'orderWithReceivingWorksheet' | translate }}</span>
+        </div>
+
+        <span ng-attr-id="{{ 'itemDeliveryDaysLate' }}" class="information-indicator"
+          ng-if="!$ctrl.currentItem().daysLate && $ctrl.currentItem().authorizerInChargeCount && $ctrl.currentItem().authorizerInChargeCount > 1">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          &nbsp;{{ $ctrl.currentItem().authorizerInChargeCount }}&nbsp;{{ 'authorizersCount' | translate }}
+        </span>
+      </div>
+
+      <div class="form-group" ng-if="$ctrl.currentItem().personInCharge">
+        <label for="itemResponsible">{{ 'requisitionItemResponsible' | translate }}</label>
+        <div class="readonly-field-placeholder">
+          <span class="form-control-static" id="personInCharge">{{ $ctrl.currentItem().personInCharge.code }}&nbsp;-&nbsp;{{ $ctrl.currentItem().personInCharge.description }}</span>
+        </div>
+        <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().personInCharge.phoneNumber">
+          <span class="form-control-static" id="phone">{{ $ctrl.currentItem().personInCharge.phoneNumber }}</span>
+          <span class="form-control-static" ng-if="$ctrl.currentItem().personInCharge.phoneExtension">&nbsp;-&nbsp;</span>
+          <span class="form-control-static" id="extension">{{ $ctrl.currentItem().personInCharge.phoneExtension }}</span>
+        </div>
+        <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().personInCharge.email">
+          <span class="form-control-static" id="email">{{ $ctrl.currentItem().personInCharge.email }}</span>
+        </div>
+
+        <div ng-if="$ctrl.currentItem().inChargeDelay && $ctrl.currentItem().status !== '2R'">
+          <label for="responsibleFor">{{ 'for' | translate }}</label>
+          <div class="readonly-field-placeholder" ng-if="$ctrl.currentItem().status !== '2R'">
+            <span class="form-control-static" id="delayDays" ng-if="$ctrl.currentItem().inChargeDelay.days">{{ $ctrl.currentItem().inChargeDelay.days }}&nbsp;{{ 'days' | translate }}</span>
+            <span class="form-control-static" id="delayHours" ng-if="$ctrl.currentItem().inChargeDelay.hours">{{ $ctrl.currentItem().inChargeDelay.hours }}&nbsp;{{ 'hours' | translate }}</span>
+            <span class="form-control-static" id="delayMinutes" ng-if="$ctrl.currentItem().inChargeDelay.minutes && !$ctrl.currentItem().inChargeDelay.days">{{ $ctrl.currentItem().inChargeDelay.minutes }}&nbsp;{{ 'minutes' | translate }}</span>
+            <span class="form-control-static" id="delayMinutes" ng-if="$ctrl.currentItem().inChargeDelay.seconds && !$ctrl.currentItem().inChargeDelay.minutes && !$ctrl.currentItem().inChargeDelay.days && !$ctrl.currentItem().inChargeDelay.hours">{{ 'lessThanAMinute' | translate }}</span>
+          </div>
+        </div>
+
+        <div ng-if="$ctrl.currentItem().status === '2R'">
+          <label for="responsibleFor">{{ 'delay' | translate }}</label>
+          <div class="readonly-field-placeholder">
+            <span class="form-control-static" id="delayDays">{{ 'followUpAuthorizedDelayMessage' | translate }}</span>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+</div>

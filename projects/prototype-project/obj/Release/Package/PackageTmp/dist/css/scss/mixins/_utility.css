@@ -1,0 +1,112 @@
+﻿/*$background-test: ($background-color, 13.5%);*/
+/*$brand: #0082ab;*/
+/*$brand-inactive: #0057ab;
+$brand-hover: #00c0f2;
+$brand-active: #0057ab;*/
+/*$brand: #0083a5;*/
+/*$primary: #0083a5;*/
+/*$primary: #0ec5ff;*/
+/*$primary: #20a8d8;*/
+/*$primary: #00c0f2;*/
+/*$primary-inactive: #0095c5;
+$primary-hover: #00c0f2;
+$primary-active: #0066ab;*/
+/*$info: #00c0f2;
+$info-active: #00acf2;
+$info-inactive: #00d4f2;*/
+/*$grey: #cfd8dc;*/
+/*$danger: #ff4835;*/
+/*$danger: #f23200;*/
+/*$success: #00d8cf;*/
+/*$font_0: 'fontAwesome';
+$font_1: 'Helvetica Neue';
+$font_2: 'Helvetica';
+$font_3: 'Arial';
+$font_4: 'sans-serif';*/
+/*$sub-brand-orange: #f74141;*/
+.no-padding {
+  padding: 0px !important; }
+
+.no-padding-bottom {
+  padding-bottom: 0px !important; }
+
+.no-padding-top {
+  padding-top: 0px !important; }
+
+.no-padding-right {
+  padding-right: 0px !important; }
+
+.no-padding-left {
+  padding-left: 0px !important; }
+
+.no-padding-right-left {
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.no-margin-bottom {
+  margin-bottom: 0px !important; }
+
+.no-margin {
+  margin: 0px !important; }
+
+.no-margin-top {
+  margin-top: 0px !important; }
+
+.no-margin-right {
+  margin-right: 0px !important; }
+
+.no-margin-left {
+  margin-left: 0px !important; }
+
+.text-no-bold {
+  font-weight: normal !important; }
+
+.center-content {
+  text-align: center !important; }
+
+.center-content-container {
+  margin: auto;
+  width: 50%; }
+
+.right {
+  float: right; }
+
+.text-align-left {
+  text-align: left !important; }
+
+.text-align-right {
+  text-align: right !important; }
+
+.text-align-center {
+  text-align: center !important; }
+
+.border-right {
+  border-right: 1px solid #cfd8dc; }
+
+.border-left {
+  border-left: 1px solid #cfd8dc; }
+
+.border-top {
+  border-top: 1px solid #cfd8dc; }
+
+.border-top {
+  border-top: 1px solid #cfd8dc; }
+
+.border-top {
+  border-top: 1px solid #cfd8dc; }
+
+.no-background {
+  background: transparent; }
+
+.no-overflow-y {
+  overflow-y: hidden; }
+
+.opacity08 {
+  opacity: 0.8; }
+
+.opacity06 {
+  opacity: 0.6; }
+
+.disabled {
+  cursor: not-allowed;
+  opacity: .65; }

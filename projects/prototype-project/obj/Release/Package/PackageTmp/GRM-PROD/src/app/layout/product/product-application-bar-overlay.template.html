@@ -1,0 +1,16 @@
+<div class="application-bar-container">
+  <div class="application-bar application-bar-reverse-contrast">
+
+    <div class="pull-left application-breadcrumbs-container application-breadcrumbs-container-reverse-contrast">
+      <ui-breadcrumbs displayname-property="data.label" template-url="breadcrumbs-readonly-reverse-contrast.template.html"></ui-breadcrumbs>
+    </div>
+
+    <div class="btn-group pull-right" role="group" aria-label="{{ 'searchProductsActions' | translate }}">
+      <button type="button" class="btn sgui-btn-icon sgui-btn-primary-inverted-no-bg" title="{{ 'close' | translate }}" ng-click="$ctrl.onCloseOverlay($event, false)">
+        <span><i class="mdi mdi-close"></i></span>
+      </button>
+    </div>
+
+  </div>
+
+</div>

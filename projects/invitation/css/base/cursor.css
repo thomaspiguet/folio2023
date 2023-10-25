@@ -1,0 +1,147 @@
+*.cursor {
+  /*&__url {
+    cursor: url(myBall&__cur),auto;
+}*/
+}
+
+*.cursor__alias {
+  cursor: alias;
+}
+
+*.cursor__all-scroll {
+  cursor: all-scroll;
+}
+
+*.cursor__auto {
+  cursor: auto;
+}
+
+*.cursor__cell {
+  cursor: cell;
+}
+
+*.cursor__context-menu {
+  cursor: context-menu;
+}
+
+*.cursor__col-resize {
+  cursor: col-resize;
+}
+
+*.cursor__copy {
+  cursor: copy;
+}
+
+*.cursor__crosshair {
+  cursor: crosshair;
+}
+
+*.cursor__default {
+  cursor: default;
+}
+
+*.cursor__e-resize {
+  cursor: e-resize;
+}
+
+*.cursor__ew-resize {
+  cursor: ew-resize;
+}
+
+*.cursor__grab {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+*.cursor__grabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+*.cursor__help {
+  cursor: help;
+}
+
+*.cursor__move {
+  cursor: move;
+}
+
+*.cursor__n-resize {
+  cursor: n-resize;
+}
+
+*.cursor__ne-resize {
+  cursor: ne-resize;
+}
+
+*.cursor__nesw-resize {
+  cursor: nesw-resize;
+}
+
+*.cursor__ns-resize {
+  cursor: ns-resize;
+}
+
+*.cursor__nw-resize {
+  cursor: nw-resize;
+}
+
+*.cursor__nwse-resize {
+  cursor: nwse-resize;
+}
+
+*.cursor__no-drop {
+  cursor: no-drop;
+}
+
+*.cursor__none {
+  cursor: none;
+}
+
+*.cursor__not-allowed {
+  cursor: not-allowed;
+}
+
+*.cursor__pointer {
+  cursor: pointer;
+}
+
+*.cursor__progress {
+  cursor: progress;
+}
+
+*.cursor__row-resize {
+  cursor: row-resize;
+}
+
+*.cursor__s-resize {
+  cursor: s-resize;
+}
+
+*.cursor__se-resize {
+  cursor: se-resize;
+}
+
+*.cursor__sw-resize {
+  cursor: sw-resize;
+}
+
+*.cursor__text {
+  cursor: text;
+}
+
+*.cursor__w-resize {
+  cursor: w-resize;
+}
+
+*.cursor__wait {
+  cursor: wait;
+}
+
+*.cursor__zoom-in {
+  cursor: zoom-in;
+}
+
+*.cursor__zoom-out {
+  cursor: zoom-out;
+}

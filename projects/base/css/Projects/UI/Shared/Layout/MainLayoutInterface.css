@@ -1,0 +1,184 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/*
+ * placeholder 
+ * 
+ */
+/*
+ * prefixs 
+ * 
+ */
+/*
+ * transition 
+ * 
+ */
+/*
+ * calc 
+ * 
+ */
+/*
+ * box-shadow 
+ * @include box-shadow(1px,1px,1px,0, #fff, true);
+ * 
+ */
+/*
+ * rotate 
+ * 
+ */
+/*
+ * scale 
+ * 
+ */
+/*
+ * translate 
+ * 
+ */
+/*
+ * skew 
+ * 
+ */
+/*
+ * flex 
+ * 
+ */
+/*
+ * absolute 
+ * 
+ */
+html {
+  height: 100%;
+}
+
+.layout-boxed html, .layout-boxed body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /*position: relative;*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #2f3943;
+  background-color: #fff;
+}
+
+.app-wrapper {
+  /*position: relative;*/
+  /*margin-top: $header-height;*/
+}
+
+.main {
+  /*position: relative;*/
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  /*@include calc(min-height, '100vh - 50px');
+    @include transition(margin, $main-sidebar-translation-duration);*/
+}
+
+.main.app-main-push-over {
+  margin-left: 250px;
+}
+
+.main .main-content {
+  /*padding: 20px;*/
+  margin: 0px auto;
+  /*min-height: 250px;*/
+  background-color: #fff;
+}
+
+.main .main-content .widget-panel {
+  background-color: #fff;
+  /*margin: 0 0 20px;*/
+}
+
+.main .main-content .widget-header {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.main .main-content .widget-header .box-title {
+  margin: 0px;
+}
+
+.main .main-content .widget-body {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+@media (max-width: 992px) {
+  .main.app-main-push-over {
+    margin-left: 55px;
+  }
+}

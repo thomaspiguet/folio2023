@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">-->
+
+    <title>Portail Client</title>
+
+    <!--<link href="../components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
+    <link href="../../css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="../../css/bootstrap.css" rel="stylesheet" />
+
+    <link href="../../../dist/css/scss/_newstyle.css" rel="stylesheet" />
+
+    <link href="../../../components/main-header/css/navbar.css" rel="stylesheet">
+    <link href="../../../components/main-header/_intermenu.css" rel="stylesheet" />
+
+    <link href="../../../dist/css/scss/mixins/_fonts.css" rel="stylesheet" />
+
+    <link href="../../../dist/css/scss/_branding.css" rel="stylesheet" />
+
+    <link href="../../../dist/css/scss/_btn.css" rel="stylesheet" />
+
+    <link href="../../css/_recrutement-style.css" rel="stylesheet" />
+    <link href="../../../dist/css/scss/_admin.css" rel="stylesheet" />
+    <link href=".../../../components/checkbox/_checkbox.css" rel="stylesheet" />
+
+
+    <script>
+
+    $(function () {
+
+        causeRepaintsOn = $("h1, h2, h3, p");
+
+        $(window).resize(function () {
+            causeRepaintsOn.css("z-index", 1);
+        });
+
+    });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                $(".profile-info")
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                $(".account-creation")
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+
+
+</head>
+
+
+
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <div class="navbar-brand js-scroll-trigger">
+                <a href="index.html">
+                    <img src="../../img/BRAND-EMPLOI-SANTE.svg" />
+                </a>
+            </div>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="jobs-listing.html">AFFICHAGE PROVINCIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#language">ENGLISH</a>
+                    </li>
+
+                    <li class="nav-item dropdown user user-menu">
+
+                        <a aria-expanded="false" class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown"
+                           href="#">
+                            <span class="hidden-xs">
+                                VOTRE COMPTE
+                            </span>
+                        </a>
+
+
+
+                        <ul class="dropdown-menu" id="myModal">
+                            <li class="user-header">
+
+
+
+                                <h4>Enregistrement</h4>
+
+
+
+                            </li>
+
+                            <li class="user-body account-creation collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Créer votre compte utilisateur</p>
+
+
+
+
+                                    <form action="../../index.html" method="post">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="Nom complet">
+                                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Confirmer le mot de passe">
+                                            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                                            <!--<span class="help-block danger-color">Help block with error</span>-->
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">S'inscrire</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+
+                                <!--<div>
+                                    <button type="button" class="btn btn-info btn-flat-mobile btn-block" onclick="window.location='tel:18003619659';"><i class="fa fa-phone"></i> 1-800-361-9659</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile disabled"><i class="fa fa-commenting"></i> Service Requests </button>
+                                </div>-->
+
+                            </li>
+
+                            <li class="user-body profile-info collapsed-box" style="display: none;">
+
+                                <div class="register-box-body">
+                                    <p class="login-box-msg">Ouvrir votre session</p>
+
+                                    <!--<label class="control-label text-success-color" for="inputSuccess"><i class="fa fa-check"></i> Input with success</label>-->
+
+
+                                    <form action="../../index.html" method="post">
+
+                                        <div class="form-group has-feedback">
+                                            <input type="email" class="form-control" placeholder="Adresse courriel">
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Mot de passe">
+                                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                        </div>
+                                        <p class="small">
+                                            <a href="#">Récupérer votre mot de passe</a>
+
+                                        </p>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <button onclick="window.location.href='profile.html'" type="button" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile">Se connecter</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                            </li>
+
+
+                            <li class="user-footer">
+
+
+                                <div class="">
+
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile"><span class="account-creation-btn">Créer votre compte</span></button>
+                                </div>
+
+                                <div class="">
+
+                                    <button type="button" data-widget="collapse" class="account-creation-btn btn btn-default btn-flat-mobile btn-block-mobile disabled">Profil</button>
+                                </div>
+
+                                <!--<div class="">
+                                    <button type="button" class="btn btn-danger btn-flat-mobile btn-block-mobile" data-toggle="modal" data-target="#modal-danger-logout-en">Déconnexion</button>
+
+                                </div>-->
+
+                                <div class="">
+                                    <button type="button" data-widget="collapse" class="profile-btn btn btn-success btn-flat-mobile btn-block-mobile"><span class="profile-btn">Connexion</span></button>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item" id="notification-alert">
+                        <div href="" class="nav-link notification ">
+                            <i class="fa fa-bell-o text-secondary-color"></i>
+                            <span class="label-top-container label label-top label-warning bg-grey-active"> 0</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- Header -->
+    <header class="banner" id="global-banner">
+
+        <div class="container full-width-container">
+
+
+            <div class="intro-text">
+
+
+                <h1 class="intro-heading">Un accès centralisé à toutes les offres d’emploi en santé au Québec </h1>
+            </div>
+
+
+
+        </div>
+    </header>
+
+
+    <section id="cta">
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6 bg-sub-brand-light-blue boxing">
+                    <h2 class="service-heading">CONSULTEZ LES OFFRES<br>D’EMPLOI DISPONIBLES</h2>
+
+                    <button type="button" onclick="window.location.href='jobs-listing.html'" class="btn btn-success bg-green-disabled">VOIR LES OFFRES<i class="fa fa-angle-right"></i> </button>
+
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-grey-background" id="number-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-subheading">L’emploi dans le réseau de la santé et des services sociaux du Québec.</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="">
+
+                        <ul class="list-inline">
+                            <li class="numbers">
+                                <h4 class="">5880</h4>
+                            </li>
+                            <li class="numbers">
+                                <p>Affichage des postes<p>
+                            </li>
+                            <li class="list-inline-item">
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="">
+
+                        <ul class="list-inline">
+                            <li class="numbers">
+                                <h4 class="">34</h4>
+                            </li>
+                            <li class="numbers">
+                                <p>Établissements<p>
+                            </li>
+                            <li class="list-inline-item">
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="">
+
+                        <ul class="list-inline">
+                            <li class="numbers">
+                                <h4 class="">1</h4>
+                            </li>
+                            <li class="numbers">
+                                <p>Réseau de la santé<p>
+                            </li>
+                            <li class="list-inline-item">
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section></section>
+
+
+
+    <section class="bg-grey-background utile-links" id="external-cta-widget">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="">
+                        <img src="img/logo-avenir-en-sante.gif" />
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="utile-links">
+                        <p>Découvrez les nombreuses possibilités de carrières disponibles dans le réseau de la santé et des services sociaux du Québec :<p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+
+                    <div class="">
+                        <button type="button" onclick="window.open('http://avenirensante.gouv.qc.ca/')" class="btn btn-default">DÉCOUVREZ<i class="fa fa-angle-right"></i> </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section></section>
+
+    <section id="footer" class="footer-menu bg-text">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li>ANALYTIQUE</li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-item">
+                                <h3>Legale</h3>
+                                <ul>
+                                    <li>COOKIES</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <h3>Alertes-Emploi!</h3>
+                        <p>
+                            Si vous désirez recevoir des informations actuelles sur les postes, inscrivez-vous à notre Alertes Emploi.
+                        </p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Entrez votre courriel">
+                            <input type="submit" class="form-control" value="c'est gratuit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer" id="copyright">
+
+
+
+        <small>Copyright © <a href="http://logibec.com" target="_blank">Logibec Canada</a> 2018. Tous droits réservés.</small>
+
+        <div class="">
+            <small>Version 1.0.1 BETA</small>
+        </div>
+
+    </footer>
+
+
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery.easing.js"></script>
+    <script src="../../js/jquery.easing.compatibility.js"></script>
+    <script src="../../js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .profile-btn").click(function (e) {
+                e.stopPropagation();
+                $(".profile-info")
+                    // .slideDown(1000);
+                    .slideToggle(1000);
+            });
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button .account-creation-btn").click(function (e) {
+                e.stopPropagation();
+                $(".account-creation")
+                    //.slideDown(1000);
+                    .slideToggle(1000);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #2f3943;
+  height: 55px;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1000;
+  padding-right: 20px;
+}
+
+.header .header-left {
+  float: left;
+}
+
+.header .header-left .logo {
+  height: 55px;
+}
+
+.header .header-left .logo > a {
+  display: block;
+}
+
+.header .header-left .logo > a > img {
+  height: 55px;
+  z-index: 10;
+  float: left;
+}
+
+.header .header-left .logo > a .dropdown-icon {
+  line-height: 4;
+  margin-left: 0px;
+  color: #fff;
+}
+
+.header .header-right {
+  float: right;
+  height: 55px;
+  display: flex;
+}
+
+.header .header-right .header-item-right {
+  display: inline-table;
+}
+
+.header .header-right .header-item-right .dropdown-icon {
+  line-height: 3;
+  margin-left: 10px;
+}
+
+.header .header-right .header-item-right .user-dropdown-link {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  margin-top: 8px;
+  position: relative;
+  /*.user-avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }*/
+  /*> i {
+                    line-height: 40px;
+                }*/
+}
+
+.header .header-right .header-item-right .user-dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 0px;
+  top: 100%;
+  right: 0;
+  left: auto;
+  text-align: left;
+  list-style: none;
+  width: auto !important;
+  min-width: 245px !important;
+  border-left: 1px solid #cfd8dc;
+  border-right: 1px solid #cfd8dc;
+  background-color: #f2f3f6;
+  z-index: 1000;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-header {
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-header .user-header-avatar {
+  display: table;
+  margin: 0 auto;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-header .user-header-desc {
+  margin: 10px 0 10px;
+  font-size: 14px;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-header .user-header-desc small {
+  display: block;
+  font-size: 12px;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-body, .header .header-right .header-item-right .user-dropdown-content .user-footer {
+  padding: 10px;
+  border-top: 1px solid #cfd8dc;
+  background-color: #fff;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-body:before, .header .header-right .header-item-right .user-dropdown-content .user-body:after, .header .header-right .header-item-right .user-dropdown-content .user-footer:before, .header .header-right .header-item-right .user-dropdown-content .user-footer:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-body a {
+  color: #0083a5;
+  text-decoration: none;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-body a:hover {
+  color: #31b0d5;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-body a .user-body-icon {
+  font-size: 15px;
+  vertical-align: -6%;
+  padding-right: 4px;
+}
+
+.header .header-right .header-item-right .user-dropdown-content .user-footer {
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.header .header-right .header-item-right#user-cta.open .user-dropdown-content {
+  display: block;
+}

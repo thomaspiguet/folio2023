@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox-checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Select-scenario_4" transform="translate(-334.000000, -316.000000)">
+            <g id="Group-25" transform="translate(334.000000, 199.000000)">
+                <g id="Group-32" transform="translate(0.000000, 88.000000)">
+                    <g id="Group-29" transform="translate(1.000000, 28.000000)">
+                        <g id="Group-28">
+                            <g id="checkbox-unchecked" transform="translate(0.000000, 2.000000)">
+                                <g id="checkbox-checked">
+                                    <rect id="Rectangle-10" stroke="#CDD8DD" stroke-width="2" x="0" y="0" width="13" height="13" rx="2"></rect>
+                                    <polygon id="Path" stroke="#008CA8" fill="#008CA8" points="5.39923225 9 3 6.60076775 3.67658349 5.92418426 5.39923225 7.64203455 9.04126679 4 9.71785029 4.68138196"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

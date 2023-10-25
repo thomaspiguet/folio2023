@@ -1,0 +1,97 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+.menu-btn {
+  /*background-color: #7e32d4;
+        color: white;
+        padding: 16px;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;*/
+}
+
+.dropdown-nav {
+  position: relative;
+}
+
+.dropdown-nav .menu-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 125%;
+  background-color: #fff;
+  padding: 15px 0 15px 15px;
+  border: solid #cfd8dc 1px;
+}
+
+.dropdown-nav .menu-content h4 {
+  font-size: 14px;
+}
+
+.dropdown-nav .menu-content p {
+  font-size: 12px;
+}
+
+.dropdown-nav .widget {
+  padding: 0px;
+}
+
+.dropdown-nav .widget .widget-body {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+}
+
+.dropdown-nav .widget i {
+  font-size: 22px;
+  line-height: 1 !important;
+}
+
+/*.links {
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+    }
+
+        .links:hover {
+            background-color: rgb(8, 107, 46);
+        }*/
+/*a {
+        width: 100%;
+        display: block;
+        background-color: #fff;
+        overflow: auto;
+        border: solid #cfd8dc 1px;
+        cursor: pointer;
+        margin-bottom: 1%;
+        color: #73879c;
+        height: 45px;
+        white-space: nowrap;
+        vertical-align: middle;
+        text-decoration: none;
+        overflow: hidden;
+    }*/
+/*.dropdown-nav a {
+        width: 100%;
+        display: block;
+        background-color: #fff;
+        overflow: auto;
+        border: solid #cfd8dc 1px;
+        cursor: pointer;
+        margin-bottom: 1%;
+        color: #73879c;
+        height: 45px;
+        white-space: nowrap;
+        vertical-align: middle;
+        text-decoration: none;
+        overflow: hidden;
+    }*/

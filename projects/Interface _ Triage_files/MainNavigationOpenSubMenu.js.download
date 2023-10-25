@@ -1,0 +1,44 @@
+﻿// trigger sub main sidebar
+var subMainSidebarItems = document.querySelectorAll('.sub-main-sidebar');
+
+for (var i = 0; i < subMainSidebarItems.length; i++) {
+    subMainSidebarItems[i].addEventListener('click', openSubMenu);
+}
+
+function openSubMenu() {
+
+    for (var i = 0; i < subMainSidebarItems.length; i++) {
+        var parent = subMainSidebarItems[i].parentElement;
+        var subMenu = subMainSidebarItems[i].nextElementSibling;
+
+        if (this === subMainSidebarItems[i] && !parent.classList.contains('open')) {
+            parent.classList.add('open');
+            subMenu.classList.add('open');
+            subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+        }
+        else {
+            parent.classList.remove('open');
+            subMenu.classList.remove('open');
+            subMenu.style.maxHeight = '0px';
+        }
+    }
+};
+
+function openSubMenuActive() {
+
+    for (var i = 0; i < subMainSidebarItems.length; i++) {
+        var parent = subMainSidebarItems[i].parentElement;
+        var subMenu = subMainSidebarItems[i].nextElementSibling;
+
+        if (subMenu.classList.contains('submenu-active')) {
+            parent.classList.add('open');
+            subMenu.classList.add('open');
+            subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+        }
+        else {
+            parent.classList.remove('open');
+            subMenu.classList.remove('open');
+            subMenu.style.maxHeight = '0px';
+        }
+    }
+};

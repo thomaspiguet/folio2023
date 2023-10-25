@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      <template-component-sidebar-new>
+    -->
+
+    <style>
+
+        /*.domain-menu-logo {
+            width: 80%;
+            padding: 0px;
+            margin: 10px 0px;
+        }
+        .products__domain-menu {
+            margin: 4px;
+            height: 75px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #fff;
+            background-color: #f2f3f6;
+            font-size: 15px;
+            padding: 0px 5px;
+        }
+        .arrow-sidemenu-toggle {
+            font-size: 24px;
+            padding-left: 25px;
+            color: #0083a5;
+        }
+        .icon-folder-alt:before {
+            content: "\e039";
+            font-size: 40px;
+            display: block;
+            padding-bottom: 8px;
+        }
+
+        .btn-app {
+            border-radius: 1px;
+            position: relative;
+            margin: 0 0 10px 10px;
+            padding-top: 24px;
+            min-width: 70px;
+            height: 70px;
+            text-align: center;
+            color: #2f3943;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            font-size: 11px;
+            background-image: url(../branding-products/img/01.svg);
+            background-repeat: no-repeat;
+          
+        }*/
+
+        .products__sidebar-menu {
+            padding: 8px 1px;
+            display: inline-block;
+            vertical-align: top;
+            color: black;
+            z-index: 999;
+            height: 100px;
+            width: 92px;
+            color: #f1f1f1;
+            text-align: center;
+        }
+        /*.products__sidebar-menu:hover {
+            border: 1px solid #ccc;
+        }*/
+            .products__sidebar-menu:hover  {
+                border: 1px solid #e5e5e5;
+                -webkit-border-radius: 2px;
+                border-radius: 2px;
+
+            }
+
+        .products-menu-logo {
+            display: inline-block;
+            vertical-align: top;
+            height: 64px;
+            width: 64px;
+
+        }
+
+        .products-menu-text {
+            display: block;
+            line-height: 28px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 12px;
+        }
+        .products__sidebar-container {
+            padding:20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <template id="template-component-template-id">
+
+        <aside class="pmd-sidebar sidebar-default pmd-sidebar-left-fixed pmd-sidebar-left pmd-z-depth" role="navigation">
+
+
+
+
+           <ul class=" pmd-sidebar-nav products__sidebar-container">
+
+               <div class="form-group">
+                   <select class="form-control select2" style="width: 100%;">
+
+                       <option selected="selected">Institutions</option>
+
+                       <option class="" value="">
+                           CISSS Abitibi-Témiscamigue
+                       </option>
+                       <option class="" value="">
+                           CISSS de Chaudière-Appalaches
+                       </option>
+                       <option class="" value="">
+                           CISSS de l'Outaouais
+                       </option>
+                       <option class="" value="">
+                           CISSS de la Côte-Nord
+                       </option>
+                       <option class="" value="">
+                           CISSS de la Gaspésie
+                       </option>
+                       <option class="" value="">
+                           CISSS de la Montérégie-Centre
+                       </option>
+                       <option class="" value="">
+                           CISSS de la Montérégie-Est
+                       </option>
+                       <option class="" value="">
+                           CISSS de la Montérégie-Ouest
+                       </option>
+                       <option class="" value="">
+                           CISSS de Lanaudière
+                       </option>
+                       <option class="" value="">
+                           CISSS de Laval
+                       </option>
+                       <option class="" value="">
+                           CISSS des Îles
+                       </option>
+                       <option class="" value="">
+                           CISSS des Laurentides
+                       </option>
+                       <option class="" value="">
+                           CISSS du Bas-Saint-Laurent
+                       </option>
+                       <option class="" value="">
+                           CIUSSS C-Ouest Île-de-Montréal
+                       </option>
+                       <option class="" value="">
+                           CIUSSS C-Sud Île-de-Montréal
+                       </option>
+                       <option class="" value="">
+                           CIUSSS Capitale-Nationale
+                       </option>
+                       <option class="" value="">
+                           CIUSSS Est - Île-de-Montréal
+                       </option>
+                       <option class="" value="">
+                           CIUSSS Estrie-Univ. Sherbrooke
+                       </option>
+                       <option class="" value="">
+                           CIUSSS Mauricie-Centre-du-Qué
+                       </option>
+                       <option class="" value="">
+                           CIUSSS Nord - Île-de-Montréal
+                       </option>
+                       <option class="" value="">
+                           CIUSSS Ouest - Île-de-Montréal
+                       </option>
+                       <option class="" value="">
+                           CIUSSS Saguenay-Lac-Saint-Jean
+                       </option>
+                   </select>
+               </div>
+
+
+               <li  class="products__sidebar-menu" >
+                   <a class="" href="" >
+                       <span class="badge-sidebar bg-red">Bêta</span>
+                       <div class=""></div>
+                       <span class="products-menu-logo" ><img class="" src="../branding-products/img/GCH-VIP-65x65.svg" /></span>
+                       <span class="products-menu-text">MED SOINS</span>
+                  
+                   </a>
+
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GCH-VIP-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+   
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GCH-VIP-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GCH-VIP-65x65.svg" /></span>
+                       <span class="products-menu-text">MED SOINS</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <span class="badge-sidebar bg-red">Bêta</span>
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GCH-VIP-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GCH-VIP-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+<hr>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GRF-WEB-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GRF-WEB-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GRF-WEB-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+
+
+               <hr>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GRM-WEB-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+
+               <hr>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/ANALYTIC-65x65.svg" /></span>
+                       <span class="products-menu-text">GRM</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <!--<button type="button" class="btn btn-primary" id="showtoast">Show Toast</button>-->
+
+                   <form  style="cursor: pointer;" type="submit" class="" id="showtoast">
+
+                       <!--<a class="alert-product" href="javascript:$.simplyToast('sssss', 'success');">-->
+                       <!--// Display an info toast with no title
+        toastr.info('Are you the 6 fingered man?')-->
+
+
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img style="opacity: 0.2;" class="" src="../branding-products/img/ANALYTIC-65x65.svg" /></span>
+                       <span style="color: #73879c;"  class="products-menu-text">GRM</span>
+                   </form>
+                </li>
+
+               <hr>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <span class="badge-sidebar bg-grey-active">sigfa</span>
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GRF-SIGFA-65x65.svg" /></span>
+                       <span class="products-menu-text">GRF SIGFA</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <span class="badge-sidebar bg-grey-active">sigfa</span>
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GRF-SIGFA-65x65.svg" /></span>
+                       <span class="products-menu-text">GRH SIGFA</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <span class="badge-sidebar bg-red">Bêta</span>
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/GRF-SIGFA-65x65.svg" /></span>
+                       <span class="products-menu-text">GRH SIGFA</span>
+                   </a>
+               </li>
+
+               <hr>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/CONNEX-65x65.svg" /></span>
+                       <span class="products-menu-text">CONNEX</span>
+                   </a>
+               </li>
+
+               <li class="products__sidebar-menu">
+                   <a class="" href="">
+                       <div class=""></div>
+                       <span class="products-menu-logo"><img class="" src="../branding-products/img/MOODLE-65x65.svg" /></span>
+                       <span class="products-menu-text">MOODLE</span>
+                   </a>
+               </li>
+
+            </ul>
+
+
+
+
+
+        </aside>
+
+        <div class="pmd-sidebar-overlay"></div>
+
+    </template>
+
+    <script>
+        'use strict';
+
+        templateComponents.define('template-component-sidebar-new', { templateId: 'template-component-template-id' });
+    </script>
+
+</body>
+</html>

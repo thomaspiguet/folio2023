@@ -1,0 +1,220 @@
+Uri: https://prototype-client-mvc.azurewebsites.net/blueprint/home
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\blueprint\home.html
+Content Type: text/html
+
+Uri: https://prototype-client-mvc.azurewebsites.net/img/favicon/favicon.ico
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\img\favicon\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/boostrap.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\boostrap.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/fonts/roboto/roboto.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\fonts\roboto\roboto.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/fonts/font-awesome/css/font-awesome.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\fonts\font-awesome\css\font-awesome.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/fonts/material-icons/material-icons.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\fonts\material-icons\material-icons.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/fonts/simple-line-icons/simple-line-icons.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\fonts\simple-line-icons\simple-line-icons.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/fonts/medicine-and-health/font/flaticon.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\fonts\medicine-and-health\font\flaticon.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/base.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\base.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/colors.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\colors.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Shared/Components/BluePrints/colors-legend.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Shared\Components\BluePrints\colors-legend.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/grid-system.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\grid-system.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/mixins.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\mixins.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/utility.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\utility.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/variables.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\variables.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/fonts.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\fonts.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/table.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\table.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/base/cursor.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\base\cursor.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/accordion.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\accordion.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/button.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\button.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/progressbar.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\progressbar.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Forms/checkbox.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Forms\checkbox.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Forms/inputs.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Forms\inputs.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Forms/selectV1.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Forms\selectV1.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Forms/tagsinput.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Forms\tagsinput.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/alerts.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\alerts.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/tabs.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\tabs.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/treeview.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\treeview.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/badge.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\badge.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/flowchart.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\flowchart.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Styles/nomalize.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Styles\nomalize.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Styles/MainLayoutStrom.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Styles\MainLayoutStrom.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Styles/tooltip-map.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Styles\tooltip-map.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Shared/Containers/Aside/aside-panel.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Shared\Containers\Aside\aside-panel.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/UIElements/list.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\UIElements\list.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Shared/Components/BluePrints/blue-print.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Shared\Components\BluePrints\blue-print.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Shared/Components/BluePrints/legend.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Shared\Components\BluePrints\legend.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Shared/Containers/Navigation/navigation-tool.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Shared\Containers\Navigation\navigation-tool.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Shared/Containers/Navigation/main-navigation.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Shared\Containers\Navigation\main-navigation.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Shared/Containers/TopHeader/top-header.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Shared\Containers\TopHeader\top-header.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/Strom/Shared/Containers/Body/table-timeline.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\Strom\Shared\Containers\Body\table-timeline.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Tables/datatables.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Tables\datatables.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Forms/wizard.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Forms\wizard.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Shared/Containers/Footer/footer.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Shared\Containers\Footer\footer.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Shared/Containers/Header/header.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Shared\Containers\Header\header.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Shared/Containers/SidebarAppSwitch/SidebarAppSwitch.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Shared\Containers\SidebarAppSwitch\SidebarAppSwitch.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Widgets/widgets.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Widgets\widgets.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/BluePrint/Styles/nomalize.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\BluePrint\Styles\nomalize.css
+Content Type: text/css
+
+Uri: https://prototype-client-mvc.azurewebsites.net/css/Projects/BluePrint/Styles/style-lm.css
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\css\Projects\BluePrint\Styles\style-lm.css
+Content Type: text/css
+
+Uri: https://www.logibec.com/
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\index.htm
+Content Type: text/html
+
+Uri: https://prototype-client-mvc.azurewebsites.net/js/modernizr-custom.js
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\js\modernizr-custom.js
+Content Type: application/javascript
+
+Uri: https://prototype-client-mvc.azurewebsites.net/js/classie.js
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\js\classie.js
+Content Type: application/javascript
+
+Uri: https://prototype-client-mvc.azurewebsites.net/js/list.min.js
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\js\list.min.js
+Content Type: application/javascript
+
+Uri: https://prototype-client-mvc.azurewebsites.net/js/main-lm.js
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\js\main-lm.js
+Content Type: application/javascript
+
+Uri: https://tympanus.net/Development/SeatPreview/
+File Name: E:\BACK-UP OFFICE 2021\blueprint\prototype-client-mvc.azurewebsites.net\Development\SeatPreview\index.htm
+Content Type: text/html
+

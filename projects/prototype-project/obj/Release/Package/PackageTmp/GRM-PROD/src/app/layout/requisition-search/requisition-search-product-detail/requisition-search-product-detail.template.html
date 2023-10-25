@@ -1,0 +1,168 @@
+<div class="full-height">
+  <div class="container-fluid requisition-search-detail">
+
+    <div class="row">
+      <div class="form-group col-md-3">
+        <label for="productDescription">{{ 'productDescription' | translate }}</label>
+        <div class="readonly-field-placeholder" id="productDescription">
+          <span ng-show="$ctrl.model.description">
+            {{$ctrl.model.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="administrativeUnit">{{ 'administrativeUnit' | translate }}</label>
+        <div class="readonly-field-placeholder" id="administrativeUnit">
+          <span ng-show="$ctrl.model.department">
+            {{$ctrl.model.department.code}} - {{$ctrl.model.department.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="vendor">{{ 'vendor' | translate }}</label>
+        <div class="readonly-field-placeholder" id="vendor">
+          <span ng-show="$ctrl.model.vendor">
+            {{$ctrl.model.vendor.code}} - {{$ctrl.model.vendor.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="projectActivity">{{ 'projectActivity' | translate }}</label>
+        <div class="readonly-field-placeholder" id="projectActivity">
+          <span ng-show="$ctrl.model.projectActivity">
+            {{$ctrl.model.projectActivity.projectCode}}/{{$ctrl.model.projectActivity.activityCode}} - {{$ctrl.model.projectActivity.description}}
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="form-group col-md-3">
+        <label for="note">{{ 'noteForProduct' | translate }}</label>
+        <div class="readonly-field-placeholder" id="note">
+          <span ng-show="$ctrl.model.note">
+            {{$ctrl.model.note}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="deliveryLocation">{{ 'shippingLocation' | translate }}</label>
+        <div class="readonly-field-placeholder" id="deliveryLocation">
+          <span ng-show="$ctrl.model.deliveryLocation">
+            {{$ctrl.model.deliveryLocation.code}} - {{$ctrl.model.deliveryLocation.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="orderId">{{ 'orderNumber' | translate }}</label>
+        <div class="readonly-field-placeholder" id="orderId">
+          <span ng-show="$ctrl.model.orderId">
+            {{$ctrl.model.orderId}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="suggestedPurchaseProcess">{{ 'purchaseProcessSuggested' | translate }}</label>
+        <div class="readonly-field-placeholder" id="suggestedPurchaseProcess">
+          <span ng-show="$ctrl.model.suggestedPurchaseProcess">
+            {{$ctrl.model.suggestedPurchaseProcess.code}} - {{$ctrl.model.suggestedPurchaseProcess.description}}
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="form-group col-md-3">
+        <label for="formatDescription">{{ 'format' | translate }}</label>
+        <div class="readonly-field-placeholder" id="formatDescription">
+          <span ng-show="$ctrl.model.formatDescription">
+            {{$ctrl.model.formatDescription}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="site">{{ 'site' | translate }}</label>
+        <div class="readonly-field-placeholder" id="site">
+          <span ng-show="$ctrl.model.site">
+            {{$ctrl.model.site.code}} - {{$ctrl.model.site.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="store">{{ 'store' | translate }}</label>
+        <div class="readonly-field-placeholder" id="store">
+          <span ng-show="$ctrl.model.store">
+            {{$ctrl.model.store.code}} - {{$ctrl.model.store.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="usedPurchaseProcess">{{ 'purchaseProcessUsed' | translate }}</label>
+        <div class="readonly-field-placeholder" id="usedPurchaseProcess">
+          <span ng-show="$ctrl.model.usedPurchaseProcess">
+            {{$ctrl.model.usedPurchaseProcess.code}} - {{$ctrl.model.usedPurchaseProcess.description}}
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="form-group col-md-3">
+        <label for="buyer">{{ 'buyer' | translate }}</label>
+        <div class="readonly-field-placeholder" id="buyer">
+          <span ng-show="$ctrl.model.buyer">
+            {{$ctrl.model.buyer.code}} - {{$ctrl.model.buyer.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="requester">{{ 'requester' | translate }}</label>
+        <div class="readonly-field-placeholder" id="requester">
+          <span ng-show="$ctrl.model.requester">
+            {{$ctrl.model.requester.code}} - {{$ctrl.model.requester.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <!-- Empty Column... -->
+      </div>
+      <div class="form-group col-md-3">
+        <label for="deviation">{{ 'deviation' | translate }}</label>
+        <div class="readonly-field-placeholder" id="deviation">
+          <span ng-show="$ctrl.model.deviation">
+            {{$ctrl.model.deviation.code}} - {{$ctrl.model.deviation.description}}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group form-group-no-bottom-margin col-md-3">
+        <label for="externalReferenceNumber">{{ 'externalReference' | translate }}</label>
+        <div class="readonly-field-placeholder" id="externalReferenceNumber">
+          <span ng-show="$ctrl.model.externalReferenceNumber">
+            {{$ctrl.model.externalReferenceNumber}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group form-group-no-bottom-margin col-md-3">
+        <label for="client">{{ 'client' | translate }}</label>
+        <div class="readonly-field-placeholder" id="client">
+          <span ng-show="$ctrl.model.client">
+            {{$ctrl.model.client.code}} - {{$ctrl.model.client.description}}
+          </span>
+        </div>
+      </div>
+      <div class="form-group form-group-no-bottom-margin col-md-3">
+        <!-- Empty Column... -->
+      </div>
+      <div class="form-group form-group-no-bottom-margin col-md-3">
+        <!-- Empty Column... -->
+      </div>
+    </div>
+
+</div>
+</div>

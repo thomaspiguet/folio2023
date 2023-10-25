@@ -1,0 +1,24 @@
+<div class="error-layout" ng-cloak>
+  <div class="panel" ng-hide="ctrl.isRedirecting">
+    <div class="panel-body">
+      <p>{{ 'anErrorHasOccured' | translate }}</p>
+      <br />
+      <span>{{ ctrl.error.description | translate }}</span>
+    </div>
+    <div class="panel-footer panel-footer-no-border">
+      <div class="row">
+        <div class="col-sm-12">
+          <a ng-href="#" ng-show="ctrl.authenticationInfos.authenticated && !ctrl.unauthorized"
+             class="pull-right" ng-click="ctrl.backToHomePage($event)">
+              {{ 'backToHomePage' | translate }}
+          </a>
+          <a ng-href="#" ng-show="!ctrl.authenticationInfos.authenticated && !ctrl.unauthorized"
+             class="pull-right"
+             ng-click="ctrl.login($event)">
+            {{ 'reconnection' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

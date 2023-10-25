@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>collapse list</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Salaires_Grouping_1" transform="translate(-1018.000000, -188.000000)" fill-rule="nonzero" fill="#00778B">
+            <g id="Group-3" transform="translate(915.000000, 179.000000)">
+                <g id="Group-26">
+                    <g id="collapse-list" transform="translate(108.000000, 16.000000) rotate(90.000000) translate(-108.000000, -16.000000) translate(101.000000, 11.000000)">
+                        <path d="M0,8.83333333 L3.68,5 L8.8817842e-16,1.16666667 L1.12,0 L5.92,5 L1.12,10 L0,8.83333333 Z M14,8.83333333 L10.32,5 L14,1.16666667 L12.88,0 L8.08,5 L12.88,10 L14,8.83333333 L14,8.83333333 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+	<defs>
+    <style>
+      .b6ea3b2d-cc20-4b35-88b6-de7be38db512 {
+        fill: #fff;
+      }
+      .bbff73a5-b444-41c1-923d-894fdb86e373 {
+        fill: #c1ccd3;
+      }
+      .ae4182c2-fe60-476c-87f1-33fc3ccd7482 {
+        fill: #acb8c5;
+      }
+    </style>
+	</defs>
+  <g>
+    <path class="b6ea3b2d-cc20-4b35-88b6-de7be38db512" d="M13,29.5a16.61,16.61,0,0,0,1.56,7.28L19,33.4a10.78,10.78,0,0,1-.52-4.16A13.05,13.05,0,0,1,19,26.12L14.3,22.74A18.41,18.41,0,0,0,13,29.5"/>
+    <path class="bbff73a5-b444-41c1-923d-894fdb86e373" d="M28.08,19.36a9.6,9.6,0,0,0-9.36,6.76L14.3,22.74c2.34-5.2,7.28-8.06,13.78-8.06a12.6,12.6,0,0,1,10.66,5.2L34.58,23C32.5,20.4,30.42,19.36,28.08,19.36Z"/>
+    <path class="ae4182c2-fe60-476c-87f1-33fc3ccd7482" d="M28.34,40.16A9.6,9.6,0,0,1,19,33.4l-4.42,3.38c2.34,5.2,7.28,8.06,13.78,8.06A12.6,12.6,0,0,0,39,39.64l-4.16-3.12C32.76,39.12,30.68,40.16,28.34,40.16Z"/>
+  </g>
+
+</svg>

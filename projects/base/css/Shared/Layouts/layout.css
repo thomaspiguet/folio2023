@@ -1,0 +1,281 @@
+/*
+ * COLORS
+ * 
+ */
+/*$color-background-inactive: #f8f9fa;*/
+/*$color-brand: red;*/
+/*$color-marketing-grey: #373d49;*/
+/*
+ * FONT-SIZE
+ * 
+ */
+/*$font-size-h1: floor(($font-size-base * 1.85));*/
+/*$font-size-h2: floor(($font-size-base * 1.7)); 
+$font-size-h3: ceil(($font-size-base * 1.385)); 
+$font-size-h4: ceil(($font-size-base * 1.32)); 
+$font-size-h5: ceil(($font-size-base * 1.24)); 
+$font-size-h6: ceil(($font-size-base * 1.08));*/
+/*
+ * FONT-FAMILY
+ * 
+ */
+/*
+ * FONT-WEIGHT
+ * 
+ */
+/*
+ * BORDER
+ * 
+ */
+/*
+ * HEADER
+ * 
+ */
+/*
+ * SIDEBAR
+ * 
+ */
+/*
+ * APP-SWITCHER
+ * 
+ */
+/*
+ * RIBBON
+ * 
+ */
+/*
+ * FOOTER
+ * 
+ */
+/*
+ * WIZARDS
+ * 
+ */
+/*
+ * UI ELEMENTS
+ * 
+ */
+/*
+ * CONNEX
+ * 
+ */
+/*
+ * SIDEBAR - STROM
+ * 
+ */
+/*$main-sidepanel-width-expanded: 385px;*/
+/*$main-sidebar-width-expanded: 145px;*/
+/*
+ * placeholder 
+ * 
+ */
+/*
+ * prefixs 
+ * 
+ */
+/*
+ * transition 
+ * 
+ */
+/*
+ * calc 
+ * 
+ */
+/*
+ * box-shadow 
+ * @include box-shadow(1px,1px,1px,0, #fff, true);
+ * 
+ */
+/*
+ * rotate 
+ * 
+ */
+/*
+ * scale 
+ * 
+ */
+/*
+ * translate 
+ * 
+ */
+/*
+ * skew 
+ * 
+ */
+/*
+ * flex 
+ * 
+ */
+/*
+ * absolute 
+ * 
+ */
+html {
+  height: 100%;
+}
+
+.layout-boxed html, .layout-boxed body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /*position: relative;*/
+  /*min-height: 100%;*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #2f3943;
+  background-color: #f2f3f6;
+}
+
+/*DASHBOARD-LAYOUT*/
+.main {
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  padding-top: 85px;
+}
+
+@media (min-width: 1200px) {
+  .main {
+    margin: 0px 0px 0px 300px;
+    padding: 30px;
+    padding-top: 85px;
+    min-height: -moz-calc(100vh - 50px);
+    min-height: -webkit-calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
+  }
+}
+
+.main .main-content {
+  padding: 15px;
+  margin: 0px auto;
+  background-color: #f2f3f6;
+}
+
+.main .main-content .widget-panel {
+  background-color: #fff;
+  margin: 0 0 20px;
+  margin-bottom: 30px;
+  /*position: relative;*/
+  /*display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;*/
+}
+
+.main .main-content .widget-panel .widget-panel-in .subtitle-line {
+  display: table;
+  width: 100%;
+  padding: 30px 0px 20px;
+}
+
+.main .main-content .widget-panel .widget-panel-in .widget-footer {
+  padding: 10px 20px;
+}
+
+.main .main-content .widget-header {
+  padding: 20px;
+}
+
+.main .main-content .widget-header .box-title {
+  margin: 0px;
+}
+
+/*PRODUCT-LAYOUT*/
+#product-layout .aside-panel.aside-panel-open + div {
+  margin-right: 320px;
+  -webkit-transition: margin-right 750ms ease-in-out 0ms;
+  transition: margin-right 750ms ease-in-out 0ms;
+}
+
+#product-layout .main {
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  padding: 30px;
+  /*padding-top: $header-height + $ribbon-height + 30px;*/
+  /*padding-top: $header-height + 30px;*/
+  padding-top: 65px;
+  min-height: -moz-calc(100vh - 50px);
+  min-height: -webkit-calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
+  -webkit-transition: margin-right 750ms ease-in-out 0ms;
+  transition: margin-right 750ms ease-in-out 0ms;
+}
+
+.structures-pannel, .aside-panel {
+  position: fixed;
+  top: 55px;
+  right: 0;
+  z-index: 1050;
+  width: 0px;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -html-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: width 750ms ease-in-out 0ms;
+  transition: width 750ms ease-in-out 0ms;
+}
+
+.structures-pannel.structures-pannel-open, .structures-pannel.aside-panel-open, .aside-panel.structures-pannel-open, .aside-panel.aside-panel-open {
+  width: 300px;
+}
+
+.structures-pannel.structures-pannel-open .structure-wrapper .structure-close, .structures-pannel.structures-pannel-open .structure-wrapper .aside-panel-close, .structures-pannel.structures-pannel-open .aside-panel-wrapper .structure-close, .structures-pannel.structures-pannel-open .aside-panel-wrapper .aside-panel-close, .structures-pannel.aside-panel-open .structure-wrapper .structure-close, .structures-pannel.aside-panel-open .structure-wrapper .aside-panel-close, .structures-pannel.aside-panel-open .aside-panel-wrapper .structure-close, .structures-pannel.aside-panel-open .aside-panel-wrapper .aside-panel-close, .aside-panel.structures-pannel-open .structure-wrapper .structure-close, .aside-panel.structures-pannel-open .structure-wrapper .aside-panel-close, .aside-panel.structures-pannel-open .aside-panel-wrapper .structure-close, .aside-panel.structures-pannel-open .aside-panel-wrapper .aside-panel-close, .aside-panel.aside-panel-open .structure-wrapper .structure-close, .aside-panel.aside-panel-open .structure-wrapper .aside-panel-close, .aside-panel.aside-panel-open .aside-panel-wrapper .structure-close, .aside-panel.aside-panel-open .aside-panel-wrapper .aside-panel-close {
+  opacity: 1;
+}
+
+.structures-pannel .structure-wrapper, .structures-pannel .aside-panel-wrapper, .aside-panel .structure-wrapper, .aside-panel .aside-panel-wrapper {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: width 750ms ease-in-out 0ms;
+  transition: width 750ms ease-in-out 0ms;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.structures-pannel .structure-wrapper.open-panel-ai, .structures-pannel .structure-wrapper.open-s-mvc, .structures-pannel .structure-wrapper.open-s-rp, .structures-pannel .structure-wrapper.open-s-react, .structures-pannel .structure-wrapper.open-s-angular, .structures-pannel .aside-panel-wrapper.open-panel-ai, .structures-pannel .aside-panel-wrapper.open-s-mvc, .structures-pannel .aside-panel-wrapper.open-s-rp, .structures-pannel .aside-panel-wrapper.open-s-react, .structures-pannel .aside-panel-wrapper.open-s-angular, .aside-panel .structure-wrapper.open-panel-ai, .aside-panel .structure-wrapper.open-s-mvc, .aside-panel .structure-wrapper.open-s-rp, .aside-panel .structure-wrapper.open-s-react, .aside-panel .structure-wrapper.open-s-angular, .aside-panel .aside-panel-wrapper.open-panel-ai, .aside-panel .aside-panel-wrapper.open-s-mvc, .aside-panel .aside-panel-wrapper.open-s-rp, .aside-panel .aside-panel-wrapper.open-s-react, .aside-panel .aside-panel-wrapper.open-s-angular {
+  width: 300px;
+}
+
+.structures-pannel .structure-wrapper .structure-close, .structures-pannel .structure-wrapper .aside-panel-close, .structures-pannel .aside-panel-wrapper .structure-close, .structures-pannel .aside-panel-wrapper .aside-panel-close, .aside-panel .structure-wrapper .structure-close, .aside-panel .structure-wrapper .aside-panel-close, .aside-panel .aside-panel-wrapper .structure-close, .aside-panel .aside-panel-wrapper .aside-panel-close {
+  opacity: 0;
+  position: relative;
+  float: right;
+  padding: 10px 15px;
+  color: #aaaaaa;
+  font-size: 22px;
+  font-weight: normal;
+  cursor: pointer;
+  z-index: 3;
+  text-decoration: none;
+  -webkit-transition: color 150ms ease-in-out 0ms;
+  transition: color 150ms ease-in-out 0ms;
+  -webkit-transition: opacity 950ms ease-in-out 0ms;
+  transition: opacity 950ms ease-in-out 0ms;
+}
+
+.structures-pannel .structure-wrapper .structure-close:hover, .structures-pannel .structure-wrapper .structure-close:focus, .structures-pannel .structure-wrapper .aside-panel-close:hover, .structures-pannel .structure-wrapper .aside-panel-close:focus, .structures-pannel .aside-panel-wrapper .structure-close:hover, .structures-pannel .aside-panel-wrapper .structure-close:focus, .structures-pannel .aside-panel-wrapper .aside-panel-close:hover, .structures-pannel .aside-panel-wrapper .aside-panel-close:focus, .aside-panel .structure-wrapper .structure-close:hover, .aside-panel .structure-wrapper .structure-close:focus, .aside-panel .structure-wrapper .aside-panel-close:hover, .aside-panel .structure-wrapper .aside-panel-close:focus, .aside-panel .aside-panel-wrapper .structure-close:hover, .aside-panel .aside-panel-wrapper .structure-close:focus, .aside-panel .aside-panel-wrapper .aside-panel-close:hover, .aside-panel .aside-panel-wrapper .aside-panel-close:focus {
+  color: #2f3943;
+}
+
+.structures-pannel .structure-wrapper .structure-in, .structures-pannel .structure-wrapper .aside-panel-in, .structures-pannel .aside-panel-wrapper .structure-in, .structures-pannel .aside-panel-wrapper .aside-panel-in, .aside-panel .structure-wrapper .structure-in, .aside-panel .structure-wrapper .aside-panel-in, .aside-panel .aside-panel-wrapper .structure-in, .aside-panel .aside-panel-wrapper .aside-panel-in {
+  padding: 10px;
+  height: 100%;
+  position: relative;
+}
+
+.structures-pannel .structure-wrapper .cta-fixed, .structures-pannel .aside-panel-wrapper .cta-fixed, .aside-panel .structure-wrapper .cta-fixed, .aside-panel .aside-panel-wrapper .cta-fixed {
+  position: fixed;
+  bottom: 50px;
+  margin-left: 135px;
+}
