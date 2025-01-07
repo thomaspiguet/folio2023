@@ -1,3 +1,7 @@
+body {
+  padding-top: 5rem;
+}
+
 .container {
   max-width: 960px;
 }
@@ -26,18 +30,12 @@ header.border-bottom {
 }
 
 .hero-image {
-  background-image: url("photographer.jpg");
-  /* The image used */
-  background-color: #cccccc;
-  /* Used if the image is unavailable */
-  height: 500px;
-  /* You must set a specified height */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
+  background-image: url("photographer.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .dropdown-hover:hover > .dropdown-menu {
@@ -75,7 +73,6 @@ header.border-bottom {
     margin-top: 0;
   }
 }
-
 /* ============ desktop view .end// ============ */
 /* ============ mobile view ============ */
 @media (max-width: 991px) {
@@ -86,7 +83,6 @@ header.border-bottom {
     background-color: #fff !important;
   }
 }
-
 .navbar-toggler {
   padding: var(--mdb-navbar-toggler-padding-y) var(--mdb-navbar-toggler-padding-x);
   font-size: var(--mdb-navbar-toggler-font-size);
@@ -175,7 +171,6 @@ a svg {
   width: 100%;
   height: 25px;
 }
-
 a .play {
   height: 200px;
 }
@@ -183,7 +178,6 @@ a .play {
 a {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
   font-weight: 500;
@@ -197,12 +191,10 @@ a:hover {
 .video-description {
   background: red;
   position: absolute;
-  bottom: -0%;
+  bottom: 0%;
   /* left: 0; */
   bottom: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /* -webkit-box-align: center; */
   -ms-flex-align: center;
@@ -398,7 +390,6 @@ a:hover {
     margin-left: 10px;
   }
 }
-
 @media (max-width: 900px) {
   .content__container {
     display: none;
@@ -441,90 +432,40 @@ a:hover {
     margin: 0;
   }
 }
-
 .scroll-element {
   width: 100%;
   height: 750px;
   overflow-y: scroll;
   max-height: 600px;
 }
-
-@-webkit-keyframes opacity {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes change {
-  0%,
-  12.66%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -25%, 0);
-  }
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -50%, 0);
-  }
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -75%, 0);
-  }
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -50%, 0);
-  }
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -25%, 0);
-  }
-}
-
 @keyframes opacity {
-  0%,
-  100% {
+  0%, 100% {
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
 }
-
 @keyframes change {
-  0%,
-  12.66%,
-  100% {
+  0%, 12.66%, 100% {
     transform: translate3d(0, 0, 0);
   }
-  16.66%,
-  29.32% {
+  16.66%, 29.32% {
     transform: translate3d(0, -25%, 0);
   }
-  33.32%,
-  45.98% {
+  33.32%, 45.98% {
     transform: translate3d(0, -50%, 0);
   }
-  49.98%,
-  62.64% {
+  49.98%, 62.64% {
     transform: translate3d(0, -75%, 0);
   }
-  66.64%,
-  79.3% {
+  66.64%, 79.3% {
     transform: translate3d(0, -50%, 0);
   }
-  83.3%,
-  95.96% {
+  83.3%, 95.96% {
     transform: translate3d(0, -25%, 0);
   }
 }
-
 .flex-equal > * {
   flex: 1;
 }
@@ -534,7 +475,6 @@ a:hover {
     flex: 1;
   }
 }
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -548,7 +488,6 @@ a:hover {
     font-size: 3.5rem;
   }
 }
-
 .b-example-divider {
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.1);
@@ -596,7 +535,8 @@ svg {
 }
 
 video {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: auto;
   width: 100%;
   /* background-image: url("https://img.youtube.com/vi/nZcejtAwxz4/maxresdefault.jpg"); */
@@ -666,18 +606,15 @@ video::-webkit-media-controls {
 }
 
 .icon-scroll:before {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   background: royalblue;
   margin-left: -4px;
   top: 8px;
   border-radius: 4px;
-  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
   animation-name: scroll;
 }
 
@@ -686,23 +623,11 @@ video::-webkit-media-controls {
     top: 50%;
   }
 }
-
 @media (max-width: 40rem) {
   .icon-scroll {
     display: none;
   }
 }
-
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(46px);
-  }
-}
-
 @keyframes scroll {
   0% {
     opacity: 1;
@@ -711,4 +636,4 @@ video::-webkit-media-controls {
     opacity: 0;
     transform: translateY(46px);
   }
-}
+}/*# sourceMappingURL=product01.css.map */

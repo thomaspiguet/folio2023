@@ -1,3 +1,8 @@
+
+body {
+  padding-top: 5rem;
+}
+
 .container {
   max-width: 960px;
 }
@@ -41,8 +46,6 @@ header.border-bottom {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
   }
-
-
 
   .navbar .megamenu{ 
     background-color: fff;
