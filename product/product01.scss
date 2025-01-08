@@ -11,6 +11,12 @@ body {
  * Custom translucent site header
  */
 
+
+.bi {
+  vertical-align: 0.3em!important;
+  fill: currentColor;
+  font-size: 24px;
+}
 .site-header {
   background-color: rgba(0, 0, 0, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
